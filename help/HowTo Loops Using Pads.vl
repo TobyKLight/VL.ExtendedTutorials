@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="N3AYhIhQRA6QExbhnIPbML" LanguageVersion="2021.4.7.906" Version="0.128">
+  <Patch Id="OLRY0JDeVHjMdHXSMgHbmX">
+    <Canvas Id="K126rpWm9SkNuHNqjtdOLK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="JFmIVLIKzzXP0XBmLhtMq3">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Srr0R7MDR73ND8YerMutS3">
+        <Canvas Id="OWgaQBHJzrCNmhTdX8bqjT" CanvasType="Group">
+          <Pad Id="H4P2yNPwJ03O2kJfZqRw3C" Bounds="316,110,53,19" ShowValueBox="true" isIOBox="true" Value="//Intro">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RcH2IMY0IsmQQFD4DsJyWw" Bounds="316,128,338,168" ShowValueBox="true" isIOBox="true" Value="If you look up 'loops' in the helpbrowser you will find out about the ForEach and Repeat regions.&#xD;&#xA;&#xD;&#xA;It is also possible to achieve looping behaviour with Pads (AKA Properties), but this has some important details that you need to know before you start making logic this way.&#xD;&#xA;&#xD;&#xA;You can read about the details in the graybook here, ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PPDEqXw5ShoMqLUPSGwFWJ" Bounds="316,296,474,21" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/language/properties.html">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HebsZ7lYB06Nhjk3xNZZi2" Bounds="309,527,164,22" ShowValueBox="true" isIOBox="true" Value="//Demonstration">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D3Tq49nrt2NQOYcBU3fhhx" Bounds="316,324,339,187" ShowValueBox="true" isIOBox="true" Value="It says&#xD;&#xA;&quot;In every operation you can assume that first always all Pads are read from. Then all its operations are executed and only as the last step all Pads are written to.&quot;&#xD;&#xA;&#xD;&#xA;This MEANS that after you've written data to a pad, that data isn't actually available until the next frame. &#xD;&#xA;If you use pads to distribute data this could mean you may not be accessing the same value with all your logic. &#xD;&#xA;The details depend on how you patch it.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A1wGBEfHRjXNpoGFIEuu48" SlotId="IiqrYojABO3QZLuP6x0tTx" Bounds="371,560" />
+          <Pad Id="VA0zFxfvIdMLik9TwnnNgI" Bounds="376,554,254,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Pad 'MyValue' with the type Integer32">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="371,617,30,19" Id="HiuGGhhoDdMPpS9nrPus1y">
+            <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Inc" />
+              <CategoryReference Kind="Int32Type" Name="Integer32" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="FaMWIpXZX3ZPl7iKrTdtFH" Name="Input" Kind="StateInputPin" />
+            <Pin Id="PE6mI2gMngGLofwN14Bv1T" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KwhdfSrFtlWPgxvyVauYJq" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="KVjFTqGi2VGNHYP8se6TWy" Comment="DoIncrease" Bounds="397,588,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SC74hgr1HQKOH1yctlaVFC" Bounds="430,600,319,23" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Enable this to increase the integer every frame">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OOBxkAephPNOwolsoQ2mcE" Comment="" Bounds="371,656,48,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PcxDtZvfPrGOyeVRLlKXRR" SlotId="IiqrYojABO3QZLuP6x0tTx" Bounds="371,687" />
+          <Pad Id="MyyMQM7JkPrPrGpURbwhzl" Bounds="424,653,212,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;we can see it counting up, nice">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PIgQAqv1kwQP4eT1Z7F9WN" Bounds="373,682,501,20" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;here we are writing back into the pad, creating a loop">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VMiqzftCBLBLO5HWdYVDNp" SlotId="IiqrYojABO3QZLuP6x0tTx" Bounds="148,773" />
+          <Pad Id="BQnN5PAaPxlOPqwDBTOtcd" Comment="" Bounds="141,812,56,9" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="162,834,25,19" Id="IV9Bv9gBAbrMOU9YL7oUvL">
+            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="PRJZNf9ZpXjLL6PFIkgvCv" Name="Input" Kind="InputPin" />
+            <Pin Id="USEIEaZNQyAL4ucYiK2DJP" Name="Input 2" Kind="InputPin" />
+            <Pin Id="DtrT4sWkWTUPu46qIGgOn7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="BDI3qM0ob3MOk3uIyX5XVU" Name="Case1" Bounds="97,720,242,321" />
+          <Pad Id="D9mCnBoHctCNt7dtI635L0" Comment="" Bounds="164,874,35,15" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="J2Ckm9ft7UiOcxKUc2kKDS" Name="Case2" Bounds="353,716,250,326" />
+          <Node Bounds="419,822,25,19" Id="F3zM4Yo6ZqMOGewVTqO1qA">
+            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="HhX0l7uOenTLuAj3WDOwWp" Name="Input" Kind="InputPin" />
+            <Pin Id="PURvTzkwWiSON755UF03UD" Name="Input 2" Kind="InputPin" />
+            <Pin Id="RoEBLxkquCANk47nQqSkas" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IwKXUg09DJ8OyYjCjJovi6" Comment="" Bounds="421,862,35,15" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="AK5yX32NCaYMhB5q8wWc8B" Name="Case3" Bounds="612,716,252,327" />
+          <Pad Id="Ri0p3iXl4IpO4M75BLY856" SlotId="IiqrYojABO3QZLuP6x0tTx" Bounds="702,788" />
+          <Pad Id="F3aeod9Qw9UO3YQPvXZzwc" Comment="" Bounds="703,815,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AVSGZwTREBTM2Z1qSRsvpb" SlotId="IiqrYojABO3QZLuP6x0tTx" Bounds="776,788" />
+          <Pad Id="Fgyp2WuI0v6MMozv6nvmgF" Comment="" Bounds="779,817,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="740,837,25,19" Id="GT1asptihREQSOiGJpfVjo">
+            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="R23TSUWchkSPqLtdKNEocH" Name="Input" Kind="InputPin" />
+            <Pin Id="P6VAal8tk75Nmnz8EvD02Z" Name="Input 2" Kind="InputPin" />
+            <Pin Id="H1zGFbr3SJAOqUGfLAKseI" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HxDndImROe3MQAp0Xdb4Vi" Comment="" Bounds="742,877,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PZOkOgWa3BiQI5jZDz9zoP" Bounds="97,902,208,131" ShowValueBox="true" isIOBox="true" Value="In this case we access the same pad elsewhere in the patch AND compare it to a value from the original logic. If the DoIncrease is running you see it's not accessing the same value abd there will be a difference of 1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AlDDAdqaFKfOHNIbfZMfWZ" Bounds="361,903,205,115" ShowValueBox="true" isIOBox="true" Value="In this case we compare the pad that was written and the data from the original logic. When you access data from the pad that is being written you will get the same value at the same time.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LtIIlI9r5sJOKWBntsLhjT" Bounds="636,904,213,125" ShowValueBox="true" isIOBox="true" Value="In this case we read the data out of two isolated pads elsewhere in the patch. In this case you access the same value at the same time (both one frame later than the frame the value was written).">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JrfIWlRA3arLScrdMAGIsW" Bounds="315,1067,349,197" ShowValueBox="true" isIOBox="true" Value="Conclusion: be vigilant when accessing the same pad in multiple places in one patch. Take into account with your reasoning that it may not be simple to read data at the same moment that you wrote it. A long vertical chain may be better for reasoning than a cleaner patch using pads everywhere. &#xD;&#xA;&#xD;&#xA;That being said this behaviour does not always have an impact. There are many cases where just being one frame behind will have no effect on the user experience.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="TDUYPCvURAyOao5jELcvRE" Name="Create" />
+        <Patch Id="RX8QnXALMSwQDzMVxP7FIQ" Name="Update" ParticipatingElements="CZXOd3UUmwWO8j15Jw1Lch" />
+        <ProcessDefinition Id="Fq0ilT8pmmhOfHnIIFcaX5">
+          <Fragment Id="EOs6Vrk6kaWPek3E06Pm0N" Patch="TDUYPCvURAyOao5jELcvRE" Enabled="true" />
+          <Fragment Id="J8z30hxeUzhLvkvBghX3qd" Patch="RX8QnXALMSwQDzMVxP7FIQ" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="IiqrYojABO3QZLuP6x0tTx" Name="MyValue">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Integer32" />
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="BH5qZVIXD9HPByIZp5BdEy" Ids="KVjFTqGi2VGNHYP8se6TWy,KwhdfSrFtlWPgxvyVauYJq" />
+        <Link Id="NjhNST7Go76ODGJsAf9UAX" Ids="A1wGBEfHRjXNpoGFIEuu48,FaMWIpXZX3ZPl7iKrTdtFH" />
+        <Link Id="NBW2GfbeVjcQGxkopmlggx" Ids="PE6mI2gMngGLofwN14Bv1T,OOBxkAephPNOwolsoQ2mcE" />
+        <Link Id="CZXOd3UUmwWO8j15Jw1Lch" Ids="OOBxkAephPNOwolsoQ2mcE,PcxDtZvfPrGOyeVRLlKXRR" />
+        <Link Id="Mt6RYnXHHqjOgY90Zbndd6" Ids="VMiqzftCBLBLO5HWdYVDNp,BQnN5PAaPxlOPqwDBTOtcd" />
+        <Link Id="OizpIm0Jl5xNx59WbwoEdC" Ids="BQnN5PAaPxlOPqwDBTOtcd,PRJZNf9ZpXjLL6PFIkgvCv" />
+        <Link Id="EptimKU9uIBLVDVBxP7t5l" Ids="DtrT4sWkWTUPu46qIGgOn7,D9mCnBoHctCNt7dtI635L0" />
+        <Link Id="BG7PzCMgdQ3O8cUq99spQ5" Ids="RoEBLxkquCANk47nQqSkas,IwKXUg09DJ8OyYjCjJovi6" />
+        <Link Id="HOP1AwBpuFWNPgfaKTzeHW" Ids="PcxDtZvfPrGOyeVRLlKXRR,HhX0l7uOenTLuAj3WDOwWp" />
+        <Link Id="JInFFIgejQJLDb298nWmOb" Ids="OOBxkAephPNOwolsoQ2mcE,PURvTzkwWiSON755UF03UD" />
+        <Link Id="B0hL5GuBQyaQG3ijBCa4Ck" Ids="Ri0p3iXl4IpO4M75BLY856,F3aeod9Qw9UO3YQPvXZzwc" />
+        <Link Id="KvAdRcgb4lDN0XWsw3MIgM" Ids="AVSGZwTREBTM2Z1qSRsvpb,Fgyp2WuI0v6MMozv6nvmgF" />
+        <Link Id="AKgdzCbxFY2Leky934asDb" Ids="H1zGFbr3SJAOqUGfLAKseI,HxDndImROe3MQAp0Xdb4Vi" />
+        <Link Id="DoTD9qQqFlGL2IzqhYISQK" Ids="F3aeod9Qw9UO3YQPvXZzwc,R23TSUWchkSPqLtdKNEocH" />
+        <Link Id="C3zjj16SxP4POcjiQQrg8K" Ids="Fgyp2WuI0v6MMozv6nvmgF,P6VAal8tk75Nmnz8EvD02Z" />
+        <Link Id="BpdxcEM0UHtOrBA3hbXw8a" Ids="PcxDtZvfPrGOyeVRLlKXRR,USEIEaZNQyAL4ucYiK2DJP" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="H9o41OrBOL9O6RQgnicYc8" Location="VL.CoreLib" Version="2021.4.7" />
+</Document>

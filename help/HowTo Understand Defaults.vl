@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.7.906" Version="0.128">
+  <Patch Id="KttuchERx1VNntsgQkA3be">
+    <Canvas Id="EjLDhR9Gpq4OkYaoktGR7O" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="B3BH8HSdPE2MG2fZPdyDWq">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="FQxjGn7ElpZNxT9rWaprI5">
+        <Canvas Id="F8yqq6QxjpWLor4NL6p2pN" CanvasType="Group">
+          <Pad Id="S8En3Y6Ki6pOaecXRJlW4I" Bounds="328,146,53,19" ShowValueBox="true" isIOBox="true" Value="//Intro">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qa9RW23XZgtOnM3BO5xypu" Bounds="329,168,353,72" ShowValueBox="true" isIOBox="true" Value="It's important to understand default behaviour in the gamma editor because it will help you reason about (usually) unexpected behaviours.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DS7nZbVIjmbMVUeq7DQli1" Bounds="330,238,196,19" ShowValueBox="true" isIOBox="true" Value="//Demonstration">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="I9aRD74hR4fM6Thn1Ghnvi" Name="Case1 - Default value of single instance" Bounds="188,284,307,664" />
+          <Overlay Id="EHAJHPbHdMMNDTp5vbXXQq" Name="Case2 - Default value of spread" Bounds="504,283,307,918" />
+          <Pad Id="VYDRYJrlblEOFko11JHZWo" Bounds="207,353,247,55" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangle' with a type of Rectangle, but do not give it any input....">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SwYE7Q7eSvkNDZK7GvWYFd" SlotId="TY22v11DiWYP64sC4pUnpY" Bounds="335,414" />
+          <Pad Id="QUOlkBz0E62MLHh69OKt3N" Bounds="210,438,265,73" ShowValueBox="true" isIOBox="true" Value="...And then draw that rectangle using the Skia Rectangle drawing layer connected to an iobox (which shows a preview of the layer) ...">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="328,508,61,19" Id="RaL0qb3tjKuNxi81xErAKb">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
+            </p:NodeReference>
+            <Pin Id="NsF6ftUTTE0LlSKrhBndb5" Name="Bounds" Kind="InputPin" />
+            <Pin Id="Bi0rQ56k73tPuC94Yt5voV" Name="Paint" Kind="InputPin" />
+            <Pin Id="MucAOBEKW4KONKjJd49rIG" Name="Enabled" Kind="InputPin" />
+            <Pin Id="IfgtIEfchG7OIthNWxQ5gd" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,254,249" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox can be buggy, if you don't see the white square hover mouse over the output of the rectangle node) ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FylhUz1G2dqP0INa8QQQzP" Comment="" Bounds="242,553,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Oq2Fd2CQJ77O5zYKSXBhhl" Bounds="513,340,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleSpread' with a type of Spread&lt;Rectangle&gt;, but do not give it any input so the spread is empty....">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ShuUTD8Z4hSMOCnODffEE4" SlotId="AU3k1ZcSpeRLapdKWis7nr" Bounds="655,434" />
+          <Node Bounds="688,463,44,26" Id="FZqDhqo2eWyOf6QWJFDgGQ">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Count" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UCyB7IOhTYPLFnFxEoYFms" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MbWwhCNwAg3NTuI7OLODgH" Name="Count" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FrjHkd8up7tOffckX360Cs" Comment="Count" Bounds="689,511,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="642,609,85,86" Id="UDwVgjpDgNQNmQyDv9DshH">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="CJjHF5GmloxL7lWxo1mrng" Name="Break" Kind="OutputPin" />
+            <Patch Id="OpzhLgabXMCQauwOM8FmQE" ManuallySortedPins="true">
+              <Patch Id="IVxm26vF4WFPrGQ1aKR90G" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="OBD0pGl5loBOCmfTWajAJF" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="UOD88iP4UlSMifGqhisw6B" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="654,645,61,19" Id="FtMYtTrSRlKOSRoOGrV541">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
+                </p:NodeReference>
+                <Pin Id="A09zuUEd5bBPFV5QVV72az" Name="Bounds" Kind="InputPin" />
+                <Pin Id="Bp2WuAQNs3tMvlIJwFJC4C" Name="Paint" Kind="InputPin" />
+                <Pin Id="PdfKt1lf8FpOvH5p1T1O58" Name="Enabled" Kind="InputPin" />
+                <Pin Id="BcItv1LVhIvMD66ORe7XlN" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="QfsyGPXcWTmMDc1M1i9wXU" Bounds="657,615" Alignment="Top" />
+            <ControlPoint Id="Rq8Cu8ELJh6L3VDCsN6Pxv" Bounds="660,689" Alignment="Bottom" />
+          </Node>
+          <Node Bounds="648,720,45,19" Id="F8DVGUOm7p8OBOQ4t2PtS0">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
+            </p:NodeReference>
+            <Pin Id="TWfvsDWmWwDPptdEO4GDEJ" Name="Input" Kind="InputPin" />
+            <Pin Id="PVdLgdUi4eQMFJEvzwwnFL" Name="Debug" Kind="InputPin" />
+            <Pin Id="E3YLKHRdVn3LmmFEbdtnVU" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BPHWSIB0I6oL5XTdt205XU" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PjBSottVvIVOeq7FmWXuYT" Comment="" Bounds="555,767,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Vq7lrJEVHvKMbspniz1mDJ" Bounds="509,538,251,63" ShowValueBox="true" isIOBox="true" Value="...And then draw what could theoretically be many rectangles with a ForEach loop...">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PjnTAIKQiAeOuuR9hBJdqF" Bounds="521,912,258,270" ShowValueBox="true" isIOBox="true" Value="...You see nothing. &#xD;&#xA;This is because the DEFAULT value for a spread is that it contains ZERO items. &#xD;&#xA;&#xD;&#xA;That ForEach loop is not running as zero slices are arriving with the input spread to be processed. &#xD;&#xA;&#xD;&#xA;When supplying an empty spread to ForEach regions you won't get an error. The system assumes you are intentionally supplying zero slices so it is correct behaviour to run the loop zero times.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EUEPEcdlo1sNKIhPul5Kud" Bounds="518,1282,253,96" ShowValueBox="true" isIOBox="true" Value="Conclusion - Spreads . single instances, and other collection types differ in their default behaviour. This can  ometimes explain unexpected behaviour.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NITkF9rzRZ8MdtYc3tCqAk" Name="Case3 - Default value of single instance accessed from spread" Bounds="833,285,307,918" />
+          <Pad Id="IMb7ZhemCQMMuJhwKJU3XD" Bounds="838,352,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleSpread2' with a type of Spread&lt;Rectangle&gt;, but do not give it any input so the spread is empty....">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JWdQcNQlrq2N1e98WVC57h" SlotId="FWAIM5MKzp6MgcT1Q5rf0c" Bounds="983,429" />
+          <Node Bounds="1016,458,44,26" Id="HhfauENEwkgQSXl1t76c6y">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Count" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="VmGm1MXsKeONGcWYcBs0mx" Name="Input" Kind="StateInputPin" />
+            <Pin Id="FXem0lQuJRON02QAaCkcp0" Name="Count" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EGUtk1elnAMNxNZu44fk9R" Comment="Count" Bounds="1017,506,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VTGcRqbJ7YhOwqx2GS1ZZC" Comment="" Bounds="884,729,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BTlMXHVkx3kQIF6JhSNAMz" Bounds="837,533,251,63" ShowValueBox="true" isIOBox="true" Value="...And then use a getSlice to explicity get one slice from the (empty) spread....">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NNjLoU8cxGpN8BU59rO9DF" Bounds="845,869,258,255" ShowValueBox="true" isIOBox="true" Value="...You see the default rectangle again. How can this be the case? Because the GetSlice has a job to return a single instance and that's what it does, if it can't find one because the spread is empty it creates a default instance to return (as per case 1)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="977,652,61,19" Id="DkYCHYElA7kNDOMxVWQDhK">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
+            </p:NodeReference>
+            <Pin Id="Hdrol7n4TOMMDmaIpUtBpk" Name="Bounds" Kind="InputPin" />
+            <Pin Id="TfSeG9j5SC5N6ik9VcTyZh" Name="Paint" Kind="InputPin" />
+            <Pin Id="CBRlrMOVj0zQYu1fBMGVrl" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Rlh8pHB2IzSMafyItr9NNC" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="979,608,52,19" Id="UgmEaanXKVOMa5eme63yl1">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="RGztWVna7FsPwpQYF9hPhH" Name="Input" Kind="StateInputPin" />
+            <Pin Id="LT1gQrGRGC7Mk94kcZJRCp" Name="Default Value" Kind="InputPin" />
+            <Pin Id="NJ53bl7rpK8NVcORml2kDi" Name="Index" Kind="InputPin" />
+            <Pin Id="JqSHlkxNDaGNLTZ1kSsfvS" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="EpjRwSYrquPNNhWwZDptfk" Name="Case4 - Default value of single instance accessed from array" Bounds="1151,284,307,939" />
+          <Pad Id="LGdnm7xI9kuOYGZ0XNaWNY" SlotId="KFMbQIk1LpROD8U9qhRjM9" Bounds="1312,444" />
+          <Pad Id="OCMGlFhdF3eNzolDJ6AbgE" Bounds="1171,362,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleArray' with a type of Array&lt;Rectangle&gt;, but do not give it any input so the array is empty....">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1209,581,237,282" Id="HiMWTSidNSFN2t7GpTKoW7">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="FX2TdZzdmoaLDIpuywApTs" Name="Condition" Kind="InputPin" />
+            <Patch Id="I3hZqFogXMmN2q1RTKQ2Vi" ManuallySortedPins="true">
+              <Patch Id="ThfrriGQ48GPj9Ze7Y7Fwl" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="G1YG0Iin4GKLMmiyBgsGRn" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="1233,604,52,26" Id="E33rAxoCMBCNHubGQqgLcd">
+                <p:NodeReference LastCategoryFullName="Collections.Array" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="Array" />
+                  <Choice Kind="OperationCallFlag" Name="GetItem" />
+                </p:NodeReference>
+                <Pin Id="M4GfxoGR2cWPwyRVibbog6" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HEF90eQbMdpPW2leh3TI2J" Name="Index" Kind="InputPin" />
+                <Pin Id="Aekt3FXYqeQPVrYbPKJR6M" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="DF2XhpQeTJiQPAUEHM7VZg" Name="Item" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1242,668,61,19" Id="Qbgh9z2cXMpNQ6yBKEkl6z">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
+                </p:NodeReference>
+                <Pin Id="RdoU6kfOIPILTjXHpr4PyO" Name="Bounds" Kind="InputPin" />
+                <Pin Id="KhBXlaoOWvDLXJc8h46Sy9" Name="Paint" Kind="InputPin" />
+                <Pin Id="N03abyrYVW3MYrXxn6r8bv" Name="Enabled" Kind="InputPin" />
+                <Pin Id="NLI4yXaO2fkQF5yAnBmhpR" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Pad Id="K5vQuE8tJwoLZNCIHFSLKE" Comment="" Bounds="1225,718,190,132" ShowValueBox="true" isIOBox="true" />
+            </Patch>
+          </Node>
+          <Pad Id="H66znPGVKY7MDEXvtYNCjR" Comment="Enable" Bounds="1210,513,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S34AQRbmJf9NvfkAwkZprA" Bounds="1258,525,175,60" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;right click to enable this code because it will throw errors">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="J4peL2o7cl8PKec6eGLbI0" Bounds="1171,881,259,297" ShowValueBox="true" isIOBox="true" Value="..This time you get an error. The GetItem node rightly points out it can't get any item from an array index that does not exist. &#xD;&#xA;&#xD;&#xA;What is the difference? &#xD;&#xA;Array is a raw .net collection type which is much stricter with how it's used. It will throw errors when abused.&#xD;&#xA;&#xD;&#xA;Spread is a nice vvvv gamma collection type, instead of errors it has lots of 'safe' but possibly unexpected default behaviour. &#xD;&#xA;(Like if you ask for an out of range index it wraps around)&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EFVHzzciCsEOBqD0qC1oes" Bounds="1172,1198,258,22" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/libraries/collections.html)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PQbvQdwulFTNa1YUh9AmD0" Name="Create" />
+        <Patch Id="BKDMwpxFGzRN5nOhQJgOLT" Name="Update" />
+        <ProcessDefinition Id="EHmrR2Q3nJ2LvOR8ZZ93d2">
+          <Fragment Id="BfOTxZiz8yWOG9BsD2i6NK" Patch="PQbvQdwulFTNa1YUh9AmD0" Enabled="true" />
+          <Fragment Id="CEcJ5kUP8mWN3V9bcASIqY" Patch="BKDMwpxFGzRN5nOhQJgOLT" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="TY22v11DiWYP64sC4pUnpY" Name="MyRectangle">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Rectangle" />
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="DqHgpIB5nhlQT4sumyx50E" Ids="SwYE7Q7eSvkNDZK7GvWYFd,NsF6ftUTTE0LlSKrhBndb5" />
+        <Link Id="Jw6RpUnbCaZMS6ufGDffK8" Ids="IfgtIEfchG7OIthNWxQ5gd,FylhUz1G2dqP0INa8QQQzP" />
+        <Slot Id="AU3k1ZcSpeRLapdKWis7nr" Name="MyRectangleSpread">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="CPFRI3phfO9QADdGu3xwMK" Ids="ShuUTD8Z4hSMOCnODffEE4,UCyB7IOhTYPLFnFxEoYFms" />
+        <Link Id="ED9Lg2cTEqhPF0XJzL21OW" Ids="MbWwhCNwAg3NTuI7OLODgH,FrjHkd8up7tOffckX360Cs" />
+        <Link Id="L8wPJz4bE6qOEsuDB4J6bT" Ids="ShuUTD8Z4hSMOCnODffEE4,QfsyGPXcWTmMDc1M1i9wXU" />
+        <Link Id="BVKyNONJh8xLsC8reSWUDf" Ids="QfsyGPXcWTmMDc1M1i9wXU,A09zuUEd5bBPFV5QVV72az" />
+        <Link Id="NNbV2McbdFxL0vCJCfG8A5" Ids="BcItv1LVhIvMD66ORe7XlN,Rq8Cu8ELJh6L3VDCsN6Pxv" />
+        <Link Id="NqkWh3cTFLGPHcKL7DrGb4" Ids="Rq8Cu8ELJh6L3VDCsN6Pxv,TWfvsDWmWwDPptdEO4GDEJ" />
+        <Link Id="FwnTIQ4YWn2LkPviYaL5xH" Ids="BPHWSIB0I6oL5XTdt205XU,PjBSottVvIVOeq7FmWXuYT" />
+        <Link Id="O9EQRLmDUcBOcaEk70e4dI" Ids="JWdQcNQlrq2N1e98WVC57h,VmGm1MXsKeONGcWYcBs0mx" />
+        <Link Id="QoKt4eA5btDOm0LgB01g7a" Ids="FXem0lQuJRON02QAaCkcp0,EGUtk1elnAMNxNZu44fk9R" />
+        <Slot Id="FWAIM5MKzp6MgcT1Q5rf0c" Name="MyRectangleSpread2">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="Kv7nTVDBps1NbPthl7IOoY" Ids="JWdQcNQlrq2N1e98WVC57h,RGztWVna7FsPwpQYF9hPhH" />
+        <Link Id="ULToMbgsje3LXQGbYfP7OI" Ids="JqSHlkxNDaGNLTZ1kSsfvS,Hdrol7n4TOMMDmaIpUtBpk" />
+        <Link Id="EF6ZWWsp5XdPndwOqz8sjR" Ids="Rlh8pHB2IzSMafyItr9NNC,VTGcRqbJ7YhOwqx2GS1ZZC" />
+        <Slot Id="KFMbQIk1LpROD8U9qhRjM9" Name="MyRectangleArray">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Array" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="VCq5W9oBu8wN5zt2RFwfR2" Ids="LGdnm7xI9kuOYGZ0XNaWNY,M4GfxoGR2cWPwyRVibbog6" />
+        <Link Id="EHdzwc2TybnN2fOLZ0Yu7R" Ids="H66znPGVKY7MDEXvtYNCjR,FX2TdZzdmoaLDIpuywApTs" />
+        <Link Id="OXz6IAhjKdbLGtwUp7g0Jl" Ids="DF2XhpQeTJiQPAUEHM7VZg,RdoU6kfOIPILTjXHpr4PyO" />
+        <Link Id="RrFupzG9Q4kOaJglqdPfDS" Ids="NLI4yXaO2fkQF5yAnBmhpR,K5vQuE8tJwoLZNCIHFSLKE" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.7" />
+</Document>
