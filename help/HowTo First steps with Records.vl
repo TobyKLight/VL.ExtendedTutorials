@@ -23,7 +23,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="R11NUnhFYqtLm9FQUUmPNd" Bounds="162,147,435,43" ShowValueBox="true" isIOBox="true" Value="This patch is intended to be supported by a tutorial video to show you how it was made step by step.">
+          <Pad Id="R11NUnhFYqtLm9FQUUmPNd" Bounds="162,147,435,43" ShowValueBox="true" isIOBox="true" Value="This patch is intended to be supported by a tutorial video to show you how it was made step by step.&#xD;&#xA;&#xD;&#xA;https://youtu.be/RXDRfqLbc74">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -756,6 +756,15 @@
             <Pin Id="Lx6uaI8nSxeLx8kDHmC65Q" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="QtZKKCYiVmMMmgNPJx1AZQ" SlotId="J5fUjM1GcjENAt4T6mMeaQ" Bounds="496,2216" />
+          <Pad Id="RndVVCx6kgyPR3LDUesDL5" Bounds="165,201,232,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/RXDRfqLbc74">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="HhgUfpaAia5NK0SE5f0Knb" Name="Create" ParticipatingElements="Mof07pH32AXLbslIzaWzyp,H5JzErouiCXNnlUiHv1gpW,R1PfOPyXaSBLbhWg8YLd6L,B2UeODePed9LNr0D7gbMVC,PW2vAZFrgeoOpGGEfDV1tP,O8vdDCN7vKgOnJrVv7v1pd" />
         <Patch Id="ODYHhsen8afQcrGT3AGZE6" Name="Update" />
