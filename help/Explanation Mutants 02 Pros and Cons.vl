@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="NrnSk33MVX0L3c8Cil03Ae" LanguageVersion="2021.4.9.982" Version="0.128">
+  <Patch Id="M3YMMFUGtRFOds7570SpbF">
+    <Canvas Id="B6kocBwlLBgLD6DeRFwKhw" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="QQN6Z2LZZGGLZERbj2hlmK">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NToXMH1v0pNMiBLlwIFuT8">
+        <Canvas Id="EtfFUHXoKmiP5hGm9jp71n" CanvasType="Group">
+          <Overlay Id="OqQqI24vO84O7fBJzsJXS2" Name="Record (Immutable)" Bounds="74,208,399,563" />
+          <Pad Id="G1aZV0MbKQfLu3H8MsKlsq" Bounds="234,167,531,36" ShowValueBox="true" isIOBox="true" Value="Difference 1: Records must be explicitly stored">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="UmmRcCHxhTFQHBZrnHv5do" Name="Class (Mutable)" Bounds="519,209,451,557" />
+          <!--
+
+    ************************ MyClass ************************
+
+-->
+          <Node Name="MyClass" Bounds="522,94" Id="ST3fAEyDyvdLAkJCi6i4Nz">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+              <Choice Kind="ClassDefinition" Name="Class" />
+            </p:NodeReference>
+            <Patch Id="HM89oQABLjjNXoPXNOW5wa">
+              <Canvas Id="OWn68dRwqTOQWR4R3bRr6s" CanvasType="Group">
+                <Pad Id="VO2aECNGFkeQBzRfCgULnA" SlotId="FhcBrI9fPcnNxlfKy7N9VJ" Bounds="476,560" />
+                <Pad Id="SiEXjVXvKvqMMa8Y7ehuPd" SlotId="IJD6zoKuxfQNOpIOvPD1tB" Bounds="562,560" />
+                <Pad Id="H6IGJCC85yBL91zLD3JSf3" SlotId="ULwpOrbd7ckPGBW9VqUkHq" Bounds="646,559" />
+                <Pad Id="B9y65ILZKtPQLgvyDlHDCJ" SlotId="JMeNejpU0H9O0xOhTmVCGg" Bounds="726,561" />
+                <ControlPoint Id="EPEf7q9pcmZNeSieVZIZgD" Bounds="476,530" />
+                <ControlPoint Id="Vqk9WrkFhMfQBaB0OVzesT" Bounds="476,590" />
+                <ControlPoint Id="AgrRoVcq32COfuWHanxz2x" Bounds="562,530" />
+                <ControlPoint Id="VHF7YswYeKmNltSuIYtaVt" Bounds="562,590" />
+                <ControlPoint Id="ASKBfutLgkWL3aHZLpSb62" Bounds="646,529" />
+                <ControlPoint Id="QMh6q7fsl5uMpaPaSwJmPG" Bounds="646,589" />
+                <ControlPoint Id="SU1M1yfI1HMLxOqa3INRu3" Bounds="726,531" />
+                <ControlPoint Id="N3F83f1jCNHN842HbyTPDu" Bounds="726,591" />
+                <Pad Id="NkYFB2XIB6DPBrUyTtE6xZ" SlotId="ULwpOrbd7ckPGBW9VqUkHq" Bounds="585,671" />
+                <Pad Id="EU01cp3FYFGNkwUkOWiSgt" SlotId="ULwpOrbd7ckPGBW9VqUkHq" Bounds="588,735" />
+                <Node Bounds="587,697,25,19" Id="AyivJReyFRfOOGV82iNzWD">
+                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                  </p:NodeReference>
+                  <Pin Id="C1kIMtpTiq2LVRWEMfTsYC" Name="Input" Kind="InputPin" />
+                  <Pin Id="KoJKKTeDS2ELfZ6qBW919X" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="TOz3N8vU7wvPUWmsqEcpMF" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="NFS88uPZXSjMyzcgblNbPC" Comment="" Bounds="611,680,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Byte" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Overlay Id="HpQ49loLIidOYJCuHWZtaB" Name="Increment ByteC" Bounds="547,630,183,113" />
+              </Canvas>
+              <Patch Id="AukrfTf6wvoPadAR350V0Z" Name="Create">
+                <Pin Id="RcGy3gyHDCdP2SXn3f3oCb" Name="ByteA" Kind="InputPin" />
+                <Pin Id="DMNwKmTxY3sQXBg7wSqF13" Name="ByteB" Kind="InputPin" />
+                <Pin Id="Khw2axPwsTxObA7PWfINz3" Name="ByteC" Kind="InputPin" />
+                <Pin Id="UnDpcNX3plPOYFrRJddk9S" Name="ByteD" Kind="InputPin" />
+              </Patch>
+              <ProcessDefinition Id="T2jL2gfR6D6NBVcXWqQQQ1" IsHidden="true">
+                <Fragment Id="MOfHcABrMgeM6BBKXu1pO0" Patch="AukrfTf6wvoPadAR350V0Z" Enabled="true" />
+                <Fragment Id="FhS6gE4Q7xFNCg2yYyPPmP" Patch="Lcq0OeUahGYLSokvPi7pA1" />
+                <Fragment Id="GbTyiTbc3nKPWFr1Ldn1X3" Patch="B8a7pVwZDkwOel3ZdoCJab" />
+              </ProcessDefinition>
+              <Slot Id="FhcBrI9fPcnNxlfKy7N9VJ" Name="ByteA">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="IJD6zoKuxfQNOpIOvPD1tB" Name="ByteB">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="ULwpOrbd7ckPGBW9VqUkHq" Name="ByteC">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="JMeNejpU0H9O0xOhTmVCGg" Name="ByteD">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="LNkGT0xr17xNj8Iiub85NW" Ids="RcGy3gyHDCdP2SXn3f3oCb,EPEf7q9pcmZNeSieVZIZgD" IsHidden="true" />
+              <Link Id="V4ZbBp2RLXMLoBA7CeEQf1" Ids="EPEf7q9pcmZNeSieVZIZgD,VO2aECNGFkeQBzRfCgULnA" />
+              <Patch Id="Lcq0OeUahGYLSokvPi7pA1" Name="Split">
+                <Pin Id="DxV6pBncrpANyqNw23Rmcm" Name="ByteA" Kind="OutputPin" />
+                <Pin Id="BZGJRY8ehdwOYRvx97wwDN" Name="ByteB" Kind="OutputPin" />
+                <Pin Id="SY0rUf6GN5wL23B6yaq3KO" Name="ByteC" Kind="OutputPin" />
+                <Pin Id="ErZPHmCGT8JQI4vir5N3Dq" Name="ByteD" Kind="OutputPin" />
+              </Patch>
+              <Link Id="ArL9rkk3z2hLvnavEwHXXQ" Ids="Vqk9WrkFhMfQBaB0OVzesT,DxV6pBncrpANyqNw23Rmcm" IsHidden="true" />
+              <Link Id="ElYbY8jXDXrLP47PJGskcv" Ids="VO2aECNGFkeQBzRfCgULnA,Vqk9WrkFhMfQBaB0OVzesT" />
+              <Link Id="MaIutxWf5caLpupZXPQOd7" Ids="DMNwKmTxY3sQXBg7wSqF13,AgrRoVcq32COfuWHanxz2x" IsHidden="true" />
+              <Link Id="ESQZixxx5IGO76o4lprXCP" Ids="AgrRoVcq32COfuWHanxz2x,SiEXjVXvKvqMMa8Y7ehuPd" />
+              <Link Id="Df5mNKXEJcSMW99TNRtYLX" Ids="VHF7YswYeKmNltSuIYtaVt,BZGJRY8ehdwOYRvx97wwDN" IsHidden="true" />
+              <Link Id="PYv12219SWJQYF7SrPXQq7" Ids="SiEXjVXvKvqMMa8Y7ehuPd,VHF7YswYeKmNltSuIYtaVt" />
+              <Link Id="UG5gGKpOlN0M7i5NQ3y5QN" Ids="Khw2axPwsTxObA7PWfINz3,ASKBfutLgkWL3aHZLpSb62" IsHidden="true" />
+              <Link Id="Bt1xoyLxCP4LLbTR10vgXt" Ids="ASKBfutLgkWL3aHZLpSb62,H6IGJCC85yBL91zLD3JSf3" />
+              <Link Id="N7J1ehS0jy6Pp5oCoUpFDJ" Ids="QMh6q7fsl5uMpaPaSwJmPG,SY0rUf6GN5wL23B6yaq3KO" IsHidden="true" />
+              <Link Id="GxP29gqSQ0lNHafdEJfuCG" Ids="H6IGJCC85yBL91zLD3JSf3,QMh6q7fsl5uMpaPaSwJmPG" />
+              <Link Id="QrcRdme98FkLAtuCrcQYY3" Ids="UnDpcNX3plPOYFrRJddk9S,SU1M1yfI1HMLxOqa3INRu3" IsHidden="true" />
+              <Link Id="S8FWWjIckQWOm3FvpCWU6S" Ids="SU1M1yfI1HMLxOqa3INRu3,B9y65ILZKtPQLgvyDlHDCJ" />
+              <Link Id="H1iPZykcYMnL3xf4z8gxzY" Ids="N3F83f1jCNHN842HbyTPDu,ErZPHmCGT8JQI4vir5N3Dq" IsHidden="true" />
+              <Link Id="MA3L4XAIenFMzt11Vw8wsQ" Ids="B9y65ILZKtPQLgvyDlHDCJ,N3F83f1jCNHN842HbyTPDu" />
+              <Link Id="BndXwvAZXIhMRFSXGYP6vJ" Ids="NkYFB2XIB6DPBrUyTtE6xZ,C1kIMtpTiq2LVRWEMfTsYC" />
+              <Link Id="H5Jij78E5FqPLFzDHEGYcS" Ids="NFS88uPZXSjMyzcgblNbPC,KoJKKTeDS2ELfZ6qBW919X" />
+              <Link Id="I7lQR0mRrpPOehYrNRnP4t" Ids="TOz3N8vU7wvPUWmsqEcpMF,EU01cp3FYFGNkwUkOWiSgt" />
+              <Patch Id="B8a7pVwZDkwOel3ZdoCJab" Name="IncrementByteC" ParticipatingElements="BndXwvAZXIhMRFSXGYP6vJ" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ MyRecord ************************
+
+-->
+          <Node Name="MyRecord" Bounds="379,93" Id="Q2TSfOxOmhZNongvDc3OGM">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+              <Choice Kind="RecordDefinition" Name="Record" />
+            </p:NodeReference>
+            <Patch Id="EPCiGCHoGLZLONK7lNapmv">
+              <Canvas Id="Hxe11KNY5gYQRc71xs2zMy" CanvasType="Group">
+                <Pad Id="IMPwu6jTmokLQGtR649qk8" SlotId="DK9l6QCKCrJPTcqw6cKuqi" Bounds="809,584" />
+                <Pad Id="FgKlqs4NMjIPACqlnxo3ot" SlotId="MBazMVens15MKMio9qa290" Bounds="895,584" />
+                <Pad Id="Il1yzN0EhGUN0WtC2JElBX" SlotId="SUrQ67qQ3E1OVC6fawiTfP" Bounds="979,583" />
+                <Pad Id="EjjLnaHFfjNMYZucAsQB9l" SlotId="B93ti2kvOMiPNy0l2spXkU" Bounds="1059,585" />
+                <ControlPoint Id="KdlaU8xFlyuPtxy750BLC2" Bounds="809,554" />
+                <ControlPoint Id="EzybfKFjE1tMm1mhP31JAM" Bounds="809,614" />
+                <ControlPoint Id="JaypxljTs9eN6fzOgBuy8a" Bounds="895,554" />
+                <ControlPoint Id="KAEbHbHHh4hNmG2thgtDqn" Bounds="895,614" />
+                <ControlPoint Id="N3E8c5fN61aL5Tg3ZdPsUJ" Bounds="979,553" />
+                <ControlPoint Id="GQ9rXTLsnSYLNYaI9YMlYV" Bounds="979,613" />
+                <ControlPoint Id="ByP8BAiW6wQNar3K8rI4uU" Bounds="1059,555" />
+                <ControlPoint Id="PqdI2thrBG5PiwvEequ040" Bounds="1059,615" />
+                <Pad Id="VhZoflVLWgbLcCP8L3xHYl" SlotId="SUrQ67qQ3E1OVC6fawiTfP" Bounds="947,692" />
+                <Pad Id="CtBEXJrgoNyPL970e0aKvw" SlotId="SUrQ67qQ3E1OVC6fawiTfP" Bounds="950,756" />
+                <Node Bounds="949,718,25,19" Id="IUXL3nneuTbO2Nod3cnh4C">
+                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                  </p:NodeReference>
+                  <Pin Id="JPttBe4B95PNYkb7oYOIUo" Name="Input" Kind="InputPin" />
+                  <Pin Id="FAK3Z37kJf1QNLmY68vRz1" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="TA91YZh3U61PwT3LDIOQvB" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="Top86NU9fv2QJxsoibVBdQ" Comment="" Bounds="973,701,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Byte" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Overlay Id="LW5cEWw9e3hPpnO5LmBGgo" Name="Increment ByteC" Bounds="882,656,183,113" />
+              </Canvas>
+              <Patch Id="MKyGg3MbrO1LuJl7Pl6R7F" Name="Create">
+                <Pin Id="KNAMiBd2Gn2LAe2biXDScG" Name="ByteA" Kind="InputPin" />
+                <Pin Id="SrOFxvC1hrIPRRSp2asYn6" Name="ByteB" Kind="InputPin" />
+                <Pin Id="HcxgQTF4HD9Lgp4dX1CE16" Name="ByteC" Kind="InputPin" />
+                <Pin Id="KchbWFUD6YNN0wZLZ6lO80" Name="ByteD" Kind="InputPin" />
+              </Patch>
+              <ProcessDefinition Id="L5TPF0U4gxsOvrc0Yb66Jp" IsHidden="true">
+                <Fragment Id="KmCdDg0QZxMNvlpVrylohq" Patch="MKyGg3MbrO1LuJl7Pl6R7F" Enabled="true" />
+                <Fragment Id="QfbtccG7s2CMWL8Y1m1nzU" Patch="P5ysH0ohhxpONlp0aanJus" />
+                <Fragment Id="AoEjvDhH8rxMAMLzZKjlq2" Patch="SsLKYnLFtDsPgxWMcusPPX" />
+              </ProcessDefinition>
+              <Slot Id="DK9l6QCKCrJPTcqw6cKuqi" Name="ByteA">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="MBazMVens15MKMio9qa290" Name="ByteB">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="SUrQ67qQ3E1OVC6fawiTfP" Name="ByteC">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="B93ti2kvOMiPNy0l2spXkU" Name="ByteD">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Byte" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Patch Id="P5ysH0ohhxpONlp0aanJus" Name="Split">
+                <Pin Id="Bj44UGCvIBHO3KOdBFZSgN" MergeId="314997" Name="ByteA" Kind="OutputPin" />
+                <Pin Id="U7SzzSrLxhzNnY8GIrKoKM" MergeId="315023" Name="ByteB" Kind="OutputPin" />
+                <Pin Id="S7F4sfMFhMoO5agxJ7A6Tt" MergeId="315049" Name="ByteC" Kind="OutputPin" />
+                <Pin Id="KPe1fyk519vNTFn4OIoFjI" MergeId="315075" Name="ByteD" Kind="OutputPin" />
+              </Patch>
+              <Link Id="QC7FpweKwZiM3T5847a2Tg" Ids="KNAMiBd2Gn2LAe2biXDScG,KdlaU8xFlyuPtxy750BLC2" IsHidden="true" />
+              <Link Id="Ux7Ex8cUSllNw54bNE8GuS" Ids="KdlaU8xFlyuPtxy750BLC2,IMPwu6jTmokLQGtR649qk8" />
+              <Link Id="QIYdBHzjlHQLTUoYuxqYcC" Ids="EzybfKFjE1tMm1mhP31JAM,Bj44UGCvIBHO3KOdBFZSgN" IsHidden="true" />
+              <Link Id="GW1hFodgYFbQX7yDDVunTp" Ids="IMPwu6jTmokLQGtR649qk8,EzybfKFjE1tMm1mhP31JAM" />
+              <Link Id="CHAoF9dBpZwNv9LErh4yV5" Ids="SrOFxvC1hrIPRRSp2asYn6,JaypxljTs9eN6fzOgBuy8a" IsHidden="true" />
+              <Link Id="CIp5xPJhUrgOuPHtJdrt45" Ids="JaypxljTs9eN6fzOgBuy8a,FgKlqs4NMjIPACqlnxo3ot" />
+              <Link Id="PbHBxjFjRBtPDdzTg03izo" Ids="KAEbHbHHh4hNmG2thgtDqn,U7SzzSrLxhzNnY8GIrKoKM" IsHidden="true" />
+              <Link Id="OIpGWS9qeAPMAqTgOwDZMt" Ids="FgKlqs4NMjIPACqlnxo3ot,KAEbHbHHh4hNmG2thgtDqn" />
+              <Link Id="R6Nj8zsDPJWMeAfHxFe1hQ" Ids="HcxgQTF4HD9Lgp4dX1CE16,N3E8c5fN61aL5Tg3ZdPsUJ" IsHidden="true" />
+              <Link Id="FwDwVK4COO3P3Go5I4G4Jn" Ids="N3E8c5fN61aL5Tg3ZdPsUJ,Il1yzN0EhGUN0WtC2JElBX" />
+              <Link Id="SiOiZxYbOeHPzyFzVUwviJ" Ids="GQ9rXTLsnSYLNYaI9YMlYV,S7F4sfMFhMoO5agxJ7A6Tt" IsHidden="true" />
+              <Link Id="HnXjveHprUYLYovpHbMLf3" Ids="Il1yzN0EhGUN0WtC2JElBX,GQ9rXTLsnSYLNYaI9YMlYV" />
+              <Link Id="S0cVp85mOzbPMaxkTA8uEF" Ids="KchbWFUD6YNN0wZLZ6lO80,ByP8BAiW6wQNar3K8rI4uU" IsHidden="true" />
+              <Link Id="AO2SXjK00AUPe6CRE4WgMq" Ids="ByP8BAiW6wQNar3K8rI4uU,EjjLnaHFfjNMYZucAsQB9l" />
+              <Link Id="JPsnYMN0rOMMihxRk4MMBH" Ids="PqdI2thrBG5PiwvEequ040,KPe1fyk519vNTFn4OIoFjI" IsHidden="true" />
+              <Link Id="UPi2CG3P6PAN0D29CT8wAe" Ids="EjjLnaHFfjNMYZucAsQB9l,PqdI2thrBG5PiwvEequ040" />
+              <Link Id="LC5pzFl0fvdPndZUVMqg7c" Ids="VhZoflVLWgbLcCP8L3xHYl,JPttBe4B95PNYkb7oYOIUo" />
+              <Link Id="IP6v0odOh5OPgpSPfrdIDK" Ids="Top86NU9fv2QJxsoibVBdQ,FAK3Z37kJf1QNLmY68vRz1" />
+              <Link Id="BJ37DDaX2fqLPCJZO1dKQq" Ids="TA91YZh3U61PwT3LDIOQvB,CtBEXJrgoNyPL970e0aKvw" />
+              <Patch Id="SsLKYnLFtDsPgxWMcusPPX" Name="IncrementByteC" ParticipatingElements="LC5pzFl0fvdPndZUVMqg7c" />
+            </Patch>
+          </Node>
+          <Pad Id="Ujx6V6pqLDcLZGuKw5TsI4" SlotId="Ektw5AajKqyNqPlxHxt6tU" Bounds="695,367" />
+          <Node Bounds="693,324,65,26" Id="NJG1Pmp0liIL1EtJ4tXYIb">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 01 Mutability Visualised.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="MyClass" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="VkD5wMwvl2TPX88hzMZ5Bl" Name="ByteA" Kind="InputPin" />
+            <Pin Id="VM186yi7jdmNGSmHbZb4OX" Name="ByteB" Kind="InputPin" />
+            <Pin Id="Oggc5ZjLQAIP21kXfGD86T" Name="ByteC" Kind="InputPin" />
+            <Pin Id="AM1kFchNL8xNKWlXZ7zJyo" Name="ByteD" Kind="InputPin" />
+            <Pin Id="K73P3QEe0gpMlVSaXvY0BB" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="QCL4RaZcMJ2LpbPTOZIkWu" Comment="ByteA" Bounds="695,308,35,15" ShowValueBox="true" isIOBox="true" Value="255">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Byte" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="O644z10aWR6M25ABZJjeTO" SlotId="LRkljtQROcpNGXMJP9HUak" Bounds="236,359" />
+          <Node Bounds="234,317,65,26" Id="ELO5E1WBZLEMobUyS68ei6">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 01 What is Mutability.vl" LastDependency="Explanation Mutants 01 Mutability Visualised.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <CategoryReference Kind="RecordType" Name="MyRecord" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="BAlUJDoXmxrL0tKpondlNk" Name="ByteA" Kind="InputPin" />
+            <Pin Id="MeZWhPXsbabNYC2iZ6MgT9" Name="ByteB" Kind="InputPin" />
+            <Pin Id="NP8nattXbJvOHgUw7tQ5KV" Name="ByteC" Kind="InputPin" />
+            <Pin Id="I5A55KFtmeCPIDDOpiZE4X" Name="ByteD" Kind="InputPin" />
+            <Pin Id="IkluImNYxqCLlhJg7IgNlI" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="Qs4vBUVAgNXM0GnbHTuN2S" Comment="ByteA" Bounds="236,300,35,15" ShowValueBox="true" isIOBox="true" Value="255">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Byte" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="223,412,111,100" Id="GVCQROzyjCmO2a7BlGyOhz">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="PCNasvaISi9MEXCio6QO6i" Name="Condition" Kind="InputPin" />
+            <Patch Id="QUYwdiE2QB3LeP8kv2EHx4" ManuallySortedPins="true">
+              <Patch Id="QFWmfvpMrreO417xi7rHEn" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="VO8IL2zewRjQT3qgzLcUnz" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="235,448,87,26" Id="H37cA6iAeUTON2EPy8ONno">
+                <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 01 What is Mutability.vl" LastDependency="Explanation Mutants 01 Mutability Visualised.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="MyRecord" />
+                  <Choice Kind="OperationCallFlag" Name="IncrementByteC" />
+                </p:NodeReference>
+                <Pin Id="CxZNhzN7EUBLyQTD4NM6a4" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TRGHl5EywRUN2qw1uS9slH" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="MaeZ8DmPewuN7S2vVreDkZ" Bounds="237,506" Alignment="Bottom" />
+            <ControlPoint Id="FmNxpI5oDl0MRjZQGxZKso" Bounds="237,419" Alignment="Top" />
+          </Node>
+          <Pad Id="CSTsJ1dZ8TWN09e30KALLl" SlotId="LRkljtQROcpNGXMJP9HUak" Bounds="235,538" />
+          <Pad Id="Vae0wcDysWoOze2ApfKMWD" Comment="DoIncrement" Bounds="224,377,44,36" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="681,414,111,102" Id="H0ewgPlJCAROiAgZHyKwZl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="CNgC83GrorRLApYZIF6OOZ" Name="Condition" Kind="InputPin" />
+            <Patch Id="M2oKVkV0FXwLVDHTmXwfJ0" ManuallySortedPins="true">
+              <Patch Id="CmTwJsQ4WgzMeM3sHcoLYP" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="MwO0HTYJOzWM8UZD3RByUN" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="693,451,87,26" Id="NXbkn0G0JlnNrd6lB6Gg95">
+                <p:NodeReference>
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="MyClass" />
+                  <Choice Kind="OperationCallFlag" Name="IncrementByteC" />
+                </p:NodeReference>
+                <Pin Id="U1aF2UI59Q4MIazghNorUV" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DZ1iejLfLNaP2T2w7nV4P6" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="IdGnDYOKkDrNg4HB36vKsI" Bounds="695,511" Alignment="Bottom" />
+            <ControlPoint Id="NSDXvm7qJ66Pp1BGKlEL5q" Bounds="695,421" Alignment="Top" />
+          </Node>
+          <Pad Id="Qnsk1PNQMvBPzrOgAUYegG" Comment="DoIncrement" Bounds="683,381,38,34" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AqEUXZLem7DMWResJIXdzb" Bounds="707,540,162,77" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;&lt; NOTICE NO PAD NEEDED HERE TO STORE THE RESULT.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RD0VWxB4WLZMHEtuJUMiDy" Bounds="633,603,199,101" ShowValueBox="true" isIOBox="true" Value="Because the class is mutable an operation that runs on a class will modify (Mutate) the instance that is passed as input">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="689,700,85,26" Id="Ihv0eJChX3oNkeMilKEzZ6">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="MyClass" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="PCuGwbg1kLcQLFEDCIbxUM" Name="Input" Kind="StateInputPin" />
+            <Pin Id="F4VV8CKDq5QP8UeM9ZrkzK" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="UEp48mKWKQTP5LDGOqe0h2" Name="ByteA" Kind="OutputPin" />
+            <Pin Id="TbScg2Cd3xcNe2zw3XXSYm" Name="ByteB" Kind="OutputPin" />
+            <Pin Id="JCZVzztPI1cO9BfFvmPJsN" Name="ByteC" Kind="OutputPin" />
+            <Pin Id="GyMSxDzobEbNa5lzPvQnyD" Name="ByteD" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NS7CUQiVDXvN8UnwnQmq8d" SlotId="Ektw5AajKqyNqPlxHxt6tU" Bounds="690,686" />
+          <Pad Id="MflkORhF0JBMvdO1k5K7Sz" Comment="ByteC" Bounds="754,741,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GWIvYOTHzf9QcdXXjq3u0U" SlotId="LRkljtQROcpNGXMJP9HUak" Bounds="213,692" />
+          <Node Bounds="210,704,65,26" Id="LBiuh01xXWLNfywDPBltpu">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="MyRecord" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="LeO4YTVQmuhMLlMWL8GbRf" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BAAyIuhsu4IOwFkxTgqdUf" Name="ByteA" Kind="OutputPin" />
+            <Pin Id="BKb9fKKh1kcMAtGwqonxd6" Name="ByteB" Kind="OutputPin" />
+            <Pin Id="Ll9M5tMyXRAQMsTXHKedZk" Name="ByteC" Kind="OutputPin" />
+            <Pin Id="APXqEhILEmBMHl7wi9II2Z" Name="ByteD" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ACvR9D4rS7rOPqsStNVyhV" Comment="ByteC" Bounds="252,743,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LFd419kxKPtOdAHPmeU3as" Bounds="100,848,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Traditionally records (immutable objects) are considered easier to reason about in a complex program BECAUSE they are explicitly stored. &#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FvaXJzkGsNFONiP3uGAa9Q" Bounds="575,1028,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: There is less code to write to update a class. Particularly when accessing objects within objects you don't have to reassemble the original object to store the record.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JzkP8Giz8QxMFNiXU5237x" Bounds="129,1982,689,33" ShowValueBox="true" isIOBox="true" Value="Difference 2: Change detection works 'properly' on records">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ap2JegBty05QQMIWRqQ0FU" Bounds="329,805,531,36" ShowValueBox="true" isIOBox="true" Value="Consequences of difference 1">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GEUgUM6WADhPIb3qn51tv8" Bounds="102,1515,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Records are safer to use in concurrent operations (eg async tasks) because you will have to write code explicitly handling how you store the result.  ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Tc3eHugaSHkQcNh6oaovQe" Bounds="569,1511,334,93" ShowValueBox="true" isIOBox="true" Value="Con: A class object that is updated by multiple concurrent tasks is the classic example of a program that is difficult to understand what is happening to your data and why">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NwKpiNdfF1gLOc0BgOQqy8" Bounds="577,842,334,93" ShowValueBox="true" isIOBox="true" Value="Con: Classes are considered more difficult to reason about in a complex program. &#xD;&#xA;&#xD;&#xA;Workaround: Many programs are not that complex and using a class can be convenient.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KroxSuV5NyzNjD83ON2anp" Bounds="101,1031,334,93" ShowValueBox="true" isIOBox="true" Value="Con: If you have a record within a record (within a record etc...) then you may have to reassmeble that structure to write it back.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PNdy8XSl2BWM2DJC7H5I3O" Bounds="101,1140,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Use the X node to smartly repack records back into their original structure.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U94GKScwLCcNBHYqDW7Pgg" Bounds="560,1289,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Stateful operations within a class will 'just work' no matter where you execute them in the program as they can access the state of the mutable class to iterare.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BDjT8EHakyCMkwycDBRUjD" Bounds="102,1292,334,93" ShowValueBox="true" isIOBox="true" Value="Con: With stateful operations within a record you have to be concious that the record is stored again or else these operations will never be able to iterate their internal state.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QrZTLmBpLoeP3Fbrpzo5qA" Bounds="257,2326,606,36" ShowValueBox="true" isIOBox="true" Value="Consequences of Difference 2">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O4BIiIezfEOLH1EKFEEAbk" Bounds="81,2399,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Cache regions and Changed node work as expected on Records">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LcIJx7WOpmbMc05srwsuMr" Bounds="555,2400,334,93" ShowValueBox="true" isIOBox="true" Value="Con: Classes only detect when the reference changes, eg when you create a new class or reorder a collection. ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OZIcpd5ey2kMVjZ7i53SjY" Bounds="543,2090,334,93" ShowValueBox="true" isIOBox="true" Value="Only detects when the reference changes">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KbycEcoK30qL5gyCt7gG7Y" Bounds="83,1710,334,93" ShowValueBox="true" isIOBox="true" Value="Con: For a 'single source of truth' record tou would have to bring in back from multiple processes to a single pad in your main application in order to write it">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KG6p73Sc5weLZyHI2UnIjb" Bounds="552,1723,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: A class is easier to distribute around your program and write at multiple points because you pass the reference">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C9vi9PEdgUyLbY4i0epV0q" Bounds="85,1805,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Use the 'reference' nodes to, access and write a reference to your record anywhere, just like a class.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FWoa7ZUaPD6OHUsvvN47xz" Bounds="145,2947,606,70" ShowValueBox="true" isIOBox="true" Value="Difference 3: Order of operations can be unclear with classes">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qq0Q041zNu0NFKmXWR0NJJ" Bounds="76,2774,334,93" ShowValueBox="true" isIOBox="true" Value="Pro:Undo/Redo node just works ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CVLJKlKU41sMI2BMijFAAS" Bounds="543,2770,334,93" ShowValueBox="true" isIOBox="true" Value="Con: Undo/Redo does not work out of the box">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="By57hRfp0uQOIpDNnJ32FL" Bounds="548,2820,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Explicitily convert your runtime class to a record and save that using undo/redo. Not ideal though.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SsIqncmYCzMOVsLesMsiF4" Bounds="161,3657,634,35" ShowValueBox="true" isIOBox="true" Value="Difference 4: Performance ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RVv0ZCBb1VhO6OGFx900ZQ" Bounds="561,2506,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Use BehaviourSubject instead of changed nodes for a reactive pattern when you explicitily notify other parts of your application that a change to a class has occured.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Bm7Ki7rQbrpLJyBtSnTQL7" Bounds="338,2634,368,99" ShowValueBox="true" isIOBox="true" Value="General advice: For a large program with say a complex UI don't rely on change detection to update parts. Do some research on design patterns and consider instead reactive patterns where updated data can be routed to listeners that care about it.  ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JsER0Pc7oNAOY7Vg2U5JEc" Bounds="23,3145,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Because you must explicitly store your record, the order of what happens to it before you store it is always explicit as well">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TaFcgBsiFXKOhDRrZ8cLHx" Bounds="479,3151,334,93" ShowValueBox="true" isIOBox="true" Value="Con: Classes that are accessed in multiple places may have unreliable order of operations&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GSVsbt37hteNtQVzbHG0F8" Bounds="494,3232,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Class nodes explicitly arranged in a vertical order will execute in that order. ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NbfWXAz4AdVLggGyJCFA2M" Bounds="485,3327,333,62" ShowValueBox="true" isIOBox="true" Value="Workaround2: Inside a class that operates as a process node drag the operations in the list to set their order">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LlwzNv8KoNsOz6OmLho6ro" Bounds="491,3415,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround3: The IF region workaround">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CSW9ulOT200LxfEEt1xdNB" Bounds="205,3040,606,70" ShowValueBox="true" isIOBox="true" Value="Consequences of Difference 3">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EnTCQWlpOPkNewB428Pc2N" Bounds="157,3729,606,70" ShowValueBox="true" isIOBox="true" Value="Consequences of Difference 4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OpfRLTE5jzINdErnXal5GT" Bounds="22,3801,325,42" ShowValueBox="true" isIOBox="true" Value="Con: Many operations on a record in a short time can use a lot of memory ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PBkWTqgdDjjMdbiPtOal7h" Bounds="472,3803,334,93" ShowValueBox="true" isIOBox="true" Value="Pro: Because classes mutate the same block of memory they will use less memory">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T11IaY3iRI4Ps7TVrqUQ9W" Bounds="201,4014,327,173" ShowValueBox="true" isIOBox="true" Value="General Advice: Unnessecary optimisation is a trap that can make your software very complicated for no reason at the early stages. Better to make something that works reliabily (which often means simply), and then come back and do optimisation if there are perfomance problems">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SDZpzPABOHNOSUJs9DKzRD" Bounds="195,4203,327,173" ShowValueBox="true" isIOBox="true" Value="Next tutorial will look at the classic case of applying this optimisation for spread assembly, unlocking the mysteries of the so called 'SpreadBuilder'">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CWIvCW3IUjOOw6zw10zzCM" Bounds="21,3889,323,68" ShowValueBox="true" isIOBox="true" Value="Workaround: On a modern computer for data structures that are merely hundreds of bytes this often has no practical impact ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="IQ923PnybQ4OJYMHAkmA4n" Name="Create" ParticipatingElements="NJG1Pmp0liIL1EtJ4tXYIb,ELO5E1WBZLEMobUyS68ei6" />
+        <Patch Id="BT5USJr5CQWNJRFF1y2Qi0" Name="Update" />
+        <ProcessDefinition Id="K7BdzCb1G2MPEUSFMHwHeM">
+          <Fragment Id="QVYsULJRGOjNpyJd1eqEOW" Patch="IQ923PnybQ4OJYMHAkmA4n" Enabled="true" />
+          <Fragment Id="Eq7ApJiBBdGN6LwUskOxuI" Patch="BT5USJr5CQWNJRFF1y2Qi0" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="Ektw5AajKqyNqPlxHxt6tU" Name="ClassInstance" />
+        <Slot Id="LRkljtQROcpNGXMJP9HUak" Name="RecordInstance" />
+        <Link Id="RiLxFm9CelWLC5OHrAYp3f" Ids="K73P3QEe0gpMlVSaXvY0BB,Ujx6V6pqLDcLZGuKw5TsI4" />
+        <Link Id="GfrgFu57FUiL2CElbWIaue" Ids="QCL4RaZcMJ2LpbPTOZIkWu,VkD5wMwvl2TPX88hzMZ5Bl" />
+        <Link Id="J1gqF7NVL13L7dguuNzYzY" Ids="QCL4RaZcMJ2LpbPTOZIkWu,VM186yi7jdmNGSmHbZb4OX" />
+        <Link Id="JwqrySR2xebOltpPAsTfir" Ids="QCL4RaZcMJ2LpbPTOZIkWu,Oggc5ZjLQAIP21kXfGD86T" />
+        <Link Id="KU6EQBedYxyLgIpjQGPTCc" Ids="QCL4RaZcMJ2LpbPTOZIkWu,AM1kFchNL8xNKWlXZ7zJyo" />
+        <Link Id="JRHsvuMWnr4NB2iHFbzz7L" Ids="IkluImNYxqCLlhJg7IgNlI,O644z10aWR6M25ABZJjeTO" />
+        <Link Id="OcGlk7Eu9BsLxSkoezCYhm" Ids="Qs4vBUVAgNXM0GnbHTuN2S,BAlUJDoXmxrL0tKpondlNk" />
+        <Link Id="NpE1pc4atK6NhKehJMK6ku" Ids="Qs4vBUVAgNXM0GnbHTuN2S,MeZWhPXsbabNYC2iZ6MgT9" />
+        <Link Id="T9LlyHsJw9uQbQ5HHvcEgH" Ids="Qs4vBUVAgNXM0GnbHTuN2S,NP8nattXbJvOHgUw7tQ5KV" />
+        <Link Id="F8n19uv8WYWQE4BkLj7xi0" Ids="Qs4vBUVAgNXM0GnbHTuN2S,I5A55KFtmeCPIDDOpiZE4X" />
+        <Link Id="D8qEHO2j16ZPbaiJnkxfJu" Ids="FmNxpI5oDl0MRjZQGxZKso,MaeZ8DmPewuN7S2vVreDkZ" IsFeedback="true" />
+        <Link Id="T774oDSY7eTOYBMdU9cSaM" Ids="TRGHl5EywRUN2qw1uS9slH,MaeZ8DmPewuN7S2vVreDkZ" />
+        <Link Id="ALPE2xu87lEN5vkMqEkxiJ" Ids="MaeZ8DmPewuN7S2vVreDkZ,CSTsJ1dZ8TWN09e30KALLl" />
+        <Link Id="S3NFFNFR2KeMoPZ7pUg9Qd" Ids="Vae0wcDysWoOze2ApfKMWD,PCNasvaISi9MEXCio6QO6i" />
+        <Link Id="T6ZiN1Bb1THPY1Vyv5KlLx" Ids="O644z10aWR6M25ABZJjeTO,FmNxpI5oDl0MRjZQGxZKso" />
+        <Link Id="S6P9en2RfLuNyKPmJ6qsrg" Ids="FmNxpI5oDl0MRjZQGxZKso,CxZNhzN7EUBLyQTD4NM6a4" />
+        <Link Id="CISzAaiS0TGLYkYFlleGxW" Ids="NSDXvm7qJ66Pp1BGKlEL5q,IdGnDYOKkDrNg4HB36vKsI" IsFeedback="true" />
+        <Link Id="LwuwNyW7Ab9P5vawb6Ocm1" Ids="DZ1iejLfLNaP2T2w7nV4P6,IdGnDYOKkDrNg4HB36vKsI" />
+        <Link Id="V2HdercTx0kOGKmYdsrkui" Ids="Qnsk1PNQMvBPzrOgAUYegG,CNgC83GrorRLApYZIF6OOZ" />
+        <Link Id="KIGRKz5z40zPsi3HdASTdY" Ids="NSDXvm7qJ66Pp1BGKlEL5q,U1aF2UI59Q4MIazghNorUV" />
+        <Link Id="GsvPpvJgXrPLchqtByVo7Y" Ids="Ujx6V6pqLDcLZGuKw5TsI4,NSDXvm7qJ66Pp1BGKlEL5q" />
+        <Link Id="H3DTDRIzc47PM6VmvIiArS" Ids="NS7CUQiVDXvN8UnwnQmq8d,PCuGwbg1kLcQLFEDCIbxUM" />
+        <Link Id="EtxPpSMqU6BNbtFEmDXJ6P" Ids="JCZVzztPI1cO9BfFvmPJsN,MflkORhF0JBMvdO1k5K7Sz" />
+        <Link Id="LOnNMzZ4GViQDhT7gWUxJK" Ids="GWIvYOTHzf9QcdXXjq3u0U,LeO4YTVQmuhMLlMWL8GbRf" />
+        <Link Id="Et6beLOnHYVPUXrr5sEEwI" Ids="Ll9M5tMyXRAQMsTXHKedZk,ACvR9D4rS7rOPqsStNVyhV" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="L0tLQhzXEmtOBs6mb6TsSw" Location="VL.CoreLib" Version="2021.4.9" />
+</Document>
