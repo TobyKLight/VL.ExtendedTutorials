@@ -18,7 +18,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="137, 348, 452, 591" />
+              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="136, 240, 452, 588" />
               <Pin Id="VWldKJBiaMfQcFlxYz5rfU" Name="Input" Kind="InputPin" />
               <Pin Id="Vt1WteIbd0TMJT1kxi2RrX" Name="Color" Kind="InputPin" />
               <Pin Id="SuKJ4ZTh3QLPnTrEbImAJ6" Name="Clear" Kind="InputPin" />
@@ -73,6 +73,7 @@
             </Pad>
             <Node Bounds="698,1086,185,100" Id="RLh7SJ720CXOCHGYNw6UX7">
               <p:NodeReference>
+                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -697,6 +698,7 @@
             <Pad Id="AKl7Tom7tPwP7vm4Z4CoXC" SlotId="CC0ygxdmPfIPwAJf9WxkJM" Bounds="733,589" />
             <Node Bounds="654,185,141,128" Id="AtqqDMsCPM0LgOjLISjVeg">
               <p:NodeReference>
+                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
