@@ -122,15 +122,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DZD0fPopAJFNmy3iyhO3nQ" Bounds="825,1285,418,65" ShowValueBox="true" isIOBox="true" Value="IMO spreads work great. A diehard programmer will want to use exactly the right collection type every time but for me a spread is a good and useful abstraction that often gets the job done. ">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Overlay Id="K2BHwViyNO8LJs1dyAQ3kq" Name="Array" Bounds="213,770,290,492" />
           <Overlay Id="UvTaCUt1venOEn0B3hFxsD" Name="Spread" Bounds="550,771,290,493" />
           <Node Bounds="253,835,102,108" Id="JwxyKmnyhVUOQ9ONeQ1egn">
@@ -293,7 +284,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Lo8v4pUApc9PED49M4X9r9" Comment="Index" Bounds="671,1013,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="Lo8v4pUApc9PED49M4X9r9" Comment="Index" Bounds="671,1013,35,15" ShowValueBox="true" isIOBox="true" Value="32">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -349,7 +340,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RRwYjuCq4GlO2F1muu2Vcz" Bounds="1146,464,453,240" ShowValueBox="true" isIOBox="true" Value="What do we learn? &#xD;&#xA;-Scenario 3 (Mutable SpreadBuilder) is fastest as expected. &#xD;&#xA;-Scenario 2 using the splicers still gives a massive performance improvement over Scenario 1 where we explicitly added to the immutable spread.  Why? Because internally the splicers and nodes designed for handling spreads like Flatten use mutability for optimisation!&#xD;&#xA;&#xD;&#xA;Conclusions &#xD;&#xA;&gt; Use SpreadBuilder for best performance specifically for operations when building large spreads. Afterwards convert to normal Spread. &#xD;&#xA;&gt; When working with normal immutable spreads avoid Add (Spread) for any serious loop count. Always prefer the splicers and nodes like cons,flatten as these have optimisations.">
+          <Pad Id="RRwYjuCq4GlO2F1muu2Vcz" Bounds="1146,464,453,271" ShowValueBox="true" isIOBox="true" Value="What do we learn? &#xD;&#xA;-Scenario 3 (Mutable SpreadBuilder) is fastest as expected. &#xD;&#xA;-Scenario 2 using the splicers still gives a massive performance improvement over Scenario 1 where we explicitly added to the immutable spread.  Why? Because internally the splicers and nodes designed for handling spreads like Flatten use mutability for optimisation!&#xD;&#xA;&#xD;&#xA;Conclusions &#xD;&#xA;&gt; Use SpreadBuilder for best performance specifically for operations when building large spreads. Afterwards convert to normal Spread. &#xD;&#xA;&gt; Always avoid Add (Spread) for any serious loop count. Always prefer the splicers and nodes like cons,flatten as these have optimisations. &#xD;&#xA;&gt;If you are already using these optimised spread flows going to SpreadBuilder may not give a huge improvement.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -495,7 +486,7 @@
                 </Node>
                 <ControlPoint Id="DzwnukAOvnNPHkW6jwQcPG" Bounds="1316,637" />
                 <ControlPoint Id="MaUpWHU9TbBQLJj7OeS1zK" Bounds="1398,683" />
-                <ControlPoint Id="JAAgO7IIkNqMKprxAMX6zJ" Bounds="1397,658" />
+                <ControlPoint Id="JAAgO7IIkNqMKprxAMX6zJ" Bounds="1397,642" />
               </Canvas>
               <Patch Id="KCnfNbuwIBsL4a9tjbjlCi" Name="Create" />
               <Patch Id="HHUJDJ2spW1LdhyJM6YHr6" Name="Update">
@@ -654,7 +645,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="FtuHQEsTJtOL3jcQI0BaVN" Comment="" Bounds="1305,301,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="FtuHQEsTJtOL3jcQI0BaVN" Comment="" Bounds="1305,301,35,15" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -726,7 +717,7 @@
                   <ControlPoint Id="EMLlhnbn0IoP0Wqnm2fi4y" Bounds="1276,762" Alignment="Top" />
                   <ControlPoint Id="D23yIj0xAD0QC7q47YKTEt" Bounds="1276,906" Alignment="Bottom" />
                 </Node>
-                <Node Bounds="1314,682,85,19" Id="SjdhX891zCSM8K1S30hSgA">
+                <Node Bounds="1314,652,85,19" Id="SjdhX891zCSM8K1S30hSgA">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="LinearSpread" />
@@ -738,9 +729,9 @@
                   <Pin Id="GF2DLVealQdNFCFU9WGqRu" Name="Count" Kind="InputPin" />
                   <Pin Id="PxEB5pw5BisPIgbmiXJBjq" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="B2tP7HB1YM5NrDAMKhh4pc" Bounds="1316,637" />
-                <ControlPoint Id="Mc4Z0VOr0AUMh6sUlyCyCp" Bounds="1398,683" />
-                <ControlPoint Id="La3j7TjHfIDQA6P7AYANZ2" Bounds="1397,658" />
+                <ControlPoint Id="B2tP7HB1YM5NrDAMKhh4pc" Bounds="1316,607" />
+                <ControlPoint Id="Mc4Z0VOr0AUMh6sUlyCyCp" Bounds="1398,653" />
+                <ControlPoint Id="La3j7TjHfIDQA6P7AYANZ2" Bounds="1397,628" />
                 <Pad Id="V1oo9mmCHiiPGtLmSIGcJ9" SlotId="IIXaDWsMv2aQPrrBHDpaYu" Bounds="1275,700" />
                 <Node Bounds="1273,716,66,26" Id="UzHib9XalD3Otx3pNnhjfD">
                   <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
@@ -769,7 +760,7 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Node Bounds="1271,1078,66,26" Id="JyElUQSVvCZPoet9XY5sOH">
+                <Node Bounds="1276,1078,66,26" Id="JyElUQSVvCZPoet9XY5sOH">
                   <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToSpread" />
@@ -856,7 +847,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Kf3eBe1XHQxNzFfHhbj5lu" Bounds="236,2504,449,79" ShowValueBox="true" isIOBox="true" Value="1.5 What about an immutable Spread of mutable Classes?">
+          <Pad Id="Kf3eBe1XHQxNzFfHhbj5lu" Bounds="2004,150,449,79" ShowValueBox="true" isIOBox="true" Value="1.5 What about an immutable Spread of mutable Classes?">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -866,7 +857,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SOhiXSA3Vl8N5sIVYGFv8V" Bounds="230,2572,670,48" ShowValueBox="true" isIOBox="true" Value="Like it says on the tin the immutable spread will contain the references to the mutable classes. The classes do NOT become immutable just because they are stored in an immutable collection.">
+          <Pad Id="SOhiXSA3Vl8N5sIVYGFv8V" Bounds="1998,218,670,48" ShowValueBox="true" isIOBox="true" Value="Like it says on the tin the immutable spread will contain the references to the mutable classes. The classes do NOT become immutable just because they are stored in an immutable collection.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -875,7 +866,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="V700CuKW5LEQbC8qeJ7Ynt" Name="Spread of Classes" Bounds="238,2607,633,492" />
+          <Overlay Id="V700CuKW5LEQbC8qeJ7Ynt" Name="Spread of Classes" Bounds="2006,253,633,492" />
           <!--
 
     ************************ MyClass ************************
@@ -1159,7 +1150,7 @@
               <Link Id="VZTpQBkFn2gPj3OtLvvnDq" Ids="HNoQE2s7hKoNtNU4yRN8qy,MAAELhasrbsL5cffvpugEP" />
             </Patch>
           </Node>
-          <Node Bounds="339,2670,89,86" Id="Q1mfkjZPwiSNYyHLRpCSU4">
+          <Node Bounds="2107,316,89,86" Id="Q1mfkjZPwiSNYyHLRpCSU4">
             <p:NodeReference>
               <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1170,7 +1161,7 @@
               <Patch Id="SJiMHPqm6pfNDQHBTIUstq" Name="Create" ManuallySortedPins="true" />
               <Patch Id="CicIE6HoZpDPWeetEkasn1" Name="Update" ManuallySortedPins="true" />
               <Patch Id="F4A3kgs2Wu2NyJLuXmmTng" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="351,2702,65,26" Id="HkkjEWyM9sxQHpeag1dOhU">
+              <Node Bounds="2119,348,65,26" Id="HkkjEWyM9sxQHpeag1dOhU">
                 <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -1183,16 +1174,16 @@
                 <Pin Id="T1eBaDCAWqLPJAH38ZOrxH" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="TquW6TQ0T7tQBiuBqLrTbI" Bounds="354,2751" Alignment="Bottom" />
+            <ControlPoint Id="TquW6TQ0T7tQBiuBqLrTbI" Bounds="2122,397" Alignment="Bottom" />
           </Node>
-          <Pad Id="MhEcuWDbNYvM30uvejPHtw" Comment="Iteration Count" Bounds="339,2646,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="MhEcuWDbNYvM30uvejPHtw" Comment="Iteration Count" Bounds="2107,292,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NqadEqbLbNYNrQVQI3ZMEW" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="355,2781" />
-          <Pad Id="EZu0aVBk18hNoFh3QwI3SG" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="356,2959" />
-          <Node Bounds="339,2813,125,115" Id="FK8jj1Cvge9ObcO8IhTwWX">
+          <Pad Id="NqadEqbLbNYNrQVQI3ZMEW" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="2123,427" />
+          <Pad Id="EZu0aVBk18hNoFh3QwI3SG" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="2124,605" />
+          <Node Bounds="2107,458,125,116" Id="FK8jj1Cvge9ObcO8IhTwWX">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1202,7 +1193,7 @@
             <Patch Id="E6zLCNPYd64NS3NCONzBsz" ManuallySortedPins="true">
               <Patch Id="ASpmm0X5dVTQZTCbHub1mF" Name="Create" ManuallySortedPins="true" />
               <Patch Id="BAPyXhTyk7mM8urpmtGCH7" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="351,2874,41,26" Id="BAO8DxH7ExhM5kRPtxyOaK">
+              <Node Bounds="2119,520,41,26" Id="BAO8DxH7ExhM5kRPtxyOaK">
                 <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Spread" />
@@ -1212,7 +1203,7 @@
                 <Pin Id="Cv7iqqWfscoLpZQmWxXZ4j" Name="Item" Kind="InputPin" />
                 <Pin Id="FjJuUmCHdfkMS39Og4JaJW" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="387,2836,65,26" Id="FH2mrIurmeqL07WicTgOuA">
+              <Node Bounds="2155,482,65,26" Id="FH2mrIurmeqL07WicTgOuA">
                 <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -1225,10 +1216,10 @@
                 <Pin Id="N9WM8IIcTFiO9illUuhLlG" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="FQ3kRLa70LjLuTGiXGmn6P" Bounds="354,2819" Alignment="Top" />
-            <ControlPoint Id="P05LIxYeo8wOhk5WyHuwFY" Bounds="354,2922" Alignment="Bottom" />
+            <ControlPoint Id="FQ3kRLa70LjLuTGiXGmn6P" Bounds="2122,465" Alignment="Top" />
+            <ControlPoint Id="P05LIxYeo8wOhk5WyHuwFY" Bounds="2122,569" Alignment="Bottom" />
           </Node>
-          <Pad Id="E1PIlMjYHg5Oa8MTf0DLgh" Comment="DoAdd" Bounds="336,2797,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="E1PIlMjYHg5Oa8MTf0DLgh" Comment="DoAdd" Bounds="2104,443,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1237,7 +1228,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Qfv3w2D2KHqMspeajBYmKL" Bounds="340,3126,475,86" ShowValueBox="true" isIOBox="true" Value="This can be useful behaviour, use a Spread or Dictionary as a structure that makes sense to organise your data. Because the objects are mutable you can retrieve individual objects and edit them without having to reassmble that structure. ">
+          <Pad Id="Qfv3w2D2KHqMspeajBYmKL" Bounds="2108,772,475,86" ShowValueBox="true" isIOBox="true" Value="This can be useful behaviour, use a Spread or Dictionary as a structure that makes sense to organise your data. Because the objects are mutable you can retrieve individual objects and edit them without having to reassmble that structure. ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1246,7 +1237,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="281,2978,44,26" Id="M1VYn3ACFmpMq0ErhHW4v0">
+          <Node Bounds="2049,624,44,26" Id="M1VYn3ACFmpMq0ErhHW4v0">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Count" />
@@ -1255,8 +1246,8 @@
             <Pin Id="SrJ8YCFfYT9ORCmhc3khP0" Name="Input" Kind="StateInputPin" />
             <Pin Id="TvA53WeEHYjLsF9gSRU4Or" Name="Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="Smi1EZAxVdWPoGItQe0mAc" Comment="Count" Bounds="282,3016,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FFC002bnfdPLrlm6uxKTJF" Bounds="357,2959,139,95" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This spread is immutable and so must be written back to a pad to store changes like adding a new element, If you delete this link and try and add a new slice it won't work.">
+          <Pad Id="Smi1EZAxVdWPoGItQe0mAc" Comment="Count" Bounds="2050,662,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FFC002bnfdPLrlm6uxKTJF" Bounds="2125,605,139,95" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This spread is immutable and so must be written back to a pad to store changes like adding a new element, If you delete this link and try and add a new slice it won't work.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1265,7 +1256,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="585,2822,52,19" Id="Ja39itH8PlqM7LIvtLzmak">
+          <Node Bounds="2353,460,52,19" Id="Ja39itH8PlqM7LIvtLzmak">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -1276,12 +1267,12 @@
             <Pin Id="FJqjz1eBshkLNGXpGVYuTq" Name="Index" Kind="InputPin" />
             <Pin Id="NssxzN9ODiENhNHfN2qYVF" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="GWPuRAnBnYvO5wq31pHJmZ" Comment="Index" Bounds="634,2809,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="GWPuRAnBnYvO5wq31pHJmZ" Comment="Index" Bounds="2402,447,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="710,2827,52,19" Id="A3OqewTX4zRNR9RmvWqgwW">
+          <Node Bounds="2478,465,52,19" Id="A3OqewTX4zRNR9RmvWqgwW">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -1292,13 +1283,13 @@
             <Pin Id="DlYD4yRKRIYP9NoPkkzxxf" Name="Index" Kind="InputPin" />
             <Pin Id="EH4FMj628mUOmdNWDPyJSs" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="HlDP8TUCOscOpxxr2vdyfg" Comment="Index" Bounds="759,2814,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="HlDP8TUCOscOpxxr2vdyfg" Comment="Index" Bounds="2527,452,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JBbI7mlueQSQM4dAA7LvjG" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="587,2760" />
-          <Node Bounds="711,2892,85,26" Id="AKB270CRQE1NIa2uO9BVyn">
+          <Pad Id="JBbI7mlueQSQM4dAA7LvjG" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="2355,398" />
+          <Node Bounds="2479,538,85,26" Id="AKB270CRQE1NIa2uO9BVyn">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -1311,9 +1302,9 @@
             <Pin Id="OAdK9v52vyuOWzC3ejcDIz" Name="ByteC" Kind="OutputPin" />
             <Pin Id="LiWcLmpPMpZNx3GZIbm1uq" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Pad Id="CXoedkR65qwP3rKsMz0VSI" Comment="ByteC" Bounds="774,2933,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OeKaeiWj2MFLqV0fEgxRzY" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="713,2762" />
-          <Pad Id="GLY5Nv6VwPPOBATJXs5t5J" Bounds="567,2963,221,66" ShowValueBox="true" isIOBox="true" Value="^^The objects in the spread are mutable classes. As long as you retrieve the same reference you can edit it in one place and the original object mutates you do not have to explicitly save it back into the spread.">
+          <Pad Id="CXoedkR65qwP3rKsMz0VSI" Comment="ByteC" Bounds="2542,579,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OeKaeiWj2MFLqV0fEgxRzY" SlotId="P0gFBzTR23aNopsHcJYJAW" Bounds="2481,400" />
+          <Pad Id="GLY5Nv6VwPPOBATJXs5t5J" Bounds="2335,609,221,66" ShowValueBox="true" isIOBox="true" Value="^^The objects in the spread are mutable classes. As long as you retrieve the same reference you can edit it in one place and the original object mutates you do not have to explicitly save it back into the spread.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1322,7 +1313,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="356,3037,57,19" Id="KjKXXtAm51kQDNbOjp0AzL">
+          <Node Bounds="2124,683,57,19" Id="KjKXXtAm51kQDNbOjp0AzL">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -1331,12 +1322,12 @@
             <Pin Id="Db6Uz47h55nMrsO34gBMG1" Name="Result" Kind="OutputPin" />
             <Pin Id="UIddv3VX3WiLZXdNS0SPMZ" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="EflzHs8oJw9O1qAfvzNFwd" Comment="" Bounds="357,3067,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="EflzHs8oJw9O1qAfvzNFwd" Comment="" Bounds="2125,713,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QZvqJOkeRqCMOMlEwihaUp" Bounds="413,3044,276,62" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The changed node will recognise that the spread collection itself changed when you add a new slice. It will not recognise if the mustable classes inside are changing while they continue to point to the same unchanging reference. ">
+          <Pad Id="QZvqJOkeRqCMOMlEwihaUp" Bounds="2181,690,276,62" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The changed node will recognise that the spread collection itself changed when you add a new slice. It will not recognise if the mustable classes inside are changing while they continue to point to the same unchanging reference. ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1345,8 +1336,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="P2vjH2GOlVqL4uUafokTQ7" Name="Spread of Records" Bounds="237,3344,633,531" />
-          <Node Bounds="345,3400,89,86" Id="POwlttOcBI0NDEqy260sDz">
+          <Overlay Id="P2vjH2GOlVqL4uUafokTQ7" Name="Spread of Records" Bounds="2005,990,633,531" />
+          <Node Bounds="2113,1046,89,86" Id="POwlttOcBI0NDEqy260sDz">
             <p:NodeReference>
               <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1357,7 +1348,7 @@
               <Patch Id="RS83ikLCrSgOla9J8MIwEJ" Name="Create" ManuallySortedPins="true" />
               <Patch Id="CoWGQuQPRueNIVKIA4X0jN" Name="Update" ManuallySortedPins="true" />
               <Patch Id="NwnaeR1NWG3MTTxsNrG3uv" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="357,3432,65,26" Id="UGckgDkn4sbN9um10X40Bj">
+              <Node Bounds="2125,1078,65,26" Id="UGckgDkn4sbN9um10X40Bj">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1370,28 +1361,28 @@
                 <Pin Id="Stb0i2IYNSxNwPbmqoDiQR" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="M4RICVtPcnsMwxAZ3fBi5K" Bounds="360,3481" Alignment="Bottom" />
+            <ControlPoint Id="M4RICVtPcnsMwxAZ3fBi5K" Bounds="2128,1127" Alignment="Bottom" />
           </Node>
-          <Pad Id="PQGns4l21u1LUzMjqQ4uZZ" Comment="Iteration Count" Bounds="345,3376,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="PQGns4l21u1LUzMjqQ4uZZ" Comment="Iteration Count" Bounds="2113,1022,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="E781dkCAoNjLDNuOpCKEV6" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="361,3511" />
-          <Pad Id="F7FguTWATSjQBICQLYiR7a" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="363,3712" />
-          <Node Bounds="345,3542,131,117" Id="Exhs92kTOkoMQ69CvcyKtc">
+          <Pad Id="E781dkCAoNjLDNuOpCKEV6" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="2129,1157" />
+          <Pad Id="F7FguTWATSjQBICQLYiR7a" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="2131,1358" />
+          <Node Bounds="2113,1187,131,119" Id="Exhs92kTOkoMQ69CvcyKtc">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
             <Pin Id="GqSfstNmrMwP2IuFWN9Wt7" Name="Condition" Kind="InputPin" />
-            <ControlPoint Id="TbODB3GPchZLRo9Nv8rgc2" Bounds="360,3549" Alignment="Top" />
-            <ControlPoint Id="ACGTNUip8BBPRvgW4VM90f" Bounds="360,3653" Alignment="Bottom" />
+            <ControlPoint Id="TbODB3GPchZLRo9Nv8rgc2" Bounds="2128,1194" Alignment="Top" />
+            <ControlPoint Id="ACGTNUip8BBPRvgW4VM90f" Bounds="2128,1301" Alignment="Bottom" />
             <Patch Id="DVjDV487hVCMXMdgNPrJxH" ManuallySortedPins="true">
               <Patch Id="PTHfJejoLdjMDYotQ6pk3r" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Kw9wiNWanygQDNpDg4Bv7f" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="357,3604,41,26" Id="OrFvv3zRnfgQXQPQii4L6t">
+              <Node Bounds="2125,1250,41,26" Id="OrFvv3zRnfgQXQPQii4L6t">
                 <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Spread" />
@@ -1401,7 +1392,7 @@
                 <Pin Id="Cyj3FfsIQr9ObZtWoboq0v" Name="Item" Kind="InputPin" />
                 <Pin Id="JzcBRjSadhsLLTGqGVfHZs" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="399,3567,65,26" Id="FeYmxJklClONlL5nr6LHnF">
+              <Node Bounds="2167,1213,65,26" Id="FeYmxJklClONlL5nr6LHnF">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1415,7 +1406,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="JyzPnTl0eNfMs1iBQjEes2" Comment="DoAdd" Bounds="342,3527,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="JyzPnTl0eNfMs1iBQjEes2" Comment="DoAdd" Bounds="2110,1173,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1424,7 +1415,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="288,3731,44,26" Id="L3aqR7CjeMGLrao8fGXcn5">
+          <Node Bounds="2056,1377,44,26" Id="L3aqR7CjeMGLrao8fGXcn5">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Count" />
@@ -1433,8 +1424,8 @@
             <Pin Id="F5vjJubETehNiLN01y3jXY" Name="Input" Kind="StateInputPin" />
             <Pin Id="PpZSYnsiUAgNqfLoP7b7cw" Name="Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="L05HbNjq5DxO8iFCXgMDkG" Comment="Count" Bounds="289,3769,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OdWb85FzwvKM4fz62gGgO3" Bounds="364,3712,139,95" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This spread is immutable and so must be written back to a pad to store changes like adding a new element,">
+          <Pad Id="L05HbNjq5DxO8iFCXgMDkG" Comment="Count" Bounds="2057,1415,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OdWb85FzwvKM4fz62gGgO3" Bounds="2132,1358,139,95" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This spread is immutable and so must be written back to a pad to store changes like adding a new element,">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1443,7 +1434,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="553,3463,52,19" Id="Le8ccsBLSHUQYsPIPiGs2g">
+          <Node Bounds="2321,1109,52,19" Id="Le8ccsBLSHUQYsPIPiGs2g">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -1454,12 +1445,12 @@
             <Pin Id="DNiWEdntezKNSFVSk2Kdhb" Name="Index" Kind="InputPin" />
             <Pin Id="CXDBxfJXgZAPTrB8eykEMN" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="IiXbpjquInoPN2pkVvk1Lp" Comment="Index" Bounds="602,3450,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="IiXbpjquInoPN2pkVvk1Lp" Comment="Index" Bounds="2370,1096,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TIChKkt78o2MP4DB6WOfkW" Bounds="506,3630,133,52" ShowValueBox="true" isIOBox="true" Value="^^We have to explicitly write any changes in the records back into the spread.">
+          <Pad Id="TIChKkt78o2MP4DB6WOfkW" Bounds="2274,1276,133,52" ShowValueBox="true" isIOBox="true" Value="^^We have to explicitly write any changes in the records back into the spread.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1468,7 +1459,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="363,3790,57,19" Id="I1KpkPZbP8zPAYDqlTgJYX">
+          <Node Bounds="2131,1436,57,19" Id="I1KpkPZbP8zPAYDqlTgJYX">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -1477,12 +1468,12 @@
             <Pin Id="EJL7nqKU1SUN8wBU8pmZdB" Name="Result" Kind="OutputPin" />
             <Pin Id="D8sJCCQIUi0LlSiuzm4bdT" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="JlMtVyNMV1sP1KXQnys6iC" Comment="" Bounds="364,3820,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="JlMtVyNMV1sP1KXQnys6iC" Comment="" Bounds="2132,1466,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="P7CZAu0GSNCN0yPtZG6XK3" Bounds="420,3797,115,77" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Change is detected when you add slice to the spread AND when you update the record inside the spread. ">
+          <Pad Id="P7CZAu0GSNCN0yPtZG6XK3" Bounds="2188,1443,115,77" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Change is detected when you add slice to the spread AND when you update the record inside the spread. ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1761,8 +1752,8 @@
               <Link Id="Cx6M6UYBodtQDvbWy83irv" Ids="DMPeZuQUy4KL168melOc1l,NFRnZWKFCHdLCtoSwSw5rU" />
             </Patch>
           </Node>
-          <Pad Id="IfDyXISE9S9MjonqR4xmZa" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="560,3445" />
-          <Node Bounds="672,3619,65,26" Id="CZ24GXPUVpWOArN5VnL4IR">
+          <Pad Id="IfDyXISE9S9MjonqR4xmZa" SlotId="NMU7VqgQLpzL8SCoot51Ev" Bounds="2328,1091" />
+          <Node Bounds="2440,1265,65,26" Id="CZ24GXPUVpWOArN5VnL4IR">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -1774,7 +1765,7 @@
             <Pin Id="SRpn8Rmdu8pQNHHPWa8kGD" Name="ByteC" Kind="OutputPin" />
             <Pin Id="ExTfE5jt1ysOLMWUZCUrNf" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Node Bounds="360,3670,51,26" Id="L3q9fG1kK7iNlJBiN8i7wg">
+          <Node Bounds="2128,1316,51,26" Id="L3q9fG1kK7iNlJBiN8i7wg">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetSlice" />
@@ -1785,13 +1776,13 @@
             <Pin Id="HdVdYLOXjnJOazShFRyufk" Name="Index" Kind="InputPin" DefaultValue="2" />
             <Pin Id="QJFECayk6lpNHzD64UOdDC" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="DJ6qqPmK40mPR8TUbgWmLg" Comment="ByteC" Bounds="713,3657,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="CBVq4JszStTMT3PBicUbib" Comment="Index" Bounds="424,3682,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="DJ6qqPmK40mPR8TUbgWmLg" Comment="ByteC" Bounds="2481,1303,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CBVq4JszStTMT3PBicUbib" Comment="Index" Bounds="2192,1328,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="541,3513,103,84" Id="J0d6WRJEuf3O5jFG7BMqSO">
+          <Node Bounds="2309,1158,103,86" Id="J0d6WRJEuf3O5jFG7BMqSO">
             <p:NodeReference>
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1800,7 +1791,7 @@
             <Patch Id="HJE4bEvFrnpLRF1fMGvjm2" ManuallySortedPins="true">
               <Patch Id="GBkIkO6ObOPLjktPD7o8TQ" Name="Create" ManuallySortedPins="true" />
               <Patch Id="NehjK1KK2gANwc1Zo68xzN" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="553,3545,79,26" Id="UIDKGQ3wCcPN8BsUPFm69C">
+              <Node Bounds="2321,1191,79,26" Id="UIDKGQ3wCcPN8BsUPFm69C">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AnimateByteC" />
@@ -1811,10 +1802,10 @@
                 <Pin Id="OuxoOY6T3MBQSCR3uItADC" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="OkDeUSpNcg2PuZoG2qHoKd" Bounds="556,3591" Alignment="Bottom" />
-            <ControlPoint Id="B2W2mlGsSlkOlntWt4PYAQ" Bounds="556,3519" Alignment="Top" />
+            <ControlPoint Id="OkDeUSpNcg2PuZoG2qHoKd" Bounds="2324,1238" Alignment="Bottom" />
+            <ControlPoint Id="B2W2mlGsSlkOlntWt4PYAQ" Bounds="2324,1165" Alignment="Top" />
           </Node>
-          <Pad Id="TRxfhoAUMYuLS1ZdyPtZdP" Comment="Update Record at index 2" Bounds="543,3499,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TRxfhoAUMYuLS1ZdyPtZdP" Comment="Update Record at index 2" Bounds="2311,1145,35,15" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1823,7 +1814,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SKL265AFH1ZOJjynv9hAfI" Bounds="304,3319,478,30" ShowValueBox="true" isIOBox="true" Value="Ok if we look at spread of classes we should also look at spread of Records.">
+          <Pad Id="SKL265AFH1ZOJjynv9hAfI" Bounds="2072,965,478,30" ShowValueBox="true" isIOBox="true" Value="Ok if we look at spread of classes we should also look at spread of Records.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1832,7 +1823,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NEBNv2zKBYbPzlMbuO1fHy" Bounds="249,3888,610,140" ShowValueBox="true" isIOBox="true" Value="Note that an immutable Spread of immutable Records is still a 'smart' tree containing references to those records. &#xD;&#xA;Just because they are both immutable does not mean it's a single monolith of all the data where the entire thing must be copied on an update. &#xD;&#xA;When you only update one record then only the Spread itself (the list of references) and the record in question will be copied. &#xD;&#xA;The unchanged records remain where they are in memory.&#xD;&#xA;">
+          <Pad Id="NEBNv2zKBYbPzlMbuO1fHy" Bounds="2017,1555,610,140" ShowValueBox="true" isIOBox="true" Value="Note that an immutable Spread of immutable Records is still a 'smart' tree containing references to those records. &#xD;&#xA;Just because they are both immutable does not mean it's a single monolith of all the data where the entire thing must be copied on an update. &#xD;&#xA;When you only update one record then only the Spread itself (the list of references) and the record in question will be copied. &#xD;&#xA;The unchanged records remain where they are in memory.&#xD;&#xA;">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1841,7 +1832,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="572,2870,103,80" Id="H51eecs4aP5LQBjmut2AS6">
+          <Node Bounds="2340,515,103,80" Id="H51eecs4aP5LQBjmut2AS6">
             <p:NodeReference>
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1850,7 +1841,7 @@
             <Patch Id="J9IpTxfGz4ELOToNGXwiwK" ManuallySortedPins="true">
               <Patch Id="Ihxk3bmpr6fM2MvL1a83gK" Name="Create" ManuallySortedPins="true" />
               <Patch Id="MOyTisNjnnILk04zKJH1g6" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="584,2898,79,26" Id="Ga1R4G4uK21OPWBBQR8m57">
+              <Node Bounds="2352,544,79,26" Id="Ga1R4G4uK21OPWBBQR8m57">
                 <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 03 Spread vs SpreadBuilder.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AnimateByteC" />
@@ -1861,7 +1852,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="H38Oq6zwmb9NLyHETl5RhG" Comment="Update a Class" Bounds="574,2855,22,3" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="H38Oq6zwmb9NLyHETl5RhG" Comment="Update a Class" Bounds="2342,501,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1879,7 +1870,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="559,3792,57,19" Id="UuP15oQkEnmO3GuknZQCRK">
+          <Node Bounds="2327,1438,57,19" Id="UuP15oQkEnmO3GuknZQCRK">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -1888,12 +1879,12 @@
             <Pin Id="ESc38oA3zPYLgIKU142rLx" Name="Result" Kind="OutputPin" />
             <Pin Id="Kj8kEBCKZyYO4KZpfCQAqw" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="OV3V85lALnANItnL0U1ijU" Comment="" Bounds="560,3822,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="OV3V85lALnANItnL0U1ijU" Comment="" Bounds="2328,1468,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="556,3765" Id="KRvZq9sQZyhLjY50TLXRUw">
+          <Node Bounds="2324,1411,52,19" Id="KRvZq9sQZyhLjY50TLXRUw">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -1904,12 +1895,12 @@
             <Pin Id="DsXbAJnbagmOPLQI0TVrwN" Name="Index" Kind="InputPin" />
             <Pin Id="AZYUMLcuwOtL2swV8igsde" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Kma2JxsGjtjO4POuItJUH1" Comment="" Bounds="606,3751,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="Kma2JxsGjtjO4POuItJUH1" Comment="" Bounds="2374,1397,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="687,3793,57,19" Id="NhQD8ijRswKPgPVhcd5E5w">
+          <Node Bounds="2455,1439,57,19" Id="NhQD8ijRswKPgPVhcd5E5w">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -1918,12 +1909,12 @@
             <Pin Id="Ib3nfKVV9G1Pi2RGOKRePW" Name="Result" Kind="OutputPin" />
             <Pin Id="UYEav6G7mGyMXWAjpzNoQG" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="J2z8NNrvOuSNRqbbo8nzZH" Comment="" Bounds="688,3823,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="J2z8NNrvOuSNRqbbo8nzZH" Comment="" Bounds="2456,1469,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="684,3766,52,19" Id="Oyor0mQNHT5LgqNvScHMIu">
+          <Node Bounds="2452,1412,52,19" Id="Oyor0mQNHT5LgqNvScHMIu">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -1934,12 +1925,12 @@
             <Pin Id="O839h7K7d4fNmC5zXSHAqj" Name="Index" Kind="InputPin" />
             <Pin Id="LuUP3NqpDV1OX1wZRW9Q85" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="F31H0LczjB6MOuqFHuv3b1" Comment="" Bounds="734,3752,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="F31H0LczjB6MOuqFHuv3b1" Comment="" Bounds="2502,1398,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NeNF0GK8pAeP0oPSxtmiQn" Bounds="737,3803,115,77" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; NOTE Change is NOT detected on the records that did not change.">
+          <Pad Id="NeNF0GK8pAeP0oPSxtmiQn" Bounds="2505,1449,115,77" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; NOTE Change is NOT detected on the records that did not change.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1948,6 +1939,47 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Af7LcvtSbk9MYHItNdBooJ" Bounds="2035,39,425,63" ShowValueBox="true" isIOBox="true" Value="3. WHAT ABOUT SPREAD OF CLASS?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VC88GxmdHNmMN12oX0O1iP" Name="" Bounds="1892,87,1167,1856" />
+          <Node Bounds="297,317,46,26" Id="OjVZXThll1YLcjKSalF9bw">
+            <p:NodeReference LastCategoryFullName="Collections.Array" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Array" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <PinReference Kind="InputPin" Name="Length" />
+              <PinReference Kind="OutputPin" Name="Output" />
+            </p:NodeReference>
+            <Pin Id="TiSColnfmcTNaRFRMmIA3W" Name="Items" Kind="InputPin" />
+            <Pin Id="UXiyOcp6W2XMpCFpXsXgXt" Name="Start" Kind="InputPin" />
+            <Pin Id="HP6PQbdSZa1PS2fZRG5HZU" Name="Length" Kind="InputPin" />
+            <Pin Id="BqJ8tbPjptLPNHPqgTiI3n" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="373,317,65,26" Id="KpsNOrhPzBAOhQApIzcwfi">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="Sequence" />
+              <Choice Kind="OperationCallFlag" Name="FromValue" />
+            </p:NodeReference>
+            <Pin Id="L9PWTfoP28FPMVcpDjs4Vt" Name="Input" Kind="InputPin" />
+            <Pin Id="OLjLej0iVVUOvIvMjUl4O3" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="462,318,53,26" Id="SB9w4VBGCMTOLFIHmL9uER">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Dictionary" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="GJuk9WrG1BuOesvH6lKELO" Name="Result" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="F5d7uYrYSlVMhg96nnxw2I" Name="Create" ParticipatingElements="UoH20cbQDzxOymBDhYB598,IioxNDttu9ENC4HKSMYmkw" />
         <Patch Id="CZncBhJDnxuQMbh496P9iX" Name="Update" />

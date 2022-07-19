@@ -18,7 +18,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="136, 240, 452, 588" />
+              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="1292, 108, 1254, 938" />
               <Pin Id="VWldKJBiaMfQcFlxYz5rfU" Name="Input" Kind="InputPin" />
               <Pin Id="Vt1WteIbd0TMJT1kxi2RrX" Name="Color" Kind="InputPin" />
               <Pin Id="SuKJ4ZTh3QLPnTrEbImAJ6" Name="Clear" Kind="InputPin" />
@@ -933,11 +933,6 @@
               <ControlPoint Id="LFhlzs65cd1LGXj6LE8IJH" Bounds="806,498" Alignment="Top" />
             </Node>
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="AEGAJi9QnWCPBOCxBJ0xos">
             <Fragment Id="BK4V4UXQnPVMCVOQJims2R" Patch="I1xB4LVFToENpIAzYafln6" Enabled="true" />
             <Fragment Id="RdwvNcFgA8rOOUytrH2QH5" Patch="V1ydqfvKp9WLUgCzEHPQ2T" Enabled="true" />
@@ -1312,7 +1307,7 @@
               <Patch Id="OG2r4eKAA9bMC2Xi18oy07" Name="IncrementByteC" ParticipatingElements="P992gB70ynhQE1bCPSpMDP" />
             </Patch>
           </Node>
-          <Pad Id="ONgTxrHiW6rM8XOsmygQgD" Bounds="261,-186,397,19" ShowValueBox="true" isIOBox="true" Value="Made with a youtube explanation see here">
+          <Pad Id="ONgTxrHiW6rM8XOsmygQgD" Bounds="-332,-47,414,19" ShowValueBox="true" isIOBox="true" Value="Made with a youtube explanation see here">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1367,7 +1362,7 @@
               <Choice Kind="TypeFlag" Name="Byte" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="272,397,111,98" Id="LIfErhjcIh8OHt1VscQClm">
+          <Node Bounds="271,415,111,100" Id="LIfErhjcIh8OHt1VscQClm">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1377,7 +1372,7 @@
             <Patch Id="Gy3emwpmT2GPcPRIGko5J2" ManuallySortedPins="true">
               <Patch Id="RLMp5YmigHGMAScLsHbQr8" Name="Create" ManuallySortedPins="true" />
               <Patch Id="FOfH4fTdAihLc2MkrvqBoi" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="284,432,87,26" Id="KUIUFpJNG9pPEF8rRD8xYx">
+              <Node Bounds="283,451,87,26" Id="KUIUFpJNG9pPEF8rRD8xYx">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 01 What is Mutability.vl" LastDependency="Explanation Mutants 01 Mutability Visualised.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -1387,10 +1382,10 @@
                 <Pin Id="IsZMceXqJPnNI25NgSFZwE" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="SAXRzVpt7nnPPyf2DCn1Fe" Bounds="286,489" Alignment="Bottom" />
-            <ControlPoint Id="NMnth9h72Q5NhRvnKlLz5X" Bounds="286,403" Alignment="Top" />
+            <ControlPoint Id="SAXRzVpt7nnPPyf2DCn1Fe" Bounds="285,509" Alignment="Bottom" />
+            <ControlPoint Id="NMnth9h72Q5NhRvnKlLz5X" Bounds="285,421" Alignment="Top" />
           </Node>
-          <Pad Id="SNIzwyWrCcoPkIZ52jGx9X" SlotId="SR5qYsKUIK2P8T3iaFtvMm" Bounds="284,522" />
+          <Pad Id="SNIzwyWrCcoPkIZ52jGx9X" SlotId="SR5qYsKUIK2P8T3iaFtvMm" Bounds="284,528" />
           <Pad Id="GDLSf0Ug0xYMkedpdBniEe" Comment="DoIncrement" Bounds="273,361,44,36" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -1400,7 +1395,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="502,397,111,100" Id="DYqPAFVvrggL00G7x26x4s">
+          <Node Bounds="502,419,111,100" Id="DYqPAFVvrggL00G7x26x4s">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1410,7 +1405,7 @@
             <Patch Id="RVV5ZXQw3MnMuSMowMlPh9" ManuallySortedPins="true">
               <Patch Id="CKbp8C9dx7LNJNj0AjV8cK" Name="Create" ManuallySortedPins="true" />
               <Patch Id="CIUzb41zmsOLFzmcgLcCMG" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="514,433,87,26" Id="G9VYHCbKxTDPPPj0N9MVYU">
+              <Node Bounds="514,456,87,26" Id="G9VYHCbKxTDPPPj0N9MVYU">
                 <p:NodeReference>
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -1420,10 +1415,10 @@
                 <Pin Id="BgZmtKkivmqLKeYUpcKjHo" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="ESTmc4PFqssLy9alS0kZBp" Bounds="516,491" Alignment="Bottom" />
-            <ControlPoint Id="K92J6gpAXBYL1eDasYozKi" Bounds="516,403" Alignment="Top" />
+            <ControlPoint Id="ESTmc4PFqssLy9alS0kZBp" Bounds="516,515" Alignment="Bottom" />
+            <ControlPoint Id="K92J6gpAXBYL1eDasYozKi" Bounds="516,426" Alignment="Top" />
           </Node>
-          <Pad Id="Bf9IURftY3zP8V9KrRAEs0" Comment="DoIncrement" Bounds="504,363,38,34" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Bf9IURftY3zP8V9KrRAEs0" Comment="DoIncrement" Bounds="503,370,38,34" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1432,12 +1427,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RX7HuPKivLvN0J9LpGqITF" Comment="CountOfPastSnapshotsToShow" Bounds="435,607,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="RX7HuPKivLvN0J9LpGqITF" Comment="CountOfPastSnapshotsToShow" Bounds="481,602,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TDb9fkfKrE9LEj63zoNFaK" Bounds="322,57,222,19" ShowValueBox="true" isIOBox="true" Value="Mutable objects can change">
+          <Pad Id="TDb9fkfKrE9LEj63zoNFaK" Bounds="321,-97,222,19" ShowValueBox="true" isIOBox="true" Value="Mutable objects can change">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1446,7 +1441,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UlFg3cBp4ebMIeKWGhu7py" Bounds="322,83,222,54" ShowValueBox="true" isIOBox="true" Value="Immutable objects cannot change&#xD;&#xA;">
+          <Pad Id="UlFg3cBp4ebMIeKWGhu7py" Bounds="321,-74,222,19" ShowValueBox="true" isIOBox="true" Value="Immutable objects cannot change&#xD;&#xA;">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1455,7 +1450,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I6AlAJms7YrLNQhsEMpDe5" Bounds="328,700,222,19" ShowValueBox="true" isIOBox="true" Value="Mutable objects can change">
+          <Pad Id="I6AlAJms7YrLNQhsEMpDe5" Bounds="318,890,222,19" ShowValueBox="true" isIOBox="true" Value="Mutable objects can change">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1464,7 +1459,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HlRDsVskHjwQJUyHJTwaEd" Bounds="330,761,221,125" ShowValueBox="true" isIOBox="true" Value="Immutable objects cannot change. &#xD;&#xA;&gt;&gt;&gt;&#xD;&#xA;What this effectively means is an operation that would change an immutable object actaully makes a new copy of it">
+          <Pad Id="HlRDsVskHjwQJUyHJTwaEd" Bounds="318,937,221,125" ShowValueBox="true" isIOBox="true" Value="Immutable objects cannot change. &#xD;&#xA;&gt;&gt;&gt;&#xD;&#xA;What this effectively means is an operation that would change an immutable object actaully makes a new copy of it">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1473,7 +1468,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="P6z6oV0wyirPRUo1q0pASS" Bounds="357,19,222,19" ShowValueBox="true" isIOBox="true" Value="What is Mutability?">
+          <Pad Id="TaAURKoIEUaQYwz5XcyYP8" Bounds="261,7,399,19" ShowValueBox="true" isIOBox="true" Value="But obviously they both change.... so what does it mean? ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1482,6 +1477,72 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="T3EKwF2jrH6OMeo1DaBnLi" Bounds="261,24,399,19" ShowValueBox="true" isIOBox="true" Value="It's talking about the context of the memory footprint">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NTKB6e3IKLGLJlFQ9B7gK0" Bounds="318,375,103,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;&lt;Update the record and it will make a new snapshot">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HVPtulPAleYL46P3Dzjiux" Bounds="545,380,103,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;&lt;Update the class and it will mutate the same block of memory">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="P9K6VThYSkTP5UhFRno9nX" Bounds="482,623,170,53" ShowValueBox="true" isIOBox="true" Value="^^^simulate fast updating of a record where rapid changes use a larger memory footprint">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Vop1co5DNEdQJCfKp9tv8I" Bounds="300,-516,178,19" ShowValueBox="true" isIOBox="true" Value="Part 1. Mutability Visualised">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A100RIp8031NbXJKl0bJ8C" Bounds="300,-491,236,19" ShowValueBox="true" isIOBox="true" Value="Part 2. Record vs Class in detail">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Nc7YMafxrzUOwoL9IYras3" Bounds="300,-465,236,19" ShowValueBox="true" isIOBox="true" Value="Part 3. Spread vs SpreadBuilder">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Nv2S74gc6WpLBuQTeKH3K4" Name="Mutability in vvvv Gamma" Bounds="296,-616,270,172" />
+          <Overlay Id="SMWFVyIrt9oMwSJ7em5Cle" Name="What is Mutability?" Bounds="305,-173,270,172" />
+          <Overlay Id="I0VLd4WTjE3O0ro6uW09lQ" Name="What is Mutability?" Bounds="308,849,270,246" />
         </Canvas>
         <Patch Id="Ei9Do35OjxYN65TAdv0yzr" Name="Create" ParticipatingElements="GLGrkv5hefqME024rMYTnX,Jo584RSAIE0LLKkwMeQTlz" />
         <Patch Id="LiYStZF6AG5QSmQRAHmmiq" Name="Update" />
