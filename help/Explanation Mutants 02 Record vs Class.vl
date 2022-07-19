@@ -6235,11 +6235,6 @@
                 <Pin Id="SHEgYGYqcJ0OnVEoNkywyt" Name="Saturation" Kind="InputPin" Bounds="1005,525" />
                 <Pin Id="BuleM3QgP1QOUxFsTU59Vs" Name="Value" Kind="InputPin" Bounds="1084,525" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="F9gErIpQoLoLYdfySTVrib">
                 <Fragment Id="VNxdDsCjf1sNheaEANTbuF" Patch="Ierer4tA01ZO5xLmit1aNx" Enabled="true" />
                 <Fragment Id="HAZ37IyZXWCQDeXJUh2XOX" Patch="UDZ4hlIAnnfNQGkTB2rXUe" Enabled="true" />
@@ -6286,11 +6281,6 @@
                 <ControlPoint Id="SiRBVWFPqoTOaUm6NTd8WM" Bounds="1142,479" />
                 <ControlPoint Id="NPcOLAgGyIDPs6CJkVUWCN" Bounds="1320,519" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="GxieBuNc3YuLnjoplLcr4e" IsHidden="true">
                 <Fragment Id="LcymsBuwBUwNS31GaTDMzP" Patch="VYUZgfzZKtrMlIF8Bn16jr" Enabled="true" />
                 <Fragment Id="T9i97gjwGiKLJGNQmymOu9" Patch="BsFnuBtxiXLP6EDwEbCj6G" />
@@ -6499,11 +6489,6 @@
                 </Pad>
                 <ControlPoint Id="NrTV6LFNlAoMFvYrSy6l8S" Bounds="992,624" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="DafT1M11AmuM6sXDSNu5oo">
                 <Fragment Id="LOtPuuI8JRfMl1Z35Xe7dN" Patch="DCxdGHV4dErMJ6FB3xfKsq" Enabled="true" />
                 <Fragment Id="G4bpTBAkGl2QTFXIad2y3f" Patch="AE2F2M5AAJROtXSQcfteKB" Enabled="true" />
@@ -6789,11 +6774,6 @@
                 </Pad>
               </Canvas>
               <Patch Id="F8rliMrPhlSLb1iSUFkTGD" Name="Create" />
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="HONQf4FlZ1oL4H0S466g2R" IsHidden="true">
                 <Fragment Id="GuGSsJzQaJkPoK6zDDI0xl" Patch="F8rliMrPhlSLb1iSUFkTGD" Enabled="true" />
                 <Fragment Id="MgT7Ni1AMJfQPNIvdFHrT5" Patch="MU0iaF8mbvKO1rVnfmNhIB" Enabled="true" />
@@ -6826,11 +6806,6 @@
               <Patch Id="EPx89DKYFvPNvuR62f9yWq" Name="Create">
                 <Pin Id="NGkWoeJDKBxNEdZP8b0nLw" Name="Input" Kind="InputPin" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="NHbpgyz0DSVLvVk7F8VNfK" IsHidden="true">
                 <Fragment Id="Oq78Mqmgn4ALAf2xkzgSmS" Patch="EPx89DKYFvPNvuR62f9yWq" Enabled="true" />
                 <Fragment Id="VCusRhWKdKwNwl5AVvrzol" Patch="Ko983Zl5X80NpJ6j4g8yy9" />
@@ -6938,7 +6913,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F6OOqyFbFnON9d6XayOGMK" Bounds="5818,2481,498,36" ShowValueBox="true" isIOBox="true" Value="https://www.youtube.com/watch?v=36r8LnHaS7g&amp;list=PLVnRhHlkxdprSF5AVUaov7QdvckHGM1pI&amp;index=2">
+          <Pad Id="F6OOqyFbFnON9d6XayOGMK" Bounds="5822,2474,498,36" ShowValueBox="true" isIOBox="true" Value="https://www.youtube.com/watch?v=36r8LnHaS7g&amp;list=PLVnRhHlkxdprSF5AVUaov7QdvckHGM1pI&amp;index=2">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -6968,7 +6943,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QCDcYK8HczwPEQcEmznQGB" Bounds="5825,2445,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/introduction/mut.html">
+          <Pad Id="QCDcYK8HczwPEQcEmznQGB" Bounds="5825,2445,445,0" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/introduction/mut.html">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -6977,7 +6952,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TsxwRvSt23MQYO5Cqt7s98" Bounds="5821,2509,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/introduction/mut3.html">
+          <Pad Id="TsxwRvSt23MQYO5Cqt7s98" Bounds="5821,2509,483,14" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/introduction/mut3.html">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

@@ -349,16 +349,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CHGPM9CveNmMZ3l8kGEFFW" Bounds="1924,-20,309,66" ShowValueBox="true" isIOBox="true" Value="3.OTHER USES OF MUTABLE COLLECTIONS">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">16</p:fontsize>
-              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="RRwYjuCq4GlO2F1muu2Vcz" Bounds="1146,464,453,240" ShowValueBox="true" isIOBox="true" Value="What do we learn? &#xD;&#xA;-Scenario 3 (Mutable SpreadBuilder) is fastest as expected. &#xD;&#xA;-Scenario 2 using the splicers still gives a massive performance improvement over Scenario 1 where we explicitly added to the immutable spread.  Why? Because internally the splicers and nodes designed for handling spreads like Flatten use mutability for optimisation!&#xD;&#xA;&#xD;&#xA;Conclusions &#xD;&#xA;&gt; Use SpreadBuilder for best performance specifically for operations when building large spreads. Afterwards convert to normal Spread. &#xD;&#xA;&gt; When working with normal immutable spreads avoid Add (Spread) for any serious loop count. Always prefer the splicers and nodes like cons,flatten as these have optimisations.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -863,15 +853,6 @@
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="J4Qccb04KUgNumE2q7Lb2g" Bounds="1898,67,409,83" ShowValueBox="true" isIOBox="true" Value="For completeness (This is an 'extended' tutorial after all) we will look at some other differences if you use SpreadBuilder to better understand mutable collections. But it's mostly not recommended use outside of the performance improvement scenario.">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
@@ -1515,7 +1496,7 @@
     ************************ MyRecord ************************
 
 -->
-          <Node Name="MyRecord" Bounds="402,-68" Id="PNPMSshnyn1PNEIfGHY4ga">
+          <Node Name="MyRecord" Bounds="402,-75" Id="PNPMSshnyn1PNEIfGHY4ga">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="RecordDefinition" Name="Record" />
             </p:NodeReference>
