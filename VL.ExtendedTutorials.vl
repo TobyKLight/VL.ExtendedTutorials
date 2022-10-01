@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OV54Z61Hwm7NJtNnYgvxbC" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="OV54Z61Hwm7NJtNnYgvxbC" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="QOHc9deuEM6OJwpEnGIMll">
     <Canvas Id="F2bRfUBWC6QLijgk8OakA2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -23,5 +23,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="E3WY4pvWkGnP2gwiS8vFIe" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="E3WY4pvWkGnP2gwiS8vFIe" Location="VL.CoreLib" Version="2021.4.10" />
 </Document>
