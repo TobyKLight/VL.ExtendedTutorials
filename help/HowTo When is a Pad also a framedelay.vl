@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="N3AYhIhQRA6QExbhnIPbML" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="N3AYhIhQRA6QExbhnIPbML" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="OLRY0JDeVHjMdHXSMgHbmX">
     <Canvas Id="K126rpWm9SkNuHNqjtdOLK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -156,7 +156,7 @@
             <Pin Id="H1zGFbr3SJAOqUGfLAKseI" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="HxDndImROe3MQAp0Xdb4Vi" Comment="" Bounds="742,877,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="PZOkOgWa3BiQI5jZDz9zoP" Bounds="97,902,208,131" ShowValueBox="true" isIOBox="true" Value="In this case we access the same pad elsewhere in the patch AND compare it to a value from the original logic. If the DoIncrease is running you see it's not accessing the same value abd there will be a difference of 1.">
+          <Pad Id="PZOkOgWa3BiQI5jZDz9zoP" Bounds="97,902,208,131" ShowValueBox="true" isIOBox="true" Value="In this case we access the same pad elsewhere in the patch AND compare it to a value from the original logic. If the DoIncrease is running you see it's not accessing the same value and there will be a difference of 1.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -165,7 +165,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AlDDAdqaFKfOHNIbfZMfWZ" Bounds="361,903,205,115" ShowValueBox="true" isIOBox="true" Value="In this case we compare the pad that was written and the data from the original logic. When you access data from the pad that is being written you will get the same value at the same time.">
+          <Pad Id="AlDDAdqaFKfOHNIbfZMfWZ" Bounds="361,903,205,132" ShowValueBox="true" isIOBox="true" Value="In this case we compare the pad that was written and the data from the original logic. When you access data from the pad that is being written (with an input connection) you will get the same value at the same time.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -183,7 +183,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JrfIWlRA3arLScrdMAGIsW" Bounds="315,1067,349,197" ShowValueBox="true" isIOBox="true" Value="Conclusion: be vigilant when accessing the same pad in multiple places in one patch. Take into account with your reasoning that it may not be simple to read data at the same moment that you wrote it. A long vertical chain may be better for reasoning than a cleaner patch using pads everywhere. &#xD;&#xA;&#xD;&#xA;That being said this behaviour does not always have an impact. There are many cases where just being one frame behind will have no effect on the user experience.">
+          <Pad Id="JrfIWlRA3arLScrdMAGIsW" Bounds="315,1067,349,197" ShowValueBox="true" isIOBox="true" Value="Conclusion: be vigilant when accessing the same pad in multiple places in one patch. &#xD;&#xA;Take into account with your reasoning that it may not be simple to read data at the same moment that you wrote it. A long vertical chain may be better for reasoning than a cleaner patch using pads everywhere. &#xD;&#xA;&#xD;&#xA;That being said this behaviour does not always have an impact. There are many cases where just being one frame behind will have no effect on the user experience.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -223,5 +223,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="H9o41OrBOL9O6RQgnicYc8" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="H9o41OrBOL9O6RQgnicYc8" Location="VL.CoreLib" Version="2021.4.10" />
 </Document>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NrnSk33MVX0L3c8Cil03Ae" LanguageVersion="2021.4.9.982" Version="0.128">
+<Document xmlns:p="property" Id="NrnSk33MVX0L3c8Cil03Ae" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="M3YMMFUGtRFOds7570SpbF">
     <Canvas Id="B6kocBwlLBgLD6DeRFwKhw" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -536,7 +536,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BDjT8EHakyCMkwycDBRUjD" Bounds="93,3099,334,93" ShowValueBox="true" isIOBox="true" Value="Con: With stateful operations within a record you have to be concious that the record is stored again or else these operations will never be able to iterate their internal state.">
+          <Pad Id="BDjT8EHakyCMkwycDBRUjD" Bounds="93,3099,334,93" ShowValueBox="true" isIOBox="true" Value="Con: With stateful operations within a record you have to be conscious that the record is stored again or else these operations will never be able to iterate their internal state.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -619,7 +619,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Qq0Q041zNu0NFKmXWR0NJJ" Bounds="2589,967,344,39" ShowValueBox="true" isIOBox="true" Value="Pro:Nodes that store and recall state like Undo or S+H just work  ">
+          <Pad Id="Qq0Q041zNu0NFKmXWR0NJJ" Bounds="2585,1608,344,39" ShowValueBox="true" isIOBox="true" Value="Pro:Nodes that store and recall state like Undo or S+H just work  ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -628,7 +628,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CVLJKlKU41sMI2BMijFAAS" Bounds="3024,960,389,42" ShowValueBox="true" isIOBox="true" Value="Con: Undo and S+H nodes do not work out of the box with classes">
+          <Pad Id="CVLJKlKU41sMI2BMijFAAS" Bounds="3020,1601,389,42" ShowValueBox="true" isIOBox="true" Value="Con: Undo and S+H nodes do not work out of the box with classes">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -637,7 +637,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="By57hRfp0uQOIpDNnJ32FL" Bounds="3040,1551,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Explicitily convert your runtime class to a record and store that. Takes more time to program a record AND a class but possibly worth it if using a class has other clear beneifts.">
+          <Pad Id="By57hRfp0uQOIpDNnJ32FL" Bounds="3036,2192,334,93" ShowValueBox="true" isIOBox="true" Value="Workaround: Explicitily convert your runtime class to a record and store that. Takes more time to program a record AND a class but possibly worth it if using a class has other clear beneifts.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1819,7 +1819,7 @@
             </p:NodeReference>
             <Pin Id="OvE5ug7bVt6OniKKTSkiYf" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="UMAZWrWh4KLLNUjbYvHN7K" Bounds="112,2643,345,339" ShowValueBox="true" isIOBox="true" Value="Some notes with this:&#xD;&#xA;-Can only update an object that already exists, can not pack an object that you added because the added object does not exist to be replaced in the original object. For adding you will still have to manually rebuild your parent/child structure.&#xD;&#xA;-Only works on a single object, not a spread/collection of objects (But you can also workaround this by creating a topmost container object)&#xD;&#xA;-The whole approach of this example generally with operating on child objects from the outside is not always considered best practice in object oriented programming.... It's up to you of course.">
+          <Pad Id="UMAZWrWh4KLLNUjbYvHN7K" Bounds="112,2643,345,339" ShowValueBox="true" isIOBox="true" Value="Some notes with this:&#xD;&#xA;-Can only update an object that already exists, can not pack an object that you added because the added object does not exist to be replaced in the original object. For adding you will still have to manually rebuild your parent/child structure.&#xD;&#xA;-Only works on a single object, not a spread/collection of objects (But you can also workaround this by creating a topmost container object)&#xD;&#xA;&#xD;&#xA;-The whole approach of this example generally with operating on child and grandchild objects from the outside is not always considered best practice in object oriented programming.... It's up to you of course.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2206,7 +2206,7 @@
             <Pin Id="HbmV2osE4kWOaEXB8EQzfB" Name="ByteD" Kind="OutputPin" />
           </Node>
           <Pad Id="RTVffqU5NCgQRO28vLkAKo" Comment="ByteC" Bounds="753,4248,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BneDwWzvbvDOEbDJ8uDzaD" Bounds="523,4269,399,140" ShowValueBox="true" isIOBox="true" Value="Why aren't we getting the exact same result for the class and the record? &#xD;&#xA;Looking at this simple example you can probably work it out. &#xD;&#xA;The traditional argument is that, for a more complicated application, the record approach makes it more clear exactly what's going on because the code is explicit about how the record returns from the async task to be stored.">
+          <Pad Id="BneDwWzvbvDOEbDJ8uDzaD" Bounds="523,4269,391,187" ShowValueBox="true" isIOBox="true" Value="Why aren't we getting the exact same result for the class and the record? &#xD;&#xA;Looking at this simple example you can probably work it out that the record handles the case of both triggers happening at the same time to only take result from right side. &#xD;&#xA;&#xD;&#xA;The traditional argument is that, for a more complicated application, the record approach makes it more clear exactly what's going on because the code is explicit about how the record returns from the async task to be stored.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2216,7 +2216,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="TM1SFbrjimXOp88CaKNUe2" Bounds="374,4217" />
-          <Pad Id="Gzx7LhRSxcgQJiUfY8WCae" Bounds="532,4468,359,193" ShowValueBox="true" isIOBox="true" Value="Workaround: For some people the class example is more naturally logical. You ran two increment operations so no matter where they are the class increments. &#xD;&#xA;&#xD;&#xA;If for you as a coder in your specific application it is easier for you to reason about the state of the class (eg because in your architecture is a clear divide of responsibility for writing class properties over time or usecase etc) then a class may indeed be fine for you. ">
+          <Pad Id="Gzx7LhRSxcgQJiUfY8WCae" Bounds="523,4479,359,193" ShowValueBox="true" isIOBox="true" Value="Workaround: For some people the class example is more naturally logical. You ran two increment operations so no matter where they are the class increments. &#xD;&#xA;&#xD;&#xA;If for you as a coder in your specific application it is easier for you to reason about the state of the class (eg because in your architecture is a clear divide of responsibility for writing class properties over time or usecase etc) then a class may indeed be fine for you. ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2498,7 +2498,7 @@
           <Pad Id="IHzqzUaiBjAOWwTp6MbgtN" Comment="ByteB" Bounds="706,5312,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HR6j21uPJN3OUJGCeuqwRV" Comment="ByteC" Bounds="726,5326,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="O22b3AAK03uPvWj5enM7o8" Comment="ByteD" Bounds="748,5346,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GMcc5t331lgNsTCxgzGDQL" Bounds="2682,121,687,36" ShowValueBox="true" isIOBox="true" Value="Difference 3: Operations involving history are easier with records">
+          <Pad Id="GMcc5t331lgNsTCxgzGDQL" Bounds="2612,91,686,71" ShowValueBox="true" isIOBox="true" Value="Difference 3: Snapshots of classes cannot be saved like records with undo or S+H etc">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4134,7 +4134,7 @@
           <Pad Id="K2xUjk1Fyx2NsD6FoTr5mN" Comment="On Data" Bounds="1733,2607,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="GyGMkH57MNZQJHEnVBHFn4" Name="Record (Immutable)" Bounds="2583,206,413,608" />
           <Overlay Id="Q24GfF3xe9CPD2Ia3Tf9CY" Name="Class (Mutable)" Bounds="3000,206,451,608" />
-          <Pad Id="Kyi3fcga3jIMOq1y1owNct" Bounds="2892,892,606,36" ShowValueBox="true" isIOBox="true" Value="Consequences">
+          <Pad Id="Kyi3fcga3jIMOq1y1owNct" Bounds="2868,1493,606,36" ShowValueBox="true" isIOBox="true" Value="Consequences">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4144,7 +4144,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OvEaPZIBV1BL11Zu7G2Jfd" Bounds="2599,903,115,33" ShowValueBox="true" isIOBox="true" Value="D3C1">
+          <Pad Id="OvEaPZIBV1BL11Zu7G2Jfd" Bounds="2579,1538,115,33" ShowValueBox="true" isIOBox="true" Value="D3C1">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4218,7 +4218,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MKdWU0EKE0wM5jvPw8bxl1" Bounds="3038,2063,336,119" ShowValueBox="true" isIOBox="true" Value="Workaround2: Serialise the class to store it without extra code.... expensive but if you don't have so much data and it doesn't change very rapidly (Example: state of all pieces on a chess board) then this might not have a real performance impact on a modern computer">
+          <Pad Id="MKdWU0EKE0wM5jvPw8bxl1" Bounds="3034,2704,336,119" ShowValueBox="true" isIOBox="true" Value="Workaround2: Serialise the class to store it without extra code.... expensive but if you don't have so much data and it doesn't change very rapidly (Example: state of all pieces on a chess board) then this might not have a real performance impact on a modern computer">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4542,9 +4542,9 @@
             <Pin Id="EkTJCIJVM2eMEzqlDuv9rN" Name="ByteD" Kind="OutputPin" />
           </Node>
           <Pad Id="Sw5JC7FtfZuNALXk4JbhJk" Comment="ByteC" Bounds="3338,731,35,23" ShowValueBox="true" isIOBox="true" />
-          <Overlay Id="UE0cDXS6NUGMLxkjUuoKNc" Name="Record (Immutable)" Bounds="2579,921,413,608" />
-          <Overlay Id="QyP5pyoAzORNYd7oPuCLwD" Name="Class (Mutable)" Bounds="3005,921,451,1871" />
-          <Node Bounds="2721,1057,65,26" Id="IcSsUU1B1LALPk5slnRyb1">
+          <Overlay Id="UE0cDXS6NUGMLxkjUuoKNc" Name="Record (Immutable)" Bounds="2575,1562,413,608" />
+          <Overlay Id="QyP5pyoAzORNYd7oPuCLwD" Name="Class (Mutable)" Bounds="3001,1562,451,1871" />
+          <Node Bounds="2717,1698,65,26" Id="IcSsUU1B1LALPk5slnRyb1">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -4556,9 +4556,9 @@
             <Pin Id="OgD7tWoafEjN1Q2HI77tGt" Name="ByteD" Kind="InputPin" />
             <Pin Id="LaMKQxBAKE5PTqtm13qTqF" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="J1cxiPNsSWfO0zpfNqQZ7P" SlotId="GzRNdO24yL5LkEX9R4JD7T" Bounds="2723,1111" />
-          <Pad Id="CEt7FBWVoBZQIpqGAf6yP6" SlotId="GzRNdO24yL5LkEX9R4JD7T" Bounds="2710,1350" />
-          <Node Bounds="2704,1163,80,84" Id="FOKDVD1Q1BMLTb63JGoya3">
+          <Pad Id="J1cxiPNsSWfO0zpfNqQZ7P" SlotId="GzRNdO24yL5LkEX9R4JD7T" Bounds="2719,1752" />
+          <Pad Id="CEt7FBWVoBZQIpqGAf6yP6" SlotId="GzRNdO24yL5LkEX9R4JD7T" Bounds="2706,1991" />
+          <Node Bounds="2700,1803,80,84" Id="FOKDVD1Q1BMLTb63JGoya3">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -4568,7 +4568,7 @@
             <Patch Id="OwpcPN19Si8No5fXcKS0RF" ManuallySortedPins="true">
               <Patch Id="OIipKNJeYQPNLxWZi2gPBu" Name="Create" ManuallySortedPins="true" />
               <Patch Id="HZl2y929D5cNUZjHDQZsOj" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="2716,1195,56,26" Id="C8jrweAHsx1NM00IP8YEvh">
+              <Node Bounds="2712,1836,56,26" Id="C8jrweAHsx1NM00IP8YEvh">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetByteA" />
@@ -4579,10 +4579,10 @@
                 <Pin Id="BkOtZisbuE3Lj6bsqFp8Pu" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="Ft5gMMSpBk6P0RdMsxWTYn" Bounds="2721,1169" Alignment="Top" />
-            <ControlPoint Id="Ie6tV2Xu2BzMZChZ05U9Jh" Bounds="2721,1241" Alignment="Bottom" />
+            <ControlPoint Id="Ft5gMMSpBk6P0RdMsxWTYn" Bounds="2717,1810" Alignment="Top" />
+            <ControlPoint Id="Ie6tV2Xu2BzMZChZ05U9Jh" Bounds="2717,1883" Alignment="Bottom" />
           </Node>
-          <Node Bounds="2827,1081,45,19" Id="RRQmHD6p0XwMFOv4kaFN9n">
+          <Node Bounds="2823,1722,45,19" Id="RRQmHD6p0XwMFOv4kaFN9n">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -4594,7 +4594,7 @@
             <Pin Id="Oq4qjlrMKG8PHNBplptD4P" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="LKfEINg8yIMPgeVzVLw2W3" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="2826,1114" Id="O8uVGKCaEdePJNjVTQnDsb">
+          <Node Bounds="2822,1755,85,19" Id="O8uVGKCaEdePJNjVTQnDsb">
             <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Map" />
@@ -4606,12 +4606,12 @@
             <Pin Id="VNrY44qOyBUP1CfPPBi4DY" Name="Output Maximum" Kind="InputPin" DefaultValue="255" />
             <Pin Id="UN7UOV5ybxXMfEMHDY0O7m" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="K5e8ldracBeQIO6oejNWFx" Comment="Period" Bounds="2834,1068,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="K5e8ldracBeQIO6oejNWFx" Comment="Period" Bounds="2830,1709,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="2828,1140,47,19" Id="Ulq5Il9ktdBLF7ilp5hxna">
+          <Node Bounds="2824,1781,47,19" Id="Ulq5Il9ktdBLF7ilp5hxna">
             <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToByte" />
@@ -4619,8 +4619,8 @@
             <Pin Id="VBfVjmkUHxyLsjb5Fwxnxm" Name="Input" Kind="InputPin" />
             <Pin Id="BtI27DGnVBuNl76DpQzcJS" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="CmuU5CGY4oYOdkEsB7sQnr" Comment="" Bounds="2827,1173,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Q5YomArq6jKLaobaT6JJTu" Comment="DoSetByteA" Bounds="2703,1127,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="CmuU5CGY4oYOdkEsB7sQnr" Comment="" Bounds="2823,1814,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Q5YomArq6jKLaobaT6JJTu" Comment="DoSetByteA" Bounds="2699,1768,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4629,7 +4629,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="2703,1311,105,19" Id="KcadxaHajCgNzSriY8bJId">
+          <Node Bounds="2699,1952,105,19" Id="KcadxaHajCgNzSriY8bJId">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Undo" />
@@ -4644,7 +4644,7 @@
             <Pin Id="UvaG5vGr2lSNiUhydd6Zx9" Name="Count" Kind="OutputPin" />
             <Pin Id="VFYsi7nSyawPmmYjUiQogM" Name="Pointer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="2708,1371,65,26" Id="Vd98pbxzP4qOHb4byQZnk7">
+          <Node Bounds="2704,2012,65,26" Id="Vd98pbxzP4qOHb4byQZnk7">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -4656,8 +4656,8 @@
             <Pin Id="S8mNmP93QHeOUuozPdmMd3" Name="ByteC" Kind="OutputPin" />
             <Pin Id="IG8eufdFY4OQd68e55dOil" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Pad Id="JjRuBahZy2hNb6UazEwTSV" Comment="ByteA" Bounds="2711,1422,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KYz7ApSHmzJMjfPiwEWrQg" Comment="Push" Bounds="2765,1277,38,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="JjRuBahZy2hNb6UazEwTSV" Comment="ByteA" Bounds="2707,2063,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KYz7ApSHmzJMjfPiwEWrQg" Comment="Push" Bounds="2761,1918,38,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4666,7 +4666,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Uu5J2NocQQtP5N4Qm7JYpX" Comment="Undo" Bounds="2850,1272,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Uu5J2NocQQtP5N4Qm7JYpX" Comment="Undo" Bounds="2846,1913,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4675,7 +4675,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="2459,1675,65,26" Id="Rt9D3R6yjOqPbFbSBotCq1">
+          <Node Bounds="2455,2316,65,26" Id="Rt9D3R6yjOqPbFbSBotCq1">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -4687,9 +4687,9 @@
             <Pin Id="FPWRsKA2OWkOowFAQOfF3b" Name="ByteD" Kind="InputPin" />
             <Pin Id="AMjmCMbIudeOgfdhObeOZN" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="EE00mP8hX4LPgO4qR7D6iz" SlotId="HreDDWmD2CmLItlYbgPoX6" Bounds="2461,1729" />
-          <Pad Id="DKJjwzLeN2kN0HZEfgHcB9" SlotId="HreDDWmD2CmLItlYbgPoX6" Bounds="2446,2056" />
-          <Node Bounds="2442,1779,80,88" Id="RqR26TsyQXhQAT48j9e50q">
+          <Pad Id="EE00mP8hX4LPgO4qR7D6iz" SlotId="HreDDWmD2CmLItlYbgPoX6" Bounds="2457,2370" />
+          <Pad Id="DKJjwzLeN2kN0HZEfgHcB9" SlotId="HreDDWmD2CmLItlYbgPoX6" Bounds="2442,2697" />
+          <Node Bounds="2438,2419,80,88" Id="RqR26TsyQXhQAT48j9e50q">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -4699,7 +4699,7 @@
             <Patch Id="HWoeOSKvmNoO4b0lhXOMh0" ManuallySortedPins="true">
               <Patch Id="S1br9kN5SLQNEqHEDrzMVY" Name="Create" ManuallySortedPins="true" />
               <Patch Id="SW6kzPfRtBGNaSBojqOguM" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="2454,1813,56,26" Id="EbFPCbjJcaJNob8MexTmDp">
+              <Node Bounds="2450,2454,56,26" Id="EbFPCbjJcaJNob8MexTmDp">
                 <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetByteA" />
@@ -4710,10 +4710,10 @@
                 <Pin Id="I6zrsjIUQ6AMK7nCvXgFZv" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="N3pAF0iJVu1Lu4A6nv6E8L" Bounds="2459,1785" Alignment="Top" />
-            <ControlPoint Id="HoLOYV0wa4qPwMQnxXeTJC" Bounds="2459,1861" Alignment="Bottom" />
+            <ControlPoint Id="N3pAF0iJVu1Lu4A6nv6E8L" Bounds="2455,2426" Alignment="Top" />
+            <ControlPoint Id="HoLOYV0wa4qPwMQnxXeTJC" Bounds="2455,2503" Alignment="Bottom" />
           </Node>
-          <Node Bounds="2565,1699,45,19" Id="F07qQqXOEe7MvFQER3ZhKd">
+          <Node Bounds="2561,2340,45,19" Id="F07qQqXOEe7MvFQER3ZhKd">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -4725,7 +4725,7 @@
             <Pin Id="BUERalue4xzMPBxOokUEJO" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="PY3rgPEea1dMnMcZMx1Do3" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="2564,1732,85,19" Id="Tkmkxfdq8vRLZuu8NEKPP9">
+          <Node Bounds="2560,2373,85,19" Id="Tkmkxfdq8vRLZuu8NEKPP9">
             <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Map" />
@@ -4737,12 +4737,12 @@
             <Pin Id="Gv5HdP4uZlBPtjCJAEwBJD" Name="Output Maximum" Kind="InputPin" DefaultValue="255" />
             <Pin Id="K2fH9cMuOOXMMIUAinN1Wg" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="CViDgjPfjTEPcEvCUeBvSm" Comment="Period" Bounds="2572,1677,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="CViDgjPfjTEPcEvCUeBvSm" Comment="Period" Bounds="2568,2318,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="2566,1758,47,19" Id="LiMrnmKj4eYNf7qHFxQEIB">
+          <Node Bounds="2562,2399,47,19" Id="LiMrnmKj4eYNf7qHFxQEIB">
             <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToByte" />
@@ -4750,8 +4750,8 @@
             <Pin Id="FFkP0ogvzGHMlZai0lZxds" Name="Input" Kind="InputPin" />
             <Pin Id="Btr7TKbxToqNpqnh49ckst" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="GyDvwwmWHIOQO5hRDSvBeJ" Comment="" Bounds="2565,1791,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Kd6nPqB90V0NIRjDr8u1tO" Comment="DoSetByteA" Bounds="2441,1745,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GyDvwwmWHIOQO5hRDSvBeJ" Comment="" Bounds="2561,2432,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Kd6nPqB90V0NIRjDr8u1tO" Comment="DoSetByteA" Bounds="2437,2386,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4760,7 +4760,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="2439,2017,105,19" Id="TuSkEinNEaqMEgLpPGxKGO">
+          <Node Bounds="2435,2658,105,19" Id="TuSkEinNEaqMEgLpPGxKGO">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Undo" />
@@ -4775,7 +4775,7 @@
             <Pin Id="APF4ID2RpVQOZQjOvmxDMM" Name="Count" Kind="OutputPin" />
             <Pin Id="BH7tePXmiJsPot6LSfG5VJ" Name="Pointer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="2444,2077,65,26" Id="SIDBQTuotgSP9KgEx5LZLD">
+          <Node Bounds="2440,2718,65,26" Id="SIDBQTuotgSP9KgEx5LZLD">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -4787,8 +4787,8 @@
             <Pin Id="JhmvD5wSmMwPVITptrQ9ka" Name="ByteC" Kind="OutputPin" />
             <Pin Id="TGOUxssHZwBOkmmRUfqc8s" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Pad Id="UQB8cEPyJBDMyBpByoPfmC" Comment="ByteA" Bounds="2447,2128,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="2494,1916,57,19" Id="FXUtVajbgcnNEs6rPa1Im1">
+          <Pad Id="UQB8cEPyJBDMyBpByoPfmC" Comment="ByteA" Bounds="2443,2769,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="2490,2557,57,19" Id="FXUtVajbgcnNEs6rPa1Im1">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -4797,7 +4797,7 @@
             <Pin Id="AhUtLkMdCjwQP0G6qU6rVp" Name="Result" Kind="OutputPin" />
             <Pin Id="OJG0wDRK9tVPhOzbcPncRH" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="Q7lteWQfwNaLvRDl3qXET5" Comment="Push" Bounds="2498,1946,38,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Q7lteWQfwNaLvRDl3qXET5" Comment="Push" Bounds="2494,2587,38,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4806,7 +4806,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PeMReXw9i8FORpqpqYEiSt" Comment="Undo" Bounds="2615,1847,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PeMReXw9i8FORpqpqYEiSt" Comment="Undo" Bounds="2611,2488,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4815,7 +4815,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="2497,1983,37,19" Id="OiF4a1JBoRgLh2uIyHr0IZ">
+          <Node Bounds="2493,2624,37,19" Id="OiF4a1JBoRgLh2uIyHr0IZ">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AND" />
@@ -4824,7 +4824,7 @@
             <Pin Id="UuRWc60uNfAL5Cn9mAOU4a" Name="Input 2" Kind="InputPin" />
             <Pin Id="K1MROSTEBOXLHwn0j1dR0U" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="2574,1924,37,19" Id="BkbF4Im3OcaQUNlpS4UEOt">
+          <Node Bounds="2570,2565,37,19" Id="BkbF4Im3OcaQUNlpS4UEOt">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -4832,7 +4832,7 @@
             <Pin Id="L9p359CgEUjLVHAgPuzNJZ" Name="Input" Kind="StateInputPin" />
             <Pin Id="PESIw5gpPezNBPgpM7HNfT" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="2574,1955,69,19" Id="SjcYxZ4bnxKMlYkj572r4H">
+          <Node Bounds="2570,2596,69,19" Id="SjcYxZ4bnxKMlYkj572r4H">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
@@ -4840,8 +4840,8 @@
             <Pin Id="V6rEd4sMolLMAoOhJ1A1vg" Name="Value" Kind="InputPin" />
             <Pin Id="AtZBIl3tvjpNaTXKzdPgN9" Name="Value" Kind="OutputPin" />
           </Node>
-          <Overlay Id="LWMP0KJgpkdPhPB1TLVaGx" Name="Record (Immutable)" Bounds="2338,1536,413,669" />
-          <Pad Id="SN8GTCyt4JJQNWQBL3bgTx" Bounds="2361,1582,340,93" ShowValueBox="true" isIOBox="true" Value="BONUS: You can use Change detection on a RECORD to auto push the undo node, but you must ensure that it does not push when you request an undo or you will incorrectly store twice the state you are stepping back to.">
+          <Overlay Id="LWMP0KJgpkdPhPB1TLVaGx" Name="Record (Immutable)" Bounds="2334,2177,413,669" />
+          <Pad Id="SN8GTCyt4JJQNWQBL3bgTx" Bounds="2357,2223,340,93" ShowValueBox="true" isIOBox="true" Value="BONUS: You can use Change detection on a RECORD to auto push the undo node, but you must ensure that it does not push when you request an undo or you will incorrectly store twice the state you are stepping back to.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4850,8 +4850,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="EsWJXrftMPGNY41w9TIOuv" Bounds="2703,1271" />
-          <Node Bounds="3130,1043,65,26" Id="HtJiUX1q4yxPKjSsxJfGfY">
+          <ControlPoint Id="EsWJXrftMPGNY41w9TIOuv" Bounds="2699,1912" />
+          <Node Bounds="3126,1684,65,26" Id="HtJiUX1q4yxPKjSsxJfGfY">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -4863,9 +4863,9 @@
             <Pin Id="KxgH8coMnjRM3xfUudMoGM" Name="ByteD" Kind="InputPin" />
             <Pin Id="CQpSCXuMD6LNsyqBrCKdgc" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="NiTB26WYczWO69zE38MPZ4" SlotId="V0FseLVLCl1L33cTBaCbPG" Bounds="3132,1097" />
-          <Pad Id="MyQvUaXwItNLDJhfg5NluY" SlotId="V0FseLVLCl1L33cTBaCbPG" Bounds="3119,1336" />
-          <Node Bounds="3113,1148,80,85" Id="VYow6a1xPhNPD7T3sI2etK">
+          <Pad Id="NiTB26WYczWO69zE38MPZ4" SlotId="V0FseLVLCl1L33cTBaCbPG" Bounds="3128,1738" />
+          <Pad Id="MyQvUaXwItNLDJhfg5NluY" SlotId="V0FseLVLCl1L33cTBaCbPG" Bounds="3115,1977" />
+          <Node Bounds="3109,1789,80,86" Id="VYow6a1xPhNPD7T3sI2etK">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -4875,7 +4875,7 @@
             <Patch Id="B653CRP75J9LHRxjcrADyq" ManuallySortedPins="true">
               <Patch Id="GDxuMXRb9ISPYaaBP2Zv5f" Name="Create" ManuallySortedPins="true" />
               <Patch Id="DXHwy2WuBfYM7Ep4qFEeF0" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="3125,1181,56,26" Id="FL2yyPdkh3cMQPZKWGShUX">
+              <Node Bounds="3121,1822,56,26" Id="FL2yyPdkh3cMQPZKWGShUX">
                 <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetByteA" />
@@ -4886,10 +4886,10 @@
                 <Pin Id="MR3uOtyGwbzOFXBflGrnvh" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="BCaQRYisKMyPt8iCH2dl9x" Bounds="3130,1155" Alignment="Top" />
-            <ControlPoint Id="VQVgScRY8pbNQvHzdzhs63" Bounds="3130,1228" Alignment="Bottom" />
+            <ControlPoint Id="BCaQRYisKMyPt8iCH2dl9x" Bounds="3126,1795" Alignment="Top" />
+            <ControlPoint Id="VQVgScRY8pbNQvHzdzhs63" Bounds="3126,1869" Alignment="Bottom" />
           </Node>
-          <Node Bounds="3236,1067,45,19" Id="FWVReWU5LOGQZOmKkHt17j">
+          <Node Bounds="3232,1708,45,19" Id="FWVReWU5LOGQZOmKkHt17j">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -4901,7 +4901,7 @@
             <Pin Id="RUMflX22o2GOL3ZLqLorhq" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="G2wB4EjKioxMUKr7e1MS6q" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3235,1100,85,19" Id="DVdygnpHCTsOZbtw4DNeHy">
+          <Node Bounds="3231,1741,85,19" Id="DVdygnpHCTsOZbtw4DNeHy">
             <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Map" />
@@ -4913,12 +4913,12 @@
             <Pin Id="RdfCfyo5taSQXkmhVfJ3sV" Name="Output Maximum" Kind="InputPin" DefaultValue="255" />
             <Pin Id="Vf0gphABq75PBBT7jDYi2h" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="NKSVWxL4YlcMNXkDZsUbGH" Comment="Period" Bounds="3243,1054,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="NKSVWxL4YlcMNXkDZsUbGH" Comment="Period" Bounds="3239,1695,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="3237,1126,47,19" Id="RzNdLrsaV2PMQaMh8y34Xo">
+          <Node Bounds="3233,1767,47,19" Id="RzNdLrsaV2PMQaMh8y34Xo">
             <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToByte" />
@@ -4926,8 +4926,8 @@
             <Pin Id="TPdmu30My1qNOkkgQyWdaM" Name="Input" Kind="InputPin" />
             <Pin Id="JaCrF0OcpemLR0GN79Tfc7" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Makrz9nVG40NWZbRjI2B1M" Comment="" Bounds="3236,1159,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TLImGtdSm8JL4UL2QYkEmC" Comment="DoSetByteA" Bounds="3112,1113,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Makrz9nVG40NWZbRjI2B1M" Comment="" Bounds="3232,1800,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TLImGtdSm8JL4UL2QYkEmC" Comment="DoSetByteA" Bounds="3108,1754,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4936,7 +4936,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="3112,1297,105,19" Id="De1fIIzMdjILkvsKfamSAx">
+          <Node Bounds="3108,1938,105,19" Id="De1fIIzMdjILkvsKfamSAx">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Undo" />
@@ -4951,7 +4951,7 @@
             <Pin Id="APjrbiBatiXMqnYVb2SOwy" Name="Count" Kind="OutputPin" />
             <Pin Id="UMjOVqs9I22N1XRIJ4lO7p" Name="Pointer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3117,1357,65,26" Id="P9dZVTj8rQFLUsFPcmTFb0">
+          <Node Bounds="3113,1998,85,26" Id="P9dZVTj8rQFLUsFPcmTFb0">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -4964,8 +4964,8 @@
             <Pin Id="RC0Y2KgaW3mMfKX4GZaL61" Name="ByteC" Kind="OutputPin" />
             <Pin Id="OljpwRx4wHrLKMcWX4ZjgW" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Pad Id="HtZLjtG00pkLhIx6VPZiWc" Comment="ByteA" Bounds="3137,1407,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Mybpva9qBkPPybNy8rLEwC" Comment="Push" Bounds="3174,1263,38,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="HtZLjtG00pkLhIx6VPZiWc" Comment="ByteA" Bounds="3133,2048,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Mybpva9qBkPPybNy8rLEwC" Comment="Push" Bounds="3170,1904,38,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4974,7 +4974,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IcUqaOsdVBdPRz0SoYj5E8" Comment="Undo" Bounds="3259,1258,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="IcUqaOsdVBdPRz0SoYj5E8" Comment="Undo" Bounds="3255,1899,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -4983,8 +4983,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="CnjQKQyiHK2PgMpxE76kgG" Bounds="3112,1257" />
-          <Node Bounds="3145,1784,85,26" Id="RfwzwvoZsJRLYvpxOejPRk">
+          <ControlPoint Id="CnjQKQyiHK2PgMpxE76kgG" Bounds="3108,1898" />
+          <Node Bounds="3141,2425,85,26" Id="RfwzwvoZsJRLYvpxOejPRk">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -4997,7 +4997,7 @@
             <Pin Id="MB2s1YvS0sqQFl6gt8fsD7" Name="ByteC" Kind="OutputPin" />
             <Pin Id="BprbvMOxyBqOz4TgJyAcY6" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3166,1821,65,26" Id="PMgEeyu8ajkP6YGQe1twJo">
+          <Node Bounds="3162,2462,65,26" Id="PMgEeyu8ajkP6YGQe1twJo">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -5009,7 +5009,7 @@
             <Pin Id="OQx8r2QoIzQLcS7wmAOsTx" Name="ByteD" Kind="InputPin" />
             <Pin Id="FnRcBrWrJJML1dDKoSpslx" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="3152,1860,105,19" Id="Ohl6sAv2ODROST7ZTmFVcX">
+          <Node Bounds="3148,2501,105,19" Id="Ohl6sAv2ODROST7ZTmFVcX">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Undo" />
@@ -5024,7 +5024,7 @@
             <Pin Id="MRPbCSb0UEvMVoWGVQ8pWC" Name="Count" Kind="OutputPin" />
             <Pin Id="Hx7dCf49yoQMxb7ee17N0e" Name="Pointer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3152,1890,65,26" Id="RsSj29KoG7lM3eXlfgNzL2">
+          <Node Bounds="3148,2531,65,26" Id="RsSj29KoG7lM3eXlfgNzL2">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -5036,7 +5036,7 @@
             <Pin Id="CIT0clZXMxFOSvxPahlsJN" Name="ByteC" Kind="OutputPin" />
             <Pin Id="MjNDkTH0w0GPmlGlNVIWsO" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3132,1932,85,26" Id="PadrmYYyexHPUzLhaCAbZC">
+          <Node Bounds="3128,2573,85,26" Id="PadrmYYyexHPUzLhaCAbZC">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -5049,9 +5049,9 @@
             <Pin Id="ELp0G2kROvwNYO8qKKT9pJ" Name="ByteD" Kind="InputPin" />
             <Pin Id="PrqGFD8dzwhN1o7yOm5Tfw" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <ControlPoint Id="G8z0CXadUTBOyFwGLczmiy" Bounds="3134,1820" />
-          <Pad Id="TI30mkpJYK1OzTxs3UqL3a" SlotId="LZ5f6MxoBg1NW72qcaZkcn" Bounds="3146,1648" />
-          <Pad Id="B9Axs5sB1JnMU9Hpb2cUUM" Comment="Push" Bounds="3272,1780,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <ControlPoint Id="G8z0CXadUTBOyFwGLczmiy" Bounds="3130,2461" />
+          <Pad Id="TI30mkpJYK1OzTxs3UqL3a" SlotId="LZ5f6MxoBg1NW72qcaZkcn" Bounds="3142,2289" />
+          <Pad Id="B9Axs5sB1JnMU9Hpb2cUUM" Comment="Push" Bounds="3268,2421,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -5060,7 +5060,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="V6Eb4wwkWKhNDwFXXQSue7" Comment="Undo" Bounds="3309,1818,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="V6Eb4wwkWKhNDwFXXQSue7" Comment="Undo" Bounds="3305,2459,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -5069,7 +5069,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="3129,1975,85,26" Id="QIRrPbYmjS2NxAXnAoS38q">
+          <Node Bounds="3125,2616,85,26" Id="QIRrPbYmjS2NxAXnAoS38q">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -5082,7 +5082,7 @@
             <Pin Id="UlY3spBLRQSLl94PPTCB3n" Name="ByteC" Kind="OutputPin" />
             <Pin Id="K4TFXqK1jHNNKdzRefjKn6" Name="ByteD" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3134,1687,103,84" Id="U2GUEPin53GPf4iIBXCmP8">
+          <Node Bounds="3130,2328,103,84" Id="U2GUEPin53GPf4iIBXCmP8">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -5092,7 +5092,7 @@
             <Patch Id="GRT4PHt7twiLECfgm8Oj9m" ManuallySortedPins="true">
               <Patch Id="AvFGYM7aL0kLHLEuVqk28a" Name="Create" ManuallySortedPins="true" />
               <Patch Id="BsBihQ1Cv10NGyrLWf0SaT" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="3146,1719,79,26" Id="Sgw9zqBaKkuPXqtjDVrnuR">
+              <Node Bounds="3142,2360,79,26" Id="Sgw9zqBaKkuPXqtjDVrnuR">
                 <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MyClass" />
@@ -5103,10 +5103,10 @@
                 <Pin Id="LeITQCY3FhtPZpkpx9E3LD" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="PXAfhcIS0RqNz2lOlku9ns" Bounds="3149,1694" Alignment="Top" />
-            <ControlPoint Id="PDJCQfwcmrGNwgpOfgoMvq" Bounds="3149,1766" Alignment="Bottom" />
+            <ControlPoint Id="PXAfhcIS0RqNz2lOlku9ns" Bounds="3145,2335" Alignment="Top" />
+            <ControlPoint Id="PDJCQfwcmrGNwgpOfgoMvq" Bounds="3145,2407" Alignment="Bottom" />
           </Node>
-          <Pad Id="HDLsA1ov5c4Ohbn63EYRRJ" Comment="DoAnimate" Bounds="3137,1671,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="HDLsA1ov5c4Ohbn63EYRRJ" Comment="DoAnimate" Bounds="3133,2312,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -5115,8 +5115,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NkayKljEEmWNT0zJYmBjxX" Comment="ByteC" Bounds="3190,2015,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="3172,2160,50,26" Id="MhCSaqy8sEhL08Z58U2AWG">
+          <Pad Id="NkayKljEEmWNT0zJYmBjxX" Comment="ByteC" Bounds="3186,2656,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="3168,2801,50,26" Id="MhCSaqy8sEhL08Z58U2AWG">
             <p:NodeReference LastCategoryFullName="Main.ArmClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="ArmClass" />
@@ -5124,7 +5124,7 @@
             </p:NodeReference>
             <Pin Id="Molg2I7VTOUP14MfLWAiSP" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="3185,2403,105,19" Id="LaC2KR253rKMJvaSp5SgZQ">
+          <Node Bounds="3181,3044,105,19" Id="LaC2KR253rKMJvaSp5SgZQ">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Undo" />
@@ -5139,7 +5139,7 @@
             <Pin Id="EolrDP7xhRWNnXrf1WFHsQ" Name="Count" Kind="OutputPin" />
             <Pin Id="Bj8qxEmvFjLM43eHOymGqZ" Name="Pointer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3159,2276,79,80" Id="Fx4zsQUCrDzMZTUW9YNy9c">
+          <Node Bounds="3155,2917,79,80" Id="Fx4zsQUCrDzMZTUW9YNy9c">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -5149,7 +5149,7 @@
             <Patch Id="ABTOHQpM0vqPvhNf1n0IoW" ManuallySortedPins="true">
               <Patch Id="GEAChJtx45sNhIIP7ciGWu" Name="Create" ManuallySortedPins="true" />
               <Patch Id="DejbfdAEFfsLQ1Z5nVL5e6" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="3172,2307,54,19" Id="NFP8MoHwpC1NisHy4oJJGM">
+              <Node Bounds="3168,2948,54,19" Id="NFP8MoHwpC1NisHy4oJJGM">
                 <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastSymbolSource="System.Serialization.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Serialize (Xml)" />
@@ -5159,10 +5159,10 @@
                 <Pin Id="R1GvhRgXc1TPF11fiUV8v1" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="FoV3lK1M2UjPmHuMq8axFP" Bounds="3173,2350" Alignment="Bottom" />
-            <ControlPoint Id="LO1T7BbvneKNaEFM790cDC" Bounds="3173,2282" Alignment="Top" />
+            <ControlPoint Id="FoV3lK1M2UjPmHuMq8axFP" Bounds="3169,2991" Alignment="Bottom" />
+            <ControlPoint Id="LO1T7BbvneKNaEFM790cDC" Bounds="3169,2923" Alignment="Top" />
           </Node>
-          <Pad Id="TQUee2JkcG7MCwZM1Yc5Ui" Comment="RemoveFinger&amp;Push" Bounds="3248,2179,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="TQUee2JkcG7MCwZM1Yc5Ui" Comment="RemoveFinger&amp;Push" Bounds="3244,2820,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -5171,8 +5171,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EOa1I3ve2kUPYmIuUjwyQB" Comment="" Bounds="2977,2414,139,215" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="2974,2376,36,19" Id="QGiuGYDVOU3O5Miuk90RfK">
+          <Pad Id="EOa1I3ve2kUPYmIuUjwyQB" Comment="" Bounds="2983,3085,139,215" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="2980,3047,36,19" Id="QGiuGYDVOU3O5Miuk90RfK">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="S+H" />
@@ -5182,19 +5182,19 @@
             <Pin Id="TZ4Ba3WaqtDPi0sjOx5GAl" Name="Sample" Kind="InputPin" />
             <Pin Id="OD3McU5dLtPQOIZdQF8qFd" Name="Value" Kind="OutputPin" />
           </Node>
-          <Node Bounds="3157,2442,107,80" Id="RRtje6idkkHP0f6eJIjaDS">
+          <Node Bounds="3153,3083,107,80" Id="RRtje6idkkHP0f6eJIjaDS">
             <p:NodeReference>
               <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
             <Pin Id="N26uvmo0ho7N9WlI6aftGl" Name="Condition" Kind="InputPin" />
-            <ControlPoint Id="IoknJILfKfjOzdGNNcpCjQ" Bounds="3171,2516" Alignment="Bottom" />
-            <ControlPoint Id="RsdWZIJPEoyLg8B8EYxImn" Bounds="3171,2448" Alignment="Top" />
+            <ControlPoint Id="IoknJILfKfjOzdGNNcpCjQ" Bounds="3167,3157" Alignment="Bottom" />
+            <ControlPoint Id="RsdWZIJPEoyLg8B8EYxImn" Bounds="3167,3089" Alignment="Top" />
             <Patch Id="DIrTHYCWnxkOWliAzLDequ" ManuallySortedPins="true">
               <Patch Id="QU9cLA4oj8uPjSfR8P1IiL" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Q5TyuEHJ6VkOcjYFkituVC" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="3186,2474,66,19" Id="R7VO7xgQJISODPQn9a23TI">
+              <Node Bounds="3182,3115,66,19" Id="R7VO7xgQJISODPQn9a23TI">
                 <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastSymbolSource="System.Serialization.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Deserialize (Xml)" />
@@ -5205,8 +5205,8 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="GCnOQtGxPT6N6VzhwPToFf" SlotId="UsIcssrkLAJPJGnYK6sIz2" Bounds="3175,2563" />
-          <Pad Id="FxfMGmP9RuXOnnVDsbuPXq" Comment="Undo" Bounds="3262,2364,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GCnOQtGxPT6N6VzhwPToFf" SlotId="UsIcssrkLAJPJGnYK6sIz2" Bounds="3171,3204" />
+          <Pad Id="FxfMGmP9RuXOnnVDsbuPXq" Comment="Undo" Bounds="3258,3005,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -5215,8 +5215,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="N7jbRcKj4K0QPG8JImySzh" Bounds="3158,2406" />
-          <Node Bounds="3172,2210,80,26" Id="Hb7spzf2uepMw6Jgp6lPUF">
+          <ControlPoint Id="N7jbRcKj4K0QPG8JImySzh" Bounds="3154,3047" />
+          <Node Bounds="3168,2851,80,26" Id="Hb7spzf2uepMw6Jgp6lPUF">
             <p:NodeReference LastCategoryFullName="Main.ArmClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="RemoveFinger" />
@@ -5225,9 +5225,9 @@
             <Pin Id="CepS21IrsS5McHtgMhWrb9" Name="Output" Kind="StateOutputPin" />
             <Pin Id="L9Ef34A4fJdNCnyaG7wBZG" Name="Apply" Kind="InputPin" />
           </Node>
-          <ControlPoint Id="LQvkFhERxCqPJSQkgzvI1C" Bounds="3137,2258" />
-          <ControlPoint Id="C44zlRzWiXVLUGoOIyQwe8" Bounds="3132,2426" />
-          <Node Bounds="3170,2582,77,26" Id="FQ2TK3LLDsUNSZKQoB88mO">
+          <ControlPoint Id="LQvkFhERxCqPJSQkgzvI1C" Bounds="3133,2899" />
+          <ControlPoint Id="C44zlRzWiXVLUGoOIyQwe8" Bounds="3128,3067" />
+          <Node Bounds="3166,3223,77,26" Id="FQ2TK3LLDsUNSZKQoB88mO">
             <p:NodeReference LastCategoryFullName="Main.ArmClass" LastSymbolSource="Explanation Mutants 02 Pros and Cons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="ArmClass" />
@@ -5237,9 +5237,9 @@
             <Pin Id="MOAK3HkxTadMziUuBkHYY7" Name="Output" Kind="StateOutputPin" />
             <Pin Id="OT4u8g6h4spL96tKfQJLPr" Name="FingerCount" Kind="OutputPin" />
           </Node>
-          <Pad Id="LA1lXdKnmPHOdqHsxPOEuc" SlotId="UsIcssrkLAJPJGnYK6sIz2" Bounds="3174,2202" />
-          <Pad Id="HkSKrnuIluVQWfsDZKnN9g" Comment="FingerCount" Bounds="3245,2618,35,15" ShowValueBox="true" isIOBox="true" />
-          <ControlPoint Id="NNZsBMU2PkHPXEHx5uzs2n" Bounds="3247,2369" />
+          <Pad Id="LA1lXdKnmPHOdqHsxPOEuc" SlotId="UsIcssrkLAJPJGnYK6sIz2" Bounds="3170,2843" />
+          <Pad Id="HkSKrnuIluVQWfsDZKnN9g" Comment="FingerCount" Bounds="3241,3259,35,15" ShowValueBox="true" isIOBox="true" />
+          <ControlPoint Id="NNZsBMU2PkHPXEHx5uzs2n" Bounds="3243,3010" />
           <Overlay Id="UTqQE9FbVyDMWq36ABHgMK" Name="Record (Immutable)" Bounds="3679,196,413,608" />
           <Overlay Id="SSh0coGimu7OHpblaMY2RW" Name="Class (Mutable)" Bounds="4107,196,451,608" />
           <Pad Id="CxT1t5kYHZBPePw5JjmVLU" SlotId="TeoDXWNW39LM8hu511UORf" Bounds="3846,315" />
@@ -6884,7 +6884,7 @@
               <Item>Steak</Item>
             </p:Value>
           </Pad>
-          <Pad Id="HKD6lyhCEA4P9M1xiemJG9" Bounds="525,7670,390,142" ShowValueBox="true" isIOBox="true" Value="This is because the operation 'intends' to give you the result by mutating an object you create and provide to it. This might be a standard .net object (eg MutableArray) or a custom type provided by the library itself.&#xD;&#xA;&#xD;&#xA;If you see this pattern this is also a red flag to check if you should manually dispose the object. See the section of this gray book page on 'resource providers' ">
+          <Pad Id="HKD6lyhCEA4P9M1xiemJG9" Bounds="525,7670,390,157" ShowValueBox="true" isIOBox="true" Value="This is because the operation 'intends' to give you the result by mutating an object you create and provide to it. This might be a standard .net object (eg MutableArray) or a custom type provided by the library itself.&#xD;&#xA;&#xD;&#xA;If you see this pattern this is also a red flag to check if you should manually dispose the object. See the section of this gray book page on 'resource providers' ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -7311,6 +7311,108 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="UXpu3lAVSa3NXsLKBFXrgp" Comment="ByteA" Bounds="1772,3617,35,15" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="TPpgvW2JcXwMN4QQDGM5C8" Name="Class (Mutable)" Bounds="3001,837,451,564" />
+          <Pad Id="LkhnHyHuas6MjjKEKGCoG8" Bounds="3016,901,429,53" ShowValueBox="true" isIOBox="true" Value="To explicitly create a new instance of a class look for a 'clone' operation. This could be used for something like S+H type functionality. (However many classes do not have clone operations.)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="3048,998,47,26" Id="HxLFd1a9JZ5MRY4rp036gE">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="LineTo" />
+            </p:NodeReference>
+            <Pin Id="Cgk7xoryr0mOTI2D9mXg3V" Name="Input" Kind="InputPin" />
+            <Pin Id="F6jIXizWLlmP8AUBwutn6W" Name="Point" Kind="InputPin" />
+            <Pin Id="BlTKpFEwGPzP7QSXMmka9N" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Edgnki6aIMqLAm04lZGqvq" Comment="Point" Bounds="3093,971,35,28" ShowValueBox="true" isIOBox="true" Value="-0.18, 0.43">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="3048,1119,65,26" Id="UBbXzsi4PDtM1VdAzKsNav">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CubicTo (Relative)" />
+            </p:NodeReference>
+            <Pin Id="RTI02W1iFuKOoaZy3grFUQ" Name="Input" Kind="InputPin" />
+            <Pin Id="LJJ3myfFTWcLSrL753AoaW" Name="Control Point 1" Kind="InputPin" DefaultValue="0.4, -0.57" />
+            <Pin Id="FbmyUvLQDgtQOylhmfvqY6" Name="Control Point 2" Kind="InputPin" DefaultValue="-0.69, 0.3" />
+            <Pin Id="Q9n2gFe1fNQNwwk2Fwnvz4" Name="EndPoint" Kind="InputPin" DefaultValue="-0.24, -0.52" />
+            <Pin Id="G4yq8waY7OQNRcsr1n8C1i" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Dscq0MVpmuFM8qPQWNCmBW" Comment="" Bounds="3014,1196,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="3238,1056,42,26" Id="ErbpcVc1yvsQa8MXEuI8hK">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.SKPath" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Clone" />
+              <CategoryReference Kind="ClassType" Name="SKPath" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="E04yWHsINUaOcbheDaQF4F" Name="Path" Kind="InputPin" />
+            <Pin Id="FtEdAxhnPswLBs9uEYNJ58" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="3236,1124,65,26" Id="LTQ8gBSlSp6N9bgwiB5hve">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CubicTo (Relative)" />
+            </p:NodeReference>
+            <Pin Id="G6tV8lmo1e0P2XhaeUCEfa" Name="Input" Kind="InputPin" />
+            <Pin Id="CWpxYVhP41cLsFOuIU6aNC" Name="Control Point 1" Kind="InputPin" DefaultValue="1.6, -0.34" />
+            <Pin Id="H5uzQRq28QgMkJc09Tw0tT" Name="Control Point 2" Kind="InputPin" DefaultValue="0.42, 0.66" />
+            <Pin Id="Gb5lDguks4LLoRyETR3WK7" Name="EndPoint" Kind="InputPin" DefaultValue="1.72, -0.25" />
+            <Pin Id="DdZ2QU7DOpKPhoI3A5g8qL" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JVEzj3GmAkCPRGImcKiuAQ" Comment="" Bounds="3236,1190,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="3049,1079,47,26" Id="AOmIcaqc99GNo7qmxnMkw6">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="LineTo" />
+            </p:NodeReference>
+            <Pin Id="L2blEui6u3yPq7PQ6hvTMb" Name="Input" Kind="InputPin" />
+            <Pin Id="LiByZEeIGPsQDp7LzfwzTU" Name="Point" Kind="InputPin" DefaultValue="-1.08, 0.33" />
+            <Pin Id="RtwV8TG81smM3KXxPjF8nV" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FRFpaP6VDpvPTww7zgfkst" Bounds="3178,1007,190,19" ShowValueBox="true" isIOBox="true" Value="Try with and without the clone">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PdftinDs47pN9612cAAR0Z" Bounds="3291,1048,203,52" ShowValueBox="true" isIOBox="true" Value="With the clone its clear a new instance of the line starts from this point">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UyvQfiH5jOxOLInkq5jXty" Bounds="3300,1111,218,77" ShowValueBox="true" isIOBox="true" Value="Without clone there is only one path and it's unreliable which verison of it will be displayed where">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="L334E9gtrCsLipr70r8mzt" Bounds="3009,879,388,19" ShowValueBox="true" isIOBox="true" Value="Workaround">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="IQ923PnybQ4OJYMHAkmA4n" Name="Create" ParticipatingElements="NJG1Pmp0liIL1EtJ4tXYIb,ELO5E1WBZLEMobUyS68ei6,GIgr0Om17cWNXjmQUNUWZg,LrsHFPeD8PKO4cjfbxIuk3,BCeVfGYT0MrQUbLPnvTEqI,U5PXnzbasL1MOtg1QHB8nP,VZrz5yqtps8N2FzB88X0WB,FoPbKo15hFFOUiHMrG03q0,VR8OU1nm5wgPpCOScq3OKx,OsCyKraOqy5O5xk1AqpByD,DBYRw5bRa7RNNv6JtykB7Z,HogMkheRDAHLJfVhEFu01H,GolxjgM7YXzM0S2a6ZROoB,LKRLRgWSC0TOYBKVBfhtpg,KopNTc2NmlJNpzwSDcwFDO,O5EYHnA4fXWNyzN4RBKANL,F0mjvg5b8OBQP9rZJZiIlQ,OPpD6Bvv6U0NhnfGj3HZhT,SeNfGXYU8uzN0aSjO1NOqf,MGyWJ1ZIIqHOPaO4CJzlan,FuO0co4aVyiOXcbjUGexm0" />
         <Patch Id="BT5USJr5CQWNJRFF1y2Qi0" Name="Update" ParticipatingElements="LH2u45DsVuiLDVsUjMQkMt" />
@@ -7997,9 +8099,16 @@
         <Link Id="AxZdQSLW2yZPkEaHUzVtef" Ids="MaeZ8DmPewuN7S2vVreDkZ,CSTsJ1dZ8TWN09e30KALLl" />
         <Link Id="KIXY7QMurjML7ZjwzinuUE" Ids="KBkfrNLQNJPLHBrFMgbl7S,UXpu3lAVSa3NXsLKBFXrgp" />
         <Link Id="SrTUd3xTcIRMibAKvoFJIn" Ids="MBgIT7eCiKdLD0obbwiDvV,FqT032FMJ6kMN2Zx8gLsnf" />
+        <Link Id="Oh5YEZDrsYLL8ytkwte9GM" Ids="Edgnki6aIMqLAm04lZGqvq,F6jIXizWLlmP8AUBwutn6W" />
+        <Link Id="E3ka2VD70qaPdqKjeDxpaU" Ids="BlTKpFEwGPzP7QSXMmka9N,E04yWHsINUaOcbheDaQF4F" />
+        <Link Id="N971179qpoTNpUKSzFA6Wr" Ids="FtEdAxhnPswLBs9uEYNJ58,G6tV8lmo1e0P2XhaeUCEfa" />
+        <Link Id="AO2aZuiRpraMYaijVDo9Qo" Ids="G4yq8waY7OQNRcsr1n8C1i,Dscq0MVpmuFM8qPQWNCmBW" />
+        <Link Id="GFJNXhxF6JwMCXpHZ4r0HI" Ids="DdZ2QU7DOpKPhoI3A5g8qL,JVEzj3GmAkCPRGImcKiuAQ" />
+        <Link Id="BY8pgjlJabyQYEXYym8GG9" Ids="BlTKpFEwGPzP7QSXMmka9N,L2blEui6u3yPq7PQ6hvTMb" />
+        <Link Id="NRZbTSTDLUqL9QP1mpCPZY" Ids="RtwV8TG81smM3KXxPjF8nV,RTI02W1iFuKOoaZy3grFUQ" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="L0tLQhzXEmtOBs6mb6TsSw" Location="VL.CoreLib" Version="2021.4.9" />
-  <NugetDependency Id="PSlxZAFLIB2NlpHfDG9zXL" Location="VL.Skia" Version="2021.4.9" />
+  <NugetDependency Id="L0tLQhzXEmtOBs6mb6TsSw" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="PSlxZAFLIB2NlpHfDG9zXL" Location="VL.Skia" Version="2021.4.10" />
 </Document>
