@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="QUw2XeyDKt3M3ojP28C0QQ" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="QUw2XeyDKt3M3ojP28C0QQ" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="Sk8hIGeTwa3M3BjvQYkLyp">
     <Canvas Id="JoC5UZkosVpPNksqmg8pCB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -260,11 +260,6 @@
                 <ControlPoint Id="OkcrztIBlO7Pz2SnWqLYJb" Bounds="1131,712" />
                 <ControlPoint Id="Kgb8METwhGbLc7LdpltBAD" Bounds="806,614" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="DVTp0fFgXUeOPUGkk11PVP" IsHidden="true">
                 <Fragment Id="QXhnvgrQ7QFMwRGOsE24AX" Patch="D39eVDuq6QRLjUqVsYU6OD" Enabled="true" />
                 <Fragment Id="Vn36SBc4Q4QLUjZCoEZzRv" Patch="C3IKzuniVjaPCB2XucNeCS" />
@@ -864,6 +859,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QkecPffIihrNkGyNIvxfWS" Location="VL.CoreLib" Version="2021.4.7" />
-  <NugetDependency Id="IDQwinmzgeYP7itqcVyvjZ" Location="VL.Skia" Version="2021.4.7" />
+  <NugetDependency Id="QkecPffIihrNkGyNIvxfWS" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="IDQwinmzgeYP7itqcVyvjZ" Location="VL.Skia" Version="2021.4.10" />
 </Document>

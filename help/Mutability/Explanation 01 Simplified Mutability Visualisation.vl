@@ -18,7 +18,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="1121, 36, 400, 261" />
+              <Pin Id="ASBn3qfGrkeLQYLKtScc0Z" Name="Bounds" Kind="InputPin" DefaultValue="1120, 36, 400, 260" />
               <Pin Id="VWldKJBiaMfQcFlxYz5rfU" Name="Input" Kind="InputPin" />
               <Pin Id="Vt1WteIbd0TMJT1kxi2RrX" Name="Color" Kind="InputPin" />
               <Pin Id="SuKJ4ZTh3QLPnTrEbImAJ6" Name="Clear" Kind="InputPin" />
@@ -1100,7 +1100,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="NjaX1X55NzTM5DDI1SEJCz" Name="Bounds" Kind="InputPin" DefaultValue="928, 305, 586, 288" />
+              <Pin Id="NjaX1X55NzTM5DDI1SEJCz" Name="Bounds" Kind="InputPin" DefaultValue="928, 304, 585, 288" />
               <Pin Id="KxD4xvPet6iQZ45Wa6cVGH" Name="Input" Kind="InputPin" />
               <Pin Id="CW0BiceLbHlQBANM61NREf" Name="Color" Kind="InputPin" />
               <Pin Id="EVFrIySFZ4eLe51KoJeyfE" Name="Clear" Kind="InputPin" />
@@ -3111,6 +3111,24 @@
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">6</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EoENofzdKZtLwqZtMu7Pjv" Bounds="315,-317,275,19" ShowValueBox="true" isIOBox="true" Value="This helppatch is available as a video tutorial">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FavIYetF73iNKrq4c0CSaW" Bounds="317,-297,281,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/zGufG64WSF4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>

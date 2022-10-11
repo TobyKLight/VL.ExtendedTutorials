@@ -2365,6 +2365,24 @@
           <Pad Id="FyzTKPcnIe8OVfXx2OBU0u" Comment="" Bounds="687,2677,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Ie5QDtxuSFKMRArGDpRVVt" Comment="" Bounds="801,2374,161,89" ShowValueBox="true" isIOBox="true" />
           <Pad Id="LJM1YmOhiyJL0cgy2EWs6K" Comment="" Bounds="808,2562,146,110" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DvWutGnED7iMWp0iBZsDpR" Bounds="341,-358,275,19" ShowValueBox="true" isIOBox="true" Value="This helppatch is available as a video tutorial">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IY2SU5UtAnZLnCxMtf0SIR" Bounds="343,-338,281,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/zGufG64WSF4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="IQ923PnybQ4OJYMHAkmA4n" Name="Create" />
         <Patch Id="BT5USJr5CQWNJRFF1y2Qi0" Name="Update" />

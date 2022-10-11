@@ -1794,6 +1794,24 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="KMdfhRrbJCwPeldhYSmOrB" Bounds="255,-285,275,19" ShowValueBox="true" isIOBox="true" Value="This helppatch is available as a video tutorial">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T3wxdOJHsNgNMElVEpX0cH" Bounds="257,-265,281,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/zGufG64WSF4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="F5d7uYrYSlVMhg96nnxw2I" Name="Create" ParticipatingElements="UoH20cbQDzxOymBDhYB598,IioxNDttu9ENC4HKSMYmkw" />
         <Patch Id="CZncBhJDnxuQMbh496P9iX" Name="Update" />
