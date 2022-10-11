@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="KttuchERx1VNntsgQkA3be">
     <Canvas Id="EjLDhR9Gpq4OkYaoktGR7O" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -72,7 +72,7 @@
             <Pin Id="MucAOBEKW4KONKjJd49rIG" Name="Enabled" Kind="InputPin" />
             <Pin Id="IfgtIEfchG7OIthNWxQ5gd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,254,249" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox can be buggy, if you don't see the white square hover mouse over the output of the rectangle node) ">
+          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,261,254" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox visual can be buggy, if you don't see the white square hover mouse over the output of the rectangle node) ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -289,7 +289,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="J4peL2o7cl8PKec6eGLbI0" Bounds="1171,881,259,297" ShowValueBox="true" isIOBox="true" Value="..This time you get an error. The GetItem node rightly points out it can't get any item from an array index that does not exist. &#xD;&#xA;&#xD;&#xA;What is the difference? &#xD;&#xA;Array is a raw .net collection type which is much stricter with how it's used. It will throw errors when abused.&#xD;&#xA;&#xD;&#xA;Spread is a nice vvvv gamma collection type, instead of errors it has lots of 'safe' but possibly unexpected default behaviour. &#xD;&#xA;(Like if you ask for an out of range index it wraps around)&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="J4peL2o7cl8PKec6eGLbI0" Bounds="1171,881,259,297" ShowValueBox="true" isIOBox="true" Value="..This time you get an error. The GetItem node rightly points out it can't get any item from an array index that does not exist. &#xD;&#xA;&#xD;&#xA;What is the difference? &#xD;&#xA;Array is a raw .net collection type which is much stricter with how it's used. It will throw errors when abused.&#xD;&#xA;&#xD;&#xA;Spread is a nice vvvv gamma collection type, instead of errors it has lots of 'safe' but possibly unexpected default behaviour. &#xD;&#xA;(Eg if you ask for an out of range index it wraps around)&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -370,6 +370,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.7" />
-  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.7" />
+  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.10" />
 </Document>
