@@ -6,10 +6,10 @@
     <title>VL.ExtendedTutorials</title>
     <authors>TobyKLight</authors>
     <owners>TobyKLight</owners>
-    <projectUrl>https://github.com/TobyKLight/VL.PolyTools</projectUrl>
+    <projectUrl>https://github.com/TobyKLight/VL.ExtendedTutorials</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Further helppatches for vvvv gamma covering intermediate topics</summary>
-    <description></description>
+    <description>Topics include Mutability (Record vs Class), Solving Cyclic problems and understanding when a Pad will also act as a framedelay </description>
     <tags>VL, vvvv, mutability, tutorial</tags>
 	<license type="expression">MIT</license>
 	<dependencies>
