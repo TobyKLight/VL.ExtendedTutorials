@@ -20,5 +20,9 @@ https://youtu.be/zGufG64WSF4
 ## First steps with Records
 https://youtu.be/RXDRfqLbc74
 
+# Version History
+v1.0.2 
+* Ensured compatibility with 2022.4.11-1312 (RC4) 
+
 # Contributing
 If you'd like to contribute just open an issue to talk about the subject you want to cover

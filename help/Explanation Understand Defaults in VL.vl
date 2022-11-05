@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.10.1043" Version="0.128">
+<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.11.1312" Version="0.128">
   <Patch Id="KttuchERx1VNntsgQkA3be">
     <Canvas Id="EjLDhR9Gpq4OkYaoktGR7O" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -14,7 +14,7 @@
       </p:NodeReference>
       <Patch Id="FQxjGn7ElpZNxT9rWaprI5">
         <Canvas Id="F8yqq6QxjpWLor4NL6p2pN" CanvasType="Group">
-          <Overlay Id="I9aRD74hR4fM6Thn1Ghnvi" Name="Case1 - Default value of single instance" Bounds="188,284,307,664" />
+          <Overlay Id="I9aRD74hR4fM6Thn1Ghnvi" Name="Case1 - Default value of single instance" Bounds="188,284,307,719" />
           <Overlay Id="EHAJHPbHdMMNDTp5vbXXQq" Name="Case2 - Default value of spread" Bounds="504,283,307,918" />
           <Pad Id="VYDRYJrlblEOFko11JHZWo" Bounds="207,353,247,55" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangle' with a type of Rectangle, but do not give it any input....">
             <p:TypeAnnotation>
@@ -45,7 +45,7 @@
             <Pin Id="MucAOBEKW4KONKjJd49rIG" Name="Enabled" Kind="InputPin" />
             <Pin Id="IfgtIEfchG7OIthNWxQ5gd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,261,254" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox visual can be buggy, if you don't see the white square hover mouse over the output of the rectangle node) ">
+          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,248,301" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox visual can be buggy, You should see a white square. If you don't see the white square try restarting with F9 and ensure 'Show Object Details' is off under the tooltip section of the settings menu (top right)) ">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -121,15 +121,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="PjnTAIKQiAeOuuR9hBJdqF" Bounds="521,912,258,270" ShowValueBox="true" isIOBox="true" Value="...You see nothing. &#xD;&#xA;This is because the DEFAULT value for a spread is that it contains ZERO items. &#xD;&#xA;&#xD;&#xA;That ForEach loop is not running as zero slices are arriving with the input spread to be processed. &#xD;&#xA;&#xD;&#xA;When supplying an empty spread to ForEach regions you won't get an error. The system assumes you are intentionally supplying zero slices so it is correct behaviour to run the loop zero times.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="EUEPEcdlo1sNKIhPul5Kud" Bounds="569,1738,253,96" ShowValueBox="true" isIOBox="true" Value="Conclusion - Spreads . single instances, and other collection types differ in their default behaviour. This can  ometimes explain unexpected behaviour.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -306,11 +297,6 @@
                 <Pin Id="PdnYzeQ0BkoMQ5jY0pWYK7" Name="Number" Kind="InputPin" DefaultValue="10" />
               </Patch>
               <Patch Id="BT6LWVM5MPXLxlTkUfl20y" Name="Update" />
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="HDPzAPGxNv3QRtB4nd70JQ" IsHidden="true">
                 <Fragment Id="RYI7SqaQbMMQRy03UZWVvf" Patch="CSN5DeWb7BRN3zXmoCQ6Aa" Enabled="true" />
                 <Fragment Id="PIBdeScW3jmLQOuwlguNGK" Patch="BT6LWVM5MPXLxlTkUfl20y" Enabled="true" />
@@ -800,6 +786,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.10" />
-  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.11-1312-ga0521d8f1e" />
+  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.11-1312-ga0521d8f1e" />
 </Document>
