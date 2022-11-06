@@ -357,7 +357,7 @@
             <Pin Id="Np3TQH1BGZ4L4MzfQqb6yh" Name="Name" Kind="OutputPin" />
             <Pin Id="R19qWtz8Wb1L1fvZ7FhuAT" Name="Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="D0AtSE72lyROwMkRFg2Iv2" Bounds="1476,900,251,119" ShowValueBox="true" isIOBox="true" Value="If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties">
+          <Pad Id="D0AtSE72lyROwMkRFg2Iv2" Bounds="1473,897,270,257" ShowValueBox="true" isIOBox="true" Value="Don't do this! &#xD;&#xA;&#xD;&#xA;If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly (as at 2021.4.11)&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties&#xD;&#xA;-It may not create state for internal processes to access &#xD;&#xA;-It may not be supported in future &#xD;&#xA;&#xD;&#xA;see&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -376,7 +376,7 @@
             <Pin Id="SH5koYZ9AnoOFuG0LbpmbF" Name="Number" Kind="InputPin" />
             <Pin Id="OgNCqBGsXjLLRdDYdNjSmJ" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="1552,750,67,26" Id="QT76aqRLigNLoVtPojq39V">
+          <Node Bounds="1553,736,67,26" Id="QT76aqRLigNLoVtPojq39V">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -386,12 +386,12 @@
             <Pin Id="Gaxh1zlRjGhMPdYXDFykkt" Name="Number" Kind="InputPin" />
             <Pin Id="FZsDmSgw8EaQCDSiPbMyat" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="IX2jBxRdXluNRN6Q0ieCdZ" Comment="" Bounds="1616,729,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="IX2jBxRdXluNRN6Q0ieCdZ" Comment="" Bounds="1617,715,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1551,817,51,26" Id="EdL6WpcX5EKNGGBiEPa2pw">
+          <Node Bounds="1552,803,51,26" Id="EdL6WpcX5EKNGGBiEPa2pw">
             <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
@@ -410,8 +410,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FPAE3zoTaGdM0wEMf5VzXp" Comment="Name" Bounds="1551,852,91,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VMC4CXBBDCSL1Th95Ao34w" Comment="Number" Bounds="1600,870,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FPAE3zoTaGdM0wEMf5VzXp" Comment="Name" Bounds="1552,838,91,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VMC4CXBBDCSL1Th95Ao34w" Comment="Number" Bounds="1601,856,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MA0PI1brSTpOOkCqNB940X" Comment="Name" Bounds="1555,575,78,12" ShowValueBox="true" isIOBox="true" />
           <Pad Id="T1TJUYfETC0MIlINAdkwbH" Comment="Number" Bounds="1603,596,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="VOqyuytE4evNYPA2RfEdf8" Name="Case6 - Default value of class when we start from an operation other than create" Bounds="1780,280,307,885" />
@@ -513,7 +513,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1845,813,45,26" Id="KcMJpQMIHxNM380Hg20nVU">
+          <Node Bounds="1846,799,45,26" Id="KcMJpQMIHxNM380Hg20nVU">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -524,7 +524,7 @@
             <Pin Id="RigykudpntCM3S2U2t3N2b" Name="Name" Kind="OutputPin" />
             <Pin Id="RpX38LCFT5bLvvAol3d6QU" Name="Number" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1846,743,67,26" Id="CwqmH6stOZsQKjoZMT8W5C">
+          <Node Bounds="1847,729,67,26" Id="CwqmH6stOZsQKjoZMT8W5C">
             <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
@@ -534,9 +534,9 @@
             <Pin Id="RSL4q1JWXJCLjDcpXbMCBM" Name="Number" Kind="InputPin" />
             <Pin Id="DZCJnwAHRpVNjfg9vDuIFx" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="S6Lvj8GEMtqODAGfU8ONdw" Comment="Name" Bounds="1862,851,67,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RdzvhbhgOrwLxc10zZRi2r" Comment="Number" Bounds="1886,868,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="AZZtDojt0izOml3YfdEUrZ" Comment="Number" Bounds="1912,726,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="S6Lvj8GEMtqODAGfU8ONdw" Comment="Name" Bounds="1863,837,67,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RdzvhbhgOrwLxc10zZRi2r" Comment="Number" Bounds="1887,854,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AZZtDojt0izOml3YfdEUrZ" Comment="Number" Bounds="1913,712,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -550,7 +550,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CHs2aimRD6eO8JYEuZrGTH" Bounds="1797,901,266,219" ShowValueBox="true" isIOBox="true" Value="If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties&#xD;&#xA;&#xD;&#xA;NOTE in this case you do get some vvvv safe behaviour and it's NOT giving you a null reference error like a programming purist might expect.">
+          <Pad Id="CHs2aimRD6eO8JYEuZrGTH" Bounds="1796,894,264,259" ShowValueBox="true" isIOBox="true" Value="Don't do this! &#xD;&#xA;&#xD;&#xA;If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly (as at 2021.4.11)&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties&#xD;&#xA;-It will not create state for internal processes to access &#xD;&#xA;-It may not be supported in future &#xD;&#xA;&#xD;&#xA;see&#xD;&#xA;">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -693,6 +693,24 @@
             </p:NodeReference>
             <Pin Id="EhenwOZyErSPfPuzoYPrkH" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="NRnQjqIYsmcP1ARvzNPTX9" Bounds="1476,1152,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/does-implied-creation-of-a-class-also-create-state-for-internal-processes/20965/4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QzNOQD1r1cSL3pNzwsbFTb" Bounds="1799,1150,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/does-implied-creation-of-a-class-also-create-state-for-internal-processes/20965/4">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="PQbvQdwulFTNa1YUh9AmD0" Name="Create" />
         <Patch Id="BKDMwpxFGzRN5nOhQJgOLT" Name="Update" />

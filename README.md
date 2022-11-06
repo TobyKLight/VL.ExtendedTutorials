@@ -21,6 +21,9 @@ https://youtu.be/zGufG64WSF4
 https://youtu.be/RXDRfqLbc74
 
 # Version History
+V1.0.3 
+* Fixed error in the understanding defaults helppatch 
+
 v1.0.2 
 * Ensured compatibility with 2022.4.11-1312 (RC4) 
 
