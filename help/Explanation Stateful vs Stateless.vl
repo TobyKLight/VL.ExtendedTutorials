@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="IchUEKXKixEOZp62BQJBbH" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
+  <NugetDependency Id="E80uaJo9aDrMN9MkXxHBeA" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
+  <Patch Id="AibenJItzPpOhXpYGv4MwY">
+    <Canvas Id="EqoJ9McAsv8LNIjrCEdneV" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ Node ************************
+
+-->
+      <Node Name="Node" Bounds="200,100" Id="IAUnFSvqd0gMzznnI62X3r">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="VpxlHHL29UULFZOiyN5D8c">
+          <Canvas Id="B0fwGjDgBD5O5TQYWhEwr3" BordersChecked="false" CanvasType="Group" />
+          <Patch Id="FCELRTSbjhdPoqWpf1h1Sk" Name="Create" />
+          <Patch Id="Awx8gryoYelL6nx1YwWKwd" Name="Update" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="KGLjrwgYbeVMR7GeqjVK5b">
+            <Fragment Id="GLZLr4Dm8dLOKCj7CP3mS4" Patch="FCELRTSbjhdPoqWpf1h1Sk" Enabled="true" />
+            <Fragment Id="Pz10Pfl0EGyNKLEEEAEpFW" Patch="Awx8gryoYelL6nx1YwWKwd" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SXCmUumPf0KLxwFPEsjvOR">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="ERjFcsetNGiO4BAOO6dmce">
+        <Canvas Id="GiEVpkd3nN1Mb2usjyXnw0" CanvasType="Group">
+          <Overlay Id="QHjj2w8lqpdPd8hxsnTEpy" Name="What is Stateful vs Stateless?" Bounds="496,231,534,143" />
+          <Pad Id="I8Rch0SY6JZOXWO5FG0ER7" Bounds="504,276,483,103" ShowValueBox="true" isIOBox="true" Value="Simply stateful objects can 'have state', &#xD;&#xA;EG remember things between frames &#xD;&#xA;EG have pads. &#xD;&#xA;&#xD;&#xA;Stateless objects cant. &#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="OgimYT0MGC0PXIot4vPHuy" Name="Which objects are stateless?" Bounds="494,471,534,307" />
+          <Pad Id="AC3wo7vRH6RMcRThjJnfzD" Bounds="515,513,337,17" ShowValueBox="true" isIOBox="true" Value="In vvvv gamma basically static operations are stateless">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MyOperation ************************
+
+-->
+          <Node Name="MyOperation" Bounds="631,573,80,80" Id="Kqo6Pkj31oSMhmbv7ob3ua">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="FWXZWBIZy1QPy0LBpNbmLj" />
+          </Node>
+          <Pad Id="NB17cf8lVC9MMyyzfgUseF" Bounds="720,590,271,58" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try and create a pad in here, it doesn't appear in the nodebrowser. If you copy paste a pad inside it will show an error">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NIg9JC5xjVZPoRqbqaRMNn" Bounds="512,698,382,83" ShowValueBox="true" isIOBox="true" Value="Processes, Records and Classes CAN have state.&#xD;&#xA;The root application patch of a document CAN have state. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CRZKOpfdN0VNuXmiQ7rqPP" SlotId="IhWjhzbm2GVLgPrz1WlBdG" Bounds="874,667" />
+          <Overlay Id="Tl6myCUpz7BPOkSTXSh3Sq" Name="What if a stateless object contains stateful objects?" Bounds="494,808,534,416" />
+          <Pad Id="VBfxHmaJM2oNycRQO2M2qQ" Bounds="515,851,438,39" ShowValueBox="true" isIOBox="true" Value="The internal stateful object will run BUT any state will essentially restart every frame. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="588,951,62,19" Id="RQHAIEhzh5BOh2I5nprqsw">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Integrator" />
+            </p:NodeReference>
+            <Pin Id="FmEYYQp73f4PFmqjPG6FcZ" Name="Initial Value" Kind="InputPin" />
+            <Pin Id="V3AICZYB5KkNJB5yWYRCLY" Name="Offset" Kind="InputPin" />
+            <Pin Id="FRm2WjducBgOwm5iUWkaNP" Name="Reset Value" Kind="InputPin" />
+            <Pin Id="NiiPp0Dxi9NLdw3dnhPzID" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GlpU70i1vYILlRFkLO3fTl" Comment="Offset" Bounds="619,917,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HXg0jRX8pF8MBRJ4F51X1u" Comment="" Bounds="590,985,59,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="O9JZCQhQW7ZOsC5aS3HnDe" Bounds="650,953,308,39" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; this integrator process needs state so it can add to itself each frame. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ IntegratorOp ************************
+
+-->
+          <Node Name="IntegratorOp" Bounds="584,1046,142,112" Id="QHanzH19aVJOAI6T0Rz24k">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="KG3mCMC1uyAMtITd68kp0w">
+              <Node Bounds="598,1095,62,19" Id="GVUFbeefyt2NlQzSpLw2fP">
+                <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Integrator" />
+                </p:NodeReference>
+                <Pin Id="IkKit45kgyDPIsVq7tDIqN" Name="Initial Value" Kind="InputPin" />
+                <Pin Id="LmGKFxa3QxnL4Vma7aQklg" Name="Offset" Kind="InputPin" />
+                <Pin Id="RZ6n39rzaVYQNCt6whNNy3" Name="Reset Value" Kind="InputPin" />
+                <Pin Id="DeBKaRsi43HMkiJo2gPv1q" Name="Value" Kind="OutputPin" />
+              </Node>
+              <Pad Id="Po2LVXPuOsCNMz4RUobG3k" Comment="Offset" Bounds="629,1074,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="GLD3dLsyplcNfKtQQZZFtC" Ids="Po2LVXPuOsCNMz4RUobG3k,LmGKFxa3QxnL4Vma7aQklg" />
+              <Pad Id="JHDXcoM4rp1M56N8TAA04Z" Comment="" Bounds="601,1130,35,15" ShowValueBox="true" isIOBox="true" />
+              <Link Id="OoARyo9NMwWNOO3ZAsvhZ7" Ids="DeBKaRsi43HMkiJo2gPv1q,JHDXcoM4rp1M56N8TAA04Z" />
+              <ControlPoint Id="LbofmqmPcE1O21wvEBEuQ8" Bounds="598,1141" />
+              <Link Id="JLBB64nieWXL1Pu3X7jlzp" Ids="JHDXcoM4rp1M56N8TAA04Z,LbofmqmPcE1O21wvEBEuQ8" />
+              <Pin Id="DaeIdiugzTCP0vbzoLeoyu" Name="Output" Kind="OutputPin" Bounds="595,1134" />
+              <Link Id="EEEoYElf5fNPZcCx8YQxvX" Ids="LbofmqmPcE1O21wvEBEuQ8,DaeIdiugzTCP0vbzoLeoyu" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Node Bounds="761,1073" Id="SUOtDbT3QfqOyoBhaYjN5N">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IntegratorOp" />
+            </p:NodeReference>
+            <Pin Id="KY1BveCbPFUNovwOhtHU1l" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Gb1stBidhSLPJNZbtRrzJK" Comment="" Bounds="762,1109,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EtKOzJUzMP0O9WFGZ9gWVx" Bounds="836,1082,180,154" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The integrator inside a stateless context stays at 1 because its not able to write its state. It essentially restarts every frame&#xD;&#xA;You also get a yellow warning. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IQ9yfPS05EOMVMuwSK7nrp" Bounds="498,1750,501,58" ShowValueBox="true" isIOBox="true" Value="Remember a process / record / class does not necessarily have to rely on internal state to do something useful. You can create an effectively stateless process/record/class that might make sense to call in a static operation. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VFAnCF2Lh7SO1glx77LUsE" Name="Case: You can use an effectively stateless process in a stateless context" Bounds="495,1683,543,393" />
+          <Overlay Id="U0P75Jl262NPBo2BaAhsH3" Name="What if a stateful object contains stateful objects?" Bounds="494,1244,534,416" />
+          <Pad Id="UL83T60fbbKMJQBpRqxIr6" Bounds="538,1289,448,120" ShowValueBox="true" isIOBox="true" Value="Then the internal stateful objects can access the context of their containing object to write changes to their own state. &#xD;&#xA;NOTE 1: See the Mutability tutorials for the difference between how classes and records need to be managed to write their state. &#xD;&#xA;NOTE 2: Ensure your containing object is formally created. In some circumstances 'Default' objects may not initialise internal state properly. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MyIntegratorClass ************************
+
+-->
+          <Node Name="MyIntegratorClass" Bounds="685,1462" Id="KJeiKpAl0RjPcjK7MzrlQa">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="ClassDefinition" Name="Class" />
+            </p:NodeReference>
+            <Patch Id="DNOGYM5WgrEPjZSsvGjb3i">
+              <Canvas Id="MRo1gz2PYs8PkJALCVILfU" CanvasType="Group">
+                <Node Bounds="936,858" Id="MiceTrWdLBIPEOA4kQ61kT">
+                  <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Integrator" />
+                  </p:NodeReference>
+                  <Pin Id="RhNNFJEmgliOhY8ooZ6bHi" Name="Initial Value" Kind="InputPin" />
+                  <Pin Id="IUCKUFj5M7GQB0SdvG7Vti" Name="Offset" Kind="InputPin" />
+                  <Pin Id="FtxDhoZa6szPlyDaMKaS5U" Name="Reset Value" Kind="InputPin" />
+                  <Pin Id="QrP0YjFYAQ1PhZRl3AyrbE" Name="Value" Kind="OutputPin" />
+                </Node>
+                <Pad Id="FeCPsAkI0gwOVnqZJ4UyCM" Comment="Offset" Bounds="966,826,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="Netq6eRPQLGNOl7ONXtmCi" Comment="" Bounds="938,901,35,15" ShowValueBox="true" isIOBox="true" />
+                <ControlPoint Id="UAKD12TkABBLvvD4X5AUOi" Bounds="937,933" />
+              </Canvas>
+              <Patch Id="Btk7zK1S14rQZntk1ixflp" Name="Create" />
+              <!--
+
+    ************************  ************************
+
+-->
+              <ProcessDefinition Id="HQnuzdgMCWsMiPgyk7KJ82" IsHidden="true">
+                <Fragment Id="BoUr3JqEqYvOvALVWgDFi3" Patch="Btk7zK1S14rQZntk1ixflp" Enabled="true" />
+                <Fragment Id="BEjRweMjHXqL7Wkd9MKOBN" Patch="Q5trVDisC6UP8GPEUdb0Lg" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="MzGdiD3JCe2PD3XBr84jh9" Ids="FeCPsAkI0gwOVnqZJ4UyCM,IUCKUFj5M7GQB0SdvG7Vti" />
+              <Link Id="EzMHwNrHyqCMgtj4E2PDjp" Ids="QrP0YjFYAQ1PhZRl3AyrbE,Netq6eRPQLGNOl7ONXtmCi" />
+              <Link Id="Bwqoy2EcFx8MpPOdbV74Wq" Ids="Netq6eRPQLGNOl7ONXtmCi,UAKD12TkABBLvvD4X5AUOi" />
+              <Link Id="Mi4oWk1gDHzPvVzSMuwrHG" Ids="UAKD12TkABBLvvD4X5AUOi,RukOVOA9PKCPWoYCPOrPGE" IsHidden="true" />
+              <Patch Id="Q5trVDisC6UP8GPEUdb0Lg" Name="Update">
+                <Pin Id="RukOVOA9PKCPWoYCPOrPGE" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Patch>
+          </Node>
+          <Node Bounds="709,1479,81,26" Id="IGEJsn8lHMNM1ZIM7bqZqy">
+            <p:NodeReference LastCategoryFullName="Main.MyIntegratorClass" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="AKnSMIl2TJmMlEnGS1k7NL" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="A7yZdfMu1ZzO8DazgqEZ25" SlotId="REb53QLM0koLLZkE0x1D12" Bounds="711,1531" />
+          <Node Bounds="710,1551,81,26" Id="KU330VHGlfSLORrT81JVgD">
+            <p:NodeReference LastCategoryFullName="Main.MyIntegratorClass" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
+              <Choice Kind="OperationCallFlag" Name="Update" />
+            </p:NodeReference>
+            <Pin Id="H0JIIkFVRgZNdLzserVlrb" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Ci8TU58YZWpMi99uUxaV0w" Name="State Output" Kind="StateOutputPin" />
+            <Pin Id="HUjznlR4zGVMCFKw8XwdRP" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="D2Bp6h8oYnULnVrSRmHItk" Comment="" Bounds="787,1600,72,14" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="AF3QxLaONEILLM6tSc4Lxo" Name="Case: Providing state from outside a static operation" Bounds="499,2105,543,546" />
+          <!--
+
+    ************************ MyIntegratorOp2 (Class based) ************************
+
+-->
+          <Node Name="MyIntegratorOp2 (Class based)" Bounds="529,2248,158,78" Id="LvUj7DgthqZOmSlPp7UyCB">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="TSt326pAcrYNcyAs5a4BKF">
+              <Node Bounds="541,2275,81,26" Id="S3kgYAFRixfLnpoi1RLuBy">
+                <p:NodeReference LastCategoryFullName="Main.MyIntegratorClass" LastDependency="Explanation Stateful vs Stateless.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
+                  <Choice Kind="OperationCallFlag" Name="Update" />
+                </p:NodeReference>
+                <Pin Id="D3o8cq5LrK6LnpPl9xziQZ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DGmeoz55lRyQV4laYbCjVf" Name="State Output" Kind="StateOutputPin" />
+                <Pin Id="CXgj5qgSKqGNIc8rFxvZfY" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="NVyoFlPHeF9OI9LougUhPp" Bounds="616,2309" />
+              <Link Id="ALY4wHYzAA7QCe1KiJVLFM" Ids="CXgj5qgSKqGNIc8rFxvZfY,NVyoFlPHeF9OI9LougUhPp" />
+              <Pin Id="VruDWxINuKoPTzjtqdvX8g" Name="Output" Kind="OutputPin" Bounds="626,2227" />
+              <Link Id="K3E7WCZZ8obMLvpWPqejJw" Ids="NVyoFlPHeF9OI9LougUhPp,VruDWxINuKoPTzjtqdvX8g" IsHidden="true" />
+              <ControlPoint Id="Oks3PgdBtCKOag2hEaJHUs" Bounds="544,2266" />
+              <Link Id="DtGNJj04wTSQSmMf2X5q3e" Ids="Oks3PgdBtCKOag2hEaJHUs,D3o8cq5LrK6LnpPl9xziQZ" />
+              <Pin Id="CdVMU7gHuNGMhHIwXpnlAB" Name="MyIntegratorClassInstance" Kind="InputPin" Bounds="554,2183" />
+              <Link Id="IiYgOMDLvblO0oo2WkwA40" Ids="CdVMU7gHuNGMhHIwXpnlAB,Oks3PgdBtCKOag2hEaJHUs" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="URvwb9Lp2o3NvW6k8kGvQY" Bounds="509,2150,509,74" ShowValueBox="true" isIOBox="true" Value="If state is provided from outside the stateless operation then the stateless operation can effectively update state by mutating an external object (for a class) or outputting an object that is saved externally (for a record). &#xD;&#xA;Again see the mutability tutorials for more details. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="742,2294,93,19" Id="QCdXJI7mGlAOy1xRe4lM26">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MyIntegratorOp2 (Class based)" />
+            </p:NodeReference>
+            <Pin Id="RrYoFCjueQtQV9XwWMM4BP" Name="MyIntegratorClassInstance" Kind="InputPin" />
+            <Pin Id="UtZG9IglvrLPM0DFhcAc9w" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CCSIClolX4qM9mLEZuWSJ2" Comment="" Bounds="746,2334,60,11" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Plv8NF1OwADNq8Z49tC5YR" SlotId="EUjlegPlaMoPuSZYslJunD" Bounds="746,2275" />
+          <Node Bounds="744,2222,81,26" Id="NSsQvHrhIKzMzlkmL3ro15">
+            <p:NodeReference LastCategoryFullName="Main.MyIntegratorClass" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="LXBCuFx5CQ8MzlPUGBgvlI" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="893,2295,93,19" Id="S4yyKe1vrhIQBlzLtX3OPZ">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MyIntegratorOp2 (Class based)" />
+            </p:NodeReference>
+            <Pin Id="SMN4FWTfjIYOqA4anxQzFU" Name="MyIntegratorClassInstance" Kind="InputPin" />
+            <Pin Id="ULnCQ0gR43dPnT3wSO7xAX" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="G1pBwXsfk26NYRjTagO4lY" Comment="" Bounds="897,2335,58,12" ShowValueBox="true" isIOBox="true" />
+          <!--
+
+    ************************ FooBarSeparator ************************
+
+-->
+          <Node Name="FooBarSeparator" Bounds="546,1853" Id="Fr02cKeY3OkMCGwV2Ed3We">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="ContainerDefinition" Name="Process" />
+            </p:NodeReference>
+            <Patch Id="EzIVBdUGI9rMU8sW29Wvir">
+              <Canvas Id="GsnXmxnrMIvMRJO8wAsXk9" CanvasType="Group">
+                <Node Bounds="957,1156" Id="Fq4blu3wUIZNgBcfE4RyTq">
+                  <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Split (String)" />
+                  </p:NodeReference>
+                  <Pin Id="He1JYt1p2a0PZebxraDlg2" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IiD0wV0FFbvMqtzDnZt5MQ" Name="Separator" Kind="InputPin" />
+                  <Pin Id="ObEuo0LEZgRQCO1XHS81yZ" Name="Options" Kind="InputPin" />
+                  <Pin Id="DdDiSaUoHchO0jUvYSHpjc" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pad Id="J1ivuUl4FI7PU5LYU7TTDw" Comment="Separator" Bounds="977,1104,35,15" ShowValueBox="true" isIOBox="true" Value=",">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <ControlPoint Id="EYB81qtpJGsL27wx9Fr1BF" Bounds="957,1068" />
+                <ControlPoint Id="DntuRQti9aNNZobDLX7CaJ" Bounds="961,1211" />
+              </Canvas>
+              <Patch Id="AEE52fOUbGPNMOSOLPw5jD" Name="Create" />
+              <Patch Id="KMCq7vL15SfLJUZnBCdgd2" Name="Update">
+                <Pin Id="NPlkxx0AIkNNhoUk0S3NJR" Name="Input" Kind="InputPin" Bounds="956,1067" />
+                <Pin Id="EbVpwWPlYu7QBbJza5zJoF" Name="Output" Kind="OutputPin" Bounds="961,1216" />
+              </Patch>
+              <!--
+
+    ************************  ************************
+
+-->
+              <ProcessDefinition Id="OkC5CCnKRltOty0EQEpCIs">
+                <Fragment Id="RM1zVSPXX6nL3Y5f1ZYGx9" Patch="AEE52fOUbGPNMOSOLPw5jD" Enabled="true" />
+                <Fragment Id="D5sBG8PijvALLruPwfvNys" Patch="KMCq7vL15SfLJUZnBCdgd2" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="HePExm25ePOMbgOpOHhmLi" Ids="J1ivuUl4FI7PU5LYU7TTDw,IiD0wV0FFbvMqtzDnZt5MQ" />
+              <Link Id="Uccs7FMPvAgNif2nLME8Xy" Ids="EYB81qtpJGsL27wx9Fr1BF,He1JYt1p2a0PZebxraDlg2" />
+              <Link Id="B8vZg0IZLemNHEkRBkF29U" Ids="NPlkxx0AIkNNhoUk0S3NJR,EYB81qtpJGsL27wx9Fr1BF" IsHidden="true" />
+              <Link Id="MNR8Z6ceaEXMIgag5pHCBF" Ids="DdDiSaUoHchO0jUvYSHpjc,DntuRQti9aNNZobDLX7CaJ" />
+              <Link Id="TsCzACk9zkoMuq56lWPmlG" Ids="DntuRQti9aNNZobDLX7CaJ,EbVpwWPlYu7QBbJza5zJoF" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ MyFooBarSeparatingOp ************************
+
+-->
+          <Node Name="MyFooBarSeparatingOp" Bounds="555,1953,116,97" Id="FGhktV2LQFqOmGQDBqGLXj">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="RWTlPGXxTnnLR9Nyx9KV95">
+              <Node Bounds="568,1994,91,19" Id="AwYwJVicBmoPIe5f1MTz6R">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="FooBarSeparator" />
+                </p:NodeReference>
+                <Pin Id="BWgMktQEFUXNbL1HxISuC6" Name="Input" Kind="InputPin" />
+                <Pin Id="Rluxc9NaQt6M85efIqs2RU" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="MqWwoopDtdSPKuaQxHpVHA" Bounds="571,1971" />
+              <Link Id="QSFrWhp84w8OlVCpmKUjwR" Ids="MqWwoopDtdSPKuaQxHpVHA,BWgMktQEFUXNbL1HxISuC6" />
+              <Pin Id="AVfxar6BbjiMzGLnvej7YP" Name="Input" Kind="InputPin" Bounds="636,1878" />
+              <Link Id="PFNYRAuKho8PQJOwVbpw4w" Ids="AVfxar6BbjiMzGLnvej7YP,MqWwoopDtdSPKuaQxHpVHA" IsHidden="true" />
+              <ControlPoint Id="Vt02q0GNfP1NWEufbkmBqJ" Bounds="569,2033" />
+              <Link Id="CPizNGnEJHlLlZLQl8yVG2" Ids="Rluxc9NaQt6M85efIqs2RU,Vt02q0GNfP1NWEufbkmBqJ" />
+              <Pin Id="Pk2b1eirTAtOMvvASYeljp" Name="Output" Kind="OutputPin" Bounds="629,1929" />
+              <Link Id="AK4NDbcmmmTOFoyL78YDG6" Ids="Vt02q0GNfP1NWEufbkmBqJ,Pk2b1eirTAtOMvvASYeljp" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Node Bounds="773,1852,121,19" Id="DL5Sl3aZZTVPxMPRp7uXyc">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MyFooBarSeparatingOp" />
+            </p:NodeReference>
+            <Pin Id="VzJ7GGn1DuJObTroB62EXl" Name="Input" Kind="InputPin" />
+            <Pin Id="Pk1N8Q0tUXLLjSOCRnXE2Z" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FoQYCmpoxzWNmbL374vEMO" Comment="" Bounds="775,1830,62,18" ShowValueBox="true" isIOBox="true" Value="Foo,Bar">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BuWtvqRXlmqQP42i2IlxkX" Comment="" Bounds="776,1889,35,49" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="PLIuPPWaaarNDzNzKGIDY1" Bounds="668,1994,293,69" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; you get the yellow warning that the node is recreated but it's not a problem because it doesn't actually use state. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QNTfLgi0lgzMiwHLeISJdw" Bounds="833,1446,179,53" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;check it out, another integrator inside">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MyIntegratorOp3 (Record Based) ************************
+
+-->
+          <Node Name="MyIntegratorOp3 (Record Based)" Bounds="540,2444,154,111" Id="UqjGap0QKlPQdCDKzkOuLk">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="L5K5MV936FuPLIVVHxHXRI">
+              <ControlPoint Id="O6dKx8MtNg3OdO1uSxRvWu" Bounds="639,2518" />
+              <Link Id="IrxVxLrhFJFLxA5FPaORKz" Ids="O6dKx8MtNg3OdO1uSxRvWu,QhI1ob3gdVtMPCrycJa6g3" IsHidden="true" />
+              <ControlPoint Id="FpsSkfnQXw8Nr7DaUTMyu1" Bounds="554,2462" />
+              <Link Id="I8n5NHBqNe0MW91SJeH10Q" Ids="ICHAu8zG2vGN1dUhKVqIRc,FpsSkfnQXw8Nr7DaUTMyu1" IsHidden="true" />
+              <Node Bounds="554,2474,87,26" Id="PizVUG8j0Y7Lhw3whRLFol">
+                <p:NodeReference LastCategoryFullName="Main.MyIntegratorRecord" LastDependency="Explanation Stateful vs Stateless.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="MyIntegratorRecord" />
+                  <Choice Kind="OperationCallFlag" Name="Update" />
+                </p:NodeReference>
+                <Pin Id="ThWi1mZ1yU9MUBgYWaMgz8" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UX4uNhKGeqXLeEJ9SiamW2" Name="State Output" Kind="StateOutputPin" />
+                <Pin Id="LTkVKjGUL0pMM9h4A3xQVB" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="CQesBZuEnkOLFa30ZbTqWu" Ids="FpsSkfnQXw8Nr7DaUTMyu1,ThWi1mZ1yU9MUBgYWaMgz8" />
+              <ControlPoint Id="MlbCedVPskoPwaRVOBaUS8" Bounds="556,2538" />
+              <Link Id="P3n8OMYm1hmMqk2HlYQ2cU" Ids="UX4uNhKGeqXLeEJ9SiamW2,MlbCedVPskoPwaRVOBaUS8" />
+              <Link Id="GbVA0wSObVcMtFVl9orGJI" Ids="MlbCedVPskoPwaRVOBaUS8,IWyPHFcQ1rvNTFTN9oFniI" IsHidden="true" />
+              <Pin Id="ICHAu8zG2vGN1dUhKVqIRc" Name="MyIntegratorRecord" Kind="InputPin" Bounds="554,2183" />
+              <Pin Id="IWyPHFcQ1rvNTFTN9oFniI" Name="MyIntegratorRecord" Kind="OutputPin" Bounds="558,2508" />
+              <Pin Id="QhI1ob3gdVtMPCrycJa6g3" Name="Output" Kind="OutputPin" Bounds="626,2227" />
+              <Link Id="Rv2hkcucgsgMjkbLq990kH" Ids="LTkVKjGUL0pMM9h4A3xQVB,O6dKx8MtNg3OdO1uSxRvWu" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ MyIntegratorRecord ************************
+
+-->
+          <Node Name="MyIntegratorRecord" Bounds="549,2380" Id="JJoEJ1rTRVzL2Gbol2gY9z">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="RecordDefinition" Name="Record" />
+            </p:NodeReference>
+            <Patch Id="Gy9pMDtnTukQRt6sVyrmTO">
+              <Canvas Id="DoJHVG68oo8N8RRDqnhsNv" CanvasType="Group">
+                <Node Bounds="855,979" Id="GW9imxc2x14Qd29rxz2k4Y">
+                  <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Integrator" />
+                  </p:NodeReference>
+                  <Pin Id="HWi1YkUvXyEP2v6JZLJNbM" Name="Initial Value" Kind="InputPin" />
+                  <Pin Id="I12UNDCXBctPWQ9eIpxWXw" Name="Offset" Kind="InputPin" />
+                  <Pin Id="RgTdTGrcQ0cNI0I1Zlvgk3" Name="Reset Value" Kind="InputPin" />
+                  <Pin Id="FunOH3LryNpN38CWHY4DIN" Name="Value" Kind="OutputPin" />
+                </Node>
+                <Pad Id="J2i6ze61T98NeARfouJtUF" Comment="Offset" Bounds="885,947,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="OWUq9ZUw2fGPtHytKXPUvc" Comment="" Bounds="857,1022,35,15" ShowValueBox="true" isIOBox="true" />
+                <ControlPoint Id="Kdc9J4IdoqqQCozde31KVN" Bounds="856,1054" />
+              </Canvas>
+              <Patch Id="M5Jsshnj3uQNguxz9fcX9S" Name="Create" />
+              <!--
+
+    ************************  ************************
+
+-->
+              <ProcessDefinition Id="LsVJLGx9RaJNHpTseoub7m" IsHidden="true">
+                <Fragment Id="FVUK4kUxMDlMmRZycMyT6M" Patch="M5Jsshnj3uQNguxz9fcX9S" Enabled="true" />
+                <Fragment Id="DpVrJWaOIYrK9aFgdJ0eQv" Patch="M5fUopAkZlpL0hbKo67lrJ" Enabled="true" />
+              </ProcessDefinition>
+              <Patch Id="M5fUopAkZlpL0hbKo67lrJ" Name="Update">
+                <Pin Id="A1ijuf7rfJtOJoIt0Zdtwr" MergeId="17604" Name="Output" Kind="OutputPin" />
+              </Patch>
+              <Link Id="AX65dHcDLXDPRg0BS72fjF" Ids="J2i6ze61T98NeARfouJtUF,I12UNDCXBctPWQ9eIpxWXw" />
+              <Link Id="MQWIbspwJ1EMFklCyLrUnh" Ids="FunOH3LryNpN38CWHY4DIN,OWUq9ZUw2fGPtHytKXPUvc" />
+              <Link Id="TOzZE9NnCwuMXQ3HaTdN46" Ids="OWUq9ZUw2fGPtHytKXPUvc,Kdc9J4IdoqqQCozde31KVN" />
+              <Link Id="SgSQDCH1eSsLT7AbAkuVGI" Ids="Kdc9J4IdoqqQCozde31KVN,A1ijuf7rfJtOJoIt0Zdtwr" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Node Bounds="793,2462,93,19" Id="R6iWrIcwoTIMQz28xPDglm">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MyIntegratorOp3 (Record Based)" />
+            </p:NodeReference>
+            <Pin Id="PN0GUdXbx78MzRyMsab6H1" Name="MyIntegratorRecord" Kind="InputPin" />
+            <Pin Id="I4wp5UxpwOeNoLoPA6wIDw" Name="MyIntegratorRecord" Kind="OutputPin" />
+            <Pin Id="AwdaVhrYfPbL1p3NpLwTDq" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TZXvccT2m6rMO3p3suYYfB" SlotId="KZYI9f2hLq6Nj6P6o583M0" Bounds="796,2451" />
+          <Pad Id="JQkkwGRYpIhM8wzD8BEi4R" SlotId="KZYI9f2hLq6Nj6P6o583M0" Bounds="796,2500" />
+          <Pad Id="EhgqnbvUTZ8QbzYOjQJvDq" Comment="" Bounds="883,2499,68,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OjTxbR19hNRLRmjAzAV4Kz" Bounds="574,2591,450,20" ShowValueBox="true" isIOBox="true" Value="See the Mutability tutorials for more details">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="FSPIipPXhRJOQFvEXrsw3K" Name="Create" ParticipatingElements="J5MTtbHEal4QUVcwLhxkSi,MpUL5RGeUQOMj1SX5NdUif" />
+        <Patch Id="ShhwxfcFyOlQRzQlLGD2B6" Name="Update" />
+        <ProcessDefinition Id="OF2djaBW7tYLHlticYyDzj">
+          <Fragment Id="T25QL8fzR3gNGdoJbszUxH" Patch="FSPIipPXhRJOQFvEXrsw3K" Enabled="true" />
+          <Fragment Id="ViVPC9OonCqO8z1ISklG4r" Patch="ShhwxfcFyOlQRzQlLGD2B6" Enabled="true" />
+          <Fragment Id="UXQVt9ttwMYNHqvuLqNrtw" Patch="Kqo6Pkj31oSMhmbv7ob3ua" />
+          <Fragment Id="INgqjHXxEvSNFbW4Zyteiz" Patch="QHanzH19aVJOAI6T0Rz24k" />
+          <Fragment Id="BBfDuzBs8Y0NSFJBkKJiEY" Patch="LvUj7DgthqZOmSlPp7UyCB" />
+          <Fragment Id="SLzid7LoSLGMShTzPU9R3j" Patch="FGhktV2LQFqOmGQDBqGLXj" />
+          <Fragment Id="S4YgAnYErZONp2RyLW0Ar3" Patch="UqjGap0QKlPQdCDKzkOuLk" />
+        </ProcessDefinition>
+        <Slot Id="IhWjhzbm2GVLgPrz1WlBdG" Name="CopyThisPad" />
+        <Link Id="DmNOTpCGdudO7IsLz93zwM" Ids="GlpU70i1vYILlRFkLO3fTl,V3AICZYB5KkNJB5yWYRCLY" />
+        <Link Id="ESFzvCcG7LdOu1QM3xA4ve" Ids="NiiPp0Dxi9NLdw3dnhPzID,HXg0jRX8pF8MBRJ4F51X1u" />
+        <Link Id="CijlGc5zeBeLovKY3R0cd8" Ids="KY1BveCbPFUNovwOhtHU1l,Gb1stBidhSLPJNZbtRrzJK" />
+        <Slot Id="REb53QLM0koLLZkE0x1D12" Name="Class" />
+        <Link Id="J5MTtbHEal4QUVcwLhxkSi" Ids="AKnSMIl2TJmMlEnGS1k7NL,A7yZdfMu1ZzO8DazgqEZ25" />
+        <Link Id="AD1q9PWnnI7PbmrzxlXeK1" Ids="A7yZdfMu1ZzO8DazgqEZ25,H0JIIkFVRgZNdLzserVlrb" />
+        <Link Id="QXqqIVrI0CmMZqTOyzbCno" Ids="HUjznlR4zGVMCFKw8XwdRP,D2Bp6h8oYnULnVrSRmHItk" />
+        <Link Id="DonJxlQG4WjLDurJ0XxbZA" Ids="UtZG9IglvrLPM0DFhcAc9w,CCSIClolX4qM9mLEZuWSJ2" />
+        <Slot Id="EUjlegPlaMoPuSZYslJunD" Name="Class2" />
+        <Link Id="MpUL5RGeUQOMj1SX5NdUif" Ids="LXBCuFx5CQ8MzlPUGBgvlI,Plv8NF1OwADNq8Z49tC5YR" />
+        <Link Id="EyB6ultSHxsPl0cw2oDeFr" Ids="Plv8NF1OwADNq8Z49tC5YR,RrYoFCjueQtQV9XwWMM4BP" />
+        <Link Id="AMWwBQk2zXdLQ2FWTJ4XzN" Ids="ULnCQ0gR43dPnT3wSO7xAX,G1pBwXsfk26NYRjTagO4lY" />
+        <Link Id="COw5LH26I6tLxHA90bE40o" Ids="FoQYCmpoxzWNmbL374vEMO,VzJ7GGn1DuJObTroB62EXl" />
+        <Link Id="H57tUFI5kyEPuMXu1LAjgY" Ids="Pk1N8Q0tUXLLjSOCRnXE2Z,BuWtvqRXlmqQP42i2IlxkX" />
+        <Slot Id="KZYI9f2hLq6Nj6P6o583M0" Name="Record" />
+        <Link Id="DvMp3xmFevQN4FJts6jqGO" Ids="TZXvccT2m6rMO3p3suYYfB,PN0GUdXbx78MzRyMsab6H1" />
+        <Link Id="ElLneKlNEbJNvTLpB3VVEN" Ids="I4wp5UxpwOeNoLoPA6wIDw,JQkkwGRYpIhM8wzD8BEi4R" />
+        <Link Id="Su30Nm3U4AZPCXIMr7dsRr" Ids="AwdaVhrYfPbL1p3NpLwTDq,EhgqnbvUTZ8QbzYOjQJvDq" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

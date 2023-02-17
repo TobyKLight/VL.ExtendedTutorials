@@ -21,6 +21,9 @@ https://youtu.be/zGufG64WSF4
 https://youtu.be/RXDRfqLbc74
 
 # Version History
+V1.0.4 
+* Added helppatches for Exporting to Spreadsheets and Stateful vs Stateless
+
 V1.0.3 
 * Fixed error in the understanding defaults helppatch 
 
