@@ -21,6 +21,9 @@ https://youtu.be/zGufG64WSF4
 https://youtu.be/RXDRfqLbc74
 
 # Version History
+V1.0.6 
+* Bugfix forgot to give 'Tickets are the new bang' a bona fide helppatch prefix. 
+
 V1.0.5 
 * Added tutorial 'Tickets are the new bang' 
 * Added an extra case/gotcha to 'Stateful vs Stateless' tutorial 
