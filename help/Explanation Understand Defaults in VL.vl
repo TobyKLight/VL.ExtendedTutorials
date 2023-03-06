@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2021.4.11.1312" Version="0.128">
+<Document xmlns:p="property" Id="Hwgr4DLFj6FMnde8ak4k2y" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
   <Patch Id="KttuchERx1VNntsgQkA3be">
     <Canvas Id="EjLDhR9Gpq4OkYaoktGR7O" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -14,10 +14,10 @@
       </p:NodeReference>
       <Patch Id="FQxjGn7ElpZNxT9rWaprI5">
         <Canvas Id="F8yqq6QxjpWLor4NL6p2pN" CanvasType="Group">
-          <Overlay Id="I9aRD74hR4fM6Thn1Ghnvi" Name="Case1 - Default value of single instance" Bounds="188,284,307,719" />
+          <Overlay Id="I9aRD74hR4fM6Thn1Ghnvi" Name="Case1 - Default value of single instance" Bounds="188,284,307,744" />
           <Overlay Id="EHAJHPbHdMMNDTp5vbXXQq" Name="Case2 - Default value of spread" Bounds="504,283,307,918" />
           <Pad Id="VYDRYJrlblEOFko11JHZWo" Bounds="207,353,247,55" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangle' with a type of Rectangle, but do not give it any input....">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -26,8 +26,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="SwYE7Q7eSvkNDZK7GvWYFd" SlotId="TY22v11DiWYP64sC4pUnpY" Bounds="335,414" />
-          <Pad Id="QUOlkBz0E62MLHh69OKt3N" Bounds="210,438,265,73" ShowValueBox="true" isIOBox="true" Value="...And then draw that rectangle using the Skia Rectangle drawing layer connected to an iobox (which shows a preview of the layer) ...">
-            <p:TypeAnnotation>
+          <Pad Id="QUOlkBz0E62MLHh69OKt3N" Bounds="210,438,265,73" ShowValueBox="true" isIOBox="true" Value="...And then draw that rectangle using the Skia Rectangle drawing layer connected to an iobox ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -36,7 +36,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="328,508,61,19" Id="RaL0qb3tjKuNxi81xErAKb">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
             </p:NodeReference>
@@ -45,8 +45,8 @@
             <Pin Id="MucAOBEKW4KONKjJd49rIG" Name="Enabled" Kind="InputPin" />
             <Pin Id="IfgtIEfchG7OIthNWxQ5gd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,248,301" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox visual can be buggy, You should see a white square. If you don't see the white square try restarting with F9 and ensure 'Show Object Details' is off under the tooltip section of the settings menu (top right)) ">
-            <p:TypeAnnotation>
+          <Pad Id="KQDb3r3rMyLMctiurN2Llu" Bounds="209,697,257,337" ShowValueBox="true" isIOBox="true" Value="...You will see a square, which is the DEFAULT data in a rectangle instance. This is because if you call on a single instance of something, and it does not exist, gamma will create a default object. In this case the default values look like a square. We cannot usually change the default values for this because its part of the CoreLib. &#xD;&#xA;&#xD;&#xA;(Note the iobox visual can be buggy depending on your vvvv version. first try resetting with F9. If all the ioboxes are blank then you may have to create a Skia renderer and connect it to the outputs here. Also ensure 'Show Object Details' is off under the tooltip section of the settings menu (top right)) ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -56,7 +56,7 @@
           </Pad>
           <Pad Id="FylhUz1G2dqP0INa8QQQzP" Comment="" Bounds="242,553,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Oq2Fd2CQJ77O5zYKSXBhhl" Bounds="513,340,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleSpread' with a type of Spread&lt;Rectangle&gt;, but do not give it any input so the spread is empty....">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -66,7 +66,7 @@
           </Pad>
           <Pad Id="ShuUTD8Z4hSMOCnODffEE4" SlotId="AU3k1ZcSpeRLapdKWis7nr" Bounds="655,434" />
           <Node Bounds="688,463,44,26" Id="FZqDhqo2eWyOf6QWJFDgGQ">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Count" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -76,7 +76,7 @@
           </Node>
           <Pad Id="FrjHkd8up7tOffckX360Cs" Comment="Count" Bounds="689,511,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="642,609,85,86" Id="UDwVgjpDgNQNmQyDv9DshH">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -87,7 +87,7 @@
               <Patch Id="OBD0pGl5loBOCmfTWajAJF" Name="Update" ManuallySortedPins="true" />
               <Patch Id="UOD88iP4UlSMifGqhisw6B" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="654,645,61,19" Id="FtMYtTrSRlKOSRoOGrV541">
-                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
                 </p:NodeReference>
@@ -101,7 +101,7 @@
             <ControlPoint Id="Rq8Cu8ELJh6L3VDCsN6Pxv" Bounds="660,689" Alignment="Bottom" />
           </Node>
           <Node Bounds="648,720,45,19" Id="F8DVGUOm7p8OBOQ4t2PtS0">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
             </p:NodeReference>
@@ -112,7 +112,7 @@
           </Node>
           <Pad Id="PjBSottVvIVOeq7FmWXuYT" Comment="" Bounds="555,767,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Vq7lrJEVHvKMbspniz1mDJ" Bounds="509,538,251,63" ShowValueBox="true" isIOBox="true" Value="...And then draw what could theoretically be many rectangles with a ForEach loop...">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -121,7 +121,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="PjnTAIKQiAeOuuR9hBJdqF" Bounds="521,912,258,270" ShowValueBox="true" isIOBox="true" Value="...You see nothing. &#xD;&#xA;This is because the DEFAULT value for a spread is that it contains ZERO items. &#xD;&#xA;&#xD;&#xA;That ForEach loop is not running as zero slices are arriving with the input spread to be processed. &#xD;&#xA;&#xD;&#xA;When supplying an empty spread to ForEach regions you won't get an error. The system assumes you are intentionally supplying zero slices so it is correct behaviour to run the loop zero times.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -131,7 +131,7 @@
           </Pad>
           <Overlay Id="NITkF9rzRZ8MdtYc3tCqAk" Name="Case3 - Default value of single instance accessed from spread" Bounds="833,285,307,918" />
           <Pad Id="IMb7ZhemCQMMuJhwKJU3XD" Bounds="838,352,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleSpread2' with a type of Spread&lt;Rectangle&gt;, but do not give it any input so the spread is empty....">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -141,7 +141,7 @@
           </Pad>
           <Pad Id="JWdQcNQlrq2N1e98WVC57h" SlotId="FWAIM5MKzp6MgcT1Q5rf0c" Bounds="983,429" />
           <Node Bounds="1016,458,44,26" Id="HhfauENEwkgQSXl1t76c6y">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Count" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -152,7 +152,7 @@
           <Pad Id="EGUtk1elnAMNxNZu44fk9R" Comment="Count" Bounds="1017,506,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VTGcRqbJ7YhOwqx2GS1ZZC" Comment="" Bounds="884,729,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="BTlMXHVkx3kQIF6JhSNAMz" Bounds="837,533,251,63" ShowValueBox="true" isIOBox="true" Value="...And then use a getSlice to explicity get one slice from the (empty) spread....">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -161,7 +161,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="NNjLoU8cxGpN8BU59rO9DF" Bounds="845,869,258,255" ShowValueBox="true" isIOBox="true" Value="...You see the default rectangle again. How can this be the case? Because the GetSlice has a job to return a single instance and that's what it does, if it can't find one because the spread is empty it creates a default instance to return (as per case 1)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -170,7 +170,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="977,652,61,19" Id="DkYCHYElA7kNDOMxVWQDhK">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
             </p:NodeReference>
@@ -180,7 +180,7 @@
             <Pin Id="Rlh8pHB2IzSMafyItr9NNC" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="979,608,52,19" Id="UgmEaanXKVOMa5eme63yl1">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -193,7 +193,7 @@
           <Overlay Id="EpjRwSYrquPNNhWwZDptfk" Name="Case4 - Default value of single instance accessed from array" Bounds="1151,284,307,939" />
           <Pad Id="LGdnm7xI9kuOYGZ0XNaWNY" SlotId="KFMbQIk1LpROD8U9qhRjM9" Bounds="1312,444" />
           <Pad Id="OCMGlFhdF3eNzolDJ6AbgE" Bounds="1171,362,251,77" ShowValueBox="true" isIOBox="true" Value="If we make a pad named 'MyRectangleArray' with a type of Array&lt;Rectangle&gt;, but do not give it any input so the array is empty....">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -202,7 +202,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1209,581,237,282" Id="HiMWTSidNSFN2t7GpTKoW7">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
@@ -212,7 +212,7 @@
               <Patch Id="ThfrriGQ48GPj9Ze7Y7Fwl" Name="Create" ManuallySortedPins="true" />
               <Patch Id="G1YG0Iin4GKLMmiyBgsGRn" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="1233,604,52,26" Id="E33rAxoCMBCNHubGQqgLcd">
-                <p:NodeReference LastCategoryFullName="Collections.Array" LastSymbolSource="VL.Collections.vl">
+                <p:NodeReference LastCategoryFullName="Collections.Array" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Array" />
                   <Choice Kind="OperationCallFlag" Name="GetItem" />
@@ -223,7 +223,7 @@
                 <Pin Id="DF2XhpQeTJiQPAUEHM7VZg" Name="Item" Kind="OutputPin" />
               </Node>
               <Node Bounds="1242,668,61,19" Id="Qbgh9z2cXMpNQ6yBKEkl6z">
-                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Rectangle (Bounds)" />
                 </p:NodeReference>
@@ -236,7 +236,7 @@
             </Patch>
           </Node>
           <Pad Id="H66znPGVKY7MDEXvtYNCjR" Comment="Enable" Bounds="1210,513,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -245,7 +245,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="S34AQRbmJf9NvfkAwkZprA" Bounds="1258,525,175,60" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;right click to enable this code because it will throw errors">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -253,8 +253,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="J4peL2o7cl8PKec6eGLbI0" Bounds="1171,881,261,313" ShowValueBox="true" isIOBox="true" Value="..This time you get an error. The GetItem node rightly points out it can't get any item from an array index that does not exist. &#xD;&#xA;&#xD;&#xA;What is the difference? &#xD;&#xA;Array is a raw .net collection type which is much stricter with how it's used. It will throw errors when abused.&#xD;&#xA;&#xD;&#xA;Spread is a nice vvvv gamma collection type, instead of errors it has lots of 'safe' behaviours like we see in case 3.&#xD;&#xA;&#xD;&#xA;Arguably from the programming purist point of view the error is better as you asked for something impossible. &#xD;&#xA;">
-            <p:TypeAnnotation>
+          <Pad Id="J4peL2o7cl8PKec6eGLbI0" Bounds="1171,881,261,313" ShowValueBox="true" isIOBox="true" Value="..This time you get an error. The GetItem node rightly points out it can't get any item from an array index that does not exist. &#xD;&#xA;&#xD;&#xA;What is the difference? &#xD;&#xA;Array is a raw .net collection type which is much stricter with how it's used. It will throw errors when abused.&#xD;&#xA;&#xD;&#xA;Spread is a nice vvvv gamma collection type, instead of errors it has lots of 'safe' behaviours like we see in case 3.&#xD;&#xA;&#xD;&#xA;Arguably from the programming purist perspective the error is better as you asked for something impossible. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -263,7 +263,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="EFVHzzciCsEOBqD0qC1oes" Bounds="1172,1198,258,22" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/libraries/collections.html)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -333,7 +333,7 @@
             </Patch>
           </Node>
           <Node Bounds="1555,474,67,26" Id="PD3GRqQiId3Of0MXPpUbFY">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
@@ -343,12 +343,12 @@
             <Pin Id="EjtRORLpHghNDiWwd6s9nK" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="LS8pk4mrT7tOf43k4BmwRd" Comment="" Bounds="1619,453,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1554,541,51,26" Id="TaigPafkJgWOj0CSiMIs4K">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -358,7 +358,7 @@
             <Pin Id="R19qWtz8Wb1L1fvZ7FhuAT" Name="Number" Kind="OutputPin" />
           </Node>
           <Pad Id="D0AtSE72lyROwMkRFg2Iv2" Bounds="1473,897,270,257" ShowValueBox="true" isIOBox="true" Value="Don't do this! &#xD;&#xA;&#xD;&#xA;If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly (as at 2021.4.11)&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties&#xD;&#xA;-It may not create state for internal processes to access &#xD;&#xA;-It may not be supported in future &#xD;&#xA;&#xD;&#xA;see&#xD;&#xA;&#xD;&#xA;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -367,7 +367,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1554,411,51,26" Id="VDd6DWIPnr5OlA5Xnt9D0V">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -377,7 +377,7 @@
             <Pin Id="OgNCqBGsXjLLRdDYdNjSmJ" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="1553,736,67,26" Id="QT76aqRLigNLoVtPojq39V">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
@@ -387,12 +387,12 @@
             <Pin Id="FZsDmSgw8EaQCDSiPbMyat" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="IX2jBxRdXluNRN6Q0ieCdZ" Comment="" Bounds="1617,715,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1552,803,51,26" Id="EdL6WpcX5EKNGGBiEPa2pw">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -402,7 +402,7 @@
             <Pin Id="E2yFtjBiAYTLwTcWGwPbyS" Name="Number" Kind="OutputPin" />
           </Node>
           <Pad Id="AIoi73BqIGWPwCqF9CBc5M" Bounds="1586,643,35,19" ShowValueBox="true" isIOBox="true" Value="vs">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -476,7 +476,7 @@
             </Patch>
           </Node>
           <Node Bounds="1880,414,46,26" Id="J08SHplBbMTOmGuuWflKSz">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="MyClass" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -486,7 +486,7 @@
             <Pin Id="TZO5oaAXsZGPJzotTuhX7v" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="1883,544,45,26" Id="PTh9OIXlWsHLr1OC4ZOchY">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -497,7 +497,7 @@
             <Pin Id="OYeoOWHfdjbMa8vXJZ8Lrs" Name="Number" Kind="OutputPin" />
           </Node>
           <Node Bounds="1882,474,67,26" Id="F1QUQhdbpPxLAnH28YnJcF">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -509,12 +509,12 @@
           <Pad Id="I8wnkpMVRzzQIiGhIEDfC3" Comment="Name" Bounds="1900,582,67,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="FjuG2JytyBuM1U6fXvScA5" Comment="Number" Bounds="1924,599,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="F01BQ00HJx2OqT6uTovCyp" Comment="Number" Bounds="1948,457,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1846,799,45,26" Id="KcMJpQMIHxNM380Hg20nVU">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -525,7 +525,7 @@
             <Pin Id="RpX38LCFT5bLvvAol3d6QU" Name="Number" Kind="OutputPin" />
           </Node>
           <Node Bounds="1847,729,67,26" Id="CwqmH6stOZsQKjoZMT8W5C">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -537,12 +537,12 @@
           <Pad Id="S6Lvj8GEMtqODAGfU8ONdw" Comment="Name" Bounds="1863,837,67,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="RdzvhbhgOrwLxc10zZRi2r" Comment="Number" Bounds="1887,854,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="AZZtDojt0izOml3YfdEUrZ" Comment="Number" Bounds="1913,712,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="KSeQHnwX3yvMi2qYJyOWF7" Bounds="1893,662,35,19" ShowValueBox="true" isIOBox="true" Value="vs">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -551,7 +551,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="CHs2aimRD6eO8JYEuZrGTH" Bounds="1796,894,264,259" ShowValueBox="true" isIOBox="true" Value="Don't do this! &#xD;&#xA;&#xD;&#xA;If you don't explicitly run create&#xD;&#xA;-It does create an object implicitly (as at 2021.4.11)&#xD;&#xA;-but that object won't have the default values of the create operation&#xD;&#xA;-Instead it will have the system defaults for those properties&#xD;&#xA;-It will not create state for internal processes to access &#xD;&#xA;-It may not be supported in future &#xD;&#xA;&#xD;&#xA;see&#xD;&#xA;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -559,19 +559,19 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="LoyY1HiAnE0PJEZHxb27ar" Name="Workaround - Use a Static Operation to provide 'alternate' default creation methods" Bounds="2090,281,448,885" />
+          <Overlay Id="LoyY1HiAnE0PJEZHxb27ar" Name="But if I have to run the OG create op every time how to have multiple different Creates? &#xD;&#xA;For this case use a static operation to wrap creates." Bounds="2090,281,448,885" />
           <!--
 
     ************************ CreateBloopClass ************************
 
 -->
           <Node Name="CreateBloopClass" Bounds="2356,473,143,122" Id="LCJmPYPjMvaL07NMSB3TzJ">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="VH6kYYoyGRaMPPw2WIxiSr">
               <Node Bounds="2370,535,46,26" Id="RpJpaaDXMULPcSdJNjSe6J">
-                <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="MyClass" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -581,7 +581,7 @@
                 <Pin Id="PVtd9RxECC4OsPsRLwpSaq" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Pad Id="BP0LEdE2ieTPFrjUCAWDu4" Comment="Name" Bounds="2372,501,67,15" ShowValueBox="true" isIOBox="true" Value="Bloop">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
@@ -592,8 +592,8 @@
               <Link Id="Vm4bYlHIAZqPDqWUEc5edk" Ids="JRWDnO1n9LWQR5VpuU22H8,V8E497aFxySQIGb3WyVMZh" IsHidden="true" />
             </Patch>
           </Node>
-          <Node Bounds="2363,807,45,26" Id="SIBsRhgfpB2OJl9ZX2kJr2">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Node Bounds="2357,961,45,26" Id="SIBsRhgfpB2OJl9ZX2kJr2">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -603,8 +603,8 @@
             <Pin Id="JhLpX10FsP8OBIwokVt9yG" Name="Name" Kind="OutputPin" />
             <Pin Id="DYWvsSU7AGtLHr414B9t3c" Name="Number" Kind="OutputPin" />
           </Node>
-          <Node Bounds="2364,737,67,26" Id="KJsDW48h9nuLz7J8MIdSmy">
-            <p:NodeReference LastCategoryFullName="Main.MyClass" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Node Bounds="2358,891,67,26" Id="KJsDW48h9nuLz7J8MIdSmy">
+            <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
               <CategoryReference Kind="ClassType" Name="MyClass" NeedsToBeDirectParent="true" />
@@ -613,17 +613,17 @@
             <Pin Id="CpB8KI10wV8NyUp0Qcfe7U" Name="Number" Kind="InputPin" />
             <Pin Id="UmWOmOBtPTLN2h7OKm37PC" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="Gxo38kEoRIUO5b6mo4HI7W" Comment="Name" Bounds="2380,845,67,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="PCyXYh4oamSORQmvtQhnWO" Comment="Number" Bounds="2404,862,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="AtXg7iMtaY8NndfBIUJyov" Comment="Number" Bounds="2430,720,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="Gxo38kEoRIUO5b6mo4HI7W" Comment="Name" Bounds="2374,999,67,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PCyXYh4oamSORQmvtQhnWO" Comment="Number" Bounds="2398,1016,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AtXg7iMtaY8NndfBIUJyov" Comment="Number" Bounds="2424,874,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="2364,679,95,19" Id="VP9CLa5Un2jPZvAQjSitgG">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Node Bounds="2358,833,95,19" Id="VP9CLa5Un2jPZvAQjSitgG">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="CreateBloopClass" />
+              <Choice Kind="OperationCallFlag" Name="CreateBeepClass" />
             </p:NodeReference>
             <Pin Id="Go4xpsdgyzOQBF3DHx5lQc" Name="Output" Kind="OutputPin" />
           </Node>
@@ -633,12 +633,12 @@
 
 -->
           <Node Name="CreateBloopRecord" Bounds="2143,468,143,122" Id="Qh74sG0qYPXNG6egK2uS5E">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="DqWgn6d5XioOlPEsimat2w">
               <Node Bounds="2157,530,51,26" Id="S62vbfp5J1iOtPe5kdHoDk">
-                <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                   <CategoryReference Kind="RecordType" Name="MyRecord" NeedsToBeDirectParent="true" />
@@ -648,7 +648,7 @@
                 <Pin Id="F0u8QjlYtFpMa7x3mGmQKw" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Pad Id="BX7RTWZReV5PaSOcuoNH8Q" Comment="Name" Bounds="2159,496,67,15" ShowValueBox="true" isIOBox="true" Value="Bloop">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
@@ -659,8 +659,8 @@
               <Link Id="PWbQGg1Ms6gLxRrOUEYgna" Ids="LfRRjfBBgabPDCQrEAolTX,OJ2VD9kzJQCMU5NYsayiau" IsHidden="true" />
             </Patch>
           </Node>
-          <Node Bounds="2164,740,67,26" Id="MGMDIrHyqCrLTDMsgaCUYJ">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Node Bounds="2158,894,67,26" Id="MGMDIrHyqCrLTDMsgaCUYJ">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="SetNumber" />
@@ -669,13 +669,13 @@
             <Pin Id="VnjbpoRB6XLLHt7bMXDrer" Name="Number" Kind="InputPin" />
             <Pin Id="KGHrlKuUuDOPzeTaIXGOoR" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="GVmY8EkWe4uPdxKevouLpA" Comment="" Bounds="2228,719,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="GVmY8EkWe4uPdxKevouLpA" Comment="" Bounds="2222,873,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="2163,807,51,26" Id="DOJpm8DjxgpPmDYGU2KqFs">
-            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Node Bounds="2157,961,51,26" Id="DOJpm8DjxgpPmDYGU2KqFs">
+            <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MyRecord" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -684,17 +684,17 @@
             <Pin Id="BqhnROu8oGvPKlITCaQLlK" Name="Name" Kind="OutputPin" />
             <Pin Id="Jh7AJnzD1UrLgjhiZ5feAT" Name="Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ukyd4IjH8DmP9NuJ5Houwz" Comment="Name" Bounds="2163,842,91,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="CfThWS8dnprN8GrdruLnKq" Comment="Number" Bounds="2212,860,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="2166,679,103,19" Id="KgFU0W46OM5ODNoy59rYyP">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Understand Defaults.vl">
+          <Pad Id="Ukyd4IjH8DmP9NuJ5Houwz" Comment="Name" Bounds="2157,996,91,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CfThWS8dnprN8GrdruLnKq" Comment="Number" Bounds="2206,1014,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="2160,833,103,19" Id="KgFU0W46OM5ODNoy59rYyP">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Understand Defaults in VL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="CreateBloopRecord" />
             </p:NodeReference>
             <Pin Id="EhenwOZyErSPfPuzoYPrkH" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="NRnQjqIYsmcP1ARvzNPTX9" Bounds="1476,1152,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/does-implied-creation-of-a-class-also-create-state-for-internal-processes/20965/4">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -703,7 +703,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="QzNOQD1r1cSL3pNzwsbFTb" Bounds="1799,1150,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/does-implied-creation-of-a-class-also-create-state-for-internal-processes/20965/4">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -711,6 +711,70 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <!--
+
+    ************************ CreateBeepRecord ************************
+
+-->
+          <Node Name="CreateBeepRecord" Bounds="2156,644,143,122" Id="VioN5SmfRpoMbJsbFpczm6">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="EUemQZwrMz9LptmQ4lPe3M">
+              <Node Bounds="2170,706,51,26" Id="K0AeNrr6T6qPCM1Lo2HM9b">
+                <p:NodeReference LastCategoryFullName="Main.MyRecord" LastDependency="Explanation Understand Defaults in VL.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="RecordType" Name="MyRecord" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Ap8eeiTk3AWLY3u315bgZF" Name="Name" Kind="InputPin" />
+                <Pin Id="SWBhSIN0VgKNKU7vSS98bf" Name="Number" Kind="InputPin" />
+                <Pin Id="TB7dU3MeYanMJhE8dEo8ji" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="EBZSKocYlRQPhRfExngxty" Comment="Name" Bounds="2172,672,67,15" ShowValueBox="true" isIOBox="true" Value="Beep">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="T1ipengd3RcLLMOh1pCOTl" Ids="EBZSKocYlRQPhRfExngxty,Ap8eeiTk3AWLY3u315bgZF" />
+              <ControlPoint Id="Adz9OSjSVjVMk8HNlgDlfn" Bounds="2173,749" />
+              <Link Id="HpSdgtoE5EvNHTYYIysDfZ" Ids="TB7dU3MeYanMJhE8dEo8ji,Adz9OSjSVjVMk8HNlgDlfn" />
+              <Pin Id="DW9IMkyfnIZNRpFwmNgQYB" Name="Output" Kind="OutputPin" Bounds="2169,464" />
+              <Link Id="Pm2xLQx9TOxPkOOFkm5HdS" Ids="Adz9OSjSVjVMk8HNlgDlfn,DW9IMkyfnIZNRpFwmNgQYB" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ CreateBeepClass ************************
+
+-->
+          <Node Name="CreateBeepClass" Bounds="2357,644,143,122" Id="OYB4aYiBwH9OKQ0UwFKT24">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="EpkqbLc5JPoQWOK9642eDP">
+              <Node Bounds="2371,706,46,26" Id="FUDQqr3oz6jPof6XfOCBaK">
+                <p:NodeReference LastCategoryFullName="Main.MyClass" LastDependency="Explanation Understand Defaults in VL.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="MyClass" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="KtyLIVLwZLrNXKLA2i5kKR" Name="Name" Kind="InputPin" />
+                <Pin Id="C6IOg5lCr7xO2x1gXeJoGH" Name="Number" Kind="InputPin" />
+                <Pin Id="KsOiRVOezgzPXGM6CIfnAi" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="LF8AJnkLZwANrrPcPAXNzg" Comment="Name" Bounds="2373,672,67,15" ShowValueBox="true" isIOBox="true" Value="Beep">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Link Id="HtfLklNWFVlLYx2GFkuVoc" Ids="LF8AJnkLZwANrrPcPAXNzg,KtyLIVLwZLrNXKLA2i5kKR" />
+              <ControlPoint Id="DW9TUFdBSJwLA7aDebYAFX" Bounds="2374,749" />
+              <Link Id="D06C7iyk2tNO0b9wbZ687I" Ids="KsOiRVOezgzPXGM6CIfnAi,DW9TUFdBSJwLA7aDebYAFX" />
+              <Pin Id="AyeS98rccd6ORwUXF0CdWI" Name="Output" Kind="OutputPin" Bounds="2169,464" />
+              <Link Id="CHpGwkD1if2MIwF5FC9zZZ" Ids="DW9TUFdBSJwLA7aDebYAFX,AyeS98rccd6ORwUXF0CdWI" IsHidden="true" />
+            </Patch>
+          </Node>
         </Canvas>
         <Patch Id="PQbvQdwulFTNa1YUh9AmD0" Name="Create" />
         <Patch Id="BKDMwpxFGzRN5nOhQJgOLT" Name="Update" />
@@ -719,6 +783,8 @@
           <Fragment Id="CEcJ5kUP8mWN3V9bcASIqY" Patch="BKDMwpxFGzRN5nOhQJgOLT" Enabled="true" />
           <Fragment Id="DsL4MMdGQgtMVKb0TUNury" Patch="LCJmPYPjMvaL07NMSB3TzJ" Enabled="true" />
           <Fragment Id="Tts6xSQROXKLT8C2fE64DC" Patch="Qh74sG0qYPXNG6egK2uS5E" />
+          <Fragment Id="TIbm0sgmOTeOTjPL8Dcj4J" Patch="VioN5SmfRpoMbJsbFpczm6" />
+          <Fragment Id="TKfs6LdWke1MHJyr0f5rTK" Patch="OYB4aYiBwH9OKQ0UwFKT24" />
         </ProcessDefinition>
         <Slot Id="TY22v11DiWYP64sC4pUnpY" Name="MyRectangle">
           <p:TypeAnnotation p:Type="TypeReference">
@@ -804,6 +870,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2021.4.11-1312-ga0521d8f1e" />
-  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2021.4.11-1312-ga0521d8f1e" />
+  <NugetDependency Id="MQg8StUJ8KXLI7AnP67XEI" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
+  <NugetDependency Id="TtHScMvxgQHMfmEojZEYbT" Location="VL.Skia" Version="2022.5.0-0577-gbbf5a07a29" />
 </Document>

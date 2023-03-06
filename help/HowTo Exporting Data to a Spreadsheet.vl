@@ -29,7 +29,7 @@
                 <ControlPoint Id="MYN8LjJVMHlOtd8ph2OhfF" Bounds="835,569" />
                 <ControlPoint Id="PderPmmesPLOrZ0mzcTCff" Bounds="700,760" />
                 <ControlPoint Id="OlmkrT9M1jpL6brjnPG05F" Bounds="865,617" />
-                <Node Bounds="777,638,223,273" Id="J6Ht9iXVwufQJhPXNRS18c">
+                <Node Bounds="777,638,223,274" Id="J6Ht9iXVwufQJhPXNRS18c">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
@@ -415,12 +415,12 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Gk7ADXOmaBNPj2jOJ0og7H" Comment="Bar" Bounds="873,358,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="Gk7ADXOmaBNPj2jOJ0og7H" Comment="Bar" Bounds="873,358,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IJHHYVDvA0RPlO7MnQ1mH9" Comment="Baz" Bounds="905,382,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="IJHHYVDvA0RPlO7MnQ1mH9" Comment="Baz" Bounds="905,382,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>

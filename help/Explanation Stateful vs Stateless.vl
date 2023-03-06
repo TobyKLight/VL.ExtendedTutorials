@@ -17,11 +17,6 @@
           <Canvas Id="B0fwGjDgBD5O5TQYWhEwr3" BordersChecked="false" CanvasType="Group" />
           <Patch Id="FCELRTSbjhdPoqWpf1h1Sk" Name="Create" />
           <Patch Id="Awx8gryoYelL6nx1YwWKwd" Name="Update" />
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="KGLjrwgYbeVMR7GeqjVK5b">
             <Fragment Id="GLZLr4Dm8dLOKCj7CP3mS4" Patch="FCELRTSbjhdPoqWpf1h1Sk" Enabled="true" />
             <Fragment Id="Pz10Pfl0EGyNKLEEEAEpFW" Patch="Awx8gryoYelL6nx1YwWKwd" Enabled="true" />
@@ -42,7 +37,7 @@
       <Patch Id="ERjFcsetNGiO4BAOO6dmce">
         <Canvas Id="GiEVpkd3nN1Mb2usjyXnw0" CanvasType="Group">
           <Overlay Id="QHjj2w8lqpdPd8hxsnTEpy" Name="What is Stateful vs Stateless?" Bounds="496,231,534,143" />
-          <Pad Id="I8Rch0SY6JZOXWO5FG0ER7" Bounds="504,276,483,103" ShowValueBox="true" isIOBox="true" Value="Simply stateful objects can 'have state', &#xD;&#xA;EG remember things between frames &#xD;&#xA;EG have pads. &#xD;&#xA;&#xD;&#xA;Stateless objects cant. &#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="I8Rch0SY6JZOXWO5FG0ER7" Bounds="504,276,483,103" ShowValueBox="true" isIOBox="true" Value="Simply stateful objects can 'have state', &#xD;&#xA;AKA remember things between frames &#xD;&#xA;AKA have pads. &#xD;&#xA;&#xD;&#xA;Stateless objects cant. &#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -72,7 +67,7 @@
             </p:NodeReference>
             <Patch Id="FWXZWBIZy1QPy0LBpNbmLj" />
           </Node>
-          <Pad Id="NB17cf8lVC9MMyyzfgUseF" Bounds="720,590,271,58" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try and create a pad in here, it doesn't appear in the nodebrowser. If you copy paste a pad inside it will show an error">
+          <Pad Id="NB17cf8lVC9MMyyzfgUseF" Bounds="719,586,271,58" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try and create a pad in here, it doesn't appear in the nodebrowser. If you copy paste a pad inside it will show an error">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -230,11 +225,6 @@
                 <ControlPoint Id="UAKD12TkABBLvvD4X5AUOi" Bounds="937,933" />
               </Canvas>
               <Patch Id="Btk7zK1S14rQZntk1ixflp" Name="Create" />
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="HQnuzdgMCWsMiPgyk7KJ82" IsHidden="true">
                 <Fragment Id="BoUr3JqEqYvOvALVWgDFi3" Patch="Btk7zK1S14rQZntk1ixflp" Enabled="true" />
                 <Fragment Id="BEjRweMjHXqL7Wkd9MKOBN" Patch="Q5trVDisC6UP8GPEUdb0Lg" Enabled="true" />
@@ -299,7 +289,7 @@
               <Link Id="IiYgOMDLvblO0oo2WkwA40" Ids="CdVMU7gHuNGMhHIwXpnlAB,Oks3PgdBtCKOag2hEaJHUs" IsHidden="true" />
             </Patch>
           </Node>
-          <Pad Id="URvwb9Lp2o3NvW6k8kGvQY" Bounds="509,2150,509,74" ShowValueBox="true" isIOBox="true" Value="If state is provided from outside the stateless operation then the stateless operation can effectively update state by mutating an external object (for a class) or outputting an object that is saved externally (for a record). &#xD;&#xA;Again see the mutability tutorials for more details. ">
+          <Pad Id="URvwb9Lp2o3NvW6k8kGvQY" Bounds="509,2150,509,74" ShowValueBox="true" isIOBox="true" Value="If state is provided from outside the stateless operation then the stateless operation can effectively update state by mutating an external object (for a class) or outputting an object that is saved externally (for a record). &#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -369,11 +359,6 @@
                 <Pin Id="NPlkxx0AIkNNhoUk0S3NJR" Name="Input" Kind="InputPin" Bounds="956,1067" />
                 <Pin Id="EbVpwWPlYu7QBbJza5zJoF" Name="Output" Kind="OutputPin" Bounds="961,1216" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="OkC5CCnKRltOty0EQEpCIs">
                 <Fragment Id="RM1zVSPXX6nL3Y5f1ZYGx9" Patch="AEE52fOUbGPNMOSOLPw5jD" Enabled="true" />
                 <Fragment Id="D5sBG8PijvALLruPwfvNys" Patch="KMCq7vL15SfLJUZnBCdgd2" Enabled="true" />
@@ -514,11 +499,6 @@
                 <ControlPoint Id="Kdc9J4IdoqqQCozde31KVN" Bounds="856,1054" />
               </Canvas>
               <Patch Id="M5Jsshnj3uQNguxz9fcX9S" Name="Create" />
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="LsVJLGx9RaJNHpTseoub7m" IsHidden="true">
                 <Fragment Id="FVUK4kUxMDlMmRZycMyT6M" Patch="M5Jsshnj3uQNguxz9fcX9S" Enabled="true" />
                 <Fragment Id="DpVrJWaOIYrK9aFgdJ0eQv" Patch="M5fUopAkZlpL0hbKo67lrJ" Enabled="true" />
@@ -553,6 +533,52 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Overlay Id="CA6e54g30H8MhNKHnCaV5i" Name="Some things are stateful that you wouldn't expect" Bounds="501,2666,543,546" />
+          <Node Bounds="653,2960,85,19" Id="Ly4t2n3bZAvOz3GGc1ZOx2">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Blur" />
+            </p:NodeReference>
+            <Pin Id="ORea18gfCrINUs5a3VH312" Name="Input" Kind="InputPin" />
+            <Pin Id="PlRGVNdFSfvQY2Xi6FVA7S" Name="Strength" Kind="InputPin" />
+            <Pin Id="DlSuhJux7s8QLHkz2KKypP" Name="Control" Kind="InputPin" />
+            <Pin Id="SwgrROl1ehvNRQP1u1xh6M" Name="Passes" Kind="InputPin" />
+            <Pin Id="O8fQ4FZDFikPlC9nZOebKf" Name="Apply" Kind="InputPin" />
+            <Pin Id="TjcR3E2aCUWLUnp6lu8eue" Name="Output" Kind="OutputPin" />
+          </Node>
+          <!--
+
+    ************************ Operation ************************
+
+-->
+          <Node Name="Operation" Bounds="774,2926,109,80" Id="OxYvmAEGckXPa44uWY8b5R">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="AHAV2i1zjFKMqtr86qxKfh">
+              <Node Bounds="786,2958,85,19" Id="EBMF8ZAYf6kLEAYWscoxbH">
+                <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Blur" />
+                </p:NodeReference>
+                <Pin Id="IC9jt1TlyBaQVmbPnXwhdh" Name="Input" Kind="InputPin" />
+                <Pin Id="LhdjMkc6oLPMG5092DcRLY" Name="Strength" Kind="InputPin" />
+                <Pin Id="LFMu6fcyMFWPrMJOoKkuy1" Name="Control" Kind="InputPin" />
+                <Pin Id="VB4zOYMc4KhQSkJ1h45vgh" Name="Passes" Kind="InputPin" />
+                <Pin Id="Gnd5j9RbmLmLKMc2dwxSBh" Name="Apply" Kind="InputPin" />
+                <Pin Id="J40QjJhsAxTMQ2PmLXCWDb" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="QgQIGJYeQZNPNivdbJkSRm" Bounds="506,2711,517,115" ShowValueBox="true" isIOBox="true" Value="For example the texture filters in stride (Eg Blur) are stateful processes and won't run in a stateless static op or delegate. &#xD;&#xA;This may seem odd as conceptually blur seems to be a stateless transformation of a texture: it takes a texture, apply some blur, spits it out. &#xD;&#xA;It's a quirk of the way the graphics pipeline in stride is implemented that blur is stateful.  &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FSPIipPXhRJOQFvEXrsw3K" Name="Create" ParticipatingElements="J5MTtbHEal4QUVcwLhxkSi,MpUL5RGeUQOMj1SX5NdUif" />
         <Patch Id="ShhwxfcFyOlQRzQlLGD2B6" Name="Update" />
@@ -564,8 +590,13 @@
           <Fragment Id="BBfDuzBs8Y0NSFJBkKJiEY" Patch="LvUj7DgthqZOmSlPp7UyCB" />
           <Fragment Id="SLzid7LoSLGMShTzPU9R3j" Patch="FGhktV2LQFqOmGQDBqGLXj" />
           <Fragment Id="S4YgAnYErZONp2RyLW0Ar3" Patch="UqjGap0QKlPQdCDKzkOuLk" />
+          <Fragment Id="FS6CVIwQZRHMjuavsA2tcz" Patch="OxYvmAEGckXPa44uWY8b5R" />
         </ProcessDefinition>
-        <Slot Id="IhWjhzbm2GVLgPrz1WlBdG" Name="CopyThisPad" />
+        <Slot Id="IhWjhzbm2GVLgPrz1WlBdG" Name="CopyThisPad">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Integer32" />
+          </p:TypeAnnotation>
+        </Slot>
         <Link Id="DmNOTpCGdudO7IsLz93zwM" Ids="GlpU70i1vYILlRFkLO3fTl,V3AICZYB5KkNJB5yWYRCLY" />
         <Link Id="ESFzvCcG7LdOu1QM3xA4ve" Ids="NiiPp0Dxi9NLdw3dnhPzID,HXg0jRX8pF8MBRJ4F51X1u" />
         <Link Id="CijlGc5zeBeLovKY3R0cd8" Ids="KY1BveCbPFUNovwOhtHU1l,Gb1stBidhSLPJNZbtRrzJK" />
@@ -587,4 +618,5 @@
       </Patch>
     </Node>
   </Patch>
+  <NugetDependency Id="Lt3DpC59srDPZ1lXa3Ja7l" Location="VL.Stride" Version="2022.5.0-0577-gbbf5a07a29" />
 </Document>
