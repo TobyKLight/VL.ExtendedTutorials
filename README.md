@@ -6,10 +6,7 @@ Install by going to the top left menu > Manage Nugets > Commandline and typing
 ````Nuget Install VL.ExtendedTutorials````
 
 # Contents
-![image](https://user-images.githubusercontent.com/4467208/195159919-e2f16f20-3ed7-476d-8016-3c392a35d61e.png)
-![image](https://user-images.githubusercontent.com/4467208/195159939-a0ca1dd9-a79c-4630-a2e3-3576ca90d66e.png)
-
-
+![image](https://user-images.githubusercontent.com/4467208/223262541-a2b34c30-28c0-441f-880c-6c8c0b04e261.png)
 
 # Videos
 Some of these helppatches are accompanied by videos
@@ -19,6 +16,12 @@ https://youtu.be/zGufG64WSF4
 
 ## First steps with Records
 https://youtu.be/RXDRfqLbc74
+
+## Tickets are the new bang
+https://youtu.be/8dasXkisqTY
+
+## Exporting data to a spreadsheet
+https://youtu.be/cKjb3dFOXqk
 
 # Version History
 V1.0.6 
