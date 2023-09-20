@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="UXWbJd3GoZzPlZZuhqMyIB" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+  <NugetDependency Id="HybgKAZLmUkMGTAGOfKqyj" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <Patch Id="CLWKiLdng2CMIRqg2Mf6BY">
+    <Canvas Id="BjksjkuXo2mNqYEc2YqUTA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="H12FcdLf8oXQXrnI1PWBeo">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="GSOOpXhSzKyOGbRu2E0iNp">
+        <Canvas Id="EPc8hXUplBgOQWWc3mSRIc" CanvasType="Group">
+          <Pad Id="EY1sdFFWm3YM0zYzdlhbvU" Bounds="62,54,658,67" ShowValueBox="true" isIOBox="true" Value="I wanted to do a series on vvvv relevant maths &#xD;&#xA;(Also to improve my own skills)&#xD;&#xA;I found Freya Holmérs excellent free course 'Math For Game Devs' on youtube.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BvY24jeYiY3MzAYZZ5kxpo" Bounds="62,125,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.youtube.com/watch?v=MOYiVLEnhrw">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Hvbr4j6OO4uO0OVybrc18v" Bounds="63,167,744,79" ShowValueBox="true" isIOBox="true" Value="So why do my own video when there is already such a good resource?&#xD;&#xA;&#xD;&#xA;This series of patches is loosely based on Freyas videos. (Plus some tangents from me)&#xD;&#xA;I will attempt to show how each concept can be computed in vvvv and will include links to the appropriate part of the video.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BFblOnzTywoOZ8qIdQwdPH" Bounds="63,257,660,25" ShowValueBox="true" isIOBox="true" Value="Please consider supporting Freya on Patreon if you find these useful">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TroLfm0bMEzQI7ponpGEV5" Bounds="63,292,190,23" ShowValueBox="true" isIOBox="true" Value="https://www.patreon.com/acegikmo/membership">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Un9LTMnGP14MgUBBYJsK7X" Name="What is a Vector?" Bounds="78,576,613,623" />
+          <Pad Id="RAmRxEkiqmCNJGSAcLFgq7" Bounds="89,631,564,89" ShowValueBox="true" isIOBox="true" Value="A VECTOR is information about the DIFFERENCE between two POSITIONS">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Unf8Z5i8RPJLiBnd4Zuo9j" Bounds="91,722,462,21" ShowValueBox="true" isIOBox="true" Value="(and you'll see its literally a difference calculated by subtraction)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LM8lASGiMreL4eTFIcDP6a" Bounds="87,770,570,428" ShowValueBox="true" isIOBox="true" Value="You can imagine it like someone is standing at 0,0 and they are literally pointing in a direction and telling you how far away something is in that direction. &quot;It's that way, 3 steps&quot;. &#xD;&#xA;&#xD;&#xA;VECTOR by itself is expressed in relation to the origin (to the guy standing at 0,0 in the example above). You often need to add a vector back to a known position to do something with it in space. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;VECTORs are sometimes used to give us information about orientation (rotation) but we have to be careful. In 3D the vector does not give us information about every axis of rotation. &#xD;&#xA;If I said 'the object is pointing that way' and pointed with my arm that seems to give us information about orientation right? &#xD;&#xA;It depends on the usecase.&#xD;&#xA;If I'm talking about a building on planet earth and I'm pointing where the front door should be then we can assume the building isn't upside down so we have all the information we need to determine the buildings rotation. (This assumption is using a so called Up Vector to complete the rotation information)&#xD;&#xA;&#xD;&#xA;If I'm on a space station and pointing to where the airlock should be rotated to then that gives us a lot of information about the space station orientation but not all of it....its still unclear which way the space station could be rotated around the axis of my arm. Which might be very important for the spaceship to dock.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GyG07TwL1m0P9T1efCrzu4" Bounds="107,473,444,19" ShowValueBox="true" isIOBox="true" Value="https://app.element.io/#/room/#TransformingBrains:matrix.org">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ld2rAaxwbxzN1F9lNCHyNR" Bounds="115,427,748,28" ShowValueBox="true" isIOBox="true" Value="&lt;Join transforming brains channel&gt;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K25gFWJif9LN5ynnyZ6QV1" Bounds="67,504,744,79" ShowValueBox="true" isIOBox="true" Value="Helped me with the later bits quternions special thanks">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="CWtBaRaO0epN0b1DZb9red" Name="Create" />
+        <Patch Id="Ff2lI6O6CH5MXICPjPKww1" Name="Update" />
+        <ProcessDefinition Id="V5o77Dz46IhQASyRVd45OD">
+          <Fragment Id="EcTBEH5Zjy5PCHmu2gkK9O" Patch="CWtBaRaO0epN0b1DZb9red" Enabled="true" />
+          <Fragment Id="IPzIOE0wFKBP5cTid2CMaG" Patch="Ff2lI6O6CH5MXICPjPKww1" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

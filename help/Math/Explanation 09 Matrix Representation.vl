@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="V767Yirf070MbJ4QdbSgv7" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+  <NugetDependency Id="VJHCNCpIFxDNYoTmPol51e" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <Patch Id="BeFDjcKxfcrM9eLDVXQBcI">
+    <Canvas Id="GkJNAfcIG1yM9zYdRfj78o" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="HbFjPdS0hTLLx77y1VVt9d">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="AQv5gY1LwU3Ofdawa8rAlF">
+        <Canvas Id="PslHeXIZQ6gQd64jpMQG6r" CanvasType="Group">
+          <Overlay Id="I3tEmRQanEiLsWk9IXpT43" Name="Matrix Representation" Bounds="66,48,802,891" />
+          <Pad Id="RoEFqEPyjxCLOCRKkZmpaU" Bounds="132,132,140,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/XiwEyopOMqg?t=5655">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VtNbB5FhXAGOUXEWcuUaYQ" Bounds="115,111,489,19" ShowValueBox="true" isIOBox="true" Value="Freya explains matrices ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Gi6jlrDvHhPLeQ4DNopsGM" Bounds="106,183,723,19" ShowValueBox="true" isIOBox="true" Value=" the matrixes that Freya shows in the video are Column-Major, with the translations on the right">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VvPIX1PcdGvNvJXemTm0Nm" Comment="Translation" Bounds="327,322,60,43" ShowValueBox="true" isIOBox="true" Value="1000, 2000, 3000">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FROWifLUfliMx53HMeUPyl" Bounds="261,275,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/row-major-vs-column-major-vector.html#:~:text=row%2Dmajor%20vector.-,Summary,-The%20differences%20between">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BYcWzhkMQGRPVGQD3SQiLy" Comment="" Bounds="328,580,207,76" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MdUvkmj7S9hPAyLXn1qiK2" Bounds="105,233,723,19" ShowValueBox="true" isIOBox="true" Value="Matrixes in vvvv are Row-Major, meaning the translations are at the bottom. (Coming from DirectX?)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PkqUsod46umMZ9SAAK7dql" Bounds="187,275,85,19" ShowValueBox="true" isIOBox="true" Value="More info:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="325,527,80,19" Id="SCpQfJ1IwHhQditYR5IisR">
+            <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ParallelEpiped" />
+            </p:NodeReference>
+            <Pin Id="CA4QxgnvDIWLhXFejeiv1J" Name="Position" Kind="InputPin" />
+            <Pin Id="QtpYke9dFMlOxzn0B5GPil" Name="X Axis" Kind="InputPin" />
+            <Pin Id="Ev2eqdoTESZPxIknqpiMVV" Name="Y Axis" Kind="InputPin" />
+            <Pin Id="CBZPPY3IGDFNOfBcmTmoPT" Name="Z Axis" Kind="InputPin" />
+            <Pin Id="KptTu9A0OZ7OLlG6bEukB2" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="B2el0WXpCqsNrcu1utsAZa" Comment="X Axis" Bounds="353,375,35,43" ShowValueBox="true" isIOBox="true" Value="1, 2, 3">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PfQ9XdCyAdRNOEugXZHx8x" Comment="Y Axis" Bounds="378,425,35,43" ShowValueBox="true" isIOBox="true" Value="10, 20, 30">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LCP51fpm76PLxziVeRxH8R" Comment="Z Axis" Bounds="402,477,50,43" ShowValueBox="true" isIOBox="true" Value="100, 200, 300">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="990,510,63,19" Id="Sz7HPb4lu7JMUy9DDIUsIc">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Matrix" />
+              <Choice Kind="OperationCallFlag" Name="Transpose" />
+            </p:NodeReference>
+            <Pin Id="NQpEL66FMuDLbxeNVg8lBH" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SZyU1ExGUuyMq8XMq8yj44" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="IgDo3UDWCe9Mw09BhpufFc" Comment="" Bounds="992,575,196,87" ShowValueBox="true" isIOBox="true" Value="1, 10, 100, 1000, 2, 20, 200, 1999.73, 3, 30, 300, 3000, 0, 0, 0, 1" />
+          <Pad Id="Fia4Wz0swnTQA0htn8VYYP" Bounds="1074,519,500,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the transpose node to change to Row Major and vice versa">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Dz5rKTyuFH0M5ccCQ9uSM9" Comment="" Bounds="992,415,211,74" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Matrix" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QAJfztMqij8NywbSCKnDBR" Comment="Translation" Bounds="992,162,60,43" ShowValueBox="true" isIOBox="true" Value="1000, 2000, 3000">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="990,367,80,19" Id="QOufZeGbbiRL2cpr5KgBUE">
+            <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ParallelEpiped" />
+            </p:NodeReference>
+            <Pin Id="UoemXvTHz4WPVqhUmkapS9" Name="Position" Kind="InputPin" />
+            <Pin Id="M8GTGAWJ7qZL0r7VQLLAMb" Name="X Axis" Kind="InputPin" />
+            <Pin Id="K0ZdWu3YxOxMyySKAys3zx" Name="Y Axis" Kind="InputPin" />
+            <Pin Id="MJxoqBI2TLiMoYAcybNeac" Name="Z Axis" Kind="InputPin" />
+            <Pin Id="OWx0yCCbBTjNmeHgUyYY7o" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="I3zOlTh0kF2MfopssDkQaq" Comment="X Axis" Bounds="1018,215,35,43" ShowValueBox="true" isIOBox="true" Value="1, 2, 3">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KIzPiHoNxRwQQ8Mv8baZeC" Comment="Y Axis" Bounds="1043,265,35,43" ShowValueBox="true" isIOBox="true" Value="10, 20, 30">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="IUtu1IWnaSiPB7ZQlhCZ1V" Comment="Z Axis" Bounds="1067,317,50,43" ShowValueBox="true" isIOBox="true" Value="100, 200, 300">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Overlay Id="GjX2AYCMPyqNnG6JqN8kJR" Name="Converting row major to column major and vice versa" Bounds="887,45,646,887" />
+          <Pad Id="Ihu67MfJTMxLhDJoChzdV7" Bounds="147,715,536,55" ShowValueBox="true" isIOBox="true" Value="Its important to be careful if you find solutions on the web (eg for Unity) that have direct matrix operations, as they may be for column-major matrix">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SSE0B0obdJ4LOpF7x1EsKq" Bounds="107,203,489,19" ShowValueBox="true" isIOBox="true" Value="(Note that Freya makes a mistake with the layout and then corrects it 1:53:00..)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="IESNvaO7OIQLuneg3iIJX4" Name="Transformation without translation" Bounds="1560,43,646,977" />
+          <Node Bounds="1635,272,68,19" Id="OuFhd08QBweMxUaqy58jlA">
+            <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4043309058" Name="Vector3" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Transform (Normal)" />
+            </p:NodeReference>
+            <Pin Id="BkfeGDlTiMALcC0af40oyD" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Uxtm28KjCC1Ot6yGDhD1J9" Name="Transform" Kind="InputPin" />
+            <Pin Id="RJggMht2tGkOdzzr63D5nh" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="CuUZDD62DeoNe8S750f3u5" Bounds="1572,91,140,19" ShowValueBox="true" isIOBox="true" Value="https://youtu.be/XiwEyopOMqg?t=6986">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ELJ6tnVRAltMHw994mzTUo" Bounds="1609,130,398,77" ShowValueBox="true" isIOBox="true" Value="Freya talks about 'TransformPoint' functions in unity.&#xD;&#xA;This is where the W value of the translations is zero, effectively meaning translation is not applied to the transformation.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OGSGd9MUNeUNDAjJPCicUO" Bounds="1605,222,408,43" ShowValueBox="true" isIOBox="true" Value="To achieve this in vvvv look in the node browser (with advanced category on) for 'Transform (Normal)'">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G6IukJBIMaUQZHZZMleVyu" Bounds="1701,277,282,55" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This is 'Transform (Normal)'. Hover over this and check tooltip">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kh30YJEXMHENzYSsUzUb41" Bounds="1596,435,466,36" ShowValueBox="true" isIOBox="true" Value="For the other kind of 'TransformPoint': In terms of actually applying a transform to a &quot;point&quot; in terms of datatype">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CQ1xa3S5sM0MtwvCqevSdt" Bounds="1645,490,385,57" ShowValueBox="true" isIOBox="true" Value="Look up vector2 or vector3 in the node browser and then they have transform operations that take and return vector2 and vector3">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1688,607,64,19" Id="LbWSj34SDOKNOZiCkhNaEB">
+            <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4043309057" Name="Vector2" />
+              <Choice Kind="OperationCallFlag" Name="Transform" />
+            </p:NodeReference>
+            <Pin Id="DGyKBtbgSPQNSPwsG06YBr" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TPG4ZOW6i0YPOaiOsrYHso" Name="Transform" Kind="InputPin" />
+            <Pin Id="Mxyfdfn2a2nPkvJDCk2cgZ" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="1866,613,64,19" Id="BIS6g2Y6JqMQAl8s13nV0Y">
+            <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4043309058" Name="Vector3" />
+              <Choice Kind="OperationCallFlag" Name="Transform" />
+            </p:NodeReference>
+            <Pin Id="KPfhrZlY88hMNfmjUB5TPR" Name="Input" Kind="StateInputPin" />
+            <Pin Id="HfXG04ShmXKNUFCVe9UPWG" Name="Transform" Kind="InputPin" />
+            <Pin Id="LwPao00MyEsMJ2PPRMf3kd" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="NAYJ6gzVGCtOahrQbIBHBu" Comment="" Bounds="1690,574,35,28" ShowValueBox="true" isIOBox="true" Value="1, 1">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="IdtxfjBYKtKLxj8Lk2FBuw" Comment="" Bounds="1689,643,35,28" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1747,582,80,19" Id="EhjOJ5oMp3QM6qQaJ70XZF">
+            <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="2D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT" />
+            </p:NodeReference>
+            <Pin Id="CHKMEHsDeIeLbnim3pXd8P" Name="Input" Kind="InputPin" />
+            <Pin Id="VunN7NTvU4QMinnNmULkqq" Name="Scaling" Kind="InputPin" DefaultValue="2, 2" />
+            <Pin Id="OHldVEqqoQ5Pg5hdGxxhZv" Name="Rotation" Kind="InputPin" />
+            <Pin Id="QuwHpsFGNPNLJtqN8knox3" Name="Translation" Kind="InputPin" />
+            <Pin Id="NBE62gNFxJwL17NjB7BSbw" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1926,589,80,19" Id="BJhQOoriibYNu4ddG8pY5x">
+            <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="3D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT" />
+            </p:NodeReference>
+            <Pin Id="S1mzaTlzdKQNjoFkT6Mhp9" Name="Input" Kind="InputPin" />
+            <Pin Id="K8q1Fmy7z2mOq6Zj7yCSK8" Name="Scaling" Kind="InputPin" />
+            <Pin Id="S5LxTVT6HhnMP8XjSWAI9k" Name="Rotation" Kind="InputPin" />
+            <Pin Id="Av1zXvJNrVCLB4d9vv8j8g" Name="Translation" Kind="InputPin" DefaultValue="1, 1, 1" />
+            <Pin Id="QzVIpjw1W4gO2rWI0wAm76" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L9rzqUueR4JMHwWa4MSROn" Comment="" Bounds="1868,562,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 0">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OpzZrYFB2cdMTz3UR6mZsT" Comment="" Bounds="1868,650,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CVtUGp0VhLbMEDFR2RmCSD" Bounds="1647,713,423,59" ShowValueBox="true" isIOBox="true" Value="You also transform a transform... AKA transform a matrix. &#xD;&#xA;Look up matrix category in the nodebrowser and then transform.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1782,858,64,19" Id="V29w1v6mQVbOOMWxtbbbyr">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Matrix" />
+              <Choice Kind="OperationCallFlag" Name="Transform" />
+            </p:NodeReference>
+            <Pin Id="CbHCedawh0oOg07DHbCnj1" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BTfbvRvalagO8BrOfNJZGZ" Name="Transformation" Kind="InputPin" />
+            <Pin Id="E2e4TDWFS7WPW3gdTRpvFr" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="ClJnMWwrj3EOqezi5IIthJ" Comment="" Bounds="1784,772,119,61" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Matrix" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1936,804,80,19" Id="DrjuNvG1k8cOwgEXXdizMq">
+            <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="2D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT" />
+            </p:NodeReference>
+            <Pin Id="FZ1VJpRvvRxNQOo5I2hILc" Name="Input" Kind="InputPin" />
+            <Pin Id="UA3qTlJpJXxM6mG7iWIGYZ" Name="Scaling" Kind="InputPin" />
+            <Pin Id="VkwmQsrjBRUOWcULh4ryUr" Name="Rotation" Kind="InputPin" />
+            <Pin Id="UPHGTCrVptyMesJda8UG1Q" Name="Translation" Kind="InputPin" />
+            <Pin Id="QSJf0AX3hbFMzNZQRwMNbH" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QyZfxTKXWK2Oy9V4IIsv9Q" Comment="" Bounds="1783,898,119,61" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="Lid78gbjcHVNJAVXO5Jwa8" Name="Identity Matrix" Bounds="2228,42,610,797" />
+          <Pad Id="MmmTrG9wsoXMyEZcQosHBI" Bounds="2286,166,294,21" ShowValueBox="true" isIOBox="true" Value="The 'default' matrix is called the Identity Matrix">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="2357,473,58,26" Id="Hv52kEx1RZKPuYCMBg4G30">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsIdentity" />
+            </p:NodeReference>
+            <Pin Id="ITkOE46PQw8Ovkyj0Ic5zN" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DHQ5OXy2xMMLuCN1mJpUuX" Name="Is Identity" Kind="OutputPin" />
+          </Node>
+          <Pad Id="P7NSjEF8m1mOXywRekaoON" Comment="Is Identity" Bounds="2360,541,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KTfLA5nLVGBNGYzyJHC2q6" Bounds="2434,482,388,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the 'IsIdentity' node to check">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="2357,308,80,19" Id="KBIxUp7wWaXNGmDgSWZ7CX">
+            <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="3D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT" />
+            </p:NodeReference>
+            <Pin Id="TgHmX45TGB5PKBrDslCHU9" Name="Input" Kind="InputPin" />
+            <Pin Id="U88gNe7IUxiMNcQujKVoFi" Name="Scaling" Kind="InputPin" />
+            <Pin Id="JqS64YXQ5GFQO0i0Ns1QK7" Name="Rotation" Kind="InputPin" />
+            <Pin Id="Cp0yrpZKVAOOdfq5zdZw9V" Name="Translation" Kind="InputPin" />
+            <Pin Id="Vyrz6DEb8aHPs30KzFn7kS" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ARtt3b69CG3NbQBU1SCE0Q" Comment="Scaling" Bounds="2383,209,35,43" ShowValueBox="true" isIOBox="true" Value="1, 1, 1">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NFwqZsTHs1DNdrpHLB1I7p" Comment="Rotation" Bounds="2475,211,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 0">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Uz3wQkZA1SBLiAywQjfY7t" Comment="Translation" Bounds="2574,209,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 0">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KTl0Hsu7WPINlhfoDnnLV6" Bounds="2619,228,196,102" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change anything from defaults and it will no longer be an identity matrix">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G8QYrBZkSIEQXZ4YydpNdJ" Comment="" Bounds="2359,359,119,61" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="HW0Fd5cnzNnNyESqVryQuu" Name="Matrix and direction naming" Bounds="2848,43,598,792" />
+          <Node Bounds="3190,232,53,26" Id="IRjGFGft3JzNi79FkVFWmQ">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Forward" />
+            </p:NodeReference>
+            <Pin Id="TC5qBRqsnmeLcznXnVrLAz" Name="Input" Kind="StateInputPin" />
+            <Pin Id="F0C8hhSkCdYPXks47bI5Qk" Name="Forward" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CcD02X6gXCqOIliyG4PIYW" Comment="Forward" Bounds="3192,282,35,43" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="3095,232,39,26" Id="CHac3FNVnaULzEQhzCeNuf">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Matrix" />
+              <Choice Kind="OperationCallFlag" Name="Up" />
+            </p:NodeReference>
+            <Pin Id="GFuD13kYFDSLqYOT5OxpWb" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Vb959EcpbIuL34z4GxrQYU" Name="Up" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Vv57m5awvbEOAiqq1R4n4l" Comment="Up" Bounds="3096,282,35,43" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="2997,232,40,26" Id="P14b9WPNuQiLjNl08xQnYL">
+            <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Matrix" />
+              <Choice Kind="OperationCallFlag" Name="Right" />
+            </p:NodeReference>
+            <Pin Id="EQMK5yJNnzoMUQ5UMPzgqZ" Name="Input" Kind="StateInputPin" />
+            <Pin Id="G6MSfRu1A7fOT6MvL4Fnhh" Name="Right" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FMfbG1d70EnLvVyJ4t0Elu" Comment="Right" Bounds="2999,282,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="S3BluQ8Gm6NMRm4pkUySzt" Bounds="2850,78,580,112" ShowValueBox="true" isIOBox="true" Value="In code snippets for unity etc you will often see access to axis vectors from a matrix using matrix.right(), matrix.up(), matrix.forward().&#xD;&#xA;(And also down, left, backward) &#xD;&#xA;Up() and Right() behave as you would expect with the positive axis value.&#xD;&#xA;Be aware that Forward() is the standard naming for the NEGATIVE z value in vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VF3M7naq7lzLUizW4mfoug" Name="" Bounds="3167,198,126,149">
+            <p:ColorIndex p:Type="Int32">7</p:ColorIndex>
+          </Overlay>
+          <Pad Id="IyLZfhkEnixPM1Jd5GhcyG" Bounds="2850,394,578,40" ShowValueBox="true" isIOBox="true" Value="This convention appears to be inherited from stride, see how the forward function negates the values it retrieves from the matrix">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QAG6gSjEkk1M7Un8CUfJdg" Bounds="2850,436,140,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/stride3d/stride/blob/master-4.0/sources/core/Stride.Core.Mathematics/Matrix.cs/#L364">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GVxbDoNiFuQL7IVSSDYXh0" Bounds="2850,489,576,66" ShowValueBox="true" isIOBox="true" Value="Note that this doesn't mean anything is 'automatically flipped'.&#xD;&#xA;Imported models that 'face' towards Z positive will still face z positive when they have an identity (default) transform.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ES924OmstaLOFza1t4kMrI" Bounds="2850,597,567,29" ShowValueBox="true" isIOBox="true" Value="When you specify Z axis manually (eg on ParallelEpiped node) you still specify a positive Z axis.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CutXSBGc3EVL13XeZNGMp0" Bounds="2850,561,577,26" ShowValueBox="true" isIOBox="true" Value="The 'Blue Arrow' axis on the default axis (press f4 on any stride window) still points Z positive.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DUhSNfttzC8PXKgZ6aMlWV" Bounds="2850,641,568,65" ShowValueBox="true" isIOBox="true" Value="Recommendation: If your project involves forward vectors and you are finding this confusing then instead of using terms like 'forward vector' or 'backwards vector' say 'local z positive vector'">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qot5vWD7DBjPuP4FGWUGZv" Bounds="1685,986,434,19" ShowValueBox="true" isIOBox="true" Value="Note the order of the inputs matters with matrices">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="QLkvH6Irdj5NkvwJDGDzsz" Name="Transforming a position" Bounds="1590,390,529,311" />
+        </Canvas>
+        <Patch Id="GxiHhwLMTgvL9YjPfFwdH0" Name="Create" />
+        <Patch Id="Nn1zVMUabZjNbjagtWEYfX" Name="Update" />
+        <ProcessDefinition Id="Ft4KYHF4VFOMdRCah2MNz7">
+          <Fragment Id="MESFoK7gkkLMWTrHNfWUj0" Patch="GxiHhwLMTgvL9YjPfFwdH0" Enabled="true" />
+          <Fragment Id="AjCF9HKCb3hPxlroJCDDYS" Patch="Nn1zVMUabZjNbjagtWEYfX" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="NNQ0blPRU3YMdMT37E3urw" Ids="VvPIX1PcdGvNvJXemTm0Nm,CA4QxgnvDIWLhXFejeiv1J" />
+        <Link Id="UaUbAIt0sYfMH5DbW09bZs" Ids="KptTu9A0OZ7OLlG6bEukB2,BYcWzhkMQGRPVGQD3SQiLy" />
+        <Link Id="D1oOw7gn6QXNiY199KeSrr" Ids="B2el0WXpCqsNrcu1utsAZa,QtpYke9dFMlOxzn0B5GPil" />
+        <Link Id="QyboyxyU1v3ONvsQQaWmf3" Ids="PfQ9XdCyAdRNOEugXZHx8x,Ev2eqdoTESZPxIknqpiMVV" />
+        <Link Id="LWg0DlsnTR7PR6Z8cbfr3M" Ids="LCP51fpm76PLxziVeRxH8R,CBZPPY3IGDFNOfBcmTmoPT" />
+        <Link Id="Iigg2u9BVOFMayXyIgeHhL" Ids="SZyU1ExGUuyMq8XMq8yj44,IgDo3UDWCe9Mw09BhpufFc" />
+        <Link Id="A73i6TmANz8NwvQvWhcv4C" Ids="Dz5rKTyuFH0M5ccCQ9uSM9,NQpEL66FMuDLbxeNVg8lBH" />
+        <Link Id="MKMroAn8nGiOlCIe2XFykO" Ids="QAJfztMqij8NywbSCKnDBR,UoemXvTHz4WPVqhUmkapS9" />
+        <Link Id="JoH51ScbBozNFLg5jJTV94" Ids="I3zOlTh0kF2MfopssDkQaq,M8GTGAWJ7qZL0r7VQLLAMb" />
+        <Link Id="B065256beNBOID8euIADTn" Ids="KIzPiHoNxRwQQ8Mv8baZeC,K0ZdWu3YxOxMyySKAys3zx" />
+        <Link Id="UsDXasdAKHjOFMaa28K9GF" Ids="IUtu1IWnaSiPB7ZQlhCZ1V,MJxoqBI2TLiMoYAcybNeac" />
+        <Link Id="QnaWYs01ibWMmK3qBgIntn" Ids="OWx0yCCbBTjNmeHgUyYY7o,Dz5rKTyuFH0M5ccCQ9uSM9" />
+        <Link Id="UpTTflIVIwINf8itLpgkiJ" Ids="NAYJ6gzVGCtOahrQbIBHBu,DGyKBtbgSPQNSPwsG06YBr" />
+        <Link Id="Q7UYwRIvVUyLrU2iVhAPHF" Ids="Mxyfdfn2a2nPkvJDCk2cgZ,IdtxfjBYKtKLxj8Lk2FBuw" />
+        <Link Id="QSOW9JP2JXvQIVF7VLihuk" Ids="NBE62gNFxJwL17NjB7BSbw,TPG4ZOW6i0YPOaiOsrYHso" />
+        <Link Id="KfoYM9PWrMRL2XSz7lrrY2" Ids="QzVIpjw1W4gO2rWI0wAm76,HfXG04ShmXKNUFCVe9UPWG" />
+        <Link Id="Ldw3gPOckQ5NQdcsXA0L3h" Ids="L9rzqUueR4JMHwWa4MSROn,KPfhrZlY88hMNfmjUB5TPR" />
+        <Link Id="FNN2RTTTEPlM4z0IRIuj5y" Ids="LwPao00MyEsMJ2PPRMf3kd,OpzZrYFB2cdMTz3UR6mZsT" />
+        <Link Id="BbW6apwmhXCOzshtM4RM99" Ids="ClJnMWwrj3EOqezi5IIthJ,CbHCedawh0oOg07DHbCnj1" />
+        <Link Id="GLZ9fC3VBewLNuFloZO9R0" Ids="QSJf0AX3hbFMzNZQRwMNbH,BTfbvRvalagO8BrOfNJZGZ" />
+        <Link Id="Jxg96m6K5T2O55pHYCONBK" Ids="E2e4TDWFS7WPW3gdTRpvFr,QyZfxTKXWK2Oy9V4IIsv9Q" />
+        <Link Id="VX5UFrxYiW4OuoDqmKuwfN" Ids="DHQ5OXy2xMMLuCN1mJpUuX,P7NSjEF8m1mOXywRekaoON" />
+        <Link Id="SX5He8UR7VPLTb2A8qYVMb" Ids="ARtt3b69CG3NbQBU1SCE0Q,U88gNe7IUxiMNcQujKVoFi" />
+        <Link Id="EHjoTtqXhTmNqyZqklZepT" Ids="NFwqZsTHs1DNdrpHLB1I7p,JqS64YXQ5GFQO0i0Ns1QK7" />
+        <Link Id="T6txredDaCyMxlfd6dKhqN" Ids="Uz3wQkZA1SBLiAywQjfY7t,Cp0yrpZKVAOOdfq5zdZw9V" />
+        <Link Id="K1tU9zrMFhNLs1lRgCAvnX" Ids="Vyrz6DEb8aHPs30KzFn7kS,G8QYrBZkSIEQXZ4YydpNdJ" />
+        <Link Id="MG8xvl5iK92PlG1Pg4m6u3" Ids="G8QYrBZkSIEQXZ4YydpNdJ,ITkOE46PQw8Ovkyj0Ic5zN" />
+        <Link Id="V2VIXE5CT6qMu2VgjIvCdI" Ids="F0C8hhSkCdYPXks47bI5Qk,CcD02X6gXCqOIliyG4PIYW" />
+        <Link Id="BINRuT8FrWPPqEnFtRmE0o" Ids="Vb959EcpbIuL34z4GxrQYU,Vv57m5awvbEOAiqq1R4n4l" />
+        <Link Id="R8yUMmMn7z2OsTOLs1svlc" Ids="G6MSfRu1A7fOT6MvL4Fnhh,FMfbG1d70EnLvVyJ4t0Elu" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

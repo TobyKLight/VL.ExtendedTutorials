@@ -1,0 +1,17 @@
+Next:
+
+
+-FPS CAM 
+-SpaceFighter Cam ... with velocity, acceleration, turning... 
+
+NOTE Need to add VL.PolyTools as a dependency to the nuget if you put this into VL.ExtendedTutorials
+NOTE2 Will need to push latest VL.PolyTools and have that version specified in the depeencies... Minimum V1.3.0 
+
+
+
+
+-------------
+//If you do CAmera transforms... 
+
+Check this thread on view transform for billboards... 
+https://matrix.to/#/!wujnTyabvItCIgnlFd:matrix.org/$169442959936771ODQCz:matrix.org?via=matrix.org&via=t2bot.io&via=experienss.modular.im
