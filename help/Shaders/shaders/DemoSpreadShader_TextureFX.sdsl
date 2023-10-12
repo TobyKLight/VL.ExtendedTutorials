@@ -1,0 +1,38 @@
+[TextureSource]
+[Category("Source")]
+[Summary("")]
+shader DemoSpreadShader_TextureFX : TextureFX
+{
+    [Color]
+    float4 Color = float4(1, 1, 1, 1);
+	
+	//To create the inputs declare StructuredBuffers here with the subtype you want. 
+	//Note1 the input pin won't appear on the vvvv shader node with just the buffer declaration. The buffer has to be used in the shader code below. 
+	//Note2 color is float4. 
+	
+	
+	StructuredBuffer<float4> Colors  ;
+	StructuredBuffer<float> Intensities  ;
+
+    stage override float4 Shading()
+    {
+        
+		float2 uv = streams.TexCoord;
+		
+		//Use GetDimensions function to get the count of the buffer. You also have to get the Stride even if you don't use it. 
+		
+		uint count, stride;
+        Colors.GetDimensions(count, stride);
+		
+		float4 c;  
+		
+		int index = uv.x * count;
+		
+		//then access the values using typical array notation. 
+		
+		c = Colors[index] * Intensities[index];
+		
+		
+		return c;
+    }
+};
