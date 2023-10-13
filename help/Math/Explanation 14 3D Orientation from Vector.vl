@@ -43,7 +43,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="VrO1NiyzkXbLKO8kIx24O3" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="MXkJVQRIGKxQcz3W2gJM07" Name="Bounds" Kind="InputPin" DefaultValue="-19.2, 323.2, 1536, 800.8" />
+            <Pin Id="MXkJVQRIGKxQcz3W2gJM07" Name="Bounds" Kind="InputPin" DefaultValue="0, 23.2, 1536, 800.8" />
             <Pin Id="HLA7w475s2eMFiPNjlrWsv" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="Hp34lGmZ7NgMlkkVCMPOwx" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="PgGM8F6YqaOPGYuPnZMokz" Name="Save Bounds" Kind="InputPin" />
@@ -1521,7 +1521,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="Ee9e3M4GVSFPpithgDVTWC" Name="Concept5 Special cases with vector based orientation" Bounds="3588,268,720,955" />
-          <Pad Id="IIKbVESOStlPAXQRXzo9gm" Bounds="3865,590,282,156" ShowValueBox="true" isIOBox="true" Value="2. If target is on same normalised vector as Up it won't return a valid result.&#xD;&#xA;Try making target (0,0.98, 0) and Up (0,1,0) and see what happens. Slide the target Y value forward and back and see what happens.... ultimately no target on the same or flipped vector as up will return a valid result.">
+          <Pad Id="IIKbVESOStlPAXQRXzo9gm" Bounds="3865,590,282,156" ShowValueBox="true" isIOBox="true" Value="2. If target is the same normalised direction as Up it won't return a valid result.&#xD;&#xA;Try making target (0,0.98, 0) and Up (0,1,0) and see what happens. Slide the target Y value forward and back and see what happens.... ultimately no target on the same or flipped vector as up will return a valid result.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1570,7 +1570,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KIHhWNnnQ3lOOyzeQrME86" Bounds="836,316,566,120" ShowValueBox="true" isIOBox="true" Value="Ok so what if we do want to roll around the target vector? &#xD;&#xA;It's not intuitive to rotate the up vector directly.&#xD;&#xA;&#xD;&#xA;Notice how the Z positive axis became the new target axis. &#xD;&#xA;This means we can apply euler roation around Z after the lookat transform and it will rotate around this axis. ">
+          <Pad Id="KIHhWNnnQ3lOOyzeQrME86" Bounds="836,321,566,120" ShowValueBox="true" isIOBox="true" Value="Ok so what if we do want to roll around the target vector? &#xD;&#xA;It may not be intuitive to rotate the up vector directly.&#xD;&#xA;&#xD;&#xA;Notice how the Z positive axis became the new target axis. &#xD;&#xA;This means we can apply euler roation around Z after the lookat transform and it will rotate around this axis. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1725,7 +1725,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LgLpTsp2p5xLZs4TnbdIs9" Bounds="1487,314,429,83" ShowValueBox="true" isIOBox="true" Value="Isn't there a way to automatically calculate up vector? &#xD;&#xA;Yes but it has its own problems.">
+          <Pad Id="LgLpTsp2p5xLZs4TnbdIs9" Bounds="1487,314,429,83" ShowValueBox="true" isIOBox="true" Value="Isn't there a way to automatically calculate up vector? &#xD;&#xA;Yes but it has its own problems in some usecases.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

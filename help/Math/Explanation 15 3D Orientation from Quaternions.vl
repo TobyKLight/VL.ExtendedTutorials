@@ -1030,7 +1030,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EvIRPXXarnuOrpsVUMHZL1" Bounds="113,64,491,19" ShowValueBox="true" isIOBox="true" Value="For quaternion concept reccomend these videos">
+          <Pad Id="EvIRPXXarnuOrpsVUMHZL1" Bounds="113,64,491,19" ShowValueBox="true" isIOBox="true" Value="For quaternion concept these are good videos">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1123,7 +1123,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="C480RyscwCqPAQLa05koMr" Bounds="145,648,436,216" ShowValueBox="true" isIOBox="true" Value="The 4 dimensions of a quaternion are referred to as XYZW.&#xD;&#xA;&#xD;&#xA;Although it's called &quot;XYZ&quot;, these aren't in a unit like cycles and practically they don't have a direct mapping to XYZ dimensions of 3D rotation or other uses of XYZ. &#xD;&#xA;&#xD;&#xA;The default quaternion values are 0,0,0,1. This is equivalent to euler angles of 0,0,0. &#xD;&#xA;&#xD;&#xA;By itself this means 'no change in angle' from the default orientation in stride.&#xD;&#xA;">
+          <Pad Id="C480RyscwCqPAQLa05koMr" Bounds="145,648,436,216" ShowValueBox="true" isIOBox="true" Value="The 4 dimensions of a quaternion are referred to as XYZW.&#xD;&#xA;&#xD;&#xA;Although it's called &quot;XYZ&quot;, these aren't in a unit like cycles and practically they don't have a direct mapping to XYZ dimensions of 3D rotation or other uses of XYZ. &#xD;&#xA;&#xD;&#xA;The default quaternion values are 0,0,0,1. &#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1284,7 +1284,7 @@
             <Pin Id="E8ASyphIjW3NrXVJtnE6w4" Name="Result" Kind="OutputPin" />
           </Node>
           <Overlay Id="Fv5ipQEmCYZOdzN33d9Bat" Name="Quaternion normalisation" Bounds="125,903,495,305" />
-          <Pad Id="FDKxcBQs1i4OCqp6TLyO4z" Bounds="166,1008,417,206" ShowValueBox="true" isIOBox="true" Value="In theory quaternions should be 'unit quaternions' that are normalised. They have a 'Normalize' node for this purpose.&#xD;&#xA;&#xD;&#xA;The nodes that generate quaternions (see the next helppatch) already produce normalised quaternions. &#xD;&#xA;&#xD;&#xA;If you directly create a quaternion OR you are integrating quaternions then normalising may be needed. (see the dead reackoning helppatch)&#xD;&#xA;">
+          <Pad Id="FDKxcBQs1i4OCqp6TLyO4z" Bounds="166,1008,417,206" ShowValueBox="true" isIOBox="true" Value="In theory quaternions should be 'unit quaternions' that are normalised. They have a 'Normalize' node for this purpose.&#xD;&#xA;&#xD;&#xA;The nodes that generate quaternions (see the next helppatch) should already produce normalised quaternions. &#xD;&#xA;&#xD;&#xA;If you directly create a quaternion OR you are integrating quaternions then normalising may be needed. (see the dead reackoning helppatch)&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

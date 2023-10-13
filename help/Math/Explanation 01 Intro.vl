@@ -79,7 +79,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LM8lASGiMreL4eTFIcDP6a" Bounds="87,770,570,428" ShowValueBox="true" isIOBox="true" Value="You can imagine it like someone is standing at 0,0 and they are literally pointing in a direction and telling you how far away something is in that direction. &quot;It's that way, 3 steps&quot;. &#xD;&#xA;&#xD;&#xA;VECTOR by itself is expressed in relation to the origin (to the guy standing at 0,0 in the example above). You often need to add a vector back to a known position to do something with it in space. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;VECTORs are sometimes used to give us information about orientation (rotation) but we have to be careful. In 3D the vector does not give us information about every axis of rotation. &#xD;&#xA;If I said 'the object is pointing that way' and pointed with my arm that seems to give us information about orientation right? &#xD;&#xA;It depends on the usecase.&#xD;&#xA;If I'm talking about a building on planet earth and I'm pointing where the front door should be then we can assume the building isn't upside down so we have all the information we need to determine the buildings rotation. (This assumption is using a so called Up Vector to complete the rotation information)&#xD;&#xA;&#xD;&#xA;If I'm on a space station and pointing to where the airlock should be rotated to then that gives us a lot of information about the space station orientation but not all of it....its still unclear which way the space station could be rotated around the axis of my arm. Which might be very important for the spaceship to dock.">
+          <Pad Id="LM8lASGiMreL4eTFIcDP6a" Bounds="91,765,570,428" ShowValueBox="true" isIOBox="true" Value="You can imagine it like someone is standing at 0,0 and they are literally pointing in a direction and telling you how far away something is in that direction. &quot;It's that way, 3 steps&quot;. &#xD;&#xA;&#xD;&#xA;VECTOR by itself is expressed in relation to the origin (to the guy standing at 0,0 in the example above). You often need to add a vector back to a known position to do something with it in space. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;VECTORs are sometimes used to give us information about orientation (rotation) but we have to be careful. In 3D the vector does not give us information about every axis of rotation. &#xD;&#xA;If I said 'the object is pointing that way' and pointed with my arm that seems to give us information about orientation right? &#xD;&#xA;It depends on the usecase.&#xD;&#xA;If I'm talking about a building on planet earth and I'm pointing where the front door should be then we can assume the building isn't upside down so we have all the information we need to determine the buildings rotation. (This assumption about orientation of the building due to gravity is a so called &quot;Up Vector&quot;, used as a helper to complete the rotation information)&#xD;&#xA;&#xD;&#xA;If I'm on a space station and pointing to where the airlock should be for an incoming space ship then that gives us a lot of information about the space station orientation but not all of it....its still unclear which way the space station could be rotated around the axis of my arm. Which might be very important for the spaceship to dock.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -88,7 +88,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GyG07TwL1m0P9T1efCrzu4" Bounds="107,473,444,19" ShowValueBox="true" isIOBox="true" Value="https://app.element.io/#/room/#TransformingBrains:matrix.org">
+          <Pad Id="GyG07TwL1m0P9T1efCrzu4" Bounds="65,413,444,19" ShowValueBox="true" isIOBox="true" Value="https://app.element.io/#/room/#TransformingBrains:matrix.org">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -97,7 +97,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ld2rAaxwbxzN1F9lNCHyNR" Bounds="115,427,748,28" ShowValueBox="true" isIOBox="true" Value="&lt;Join transforming brains channel&gt;">
+          <Pad Id="Ld2rAaxwbxzN1F9lNCHyNR" Bounds="73,367,748,28" ShowValueBox="true" isIOBox="true" Value="For more vvvv related maths support consider joining the 'transforming brains' matrix channel">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -106,7 +106,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="K25gFWJif9LN5ynnyZ6QV1" Bounds="67,504,744,79" ShowValueBox="true" isIOBox="true" Value="Helped me with the later bits quternions special thanks">
+          <Pad Id="K25gFWJif9LN5ynnyZ6QV1" Bounds="70,444,744,79" ShowValueBox="true" isIOBox="true" Value="Special thanks to the colleagues here, they helped me with the later bits ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

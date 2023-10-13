@@ -1520,7 +1520,7 @@
           <ControlPoint Id="ExCsfTpfegaOoIgtyu9Vm8" Bounds="1462,770" />
           <ControlPoint Id="GN5UroBT5l0LIcaXlfKwt0" Bounds="1465,771" />
           <ControlPoint Id="LrOcq2XoCV8PSfMm4YWLu2" Bounds="1464,331" />
-          <Pad Id="TAoqGhPVht6P4y4Yt37ysH" Bounds="1800,472,355,347" ShowValueBox="true" isIOBox="true" Value="What is the usecase of the dot product?&#xD;&#xA;It tells us how similar the DIRECTION is.&#xD;&#xA;&#xD;&#xA;For normalised inputs:&#xD;&#xA;If you move the positions so they almost overlap you will see dot product close to 1.0&#xD;&#xA;&#xD;&#xA;Move them further apart and it gets lower.&#xD;&#xA;&#xD;&#xA;Move them 90 degrees apart and it becomes 0&#xD;&#xA;&#xD;&#xA;Move them 180 degrees apart and it becomes -1.0&#xD;&#xA;&#xD;&#xA;In a game you can use this to tell if the player is looking at something or if an enemy is looking at the player... if dot product is less than some limit than two vectors are similar. &#xD;&#xA;&#xD;&#xA;For another usecase check the next patch&#xD;&#xA;">
+          <Pad Id="TAoqGhPVht6P4y4Yt37ysH" Bounds="1800,472,355,354" ShowValueBox="true" isIOBox="true" Value="What is the usecase of the dot product?&#xD;&#xA;It tells us how similar the DIRECTION of two vectors is. &#xD;&#xA;&#xD;&#xA;For normalised inputs:&#xD;&#xA;If you move the positions so they almost overlap you will see dot product close to 1.0&#xD;&#xA;&#xD;&#xA;Move them further apart and it gets lower.&#xD;&#xA;&#xD;&#xA;Move them 90 degrees apart and it becomes 0&#xD;&#xA;&#xD;&#xA;Move them 180 degrees apart and it becomes -1.0&#xD;&#xA;&#xD;&#xA;In a game you can use this to tell if the player is looking at something or if an enemy is looking at the player... if dot product is less than some limit than two vectors are similar. &#xD;&#xA;&#xD;&#xA;For another usecase check the next patch&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1556,7 +1556,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BmdwTBVGKSGOLrrYqEfmqu" Bounds="125,106,455,51" ShowValueBox="true" isIOBox="true" Value="Dot product is ONE WAY to multiply vectors.&#xD;&#xA;Before we talk about dot product we should look at the other common ways">
+          <Pad Id="BmdwTBVGKSGOLrrYqEfmqu" Bounds="125,106,455,51" ShowValueBox="true" isIOBox="true" Value="Dot product is ONE WAY to multiply vectors.&#xD;&#xA;Before we talk about dot product we should look at the other common ways to do multiplication with vectors">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1745,7 +1745,7 @@
             <Pin Id="BynTQ7FCB9bOZjSLBsm4cD" Name="Input 2" Kind="InputPin" />
             <Pin Id="TYERd5NRm9FMMBi9jCeD3f" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="OIrJ3jnyFWiQIh4uM5dkyu" Bounds="1550,998,104,99" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="OIrJ3jnyFWiQIh4uM5dkyu" Bounds="1550,998,104,99" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -1927,6 +1927,24 @@
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N3eICZyPBVnNprjE4t6aHa" Bounds="1455,18,486,35" ShowValueBox="true" isIOBox="true" Value="For these two concepts you can change the visualisation at the bottom.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JiolvOwxYo8PvWQiArDvhN" Bounds="2752,68,241,48" ShowValueBox="true" isIOBox="true" Value="Remember clockwise and counterclockwise is affectd by the direction of the Y axis. Y axis is positive upwards in Stride and positive downards in Skia. More on this later.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>

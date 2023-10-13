@@ -377,7 +377,7 @@
             <Pin Id="CUVDBoHoNErM4VoBWbpLxa" Name="Output" Kind="OutputPin" />
           </Node>
           <Overlay Id="R1vg6jH92oUN0qhUZKzAlw" Name="Version A: Use ParallelEpiped to set a matrix" Bounds="607,474,485,1117" />
-          <Pad Id="URNzstiWqV6LuSi47TrUed" Bounds="655,96,597,26" ShowValueBox="true" isIOBox="true" Value="This explores different methods for creating quaternion rotations from vectors.">
+          <Pad Id="URNzstiWqV6LuSi47TrUed" Bounds="658,76,597,26" ShowValueBox="true" isIOBox="true" Value="This explores different methods for creating quaternion rotations from vectors.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -397,7 +397,7 @@
             <Pin Id="VAbaZ3ucPj2OwQoObTz8sg" Name="Z Axis" Kind="InputPin" />
             <Pin Id="VkreSXBlZNzO0bEBq58oYd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="BXYEDHYfQr8N1alJBGXfaV" Bounds="630,518,399,79" ShowValueBox="true" isIOBox="true" Value="Using ParallelEpiped we can specify the orientation directly by specifying positive vectors for all three axes. It's a very clear way to provide the orientation and without using angles at all.&#xD;&#xA;The problem in this case is it provides a matrix, not a quaternion. ">
+          <Pad Id="BXYEDHYfQr8N1alJBGXfaV" Bounds="630,518,399,79" ShowValueBox="true" isIOBox="true" Value="Using ParallelEpiped we can specify the orientation directly by specifying positive vectors for all three axes. It's a very clear way to provide the orientation and without using angles at all.&#xD;&#xA;The problem in this case is it doen't actually achieve our goal as it provides a matrix, not a quaternion. It's here for reference ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -763,7 +763,7 @@
               <CategoryReference Kind="Category" Name="3D" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AfeTTOgDdvHMHgHsIMqwSw" Bounds="654,129,483,76" ShowValueBox="true" isIOBox="true" Value="For each rotation it shows a Utah Teapot and the target direction as a purple arrow. For operations that support it shows the Up Vector in yellow.&#xD;&#xA;&#xD;&#xA;You want to turn on the global grid and axis with f4 to compare.">
+          <Pad Id="AfeTTOgDdvHMHgHsIMqwSw" Bounds="657,109,483,76" ShowValueBox="true" isIOBox="true" Value="For each rotation it shows a Utah Teapot and the target direction as a purple arrow. For operations that support it shows the Up Vector in yellow.&#xD;&#xA;&#xD;&#xA;You want to turn on the global grid and axis with f4 to compare.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3546,7 +3546,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="O6tSNxDaRbAMaxkKRAeXot" Bounds="882,243,343,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change these to see how the different solutions work">
+          <Pad Id="O6tSNxDaRbAMaxkKRAeXot" Bounds="874,242,343,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change these to see how the different solutions work">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3666,6 +3666,24 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="SWvxJHEH573MhNnwZ4rhUp" Bounds="5330,710,146,186" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change this to roll around the Z axis before the direction rotation">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Soodea1IPuYN6X03QtiY4P" Bounds="879,262,343,19" ShowValueBox="true" isIOBox="true" Value="In particular note the flips that occur on some solutions">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Nv19Svm3MBNOuk8facuXol" Bounds="658,193,488,19" ShowValueBox="true" isIOBox="true" Value="You may have to zoom out on the stride window to see every teapot">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

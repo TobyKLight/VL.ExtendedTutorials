@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="FElAWOJplr7N8qjieE0U0L" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ScWZsO77lU9NBsmMhhcuKK" Name="Bounds" Kind="InputPin" DefaultValue="910.4, 220, 673.6, 584.8">
+            <Pin Id="ScWZsO77lU9NBsmMhhcuKK" Name="Bounds" Kind="InputPin" DefaultValue="0, 23.2, 1536, 800.8">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -746,7 +746,7 @@
             <Pin Id="JEVucnKh6r2NHUMj34TFBs" Name="Scalar" Kind="InputPin" DefaultValue="-0.11" />
             <Pin Id="R7nPlkjDVXRNYeUZN4oIcK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Overlay Id="TlStIRkGMGsQHMk67dyK7O" Name="3.Specify second orientation 'helper' vector" Bounds="1031,957,1324,396" />
+          <Overlay Id="TlStIRkGMGsQHMk67dyK7O" Name="3.Specify second orientation 'helper' vector" Bounds="1031,957,1324,421" />
           <Pad Id="SdT9YQE5OdWNWYmBeOhYwv" Comment="Orientation helper vector" Bounds="1139,1059,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 1">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector3" />
@@ -840,7 +840,7 @@
             <Pin Id="OoSvjPqx7kpMhho8vBhKs2" Name="Enabled" Kind="InputPin" />
             <Pin Id="V0KECtAKa22ODNaxwFFbUH" Name="Output" Kind="OutputPin" />
           </Node>
-          <Overlay Id="PGCyPILEZbNPiszAjPkN9C" Name="4. Cross product twice" Bounds="759,1436,1303,764" />
+          <Overlay Id="PGCyPILEZbNPiszAjPkN9C" Name="4. How to apply helper vector to build full orientation? use Cross product twice" Bounds="759,1436,1303,764" />
           <Pad Id="Ds90qV7mRG2QbZR2uhKMgl" Bounds="1523,1465,518,546" ShowValueBox="true" isIOBox="true" Value="4. Ok so far if you look at the yellow and purple arrows you see they are very often NOT 90 degrees from each other.&#xD;&#xA;So how do we build the full three basis vectors at 90 degrees to each other?&#xD;&#xA;&#xD;&#xA;The answer is we can do the cross product twice to get a complete orientation.&#xD;&#xA;&#xD;&#xA;&lt;&lt;Enable to view the basis vectors&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;4a. Take the normal vector (as its closest to up in our case) and consider that it should be the new 'up' Y positive direction for our object. Drawn as green arrow.&#xD;&#xA;&#xD;&#xA;4b. The first cross product is between the new Y vector and our helper vector.&#xD;&#xA;Imagine they are on a plane. This cross creates a vector that is shooting out of that plane, locked at 90 degrees to the Y and the helper.  &#xD;&#xA;This becomes our new 'right' X positive direction for our object. Drawn as red arrow. &#xD;&#xA;&#xD;&#xA;4c. The second cross product is between our Y vector and the X vector we just created. Imagine they are on a YX plane. Now we have a Z vector pointing out of that plane. Drawn as blue arrow.&#xD;&#xA;&#xD;&#xA;4d. We said we wanted basis vectors and in this context basis vectors are unit vectors. So to ensure our vectors are unit length lets normalise them.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;(This is very similar to the inside of the AlignToPath node) &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -862,7 +862,7 @@
             <Pin Id="H6maCVJ76PeOq6QtqwcbUB" Name="Input 2" Kind="InputPin" />
             <Pin Id="U8cmdkpyW2eOnva6KYkB3y" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="ObBsyX8TJFjLQQRHrnHKL4" Comment="NormalVector" Bounds="990,1449,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ObBsyX8TJFjLQQRHrnHKL4" Comment="NormalVector" Bounds="987,1498,35,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="UVvGOsaAel0OgYmHJVFKDr" Comment="Orientation helper vector" Bounds="1132,1593,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 1">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector3" />
@@ -1792,7 +1792,7 @@
             <Pin Id="JDg067uhR1uOdXFXEN7ZHm" Name="Enabled" Kind="InputPin" />
             <Pin Id="JKaUuvTmx9aMhLQMvuFXN4" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Pad Id="M7YVdUPE8ufMVmpGUHetOu" Comment="ShowTransformedTeapot" Bounds="1228,2598,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="M7YVdUPE8ufMVmpGUHetOu" Comment="ShowTransformedTeapot" Bounds="1228,2598,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -1871,7 +1871,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Pn5isU0XCh9LN7od3yebCi" Bounds="1063,581,395,41" ShowValueBox="true" isIOBox="true" Value="(NOTE In a more complicated usecase you would probably want to provide something like a 2D position and then sample the mesh at that point, maybe interpolate between vertexes... but we have skipped that it's not really relevant to this problem.)">
+          <Pad Id="Pn5isU0XCh9LN7od3yebCi" Bounds="1063,581,395,41" ShowValueBox="true" isIOBox="true" Value="(NOTE In a more complicated usecase you would probably want to provide something like a 2D position and then sample the mesh at that point, maybe interpolate between vertexes... but we have skipped that)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1922,7 +1922,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="M1eGvKx2vwTLr3gkTSWhrn" Bounds="1416,1073,689,259" ShowValueBox="true" isIOBox="true" Value="Why do we need a helper vector when we already have the normal vector? This is because one vector alone cannot determine orientation of a 3D object. &#xD;&#xA;Imagine we are on a space station and you ask me 'which way is the incoming pod?&quot; I point with my arm and say 'that way'. You orient the space station so the airlock is facing the incoming pod....  but we are missing something. I didn't specify rotation around the axis of my arm. Which could be important for the pod to dock properly.&#xD;&#xA;We could supply that as a rotation value (see the 'Rotate (Axis)' node) &#xD;&#xA;In practice specifying another vector that is an aproximate tangent (right angle) to the first vector is more common.&#xD;&#xA;BUT note we can't just supply any vector, the helper vector should also not be close to aligning with the first vector or it doesn't tell us anything useful. &#xD;&#xA;&#xD;&#xA;Most often this helper vector is known as the 'Up Vector'. (eg see the LookAt nodes)&#xD;&#xA;But In our case the normal is already generally 'up' so we will use forwards (Z positive) as the helper vector. Right (X Positive) would also work. So would anything on that XZ plane. As long as the helper vector will be very roughly right angle to the normal vector.">
+          <Pad Id="M1eGvKx2vwTLr3gkTSWhrn" Bounds="1416,1073,698,300" ShowValueBox="true" isIOBox="true" Value="Why do we need a helper vector when we already have the normal vector? This is because one vector alone cannot determine orientation of a 3D object. &#xD;&#xA;Imagine we are on a space station and you ask me 'which way is the incoming pod?&quot; I point with my arm and say 'that way'. You orient the space station so the airlock is facing the incoming pod....  but we are missing something. I didn't specify rotation around the axis of my arm. Which could be important for the pod to dock properly.&#xD;&#xA;We could supply that as a rotation value (see the 'Rotate (Axis)' node) . But rotated in relation to what? We need more information. &#xD;&#xA;&#xD;&#xA;In practice we prodive a helper vector that is an aproximate tangent (right angle) to the direction vector&#xD;&#xA;It doesn't have to be a perfect tangent, in fact in some usecases it can be very rough, as long as the helper vector is not close to aligning with the direction vector or it doesn't tell us anything useful. &#xD;&#xA;&#xD;&#xA;Most often this helper vector is known as the 'Up Vector' AKA local Y Positive. (eg see the LookAt nodes)&#xD;&#xA;But In our case the direction we are starting with is already generally 'up' so we will use Z positive as the helper vector. X Positive would also work. So would anything on that XZ plane. As long as the helper vector will be very roughly right angle to the normal vector.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

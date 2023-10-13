@@ -20,7 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="RE9se64k4LjMxod06JDAYy" Name="Bounds" Kind="InputPin" DefaultValue="800, 32, 729, 524" />
+            <Pin Id="RE9se64k4LjMxod06JDAYy" Name="Bounds" Kind="InputPin" DefaultValue="800, 32, 728, 524" />
             <Pin Id="BKJKNUHOq1JM3tY7ziWp4j" Name="Save Bounds" Kind="InputPin" />
             <Pin Id="KSP1BSLXNPBQQNb4AzK6aS" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="I0GrH3CPpO0MTIBtrJnbYy" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1304,6 +1304,15 @@
           </Pad>
           <Pad Id="SI4py2v8hKFLSLZRuwKFu0" Comment="ARightDirectionNormalised" Bounds="1730,845,35,28" ShowValueBox="true" isIOBox="true" />
           <Pad Id="H5X40BO69ipOH0cb8pq4jS" Comment="AUpDirectionNormalised" Bounds="1852,863,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HdQwwVS9hM9NdGgG45jyCX" Bounds="136,33,474,26" ShowValueBox="true" isIOBox="true" Value="Work left to right and change the visualisation shown at the bottom">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Irk1TAKck8sPQLPhQSUFNS" Name="Create" />
         <Patch Id="DzzeQzIifoJOPGabTOWPaP" Name="Update" ParticipatingElements="EyUJe8dp0B5Nmcdpgx8cC1,FkxT3xCAVwRMueikjl9Ufv,I3Mz9xTWdsFLDcQRhgIFkq,ObP6gIKYg1SQO56o4ITJWs,VMDXgXISaFSL9tlgXmEWd1,F2spel2FHGZPoJUIjTkJeA,QZjrzUbDwRXM0Qqdeamnx7,R63rUrYzAZ1M3OS7SBCC7A,LG2btXGYiRbN1Wrp1R1NPo,A2RC78EEtZtN3TO31PeSTp" />

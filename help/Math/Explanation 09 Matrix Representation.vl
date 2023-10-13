@@ -467,7 +467,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GVxbDoNiFuQL7IVSSDYXh0" Bounds="2850,489,576,66" ShowValueBox="true" isIOBox="true" Value="Note that this doesn't mean anything is 'automatically flipped'.&#xD;&#xA;Imported models that 'face' towards Z positive will still face z positive when they have an identity (default) transform.">
+          <Pad Id="GVxbDoNiFuQL7IVSSDYXh0" Bounds="2850,489,576,66" ShowValueBox="true" isIOBox="true" Value="Note that this convention doesn't mean anything is 'automatically flipped'.&#xD;&#xA;Imported models that 'face' towards Z positive will still face z positive when they have an identity (default) transform.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

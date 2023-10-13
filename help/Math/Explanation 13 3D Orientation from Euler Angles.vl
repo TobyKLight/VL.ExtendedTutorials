@@ -1215,7 +1215,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="DcoFrqrAJm6QcwGFuNKg1Q" Name="Referesher: Matrix representation of orientation" Bounds="166,289,545,953" />
-          <Pad Id="N1cM5u9hUwPP5zzGDMOddf" Bounds="184,357,496,398" ShowValueBox="true" isIOBox="true" Value="Before we look at angles, remember that matrixes already store 3D orientation in a nice way without a numeric representation of angles.&#xD;&#xA;&#xD;&#xA;Matrixes represent orientation through three vectors that point to the local X Y Z axis of the object.&#xD;&#xA;&#xD;&#xA;See the previous lessons for more details.&#xD;&#xA;&#xD;&#xA;So why do we need other representations of orientation?&#xD;&#xA;&#xD;&#xA;A) Because often rotation by angle is an intutive way to think about CHANGING the orientation of an object.&#xD;&#xA;&#xD;&#xA;B) For some complex apps where you will update object orientation by integration matrixes can accumulate precision errors. This is better handled by other forms of rotation. More on this later.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;In reality a complex application might mix several forms of orientation representation depending on usecase.&#xD;&#xA;">
+          <Pad Id="N1cM5u9hUwPP5zzGDMOddf" Bounds="184,357,496,398" ShowValueBox="true" isIOBox="true" Value="Before we look at angles, remember that matrixes already store 3D orientation in a nice way without a numeric representation of angles.&#xD;&#xA;&#xD;&#xA;Matrixes represent orientation through three basis vectors that point to the local X Y Z axis of the object.&#xD;&#xA;&#xD;&#xA;See the previous lessons for more details.&#xD;&#xA;&#xD;&#xA;So why do we need other representations of orientation?&#xD;&#xA;&#xD;&#xA;A) Because often rotation by angle is an intutive way to think about CHANGING the orientation of an object.&#xD;&#xA;&#xD;&#xA;B) For some complex apps where you will update object orientation by integration. Matrixes can accumulate precision errors. This is better handled by other forms of rotation. More on this later.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;In reality a complex application might mix several forms of orientation representation depending on usecase.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1333,7 +1333,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ALj3JafYESlMFlh8t62xtw" Bounds="984,571,257,45" ShowValueBox="true" isIOBox="true" Value="AKA Pitch Yaw Roll? Explain">
+          <Pad Id="ALj3JafYESlMFlh8t62xtw" Bounds="967,571,257,45" ShowValueBox="true" isIOBox="true" Value="XYZ euler rotation AKA Roll Pitch Yaw">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

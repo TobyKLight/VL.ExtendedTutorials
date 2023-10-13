@@ -20,7 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="HxCGVJpumF2LReItpOkzlh" Name="Bounds" Kind="InputPin" DefaultValue="-864, 32, 744, 608" IsHidden="true" />
+            <Pin Id="HxCGVJpumF2LReItpOkzlh" Name="Bounds" Kind="InputPin" DefaultValue="18, 70, 744, 608" IsHidden="true" />
             <Pin Id="FnSPI0k4P37LP8rEsdC74c" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="OE6Ggd5jn9GNezz33z1AgH" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="VLA5yWY2NEENa2MSMmL017" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -360,7 +360,7 @@
               <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HrUFibHQAkHNdGWSKXRav9" Bounds="376,898,362,80" ShowValueBox="true" isIOBox="true" Value="DIRECTION is now a 2D Value&#xD;&#xA;It's still a unit vector, which means its equivalent to 1. &#xD;&#xA;However unless you are on the axis those values are not 1. &#xD;&#xA;What's going on?">
+          <Pad Id="HrUFibHQAkHNdGWSKXRav9" Bounds="364,877,412,96" ShowValueBox="true" isIOBox="true" Value="DIRECTION is now a 2D Value&#xD;&#xA;It's still a UNIT VECTOR, which means its length equivalent to 1. &#xD;&#xA;However unless the pos is directly on the X or Y axis those direction values are not 1. &#xD;&#xA;What's going on?">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -369,7 +369,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VnolqtubH40Mbi9rbSSxaJ" Bounds="496,1094,286,145" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;In this case the Direction itself still has a length of 1. So it's still a unit vector.&#xD;&#xA;&#xD;&#xA;In 2D you can imagine a circle around the origin with radius 1. The DIRECTION is the position on the edge of that circle that... points in the calculated direction.  &#xD;&#xA;See concept 6">
+          <Pad Id="VnolqtubH40Mbi9rbSSxaJ" Bounds="496,1094,286,187" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;In this case the Direction itself still has a length of 1. So it's still a unit vector.&#xD;&#xA;&#xD;&#xA;In 2D you can imagine a circle around the origin with radius 1. The DIRECTION is the position on the edge of that circle that points in the calculated direction.  &#xD;&#xA;See concept 6">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -995,7 +995,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VQx4L9bYH6VPNfeKbuaEEg" Comment="PosB" Bounds="1578,1066,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UGCd7BA3pJULd4uNPQrwnj" Bounds="1669,568,295,150" ShowValueBox="true" isIOBox="true" Value="This works the same as 1D&#xD;&#xA;Multiply the DIRECTION by the LENGTH . &#xD;&#xA;&#xD;&#xA;Add that to the ORIGINAL POSITION to get the NEW POSITION.&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="UGCd7BA3pJULd4uNPQrwnj" Bounds="1544,554,295,150" ShowValueBox="true" isIOBox="true" Value="This works the same as 1D&#xD;&#xA;Multiply the DIRECTION by the LENGTH . &#xD;&#xA;&#xD;&#xA;Add that to the ORIGINAL POSITION to get the NEW POSITION.&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1259,7 +1259,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I3vht0mLNoWNpPoQ8TZuJh" Bounds="160,456,677,26" ShowValueBox="true" isIOBox="true" Value="First some intro stuff to show you its the same nodeset as before">
+          <Pad Id="I3vht0mLNoWNpPoQ8TZuJh" Bounds="154,557,586,28" ShowValueBox="true" isIOBox="true" Value="First some intro stuff to show you its the same nodeset as before">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1454,7 +1454,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MedQRMzyci2L7ZUti8SmVZ" Bounds="2568,706,348,256" ShowValueBox="true" isIOBox="true" Value="However this example is slightly confusing in this form because vectorA is being used as a vector AND then a position. &#xD;&#xA;&#xD;&#xA;This is fine when everything is in relation to the origin. &#xD;&#xA;&#xD;&#xA;This illustrated how a POSITION in relation to the ORIGIN is equivalent to its VECTOR.&#xD;&#xA;&#xD;&#xA;This is because the vector is the difference between two positions. Anything minus the origin (0,0) of course says the same.">
+          <Pad Id="MedQRMzyci2L7ZUti8SmVZ" Bounds="2598,708,316,260" ShowValueBox="true" isIOBox="true" Value="However this example is slightly confusing in this form because vectorA is being used as a vector AND then a position. &#xD;&#xA;&#xD;&#xA;This is fine when everything is in relation to the origin. &#xD;&#xA;&#xD;&#xA;This illustrates how a POSITION in relation to the ORIGIN is equivalent to its VECTOR.&#xD;&#xA;&#xD;&#xA;This is because the vector is the difference between two positions. Anything minus the origin (0,0) of course says the same.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1770,7 +1770,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DvsZEzGI3uMLOjpqVK21nc" Bounds="4704,763,304,40" ShowValueBox="true" isIOBox="true" Value="Note what happens to the blue representation of the unit vector">
+          <Pad Id="DvsZEzGI3uMLOjpqVK21nc" Bounds="4704,763,342,42" ShowValueBox="true" isIOBox="true" Value="Note what happens to the orange (original) vs blue (normalised) representation of the unit vector">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1833,7 +1833,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OiLxW1lgNirPH5wfIJ7rAO" Bounds="5340,552,428,338" ShowValueBox="true" isIOBox="true" Value="The LENGTH function involves a square root &#xD;&#xA;(Because underneath it uses pythagoras theorem)&#xD;&#xA;&#xD;&#xA;IF you are running into performance issues you can do an OPTIMISATION here. &#xD;&#xA;(But this is probably only going to make a difference if you were doing several hundred or more checks per frame).... &#xD;&#xA;&#xD;&#xA;If you are doing a lot of LENGTH comparisions then instead you can compare LENGTH SQUARED.&#xD;&#xA;&#xD;&#xA;This is a slightly confusing function name because its actually one step less than calculating the complete LENGTH.&#xD;&#xA;It does the SQUARING part of pythagoras function without the SQUARE ROOT.&#xD;&#xA;&#xD;&#xA;This saves the performance of doing the square root.&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="OiLxW1lgNirPH5wfIJ7rAO" Bounds="5340,552,428,338" ShowValueBox="true" isIOBox="true" Value="The LENGTH function involves a square root &#xD;&#xA;(Because underneath it uses pythagoras theorem)&#xD;&#xA;&#xD;&#xA;IF you are running into performance issues you can do an OPTIMISATION here. &#xD;&#xA;(But this is probably only going to make a difference if you were doing several hundred or more checks every frame).... &#xD;&#xA;&#xD;&#xA;If you are doing a lot of LENGTH comparisions then instead you can compare LENGTH SQUARED.&#xD;&#xA;&#xD;&#xA;This is a slightly confusing function name because its actually one step less than calculating the complete LENGTH.&#xD;&#xA;It does the SQUARING part of pythagoras function without the SQUARE ROOT.&#xD;&#xA;&#xD;&#xA;This saves the performance of doing the square root.&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1862,7 +1862,7 @@
             <Pin Id="C4EYVSRq3PLLHAZ0BbldhO" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="CULLzBrD7fgMEzdRVO2fiF" Comment="" Bounds="5534,1026,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Jz2VHUFq8CiPzb29MmAcDW" Bounds="5336,1068,404,170" ShowValueBox="true" isIOBox="true" Value="These results are not the actual length.&#xD;&#xA;But from some usecases they can still be an accurate comparison to EACH OTHER.&#xD;&#xA;So this will still tell you things like which one is closer.&#xD;&#xA;&#xD;&#xA;Wether it makes sense to apply this optimisation all depends on your usecase.">
+          <Pad Id="Jz2VHUFq8CiPzb29MmAcDW" Bounds="5336,1068,404,170" ShowValueBox="true" isIOBox="true" Value="These results are not the actual length.&#xD;&#xA;But for some usecases they can still be an accurate comparison to EACH OTHER.&#xD;&#xA;So this will still tell you things like which one is closer.&#xD;&#xA;&#xD;&#xA;Wether it makes sense to apply this optimisation all depends on your usecase.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2038,6 +2038,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="EWmSvN6sET6NUsqdePeMM0" Name="" Bounds="137,43,775,338" />
+          <Pad Id="DFFhmfnc8XbN0Re4FAdJA8" Bounds="126,13,486,35" ShowValueBox="true" isIOBox="true" Value="Go through each concept left to right and change the visualisation at the bottom.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="RPzymNIqoCgMoeK994lrqk" Name="Create" />
         <Patch Id="M2WZGSy13huN6nIfdjb8il" Name="Update" />

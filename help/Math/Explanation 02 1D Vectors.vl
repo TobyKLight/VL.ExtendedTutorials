@@ -109,7 +109,7 @@
               <p:fontsize p:Type="Int32">20</p:fontsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Gyk6BjX60k8PUZlmu1nKGB" Bounds="494,1466,283,31" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change concept here">
+          <Pad Id="Gyk6BjX60k8PUZlmu1nKGB" Bounds="494,1466,554,31" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change concept visualisation here">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -365,7 +365,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NBq3BgrHwR5NhRKoXlZUjz" Bounds="521,780,186,61" ShowValueBox="true" isIOBox="true" Value="In 1D this is equivelent to using the 'Abs' node (Absolute value)">
+          <Pad Id="NBq3BgrHwR5NhRKoXlZUjz" Bounds="521,780,186,61" ShowValueBox="true" isIOBox="true" Value="(Note: In 1D this is equivelent to using the 'Abs' node (Absolute value))">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -402,7 +402,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VnolqtubH40Mbi9rbSSxaJ" Bounds="470,1067,286,118" ShowValueBox="true" isIOBox="true" Value="From microsoft docs of Vector.Normalize &quot;A normalized vector maintains its direction but its Length becomes 1. The resulting vector is often called a unit vector. &quot;&#xD;&#xA;&#xD;&#xA;The meaning of this becomes more clear later">
+          <Pad Id="VnolqtubH40Mbi9rbSSxaJ" Bounds="470,1067,286,129" ShowValueBox="true" isIOBox="true" Value="From microsoft docs of Vector.Normalize &quot;A normalized vector maintains its direction but its Length becomes 1. The resulting vector is often called a unit vector. &quot;&#xD;&#xA;&#xD;&#xA;The meaning of this will become more clear later">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -411,7 +411,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BUXCpO7Yj66LEGX0C8t9WR" Bounds="434,1203,330,35" ShowValueBox="true" isIOBox="true" Value="Note special case of position 0 = length and direction of 0. ">
+          <Pad Id="BUXCpO7Yj66LEGX0C8t9WR" Bounds="439,1235,320,45" ShowValueBox="true" isIOBox="true" Value="Note special case of position 0 = length and direction of 0. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -982,7 +982,7 @@
             <Pin Id="Luz951DO6SpPUhJc4c1TeP" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="VQx4L9bYH6VPNfeKbuaEEg" Comment="PosB" Bounds="1574,752,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UGCd7BA3pJULd4uNPQrwnj" Bounds="1709,702,295,150" ShowValueBox="true" isIOBox="true" Value="Multiply the DIRECTION by the LENGTH . &#xD;&#xA;&#xD;&#xA;Add that to the ORIGINAL POSITION to get the NEW POSITION.&#xD;&#xA;&#xD;&#xA;This is why it's important the DIRECTION itself is effectively length 1, because its often multiplied by other things to set their direction. ">
+          <Pad Id="UGCd7BA3pJULd4uNPQrwnj" Bounds="1709,702,296,184" ShowValueBox="true" isIOBox="true" Value="To apply a vector to a position: &#xD;&#xA;Multiply the DIRECTION by the LENGTH . &#xD;&#xA;&#xD;&#xA;Add that to the ORIGINAL POSITION to get the NEW POSITION.&#xD;&#xA;&#xD;&#xA;This is why it's important the DIRECTION itself is effectively length 1 (AKA a Unit Vector), because its often multiplied by magnitude and it shouldn't change the size of that value.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -992,7 +992,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="D6sS656yxU1OYOfm7K2O8e" Name="Concept 3: Be careful of float precision and equality" Bounds="2221,472,705,912" />
-          <Pad Id="AxW7SJqKBx8MmPnSixJifa" Bounds="2272,540,293,61" ShowValueBox="true" isIOBox="true" Value="What if we put it all together and test it?&#xD;&#xA;Go from vector properties to back again">
+          <Pad Id="AxW7SJqKBx8MmPnSixJifa" Bounds="2262,531,485,78" ShowValueBox="true" isIOBox="true" Value="What if we put it all together and test it?&#xD;&#xA;Calculate vector properties of PosB in relation to PosA, then add the vector properties back to PosA to reconstruct PosB. We should be able to achieve the same pos B.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1078,7 +1078,7 @@
             <Pin Id="Je0e4wDj2NvMTVm9MvRNyL" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="O9seTZYEkPYPZeX0apsaSl" Comment="IsEqual" Bounds="2670,1004,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="A1YI8OYOseELmdeW2GKhzC" Bounds="2345,624,188,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Right click and scroll these">
+          <Pad Id="A1YI8OYOseELmdeW2GKhzC" Bounds="2352,615,188,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Right click and scroll these">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1089,7 +1089,7 @@
           </Pad>
           <ControlPoint Id="PCPZcOJtkcLPbhMWTQEQmT" Bounds="2678,671" />
           <Pad Id="HEIJLvBJSDYNEqK258ipGi" Comment="TargetPosB" Bounds="2687,939,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GpAuooOzlvGPS5dpWcj1kk" Bounds="2248,1049,500,82" ShowValueBox="true" isIOBox="true" Value="You will see the IsEqual flicker, showing that the values aren't always equal, although they should be? &#xD;&#xA;&#xD;&#xA;This is due to floating point equality issues. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="GpAuooOzlvGPS5dpWcj1kk" Bounds="2246,1091,500,82" ShowValueBox="true" isIOBox="true" Value="You will see the IsEqual flicker, showing that the values aren't always equal, although they should be? &#xD;&#xA;&#xD;&#xA;This is due to floating point equality issues. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1098,7 +1098,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VmpSiQ91pMUOxxS1YNbcPH" Bounds="2248,1132,348,28" ShowValueBox="true" isIOBox="true" Value="https://floating-point-gui.de/errors/comparison/">
+          <Pad Id="VmpSiQ91pMUOxxS1YNbcPH" Bounds="2246,1174,348,28" ShowValueBox="true" isIOBox="true" Value="https://floating-point-gui.de/errors/comparison/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1108,7 +1108,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="B2UVRqWPcvRLBZyEu4ikqc" Bounds="2689,671" />
-          <Pad Id="MHGAnIt28WmPQr0D5d5Oic" Bounds="2248,1172,500,82" ShowValueBox="true" isIOBox="true" Value="Reccomend to detect equality with a range of succesful values (Epsilon) if you do vector equality.">
+          <Pad Id="MHGAnIt28WmPQr0D5d5Oic" Bounds="2246,1214,500,82" ShowValueBox="true" isIOBox="true" Value="Reccomend to detect equality with a range of succesful values (Epsilon) if you do vector equality.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1118,6 +1118,24 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="AGa3SMs3MfOPjU4E1DVWGn" Bounds="836,447,486,35" ShowValueBox="true" isIOBox="true" Value="At the bottom of the patch change the CONCEPT NUMBER to change the visualisation">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QfqbYK7Z4FFN5dTLgsZsYe" Bounds="128,29,486,35" ShowValueBox="true" isIOBox="true" Value="Go through each concept left to right and change the visualisation at the bottom.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VVaSJaS1BHdLwNL34iXkoM" Bounds="3656,1627,500,82" ShowValueBox="true" isIOBox="true" Value="You will see the IsEqual flicker, showing that the values aren't always equal, although they should be? &#xD;&#xA;&#xD;&#xA;This is due to floating point equality issues. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

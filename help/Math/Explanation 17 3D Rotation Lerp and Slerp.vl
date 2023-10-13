@@ -366,7 +366,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="BNCL5qlPbjCPdzKQl0h8NB" SlotId="PW2zTXVQqGBLCip5YizrHK" Bounds="770,287" />
-          <Pad Id="AfeTTOgDdvHMHgHsIMqwSw" Bounds="696,-323,469,203" ShowValueBox="true" isIOBox="true" Value="For each rotation it shows a Utah Teapot and the two target directions as yellow and purple arrows. &#xD;&#xA;&#xD;&#xA;There are three versions for every lerp type.&#xD;&#xA;Close = small direction change with a little roll&#xD;&#xA;Far = close to 180 angle direction change with moderate roll&#xD;&#xA;Emirror= A direction that's almost the same orientation but mathematically opposite in terms of euler angles, with no roll">
+          <Pad Id="AfeTTOgDdvHMHgHsIMqwSw" Bounds="696,-323,469,203" ShowValueBox="true" isIOBox="true" Value="For each rotation it shows a Utah Teapot and the two target directions as yellow and purple arrows. &#xD;&#xA;&#xD;&#xA;There are three versions for every lerp type.&#xD;&#xA;Close = small direction change with a little roll&#xD;&#xA;Far = close to 180 angle direction change with moderate roll&#xD;&#xA;EMirror= A direction that's almost the same orientation but mathematically opposite in terms of euler angles, with no roll. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1992,15 +1992,6 @@
             </Patch>
           </Node>
           <Overlay Id="I2rFrprzpODPVH8tgfSusA" Name="Setup" Bounds="569,-399,1927,827" />
-          <Pad Id="GIY2cV0BcujM1eDAAIWUFE" Bounds="685,-115,484,37" ShowValueBox="true" isIOBox="true" Value="We compose the rotations originally from euler angles as that's the 'lowest level' data we will directly interpolate to compare.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="765,145,54,19" Id="QITorK9w04RMtvjf7YLqAf">
             <p:NodeReference LastCategoryFullName="3D.Quaternion" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2522,11 +2513,6 @@
                 </Node>
                 <ControlPoint Id="EG87OVGuzI2McDEg3adBF5" Bounds="1138,415" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="MZO9U4j0mfiLMWW2LBYkvs">
                 <Fragment Id="MNz4wpzUR8ILhpCrpanl1D" Patch="I0BYLhRZqXhMan7FgAbIOv" Enabled="true" />
                 <Fragment Id="MeJGjx7B9pZLHaJkI1TodI" Patch="RNpmVdWq9nwME5WtgkfD1x" Enabled="true" />
@@ -2556,7 +2542,7 @@
               <Link Id="VjYu2TpO7dVOGkVXSiBF06" Ids="ONovNTUebdoPUJnTH9utvV,MxIOOnTwBtJLs2wrEAYFes" />
             </Patch>
           </Node>
-          <Pad Id="O9TVBnX74H5NEdUDqDJzFe" Bounds="685,-64,647,43" ShowValueBox="true" isIOBox="true" Value="All are driven by linear animation &#xD;&#xA;If you perceive any acceleration in the movement that's due to the lerp method.">
+          <Pad Id="O9TVBnX74H5NEdUDqDJzFe" Bounds="693,-115,556,41" ShowValueBox="true" isIOBox="true" Value="All are driven by linear animation &#xD;&#xA;If you perceive any acceleration in the movement that's due to the lerp method.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3873,11 +3859,6 @@
                   <Pin Id="BnZ4jqBqBxeLPMyYUpMEed" Name="Output" Kind="OutputPin" />
                 </Node>
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="LDeiIeFXo5ANSyTXw0rh1E">
                 <Fragment Id="DGlbGpddQ6tPnof5V7MqyZ" Patch="FRFaaA5hf0kLfV05K08jIE" Enabled="true" />
                 <Fragment Id="Jwfz0LqY1B3Nefw97XeCGx" Patch="MGsm9a18V3uPKKFhKKwmVh" Enabled="true" />
@@ -4864,7 +4845,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LT4CtelV0JcQNu1HMDSF6T" Bounds="9792,1751,165,236" ShowValueBox="true" isIOBox="true" Value="7.">
+          <Pad Id="LT4CtelV0JcQNu1HMDSF6T" Bounds="9792,1751,165,236" ShowValueBox="true" isIOBox="true" Value="6.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -4905,6 +4886,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="RYpqfBaJCFYOVXEGuZ6laV" Bounds="10225,607,297,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Rotate around the Z axis with first quaternion">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NSdqrsvmPY5MisF2OErCM3" Bounds="696,-68,457,47" ShowValueBox="true" isIOBox="true" Value="Zoom right out and see the bottom of the patch for more notes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -5368,6 +5358,7 @@
         <Link Id="R8TEZKMsP0ML1nLibMryT1" Ids="QaqumbHvB2bM9pChkz21ix,F1p75C2h5a9MkBSKfbkwqb" />
         <Link Id="B0pwT36kqqbNYeSjgskwFI" Ids="Kzt4Ns1tjVENP3vowjevQX,RzRXKg0Klb2OpyPlyZnVM7" />
         <Link Id="Q1xn1nSPphfN2q04YHnTgE" Ids="SJ7Og0FzRT4OOe1GGcoqzn,U1KabeocSSEQWxSWt8uxDs" />
+        <Link Id="GdcdXpEtSYyPzPpDSZMliT" Ids="Nnozu9S41wTNwAuVTJ2CdW,PTB5JgQmJS7O6hpATJKLc8" />
       </Patch>
     </Node>
   </Patch>

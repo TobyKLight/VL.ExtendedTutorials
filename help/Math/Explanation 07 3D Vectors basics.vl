@@ -16,7 +16,7 @@
       <Patch Id="UZtFjMdU2KWOrXt9ttvdPU">
         <Canvas Id="CDXnxOzFxWvPxOcnC8Jfnb" CanvasType="Group">
           <Overlay Id="BNtPUfStWbUPaeRJuXLbK6" Name="Drawing" Bounds="81,1318,1102,477" />
-          <Pad Id="Tt27GchIkBrP8LR7BJwPUw" Bounds="115,44,382,152" ShowValueBox="true" isIOBox="true" Value="This is almost indentical to 2D vectors basics&#xD;&#xA;&#xD;&#xA;EXCEPT NOTE that in STRIDE the Y asix points upwards.&#xD;&#xA;Before in the '2D vectors basics' helppatch we used SKIA where the Y axis pointed downwards.&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="Tt27GchIkBrP8LR7BJwPUw" Bounds="115,44,382,152" ShowValueBox="true" isIOBox="true" Value="This is almost indentical to 2D vectors basics&#xD;&#xA;&#xD;&#xA;EXCEPT NOTE that in STRIDE the Y asix points upwards.&#xD;&#xA;Before in the '2D vectors basics' helppatch we used SKIA where the Y axis pointed downwards.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -31,7 +31,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="UIkhMqlAKKpPlUyC1Xkz3q" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="StMxD6V0CCZOeJuxZZjCHG" Name="Bounds" Kind="InputPin" DefaultValue="-850.4, 700, 772.8, 393.6" IsHidden="true" />
+            <Pin Id="StMxD6V0CCZOeJuxZZjCHG" Name="Bounds" Kind="InputPin" DefaultValue="-849.6, 150.4, 766.4, 681.6" IsHidden="true" />
             <Pin Id="UASMA3LgASjNj185t0o7kd" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="GWTrd0LCqPXOQSQr1MHzK3" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="LvgVnPROEZuMbfv363DBiA" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -881,7 +881,7 @@
             <Pin Id="Hpk5Qxw8G0fOmcJFOvM5ZV" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="AFqfCtLLPqjP8MMQL8sTbJ" Comment="" Bounds="515,873,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="P28zGx6A4MCQZNiQPnVrPz" Bounds="235,206,677,26" ShowValueBox="true" isIOBox="true" Value="First some intro stuff to show you its the same nodeset as before">
+          <Pad Id="P28zGx6A4MCQZNiQPnVrPz" Bounds="227,299,677,26" ShowValueBox="true" isIOBox="true" Value="First some intro stuff to show you its the same nodeset as before">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

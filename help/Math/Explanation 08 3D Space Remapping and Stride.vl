@@ -37,11 +37,6 @@
           <Canvas Id="U4hLzA0VUEhMZkk2OH6Cj5" BordersChecked="false" CanvasType="Group" />
           <Patch Id="M0QrSXGLUsqMlvjcabIfLT" Name="Create" />
           <Patch Id="NCet7MbfrAiQKrVQeUFawM" Name="Update" />
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="AHKNqjzf531NVoqFbv4RaH">
             <Fragment Id="Uwi8jDjqHo9MHuTICsZOb8" Patch="M0QrSXGLUsqMlvjcabIfLT" Enabled="true" />
             <Fragment Id="N5W1vgBVNBnPTOl0pVIati" Patch="NCet7MbfrAiQKrVQeUFawM" Enabled="true" />
@@ -67,7 +62,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="MGf6SAvRjLiNF2uXtp6Nph" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Q38fnEHo7KANXygfbU1fii" Name="Bounds" Kind="InputPin" DefaultValue="954.4, 70.4, 561.6, 508" />
+            <Pin Id="Q38fnEHo7KANXygfbU1fii" Name="Bounds" Kind="InputPin" DefaultValue="874.4, 52.8, 561.6, 508" />
             <Pin Id="NdBxbONhQThO2vbgsVdxX6" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="FxFja7eideaLm54TFe7gH6" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="NtpHwmN4H7UOPrfkIrjog6" Name="Save Bounds" Kind="InputPin" />
@@ -1586,7 +1581,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="P1RNdAQqpl6MK032IYmvYH" Bounds="1750,1018" />
-          <Pad Id="RZfJTDKgg22PgaqMsjdAUT" Bounds="1699,1055,489,78" ShowValueBox="true" isIOBox="true" Value="note how if you extract the bounding box from the model stage of the pipeline it has world transform applied.&#xD;&#xA;If you extract the mesh bounding box it does not have any trasnform applied and is still in 'mesh space'">
+          <Pad Id="RZfJTDKgg22PgaqMsjdAUT" Bounds="1699,1055,489,78" ShowValueBox="true" isIOBox="true" Value="Toggle the visibility of the bounding boxes. Note how if you extract the bounding box from the model stage of the pipeline it has world transform applied.&#xD;&#xA;If you extract the mesh bounding box it does not have any trasnform applied and is still in 'mesh space'">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1993,6 +1988,15 @@
           <ControlPoint Id="TGLrvzNBzDaNiNN9v37wCF" Bounds="2780,592" />
           <ControlPoint Id="PlOfvKKM9dVQaty9NMGqgp" Bounds="2759,589" />
           <ControlPoint Id="OQewD5KsjT7Prjm7vpXBli" Bounds="2675,549" />
+          <Pad Id="Bf3rLOdyHWaOYzesGq22hj" Bounds="224,207,415,19" ShowValueBox="true" isIOBox="true" Value="Work left to right and change the concept visualisation at the bottom">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FRcEN1FVW4XPzczxSqZgxM" Name="Create" ParticipatingElements="A5GshamZMnUMiwEnrWJUGC" />
         <Patch Id="P8CjBnDZPwpLFRKhCiXxyJ" Name="Update" />

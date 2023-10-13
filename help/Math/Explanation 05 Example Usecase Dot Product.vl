@@ -473,7 +473,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="PD5JKn1Qo4vPBcI8l642YB" Name="Goal" Bounds="201,40,655,126" />
-          <Pad Id="FiiqjlxGao0PipnOFR6Yb9" Bounds="229,92,529,37" ShowValueBox="true" isIOBox="true" Value="For this usecase we want to find which sides of a polygon are 'visible' from the mouse cursor">
+          <Pad Id="FiiqjlxGao0PipnOFR6Yb9" Bounds="229,92,540,63" ShowValueBox="true" isIOBox="true" Value="For this usecase we want to find which sides of a polygon face towards the mouse cursor. Could be used to find which sides can theoretically be seen by the cursor (although its not a full visibility calculation, doesn't account for obstruction)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -493,7 +493,7 @@
             <Pin Id="Ivz9lkD4UV3M4gYdKp56Be" Name="Radius 1" Kind="InputPin" DefaultValue="1.11" />
             <Pin Id="CIYdeZ1RCTBLzchvxMSNRF" Name="Radius 2" Kind="InputPin" DefaultValue="0.7" />
             <Pin Id="OZ0v5BeRpLJQId6ht79h52" Name="Phase" Kind="InputPin" />
-            <Pin Id="JLDOH5zUqOTLx5uSSoQ50X" Name="Spike Count" Kind="InputPin" DefaultValue="6" />
+            <Pin Id="JLDOH5zUqOTLx5uSSoQ50X" Name="Spike Count" Kind="InputPin" DefaultValue="8" />
             <Pin Id="NreAx2lEBnnMG7DgchciRc" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="1207,2083,85,19" Id="CZZEXbbGIiEPiJPMT5mwWZ">
@@ -526,28 +526,24 @@
             <Pin Id="SnsRENz1avSLr0PS18Lr1K" Name="Output" Kind="OutputPin" />
           </Node>
           <Overlay Id="UPciiJwVHB7LGcuokAuK8Y" Name="Calculate Normals for each polygon edge" Bounds="423,362,598,571" />
-          <Node Bounds="687,409,183,379" Id="FBAKGxEJbSkOZN87gxVPM4">
+          <Node Bounds="685,409,311,382" Id="FBAKGxEJbSkOZN87gxVPM4">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="R90AfWqZ1ntMbr3gG9cu4l" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="Fp60CEQ9csYOO0OtrkikNN" Bounds="702,415" Alignment="Top" />
+            <ControlPoint Id="CGcdZg5z3XcOIUr7oaFKR5" Bounds="705,785" Alignment="Bottom" />
+            <ControlPoint Id="V1WhKERrlB2PzvOQwX58UK" Bounds="865,785" Alignment="Bottom" />
+            <ControlPoint Id="TKOaO30ae4vOSO2rjUNefS" Bounds="794,785" Alignment="Bottom" />
+            <ControlPoint Id="FmtgVPtAL1RLuoAJcvZ7V6" Bounds="838,785" Alignment="Bottom" />
             <Patch Id="K5hhWRND7PlLufecwpRZxN" ManuallySortedPins="true">
               <Patch Id="QMCOwIxXAtJLntOLal6V8N" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Gsw79rvi3doLmkrLBew3Fc" Name="Update" ManuallySortedPins="true">
                 <Pin Id="ESLH2zspY06QXb9nQ3Eep9" Name="Index" Kind="InputPin" />
               </Patch>
               <Patch Id="PqX4w8zIdijMkr7oS7FCgS" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="701,720,25,19" Id="AMujzVXgxiyPM5i9eeVPCP">
-                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="-" />
-                </p:NodeReference>
-                <Pin Id="KuDncedtojAMEDbMlP0VZv" Name="Input" Kind="InputPin" />
-                <Pin Id="JuETrwU4pQIQCJYQMiZRVL" Name="Input 2" Kind="InputPin" />
-                <Pin Id="FoCgefrSyLaPa5fDO30UML" Name="Output" Kind="OutputPin" />
-              </Node>
               <Node Bounds="700,749,63,19" Id="CYgzfOEoOXDOIYu8eX9FYd">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -577,7 +573,7 @@
                 <Pin Id="JkgXQIRVWMiPR9AjpmEUqU" Name="Input 2" Kind="InputPin" DefaultValue="1" />
                 <Pin Id="H2fDYF2mUclQGVpNxEfVa4" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="737,545,25,19" Id="EGTXk7pczn7O5SkU63cuSm">
+              <Node Bounds="863,552,25,19" Id="EGTXk7pczn7O5SkU63cuSm">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="-" />
@@ -588,7 +584,7 @@
               </Node>
               <Pad Id="Nnuod865ErxM0qidYSHOEM" Comment="A" Bounds="703,507,35,28" ShowValueBox="true" isIOBox="true" />
               <Pad Id="GxM7Sp3x1C2LuQOFy1zXNa" Comment="B" Bounds="774,506,35,28" ShowValueBox="true" isIOBox="true" />
-              <Node Bounds="738,575,25,19" Id="NBTefJxTGx2NSUq9kB9Xnc">
+              <Node Bounds="864,582,25,19" Id="NBTefJxTGx2NSUq9kB9Xnc">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="* (Scale)" />
@@ -597,10 +593,8 @@
                 <Pin Id="FjzX5kieczUM3mOG6dFt5i" Name="Scalar" Kind="InputPin" DefaultValue="0.5" />
                 <Pin Id="EPHkWbjroTSP9IiOYD0ii7" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="TxYlWvMcX1aP9U0wQZC0Qv" Comment="EdgeMidPoint" Bounds="739,640,35,28" ShowValueBox="true" isIOBox="true" />
-              <ControlPoint Id="ER0HEhaTR0JLAPle4jgko4" Bounds="703,652" />
-              <Pad Id="L8FdnzPFdp4NzsQr92hz0T" Comment="PolygonCenter" Bounds="725,690,35,28" ShowValueBox="true" isIOBox="true" />
-              <Node Bounds="739,601,25,19" Id="HY5svYiHtQILE5btEu0XEF">
+              <Pad Id="TxYlWvMcX1aP9U0wQZC0Qv" Comment="EdgeMidPoint" Bounds="865,647,35,28" ShowValueBox="true" isIOBox="true" />
+              <Node Bounds="865,608,25,19" Id="HY5svYiHtQILE5btEu0XEF">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="+" />
@@ -612,14 +606,19 @@
               <ControlPoint Id="HLzc6QQszu1MGArtmY842a" Bounds="701,594" />
               <ControlPoint Id="SrLReecPDwbP4eimfnx2lh" Bounds="794,538" />
               <ControlPoint Id="JEmsIjthv6YNpmHIgSrRA2" Bounds="834,544" />
+              <Node Bounds="697,710,118,19" Id="DPzx3DaCNG3NMLezWh0SYT">
+                <p:NodeReference LastCategoryFullName="PolyTools.Line" LastDependency="VL.PolyTools.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="NormalOfLineSegment (2D)" />
+                </p:NodeReference>
+                <Pin Id="UtE2l3NvK3TNjHvp0eZ0Ls" Name="A" Kind="InputPin" />
+                <Pin Id="VcCkOokcVdHNyc7OWRW3rY" Name="B" Kind="InputPin" />
+                <Pin Id="Cwi5M5DFDLkQcfef4ybR2q" Name="NormalCandidateA" Kind="OutputPin" />
+                <Pin Id="NcImbZg4UAYQCg2uKdRVFi" Name="NormalCandidateB" Kind="OutputPin" />
+              </Node>
             </Patch>
-            <ControlPoint Id="Fp60CEQ9csYOO0OtrkikNN" Bounds="702,415" Alignment="Top" />
-            <ControlPoint Id="CGcdZg5z3XcOIUr7oaFKR5" Bounds="705,782" Alignment="Bottom" />
-            <ControlPoint Id="V1WhKERrlB2PzvOQwX58UK" Bounds="743,782" Alignment="Bottom" />
-            <ControlPoint Id="TKOaO30ae4vOSO2rjUNefS" Bounds="794,782" Alignment="Bottom" />
-            <ControlPoint Id="FmtgVPtAL1RLuoAJcvZ7V6" Bounds="838,782" Alignment="Bottom" />
           </Node>
-          <Pad Id="FfkX02rFhe8P1mxl3p9lnG" Bounds="428,425,205,104" ShowValueBox="true" isIOBox="true" Value="1.This forEach and GetSlice+1 arrangement accesses the point and point ahead. So now our ForEach loop is effectively per line segment.">
+          <Pad Id="FfkX02rFhe8P1mxl3p9lnG" Bounds="422,413,205,115" ShowValueBox="true" isIOBox="true" Value="1.This forEach and GetSlice+1 arrangement accesses the point and point ahead. So now our ForEach loop is effectively per line segment. (similar to PairWise region)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -715,10 +714,9 @@
             <Pin Id="K1NCcERpAhINl6EdtMd6au" Name="Enabled" Kind="InputPin" />
             <Pin Id="CEtSLiCyWHoLtVpC2VyTAc" Name="Output" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="OQaSym1BY9WOuKTCaegqGn" Bounds="657,467" />
-          <Pad Id="IRogUECJEQGLAV6hIpGisQ" SlotId="J1KaVgCJx7nPTmr7Ru9XUD" Bounds="739,858" />
+          <Pad Id="IRogUECJEQGLAV6hIpGisQ" SlotId="J1KaVgCJx7nPTmr7Ru9XUD" Bounds="866,878" />
           <Pad Id="Dbfi964VUIvLjM7ytvIH7t" SlotId="J1KaVgCJx7nPTmr7Ru9XUD" Bounds="1432,2003" />
-          <Pad Id="J9FkBKccEWBQUqVmuR0OCy" Bounds="424,547,209,132" ShowValueBox="true" isIOBox="true" Value="2. To get the midpoint of the edge subtract A from B to get the vector between them. Multiply by 0.5 to get half vector. Add back to A to get half vector in relation to A, AKA the midpoint.">
+          <Pad Id="J9FkBKccEWBQUqVmuR0OCy" Bounds="424,535,209,132" ShowValueBox="true" isIOBox="true" Value="2. To get the midpoint of the edge subtract A from B to get the vector between them. Multiply by 0.5 to get half vector. Add back to A to get half vector in relation to A, AKA the midpoint.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -727,7 +725,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UwGLImuojzBMh6F5RHGfws" Bounds="284,705,211,175" ShowValueBox="true" isIOBox="true" Value="3.Get normal of the midpoint in relation to the center of the polygon. Subtract polygoncenter from edge midpoint and normalise so it's a unit vector.&#xD;&#xA;These are drawn in blue (note the drawing function reduces the length so they are not drawn at the full unit1 length.. see below)">
+          <Pad Id="UwGLImuojzBMh6F5RHGfws" Bounds="420,675,211,119" ShowValueBox="true" isIOBox="true" Value="3.Get normal of the line segment. &#xD;&#xA;&#xD;&#xA;Note this gives two candidates, see VL.PolyTools helppatch &quot;Calculate normal of a 2D line segment&quot;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -961,8 +959,8 @@
             </Patch>
             <ControlPoint Id="TOTMHKMZuIhPjbckJ9jjDS" Bounds="791,1648" Alignment="Bottom" />
           </Node>
-          <Pad Id="J1ihVEYNouxNEre7bWbhAh" SlotId="B1X0hfvu3z2LAhzZ9d4Fux" Bounds="791,890" />
-          <Pad Id="Jab34Qx4wC1Oy6e8hXhkhU" SlotId="ABGL5sivY99NogNqasuFRc" Bounds="833,908" />
+          <Pad Id="J1ihVEYNouxNEre7bWbhAh" SlotId="B1X0hfvu3z2LAhzZ9d4Fux" Bounds="801,813" />
+          <Pad Id="Jab34Qx4wC1Oy6e8hXhkhU" SlotId="ABGL5sivY99NogNqasuFRc" Bounds="843,831" />
           <Node Bounds="789,1674,45,19" Id="TSzaE2MNYuxOmvL8T1TCY5">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1013,7 +1011,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G4bPF4qTFvIPH4cQ52OIzv" Bounds="414,1561,218,91" ShowValueBox="true" isIOBox="true" Value="6 For any edge where dot product &gt; threshold draw it">
+          <Pad Id="G4bPF4qTFvIPH4cQ52OIzv" Bounds="414,1561,218,91" ShowValueBox="true" isIOBox="true" Value="6 For any edge where dot product &gt; threshold draw it in red">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1022,7 +1020,25 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UiBk6ByblASPy72IpoklXi" Bounds="1217,1355,351,244" ShowValueBox="true" isIOBox="true" Value="NOTE&#xD;&#xA;If you move the mouse inside the shape it still gives results as if it's outside. &#xD;&#xA;This is because this only checks normals, it doesn't do intersection or other tests you may need for a finialised app/game usecase.">
+          <Pad Id="UiBk6ByblASPy72IpoklXi" Bounds="1217,1355,351,244" ShowValueBox="true" isIOBox="true" Value="NOTE&#xD;&#xA;If you move the mouse inside the shape it still gives results as if it's outside. &#xD;&#xA;This is because this only checks dot product vs normals, it doesn't do intersection or other tests you may need for a finialised app/game usecase.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DfqdR2vlTmFP94fcWuasRa" Bounds="620,406,35,19" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NElR1cfHLVKM8PzuSshS6D" Bounds="814,564,35,19" ShowValueBox="true" isIOBox="true" Value="2.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1088,7 +1104,6 @@
         <Link Id="UtCPbRunhD8LsFy9n3Y6z3" Ids="SnsRENz1avSLr0PS18Lr1K,VQ2FKWJheQqPqhqbuvT0dl" />
         <Link Id="VbpMLHXt2vjOfK4bv7xolf" Ids="F0sRr7IKRMQOlaA19mK2F0,Fp60CEQ9csYOO0OtrkikNN" />
         <Link Id="FrPvD3KMkAeNcO3HW6tavg" Ids="T2g8lX9yUy4QBaQcYSLiVc,G3Hf9SyUjDGQCnzh05oiHZ" />
-        <Link Id="M33JlDmJGXqMvV47QsO0x3" Ids="FoCgefrSyLaPa5fDO30UML,ETfDGbhUwexL3LVkdkRVZz" />
         <Link Id="Px6PdZCi7wPOgnCcVTF1sN" Ids="Qu7lvsT4d8fNQ5vRJe3zP3,CGcdZg5z3XcOIUr7oaFKR5" />
         <Slot Id="GXCjYYz0Uo3Pvnxh5yxEbR" Name="EdgeNormals" />
         <Link Id="Gp8ImuEra2oNy18CavKtzS" Ids="CGcdZg5z3XcOIUr7oaFKR5,KL0hcVGVJS3O9R6C28ggOM" />
@@ -1113,9 +1128,6 @@
         <Link Id="Ntq61qy2KHDMoLxkGSsunn" Ids="Nnuod865ErxM0qidYSHOEM,GfGpVmn5j17QTVeZUnjcHg" />
         <Link Id="VoHAofoEtQwNDxXgWusMk5" Ids="JPHS3NLKXWVOupbN4IxPhP,D8xIB2Hu7PzMxjYEPNbpwy" />
         <Link Id="DiWnms2FACMOo46488S9Zp" Ids="EPHkWbjroTSP9IiOYD0ii7,E8wJMLlOJExNEEn9R8oAvp" />
-        <Link Id="QJYHt2mfKXrOgmKn3AuIIc" Ids="TxYlWvMcX1aP9U0wQZC0Qv,ER0HEhaTR0JLAPle4jgko4,KuDncedtojAMEDbMlP0VZv" />
-        <Link Id="TJMWdDMBqQkLbJuLBjnjYQ" Ids="T2g8lX9yUy4QBaQcYSLiVc,OQaSym1BY9WOuKTCaegqGn,L8FdnzPFdp4NzsQr92hz0T" />
-        <Link Id="HBObC3bxcKoLBMngN6UD6R" Ids="L8FdnzPFdp4NzsQr92hz0T,JuETrwU4pQIQCJYQMiZRVL" />
         <Link Id="QfW1MeAwZfiL5zIGgnrOH2" Ids="TxYlWvMcX1aP9U0wQZC0Qv,V1WhKERrlB2PzvOQwX58UK" />
         <Slot Id="J1KaVgCJx7nPTmr7Ru9XUD" Name="EdgeMidPoints" />
         <Link Id="AJeRNnK0TdbOXX0fZFC1e7" Ids="V1WhKERrlB2PzvOQwX58UK,IRogUECJEQGLAV6hIpGisQ" />
@@ -1170,8 +1182,12 @@
         <Link Id="DqnVFPkibTsLIl8LI9UAbs" Ids="Krgwu5HRmeqPQKraxWM36E,AaJWubmKp7mQHl3nxH9zZ7" />
         <Link Id="IdASyZVPTLaOmUJJHiN9il" Ids="A6SYmyJk3oLPsAGa3cwHgK,AFTPr8Tf4rNNZa18EziZRG" />
         <Link Id="SwJTXXEQb0mMBNthGPkrl2" Ids="AbeTbmuxYpiMista6X7URC,QXR4E2lf40xQaJ11nIrn4F,VEKEyb9JaBAO4vkROQeY1Y" />
+        <Link Id="PpQV3BtbwrGMsR3r5CdfhD" Ids="Nnuod865ErxM0qidYSHOEM,UtE2l3NvK3TNjHvp0eZ0Ls" />
+        <Link Id="DaYfxyOENDcPCkomF1bUK4" Ids="GxM7Sp3x1C2LuQOFy1zXNa,VcCkOokcVdHNyc7OWRW3rY" />
+        <Link Id="KFUbuTeoFMKLiYjhcKWbsR" Ids="NcImbZg4UAYQCg2uKdRVFi,ETfDGbhUwexL3LVkdkRVZz" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="NAVn0fuzoDCN2dfpdBAe14" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="H6Rv1yKNzPeNY4cULNPN0d" Location="VL.PolyTools" Version="0.0.0" />
 </Document>
