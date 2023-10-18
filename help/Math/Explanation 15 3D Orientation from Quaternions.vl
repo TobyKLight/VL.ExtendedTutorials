@@ -1247,7 +1247,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="DzSbIVUG2SpLJZxxG7zZgR" Name="Bug." Bounds="3008,493,204,191">
+          <Overlay Id="DzSbIVUG2SpLJZxxG7zZgR" Name="Bug?" Bounds="3008,493,204,191">
             <p:ColorIndex p:Type="Int32">6</p:ColorIndex>
           </Overlay>
           <Overlay Id="GyKCoEo13dIO7gpKy0yj8R" Name="Apply Quaternion to Transform" Bounds="3544,333,411,257" />
@@ -1874,8 +1874,8 @@
           <Overlay Id="Py9Ne7fCxQhP4QUIfJXCNi" Name="" Bounds="80,14,566,210" />
           <Pad Id="MtTkH4LDOkCOJmhyuIblTz" Comment="" Bounds="2888,631,35,57" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VslCcYr7F7QQcUXzlGRC4p" Comment="" Bounds="3039,630,35,57" ShowValueBox="true" isIOBox="true" Value="0, 0.70710677, 0, 0.71" />
-          <Overlay Id="EYGNMDJcnYTPREp0AgGOoO" Name="Special cases with quaternions" Bounds="4763,215,638,980" />
-          <Pad Id="Cy3zvH0hqAPMoz9FQbDmIL" Bounds="4829,268,408,25" ShowValueBox="true" isIOBox="true" Value="Quaternion of 0,0,0,0 will mess things up. ">
+          <Overlay Id="EYGNMDJcnYTPREp0AgGOoO" Name="Special cases with quaternions" Bounds="5491,218,638,980" />
+          <Pad Id="Cy3zvH0hqAPMoz9FQbDmIL" Bounds="5557,271,408,25" ShowValueBox="true" isIOBox="true" Value="Quaternion of 0,0,0,0 will mess things up. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1913,7 +1913,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TR56ordKvOKLJrg14YYj5Y" Bounds="5525,253,554,76" ShowValueBox="true" isIOBox="true" Value="FYI There are more ways to represent orientation than what we have discussed here.&#xD;&#xA;&#xD;&#xA;One day Rotors may replace Quaternions...&#xD;&#xA;See &#xD;&#xA;">
+          <Pad Id="TR56ordKvOKLJrg14YYj5Y" Bounds="6290,245,554,76" ShowValueBox="true" isIOBox="true" Value="FYI There are more ways to represent orientation than what we have discussed here.&#xD;&#xA;&#xD;&#xA;One day Rotors may replace Quaternions...&#xD;&#xA;See &#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1922,7 +1922,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LIHvZP1xYJWOHaxwlyYPpu" Bounds="5526,330,140,19" ShowValueBox="true" isIOBox="true" Value="https://marctenbosch.com/quaternions/">
+          <Pad Id="LIHvZP1xYJWOHaxwlyYPpu" Bounds="6291,322,140,19" ShowValueBox="true" isIOBox="true" Value="https://marctenbosch.com/quaternions/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1941,7 +1941,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="VUWTdYwd7KeLTGrSpGmdLr" Name="Quaternion to/from Transform" Bounds="3433,222,671,977" />
-          <Pad Id="Vi7y4tp9dT3MZKSJUhi1k0" Bounds="4836,460,425,60" ShowValueBox="true" isIOBox="true" Value="But hopefully none of the methods we use for producing quaternions will result in this state...">
+          <Pad Id="Vi7y4tp9dT3MZKSJUhi1k0" Bounds="5564,463,425,60" ShowValueBox="true" isIOBox="true" Value="But hopefully none of the methods we use for producing quaternions will result in this state...">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1950,7 +1950,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="4899,410,67,19" Id="MCHzMUJRM6ILva4xF6RdIC">
+          <Node Bounds="5627,413,67,19" Id="MCHzMUJRM6ILva4xF6RdIC">
             <p:NodeReference LastCategoryFullName="3D.Quaternion" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Quaternion" />
@@ -1962,22 +1962,22 @@
             <Pin Id="BtFXPWOkiKPLpG1OVypGJO" Name="W" Kind="InputPin" />
             <Pin Id="RNpiQwJuVHmP1mLLDUTHFX" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="Ews7Jf8c7GlQVrWhr2T6SW" Comment="X" Bounds="4900,317,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="Ews7Jf8c7GlQVrWhr2T6SW" Comment="X" Bounds="5628,320,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BK588VPudcnP4s5Rh0Zn4X" Comment="Y" Bounds="4922,342,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="BK588VPudcnP4s5Rh0Zn4X" Comment="Y" Bounds="5650,345,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VLvptLfuAzGLevlAmKpfOe" Comment="Z" Bounds="4942,361,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="VLvptLfuAzGLevlAmKpfOe" Comment="Z" Bounds="5670,364,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AG5uKXxUZT4OZbEUoXP93S" Comment="W" Bounds="4963,382,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="AG5uKXxUZT4OZbEUoXP93S" Comment="W" Bounds="5691,385,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -2023,8 +2023,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="JkueQjry8bMLL4eKxYTb5s" Name="Concept 2 Quaternion to vector" Bounds="4129,218,609,953" />
-          <Pad Id="GoGdexr6yf4Lhw9DpU1V62" Bounds="4204,308,349,15" ShowValueBox="true" isIOBox="true" Value="The next helppatch is entirely dedicated to quaternion FROM vector.">
+          <Overlay Id="JkueQjry8bMLL4eKxYTb5s" Name="Quaternion to vector" Bounds="4129,218,609,953" />
+          <Pad Id="GoGdexr6yf4Lhw9DpU1V62" Bounds="4204,302,350,29" ShowValueBox="true" isIOBox="true" Value="What about Quaternion FROM vector? The next helppatch is entirely dedicated to quaternion FROM vector.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2393,6 +2393,84 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Overlay Id="GLJbbWWRTwEMWmjzApVAGf" Name="Quaternion to/from angle and axis" Bounds="4761,217,710,955" />
+          <Node Bounds="4905,416,74,19" Id="UyCoPUG0SUlMN4I5TBtvcm">
+            <p:NodeReference LastCategoryFullName="3D.Quaternion" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Quaternion" />
+              <Choice Kind="OperationCallFlag" Name="RotationAxis" />
+            </p:NodeReference>
+            <Pin Id="UoF9icPR5WnOIybaaeSrXR" Name="Axis" Kind="InputPin" />
+            <Pin Id="UelwSzkgQGuLOYHfGlcOQl" Name="Angle" Kind="InputPin" />
+            <Pin Id="BKK79AmvIfALH0maEnY1Uy" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QbfN20nXJtAOP8n7KgEybB" Comment="Angle" Bounds="4977,370,35,15" ShowValueBox="true" isIOBox="true" Value="0.12">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KA8b4GhrUSfPdCPo5CHxrs" Comment="Axis" Bounds="4907,322,35,43" ShowValueBox="true" isIOBox="true" Value="0, 1, 0">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="4905,599,56,26" Id="EQKWVu0crLZMV9oHKIsLIz">
+            <p:NodeReference LastCategoryFullName="3D.Quaternion" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Quaternion" />
+              <Choice Kind="OperationCallFlag" Name="Axis" />
+            </p:NodeReference>
+            <Pin Id="C9tD4JgAWzyMVSRv321sB4" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DgUtIydQ3UCMMTv8zSai98" Name="Axis" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L4DJg2xPBDrMnniT9wmKeO" Comment="Quaternion" Bounds="4907,488,35,57" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SAEbn49kvz7NTiwGLpfj5a" Comment="Axis" Bounds="4907,703,35,43" ShowValueBox="true" isIOBox="true" Value="1, 0.62, 0" />
+          <Node Bounds="5001,603,42,19" Id="A9Xi0MranNhOcYpVnVXCte">
+            <p:NodeReference LastCategoryFullName="3D.Quaternion" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Quaternion" />
+              <Choice Kind="OperationCallFlag" Name="Angle" />
+            </p:NodeReference>
+            <Pin Id="GBwdZ71oyxsPZ2lsGsfK3R" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GGnzc4mxIcNPvAkODhieVQ" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Hpt3JPJV1n1LdbrUuLt7Uw" Comment="" Bounds="5003,664,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="4905,761,63,19" Id="MbiwE8Uz5mKOPTrYdREAZM">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Normalize" />
+            </p:NodeReference>
+            <Pin Id="HWp3FZB07JbNRweKWDylhF" Name="Input" Kind="InputPin" />
+            <Pin Id="QTrYG81Sss1Nx6xgNPASrC" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KeMswv2OiTSMijiSxrXPQe" Comment="" Bounds="4907,795,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ltsxbes539rPd5M3uv87ZL" Bounds="4789,254,534,55" ShowValueBox="true" isIOBox="true" Value="You can also define a quaternion as an axis (direction) vector and rotation angle about that axis. However this is without using an up vector as reference so it may be arbitrary what the angle is in relation to.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ih9LzcDQHwVOpanxczNsNx" Bounds="4971,714,368,65" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note1 the result of Axis [Quaternion] is not normalised and will change length rather a lot depending on the angle. You can of course normalise it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F3sqlwtUZeyO7CpMr1DvUX" Bounds="4976,858,358,104" ShowValueBox="true" isIOBox="true" Value="Note2 that if you make angle at the top 0 or 1 then the quaternion is not rotated at all and the axis will 'reset' to the default. &#xD;&#xA;So dont rely on this method to store an axis of rotation in a quaternion as it cannot always be reliably retrieved.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="RHU278obDFbOjxumzubgdn" Name="Create" />
         <Patch Id="LBKsSs4yYUiM5uKlxMv4dR" Name="Update" />
@@ -2490,6 +2568,15 @@
         <Link Id="Jeb8fNvQrEXNE4tAKHvksl" Ids="F6qKVMoDSolQdLFZ2MAyaF,UnuIeAHGVuSMRQWoo8e7w7" />
         <Link Id="PnnLSU7gOs0QCS1MERV9ui" Ids="RSp2vdXRqCZLXSkcPHy8yS,GTrzzMl6U4jMGk78MDSDHl" />
         <Link Id="JPbbEqcTsExLYHbXDsmg4P" Ids="GTrzzMl6U4jMGk78MDSDHl,P0LKm0G0RudMy1VAAPdMfD" />
+        <Link Id="K7sVEHQQ8A2LAzIxKTFEqu" Ids="QbfN20nXJtAOP8n7KgEybB,UelwSzkgQGuLOYHfGlcOQl" />
+        <Link Id="M5vdcdhU3dRLKxMe9H4PFg" Ids="KA8b4GhrUSfPdCPo5CHxrs,UoF9icPR5WnOIybaaeSrXR" />
+        <Link Id="MEy05pbnFTAPuSAq0mwORG" Ids="L4DJg2xPBDrMnniT9wmKeO,C9tD4JgAWzyMVSRv321sB4" />
+        <Link Id="GRQQJycW0vBMOkEPZAmi5u" Ids="DgUtIydQ3UCMMTv8zSai98,SAEbn49kvz7NTiwGLpfj5a" />
+        <Link Id="UzudR1fG4zmN9UZzC0xbKK" Ids="L4DJg2xPBDrMnniT9wmKeO,GBwdZ71oyxsPZ2lsGsfK3R" />
+        <Link Id="NpF0Q8XLAXWLq3YHspdPxb" Ids="GGnzc4mxIcNPvAkODhieVQ,Hpt3JPJV1n1LdbrUuLt7Uw" />
+        <Link Id="NpgMWfPfEGmMY7Wnf5RdVE" Ids="SAEbn49kvz7NTiwGLpfj5a,HWp3FZB07JbNRweKWDylhF" />
+        <Link Id="Ph47erwsS0nPDszsmsh36b" Ids="QTrYG81Sss1Nx6xgNPASrC,KeMswv2OiTSMijiSxrXPQe" />
+        <Link Id="NrVP77RQhV3O372g6hRd4t" Ids="BKK79AmvIfALH0maEnY1Uy,L4DJg2xPBDrMnniT9wmKeO" />
       </Patch>
     </Node>
   </Patch>
