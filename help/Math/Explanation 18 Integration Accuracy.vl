@@ -2387,7 +2387,7 @@
             <Pin Id="JAscPvWyAXIOt4zn6YoiL9" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="MAbl8ubDSCwLRByupGLxZb" Comment="Count" Bounds="797,2032,100,17" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="A545Y3TicInNkVtE9FoeH0" Bounds="419,586,139,19" ShowValueBox="true" isIOBox="true" Value="https://gamedev.stackexchange.com/questions/110918/storing-component-vectors-to-avoid-matrix-and-quaternion-inaccuracies">
+          <Pad Id="A545Y3TicInNkVtE9FoeH0" Bounds="431,565,139,19" ShowValueBox="true" isIOBox="true" Value="https://gamedev.stackexchange.com/questions/110918/storing-component-vectors-to-avoid-matrix-and-quaternion-inaccuracies">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2396,7 +2396,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ImynrBK9fECNJ3pT5468rN" Bounds="419,644,139,19" ShowValueBox="true" isIOBox="true" Value="https://www.iracing.com/q-circles-the-crop-circles-of-iracing/">
+          <Pad Id="ImynrBK9fECNJ3pT5468rN" Bounds="431,623,139,19" ShowValueBox="true" isIOBox="true" Value="https://www.iracing.com/q-circles-the-crop-circles-of-iracing/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2405,7 +2405,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IqsYmF9KLgDQYYZaoY28Mz" Bounds="419,616,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.reddit.com/r/gamedev/comments/v5zm5w/why_do_we_integrate_motion_like_this/">
+          <Pad Id="IqsYmF9KLgDQYYZaoY28Mz" Bounds="431,595,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.reddit.com/r/gamedev/comments/v5zm5w/why_do_we_integrate_motion_like_this/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2414,7 +2414,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VlAxIM2XmxlQWRnfA5FJSM" Bounds="390,515,706,45" ShowValueBox="true" isIOBox="true" Value="In theory integration can be prone to ">
+          <Pad Id="VlAxIM2XmxlQWRnfA5FJSM" Bounds="392,530,706,45" ShowValueBox="true" isIOBox="true" Value="In theory integration can be prone to issues with floating point accuracy">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2424,7 +2424,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="CbmGYJEvDvyOo6FZjf9CuC" Bounds="503,1290" />
-          <Overlay Id="G2cNOSTZ6VfLXVlZfsFi8Y" Name="Problem" Bounds="380,470,1114,328" />
+          <Overlay Id="G2cNOSTZ6VfLXVlZfsFi8Y" Name="Problem" Bounds="382,485,1114,328" />
           <Node Bounds="641,2534,58,19" Id="Jf2Sa9k9LtBNOpxOJyoZIR">
             <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2442,7 +2442,7 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="I6sF6k5cd8VOLSSmJUf9IL" Comment="Translation" Bounds="590,1222,88,43" ShowValueBox="true" isIOBox="true" Value="200000, 0, 0">
+          <Pad Id="I6sF6k5cd8VOLSSmJUf9IL" Comment="Translation" Bounds="590,1222,88,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 0">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -2475,6 +2475,40 @@
           </Pad>
           <ControlPoint Id="CmuQT4Ohg2jObx59GfLrlj" Bounds="886,1343" />
           <Pad Id="QQJK2ZZjV2EOT1iSJCE7VK" Bounds="647,1513,221,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Increase to simulate more steps ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HajEJjuzm31NS12DepQfPA" Bounds="398,676,708,102" ShowValueBox="true" isIOBox="true" Value="However you may not run into real issues for your usecase.&#xD;&#xA;Using the setup below you can see how the teapot is moved along a circular path by integration.&#xD;&#xA;After many thousands of steps it still seems ok and the circle is not drifting. &#xD;&#xA;Even if you put in a new starting value at the edge of the floating point range and press reset you may see a squashed path but it will remain consistent after many steps.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="767,2722,105,19" Id="HP6iY48nzxQO8Yx34qwVNa">
+            <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Models" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="AxisAndGrid" />
+            </p:NodeReference>
+            <Pin Id="UPKkuReGj4UPNFpeJsAAZJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="R6salg1n12GNrvbWSqbrRP" Name="Transformation" Kind="InputPin" />
+            <Pin Id="SNHROHHYgxXQMCuLE5rPae" Name="Axis" Kind="InputPin" />
+            <Pin Id="DpkBu5ZElzKO80uCGj6ud2" Name="Grid" Kind="InputPin" />
+            <Pin Id="EdyeUFqklgXMJp1cAH1LQU" Name="Grid Color" Kind="InputPin" />
+            <Pin Id="OUgE8Gh8myjNynDHOZfGQD" Name="Radius" Kind="InputPin" />
+            <Pin Id="L8TAQ6XjSciPfMMYZheAGU" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Dv09ST5shcsPHdKCOrHcE9" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="G0WyQpa2PqLLKk97H0AUm1" Name="Other reasons not to integrate the matrix" Bounds="1054,1425,1326,558" />
+          <Pad Id="MepE3kNWhJxNICh6EWUFi5" Bounds="1108,1503,708,102" ShowValueBox="true" isIOBox="true" Value="Decompose back to orgiinal points... easier to seperate axis of action... see the FPS camera example next in this series">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2554,6 +2588,7 @@
         <Link Id="QMZukoxrwHfPPnx2Aj6AsZ" Ids="TyRJQroygXkM2RYg9hbpdH,R3FnCeeBx7pP82nZnHs3SI" />
         <Link Id="Hn0PmOoNczhLy0cxLcdRHJ" Ids="I6sF6k5cd8VOLSSmJUf9IL,CmuQT4Ohg2jObx59GfLrlj,FFi5NfByrBBN3JYGNBKtB5" />
         <Link Id="BAs0dhbVGY0MDRiHTUVdFY" Ids="RtOAolHqgV5M5akQBsYr8h,S9j27fjukInNWEUgEXWEhg" />
+        <Link Id="ED0VHZqS0mYPO84D8MwFoh" Ids="Dv09ST5shcsPHdKCOrHcE9,R5EuqqzPt4GLnzexxYKlri" />
       </Patch>
     </Node>
   </Patch>
