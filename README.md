@@ -24,6 +24,9 @@ https://youtu.be/8dasXkisqTY
 https://youtu.be/cKjb3dFOXqk
 
 # Version History
+V1.1.0 
+* Added maths helppatch series covering vector and matrix maths.  
+
 V1.0.6 
 * Bugfix forgot to give 'Tickets are the new bang' a bona fide helppatch prefix. 
 
@@ -40,6 +43,12 @@ V1.0.3
 
 v1.0.2 
 * Ensured compatibility with 2022.4.11-1312 (RC4) 
+
+# Dependencies
+
+VL.PolyTools, installed automatically via nuget
+https://www.nuget.org/packages/VL.PolyTools
+ 
 
 # Contributing
 If you'd like to contribute just open an issue to talk about the subject you want to cover
