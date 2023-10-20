@@ -229,7 +229,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="J74Lk94tcHzQIspdz6U7ZL" Name="Bounds" Kind="InputPin" DefaultValue="-852, 48, 673, 544" />
+            <Pin Id="J74Lk94tcHzQIspdz6U7ZL" Name="Bounds" Kind="InputPin" DefaultValue="992, 0, 535, 380" />
             <Pin Id="LvsBgE0NdMPPQHLC6CQkl7" Name="Save Bounds" Kind="InputPin" />
             <Pin Id="JwRykoi1ZzNLVVoWJRDCFG" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="FSq3kWlurxWOoEm7kqzYLB" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1375,7 +1375,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="VrO1NiyzkXbLKO8kIx24O3" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="MXkJVQRIGKxQcz3W2gJM07" Name="Bounds" Kind="InputPin" DefaultValue="-835.2, 680, 680, 403.2" />
+            <Pin Id="MXkJVQRIGKxQcz3W2gJM07" Name="Bounds" Kind="InputPin" DefaultValue="1002.4, 411.2, 514.4, 256" />
             <Pin Id="HLA7w475s2eMFiPNjlrWsv" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="Hp34lGmZ7NgMlkkVCMPOwx" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="PgGM8F6YqaOPGYuPnZMokz" Name="Save Bounds" Kind="InputPin" />

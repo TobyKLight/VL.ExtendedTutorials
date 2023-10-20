@@ -24,6 +24,9 @@ https://youtu.be/8dasXkisqTY
 https://youtu.be/cKjb3dFOXqk
 
 # Version History
+V1.1.1 
+* Bugfix set the Renderer windows to start in nicer default positions. Improved some text.
+
 V1.1.0 
 * Added maths helppatch series covering vector and matrix maths.  
 

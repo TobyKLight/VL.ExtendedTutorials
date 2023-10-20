@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="AFymbInB9EyMe3Z5ZJ0fvq" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="N4jwHVl0hQMMRn7rFiPbvM" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <NugetDependency Id="S61XM5bPjIsPZqU7f8nxha" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="FaPVsPUtYrALUd4C3ckUJ8">
     <Canvas Id="UBgK4c8YIbjOrucod0bgOt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -2140,7 +2140,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OArVXUOlSCFPzkVzj6PDHL" Bounds="545,166,546,115" ShowValueBox="true" isIOBox="true" Value="Instructions:&#xD;&#xA;-Press F4 In the upper (black) 'debug' window to see the axis and grid and camera widget.&#xD;&#xA;-The lower (Blue) 'output' window shows the output of this camera in each concept.&#xD;&#xA;-Click the lower (Blue) 'output' window with left button to lock mouse and then move  mouse and WASD to steer the camera. Use Space to float up and Ctrl to float down.&#xD;&#xA;">
+          <Pad Id="OArVXUOlSCFPzkVzj6PDHL" Bounds="545,166,546,115" ShowValueBox="true" isIOBox="true" Value="Instructions:&#xD;&#xA;-Press F4 In the upper (black) 'debug' window to see the axis and grid and camera widget.&#xD;&#xA;-The lower (Blue) 'output' window shows the output of the FPS camera.&#xD;&#xA;-Click the lower (Blue) 'output' window with left button to lock mouse and then move  mouse and WASD to steer the camera. Use Space to float up and Ctrl to float down.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2221,7 +2221,7 @@
             <Pin Id="RodiBwI8JRhPeZ15Pak5Xi" Name="Surface Aspect Ratio" Kind="OutputPin" />
             <Pin Id="GTDviCHrixNP0HMlLTofGX" Name="Events" Kind="OutputPin" />
           </Node>
-          <Pad Id="GE786AF1Rw2OCqkXzog4YS" Bounds="380,767,246,85" ShowValueBox="true" isIOBox="true" Value="1.Because we are using a stride 'additional window' this is how we retrieve the correct input info, for this window as opposed to the usual way through the 'Mouse [Stride.Input]' node that is patched through entity group">
+          <Pad Id="GE786AF1Rw2OCqkXzog4YS" Bounds="380,767,246,103" ShowValueBox="true" isIOBox="true" Value="1.Because we are using a stride 'additional window' this is how we retrieve the correct input devices for this window. (as opposed to the usual way via the 'Mouse [Stride.Input]' node that is patched through entity group)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2273,7 +2273,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NQEcReYFx4ZO8rtA2kkptj" Bounds="389,1393,246,61" ShowValueBox="true" isIOBox="true" Value="1. When mouse locked to window enable FrameDifference the mouse position to get a value for the relative rotation of the camera">
+          <Pad Id="NQEcReYFx4ZO8rtA2kkptj" Bounds="389,1393,246,61" ShowValueBox="true" isIOBox="true" Value="1. When mouse locked to window enable FrameDifference of the mouse position to get a delta value that we will use to control the relative rotation of the camera">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2572,7 +2572,7 @@
           </Pad>
           <Pad Id="MT8L7KGt6SJPcxYaeSz0fB" Comment="Forwards" Bounds="1172,1924,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TAdaVGKE6muNQ0JDddpu1E" Comment="Backwards" Bounds="1412,1919,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VkSqWh9NXAcQVhbUgVjsrC" Bounds="862,2197,228,213" ShowValueBox="true" isIOBox="true" Value="3. Rotate this direction vector by the orientation of the 3a. INVERTED YAW only. &#xD;&#xA;-Why YAW only? This is an FPS game. If you look up and down you don't fly in those directions. You only 'walk' on the ground. So we don't rotate the change in direction vector into the pitch plane.&#xD;&#xA;-Why inverted? Actually not totally sure. But it works...">
+          <Pad Id="VkSqWh9NXAcQVhbUgVjsrC" Bounds="862,2197,228,213" ShowValueBox="true" isIOBox="true" Value="3. Rotate this direction vector by the orientation of the 3a. INVERTED YAW only.&#xD;&#xA;This means you walk in the direction you are looking. &#xD;&#xA;-Why YAW only? This is an FPS game. If you look up and down you don't fly in those directions. You only 'walk' on the ground. So we don't rotate the change in direction vector into the pitch plane. Just by YAW.&#xD;&#xA;-Why inverted? Actually not totally sure. But it works...">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2616,7 +2616,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="NT403xGqVRgNLsAyryF6jx" Comment="Right" Bounds="1934,1918,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MK3BwieIQRINuwLm6sogtd" Bounds="863,1987,223,160" ShowValueBox="true" isIOBox="true" Value="2.Turn these into an XZ vector representing change this frame (as you move on the XZ plane). &#xD;&#xA;&#xD;&#xA;2a. Size of the change is the speed of movement per pressed key.&#xD;&#xA;&#xD;&#xA;2b. A double switch handles the case 'what if you press both buttons', one has the priority.">
+          <Pad Id="MK3BwieIQRINuwLm6sogtd" Bounds="863,1987,223,160" ShowValueBox="true" isIOBox="true" Value="2.Turn these into an XZ vector representing change this frame (as you move on the XZ plane). &#xD;&#xA;&#xD;&#xA;2a. Speed of movement is controlled by the 'size of change per frame'&#xD;&#xA;&#xD;&#xA;2b. A double switch handles the case 'what if you press both buttons', one has the priority.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2714,7 +2714,7 @@
             <Pin Id="QHzzoRMrQuYMu60GJ6M0qd" Name="Input 2" Kind="InputPin" />
             <Pin Id="TnKAGRSNxBuNsEcOkHOrN4" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="SO5D7SDf9dULdk7dMPdigg" Bounds="1372,2729,639,297" ShowValueBox="true" isIOBox="true" Value="Delta Time&#xD;&#xA;&#xD;&#xA;-Currently this code adds (or subtracts) fixed distances to the player position at the mainloop FPS. If the FPS varies than the apparent speed of movement will vary. &#xD;&#xA;-This may be fine for your usecase, if your app is comfortably running on known hardware at a good FPS with rare drops then just set your movement size for the desired FPS and that's it. &#xD;&#xA; &#xD;&#xA;If this is not desirable solutions could be &#xD;&#xA;-Running this code in a reactive region triggered by Interval or another scheduler, that should have a fixed time step&#xD;&#xA;-Measuring actual time between frames with TimeDifference node and scalng the size of movement per frame based on frame delta time. Then it's a variable time step.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more potential pros and cons see here:">
+          <Pad Id="SO5D7SDf9dULdk7dMPdigg" Bounds="1372,2729,639,297" ShowValueBox="true" isIOBox="true" Value="Delta Time&#xD;&#xA;&#xD;&#xA;-Currently this code adds (or subtracts) fixed distances to the player position at the mainloop FPS. If the FPS varies than the apparent speed of movement will vary. &#xD;&#xA;-This may be fine for your usecase, if your app is comfortably running on known hardware at a good FPS with rare drops then just set your movement size for the desired FPS and that's it. &#xD;&#xA; &#xD;&#xA;If this is not desirable then solutions could be &#xD;&#xA;-Running this code in a reactive region triggered by Interval or another scheduler, that should have a fixed time step&#xD;&#xA;-Measuring actual time between frames with TimeDifference node and scalng the size of movement per frame based on frame delta time. Then it's a variable time step.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more potential pros and cons see here:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3229,7 +3229,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OlaZoL39KWnOsrCoez24V7" Bounds="2560,2055,228,94" ShowValueBox="true" isIOBox="true" Value="Same as before but no special rotation needed. When we press CTRL we always move Y negative. When we press SPACE we always fly up Y positive.">
+          <Pad Id="OlaZoL39KWnOsrCoez24V7" Bounds="2560,2055,228,94" ShowValueBox="true" isIOBox="true" Value="Same as WASD logic but no special rotation needed. When we press CTRL we always move Y negative. When we press SPACE we always fly up Y positive.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

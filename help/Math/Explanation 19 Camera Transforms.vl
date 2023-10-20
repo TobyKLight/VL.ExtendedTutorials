@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="E9FW1GRfmpmL8X530fls6u" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="HyMNbUJbxU4PdRB8dzTlZ6" Name="Bounds" Kind="InputPin" DefaultValue="881.6, 58.4, 647.2, 348.8" />
+            <Pin Id="HyMNbUJbxU4PdRB8dzTlZ6" Name="Bounds" Kind="InputPin" DefaultValue="896.8, 46.4, 647.2, 348.8" />
             <Pin Id="PjnITfUsqP8NR50OEqrBXC" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="GXxZDSWlS46PUIvgSnNUoI" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="UxlDYCc2MskOyzOnyT62fJ" Name="Save Bounds" Kind="InputPin" />
@@ -30,7 +30,7 @@
             <Pin Id="SD7ba2HEQSeLEIAhzhMWHj" Name="Input" Kind="InputPin" />
             <Pin Id="MmAwtrWVhAmNPVdYp9DlDp" Name="Camera" Kind="InputPin" />
             <Pin Id="BXmuZ1O0KJSLWlZvp3sOdg" Name="Enable Default Camera" Kind="InputPin" />
-            <Pin Id="Hwoozk87bXeMgTOw4v8eIa" Name="Title" Kind="InputPin" DefaultValue="Debug Window" />
+            <Pin Id="Hwoozk87bXeMgTOw4v8eIa" Name="Title" Kind="InputPin" DefaultValue="Camera Transforms - Debug Window" />
             <Pin Id="Oee7U3EpvxTPXZrkWG7Sau" Name="Clear Color" Kind="InputPin" />
             <Pin Id="Eqijl7ZzhzQPNfePibtz3v" Name="Clear" Kind="InputPin" />
             <Pin Id="HmXlagdYvarPtrRixB565F" Name="Post Effects" Kind="InputPin" />
@@ -220,7 +220,7 @@
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="1025,857,55,19" Id="A05rfUvMBD5OanbtM5Tn21">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="MiniAxis" />
                   </p:NodeReference>
@@ -413,7 +413,7 @@
                   <Pin Id="L5l9kTGYHWTMDXWxFKWkUj" Name="Entity" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="281,395,59,19" Id="FRLyTIvu6dYLnQRSBKr105">
-                  <p:NodeReference LastCategoryFullName="Main.Meshes" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main.Meshes" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="LineMesh" />
                   </p:NodeReference>
@@ -520,7 +520,7 @@
                 <ControlPoint Id="GYkdtYn9j3dQdpT4Z4lcoo" Bounds="1357,850" />
                 <ControlPoint Id="KwbEBR0HkbCNJiNXzBYfCW" Bounds="1363,869" />
                 <Node Bounds="991,908,165,19" Id="OmsU8mVB9kUPkRiYNF5589">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Lines (Material)" />
                   </p:NodeReference>
@@ -579,7 +579,7 @@
                   <Pin Id="I5qMD5rqSxfP5bKm5GfPEU" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1149,585,85,19" Id="PUl8p3LJOaAQCFzJoM5upD">
-                  <p:NodeReference LastCategoryFullName="Main.Arrow" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main.Arrow" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ArrowVertices2" />
                   </p:NodeReference>
@@ -621,7 +621,7 @@
                       <Pin Id="GyhADi9UKSVLoDV5HeEFPU" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1586,544,77,19" Id="OooIgpxsGS8PbPew20amck">
-                      <p:NodeReference LastCategoryFullName="Main.Arrow" LastDependency="Explanation xx2 Camera Transforms.vl">
+                      <p:NodeReference LastCategoryFullName="Main.Arrow" LastDependency="Explanation 19 Camera Transforms.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ArrowHead2" />
                       </p:NodeReference>
@@ -995,7 +995,7 @@
                     <Patch Id="GrlzcGR0h0AMYzqHCUZOTN" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="GOm5os1ruKyNjhKqnhqkQ5" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="321,135,59,19" Id="DPOVBdDUlUqPQ7YwI86fAT">
-                      <p:NodeReference LastCategoryFullName="Main.Meshes" LastDependency="Explanation xx2 Camera Transforms.vl">
+                      <p:NodeReference LastCategoryFullName="Main.Meshes" LastDependency="Explanation 19 Camera Transforms.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="LineMesh" />
                       </p:NodeReference>
@@ -1828,7 +1828,7 @@
             <Patch Id="FEPy7Uz3ehYL3ORLnXfgRS">
               <Canvas Id="JMKiaRaUyIxN3DiBFXMSzt" CanvasType="Group">
                 <Node Bounds="1201,752,165,19" Id="PUQgisHTTEsOG6XY55qm0B">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Main" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="Arrow" />
@@ -1860,7 +1860,7 @@
                   <Pin Id="TtZayE3dVvLMyEwrmvyk5E" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1416,746,165,19" Id="BnlQaUX41XwMhYk1gp8yt3">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation xx2 Camera Transforms.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 19 Camera Transforms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Main" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="Arrow" />
@@ -2090,7 +2090,7 @@
               <Choice Kind="ProcessAppFlag" Name="AdditionalSceneWindow" />
             </p:NodeReference>
             <Pin Id="IU7LngawwhjLkBcmdqGBGc" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VXP8tGHcmK2MZ4X9nGPRed" Name="Bounds" Kind="InputPin" DefaultValue="892, 462.4, 650.4, 314.4" />
+            <Pin Id="VXP8tGHcmK2MZ4X9nGPRed" Name="Bounds" Kind="InputPin" DefaultValue="885.6, 441.6, 650.4, 314.4" />
             <Pin Id="BotoKPSsJkSK9uWnXDBuCD" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
             <Pin Id="AU5he8D6LmGPr9p52lX8Jz" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="MYexTFcWdM4Mffrybv0Abu" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -2116,7 +2116,7 @@
             <Pin Id="C79VDt5lWQKP7KhcpWWgCP" Name="Client Bounds" Kind="OutputPin" />
             <Pin Id="Dizls212hWQMFgnLKc5Dnc" Name="Input Source" Kind="OutputPin" />
           </Node>
-          <Pad Id="NAHZrmgQdHoNFXvO0lcsSh" Comment="Title" Bounds="1010,2213,89,15" ShowValueBox="true" isIOBox="true" Value="Camera Output">
+          <Pad Id="NAHZrmgQdHoNFXvO0lcsSh" Comment="Title" Bounds="1010,2213,89,15" ShowValueBox="true" isIOBox="true" Value="Camera Transforms - Camera Output">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2371,7 +2371,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Qy6r5csnskXPN5ZGFqNk95" Bounds="1868,787,317,39" ShowValueBox="true" isIOBox="true" Value="Note that when you change the rotation you are rotating around the origin not the camera eye.&#xD;&#xA;">
+          <Pad Id="Qy6r5csnskXPN5ZGFqNk95" Bounds="1839,779,317,39" ShowValueBox="true" isIOBox="true" Value="Note that when you change the rotation you are rotating around the origin not the camera eye.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2380,8 +2380,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DYbMvkoJvdMQQPzf8EQW7y" Comment="Projection Matrix" Bounds="1903,1053,169,61" ShowValueBox="true" isIOBox="true" Value="1.478261, 0, 0, 0, 0, 2.125, 0, 0, 0, 0, -1.254491, -0.81, 0, 0, -1.0663173, 0" />
-          <Pad Id="L4YLC1HDPmbMum3onuAHIx" Bounds="2105,1086,256,139" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Projection matrix is optional, if you don't supply it than the Camera node will use its other inputs to construct a projection matrix.">
+          <Pad Id="DYbMvkoJvdMQQPzf8EQW7y" Comment="Projection Matrix" Bounds="1903,1076,169,61" ShowValueBox="true" isIOBox="true" Value="1.478261, 0, 0, 0, 0, 2.125, 0, 0, 0, 0, -1.254491, -0.81, 0, 0, -1.0663173, 0" />
+          <Pad Id="L4YLC1HDPmbMum3onuAHIx" Bounds="2094,1099,256,139" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Projection matrix is optional, if you don't supply it than the Camera node will construct a projection matrix using other settings on the node.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2413,7 +2413,7 @@
             <Pin Id="DZ9SuJTJH9XQU8pCflTzkt" Name="Z Far" Kind="InputPin" DefaultValue="4.19" />
             <Pin Id="PtWyKrYYkomNj0RQWWfujE" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="N3Ozt9GKzeEMufwu5rFBwW" Bounds="1976,930,298,113" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the 'Perspective (RightHanded) 3D.Matrix' node to create a projection matrix.&#xD;&#xA;There are some other variations of the perspective node, must use the right handed versions.&#xD;&#xA;Note Z Near can't be zero">
+          <Pad Id="N3Ozt9GKzeEMufwu5rFBwW" Bounds="1976,930,298,132" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the 'Perspective (RightHanded) 3D.Matrix' node to create a projection matrix.&#xD;&#xA;There are some other variations of the perspective node, must use the right handed versions.&#xD;&#xA;Note Z Near can't be zero, although you could intuitively expect that would work.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2490,7 +2490,7 @@
             <Pin Id="KSWC55odptNPCkyS98nwVx" Name="Output" Kind="OutputPin" />
             <Pin Id="FDHH3dXn7CNNE773QdJ5a4" Name="Camera Component" Kind="OutputPin" />
           </Node>
-          <Pad Id="EZzXAvIgG11ParYWwd3Yyc" Comment="View Matrix" Bounds="2589,822,119,61" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EZzXAvIgG11ParYWwd3Yyc" Comment="View Matrix" Bounds="2589,822,119,61" ShowValueBox="true" isIOBox="true" Value="-0.99999994, 0, 0, 0, 0, 0.99254334, 0.1218913, 0, 1.86, 0.12189129, -0.9925434, 0, 0, 0.16699106, -2.5083487, 1" />
           <Pad Id="Q5qAtjJbkpsLTI3BbQlHIn" Bounds="2641,716,456,35" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use 'LookAt (RightHanded) [3D.Matrix}' to generate a view projection based on an EYE looking at a TARGET.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -2629,7 +2629,7 @@
             </p:TypeAnnotation>
           </Pad>
           <ControlPoint Id="TG90qWF8oetLu3s0EH8dqc" Bounds="3392,1475" />
-          <Pad Id="PnwR65edFJrOoIXh0c4NyJ" Bounds="2708,990,317,67" ShowValueBox="true" isIOBox="true" Value="Basically it starts with a euler rotation of the camera on the Z axis and then applies the LookAt matrix. This would be the same as if the LookAt node had a transfrom input and we had put the Rotate before the LookAt. But as it doesn't have that input we can do this multiplication to achieve the same result.">
+          <Pad Id="PnwR65edFJrOoIXh0c4NyJ" Bounds="2708,990,317,67" ShowValueBox="true" isIOBox="true" Value="Basically it starts with a euler rotation of the camera on its local Z axis and then applies the LookAt matrix. This would be the same as if the LookAt node had a transfrom input and we had put the Rotate before the LookAt. But as it doesn't have that input we can do this matrix multiplication to achieve the same result. (Remember order matters in matrix multiplication)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3326,7 +3326,7 @@
             <Pin Id="NfPogvLkvLsQT4YC0Q6CUC" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Overlay Id="Irv7XxHRwatMO8x9fnoAnQ" Name="" Bounds="6867,793,217,175" />
-          <Pad Id="DD81mRf28FCMPke3FLmuEJ" Bounds="6863,808,198,55" ShowValueBox="true" isIOBox="true" Value="How to get Inverse Rotation when you have a manual view Matrix">
+          <Pad Id="DD81mRf28FCMPke3FLmuEJ" Bounds="6863,808,198,55" ShowValueBox="true" isIOBox="true" Value="How to get Inverse VIEW Rotation when you have a manual VIEW Matrix">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3345,7 +3345,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="CnuLz4smjYYPnFoe5VsXb6" Name="" Bounds="6876,983,335,249" />
-          <Pad Id="KT6nUwtirzDLOfeHHgghc8" Bounds="6883,1000,200,128" ShowValueBox="true" isIOBox="true" Value="Billboard node must be typed with a transform to work. But this input isn't connected (look inside Billboard). if you want to transform the object you also need to apply the transform afterwards with a *. ">
+          <Pad Id="KT6nUwtirzDLOfeHHgghc8" Bounds="6883,1000,200,128" ShowValueBox="true" isIOBox="true" Value="Billboard node must be typed with a transform to work. But this input isn't connected (look inside Billboard). if you want to transform the object you also need to matrix multiply it by the desired transformation. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3383,12 +3383,12 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BoWwXgfGc3FNd3lM2A4yCm" Comment="Normal" Bounds="7284,1238,47,15" ShowValueBox="true" isIOBox="true" Value="UpZ">
+          <Pad Id="BoWwXgfGc3FNd3lM2A4yCm" Comment="Normal" Bounds="7316,1214,47,15" ShowValueBox="true" isIOBox="true" Value="UpZ">
             <p:TypeAnnotation LastCategoryFullName="Stride.Graphics.GeometricPrimitives" LastDependency="VL.Stride.vl">
               <Choice Kind="TypeFlag" Name="NormalDirection" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DdnRWgIGA9zLocTqU7lunn" Bounds="7372,1214,225,48" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;If you billboard a plane it probably needs to be in UpZ mode">
+          <Pad Id="DdnRWgIGA9zLocTqU7lunn" Bounds="7409,1212,225,48" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;If you billboard a plane it probably needs to be in UpZ mode">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3399,7 +3399,7 @@
           </Pad>
           <Overlay Id="FgHkQ907d1wOn5DmUPRRfz" Name="Apply to object" Bounds="7217,1174,383,149" />
           <Overlay Id="FRlmaSJKMO4OUZTOQButMd" Name="" Bounds="7168,794,309,161" />
-          <Pad Id="RNaNkOqkuiQQCwA2GuGH7f" Bounds="7169,807,293,53" ShowValueBox="true" isIOBox="true" Value="Cameras like Orbit Camera already have an inverse view output so you don't need Invert node. Only need to get the rotation as a matrix.">
+          <Pad Id="RNaNkOqkuiQQCwA2GuGH7f" Bounds="7169,807,293,53" ShowValueBox="true" isIOBox="true" Value="Cameras like Orbit Camera already have an inverse VIEW output so you don't need Invert node. Only need to get the rotation as a matrix.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3428,6 +3428,24 @@
           </Pad>
           <ControlPoint Id="DLputlNwLqGMAJ9fQNqEL1" Bounds="6764,1425" />
           <ControlPoint Id="IUsgaWxeFBRMk9fYe3Kton" Bounds="6842,1292" />
+          <Pad Id="Q6yvMQontX6NoIN1qB1mTG" Bounds="6972,912,129,18" ShowValueBox="true" isIOBox="true" Value="&lt;Decompose where rotation is a quaternion">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">4</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DqCDZjGmZ3JMCT7lhlGZzG" Bounds="6994,945,129,18" ShowValueBox="true" isIOBox="true" Value="&lt;Quaternion rotation back to matrix">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">4</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Fo7TuwKdL7gOMNjHGOyFYy" Name="Create" />
         <Patch Id="AdZKjFNTCkyQY2UJDDzTbO" Name="Update" />

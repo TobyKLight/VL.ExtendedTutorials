@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="FElAWOJplr7N8qjieE0U0L" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ScWZsO77lU9NBsmMhhcuKK" Name="Bounds" Kind="InputPin" DefaultValue="0, 23.2, 1536, 800.8">
+            <Pin Id="ScWZsO77lU9NBsmMhhcuKK" Name="Bounds" Kind="InputPin" DefaultValue="828, 30.4, 686.4, 337.6">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -588,7 +588,7 @@
             </Patch>
           </Node>
           <Node Bounds="638,312,106,19" Id="UimAvOGoqSfQWHvQylXs0v">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GenerateNoiseMesh" />
             </p:NodeReference>
@@ -974,7 +974,7 @@
                   <Pin Id="HUELqRfYX5RM4a2CcbhY6G" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1269,1170,94,19" Id="MpUbZ9Dbjd8LLhDVtKpCbh">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="CenteredLabel3D" />
                   </p:NodeReference>
@@ -1261,7 +1261,7 @@
                   <Pin Id="Fz8ZoAtJpnnOyQnaYBd11F" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1461,1185,94,19" Id="OefWbGbsSXdMqfEcmFuzEg">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="CenteredLabel3D" />
                   </p:NodeReference>
@@ -1328,7 +1328,7 @@
                   <Pin Id="MOKC7L53dGhNXyJOEBKeJc" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1667,1183,94,19" Id="RkUlbCTp7ScMwOLKRwuObt">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="CenteredLabel3D" />
                   </p:NodeReference>
@@ -1587,7 +1587,7 @@
             <Patch Id="A9yuidqm2yAMrdkSfJr4zG">
               <Canvas Id="RSiQBdJZZKRMEtlHVez5Zi" CanvasType="Group">
                 <Node Bounds="1464,950,145,19" Id="DkH8hnUbIu9L69eK1KfA7K">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="DrawVector3D" />
                   </p:NodeReference>
@@ -1679,7 +1679,7 @@
             </Patch>
           </Node>
           <Node Bounds="1681,3188,185,19" Id="RjaEXz7PCbiOv8WWz2nvyT">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawVector3D (PosAndDirection)" />
             </p:NodeReference>
@@ -1697,7 +1697,7 @@
             <Pin Id="ULnBz7jF1WxOY6I5bExYif" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="1879,3186,185,19" Id="Dbw11WZiWOEMiW1x09RDQP">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawVector3D (PosAndDirection)" />
             </p:NodeReference>
@@ -1715,7 +1715,7 @@
             <Pin Id="A56g5s8W1n5OH3T1q6HbGz" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="2078,3184,185,19" Id="VovqIMKMUmIMaQyojwP83c">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 11 Cross Product Usecase and Helper Vectors.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawVector3D (PosAndDirection)" />
             </p:NodeReference>

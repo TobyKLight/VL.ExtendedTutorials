@@ -42,7 +42,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="E9FW1GRfmpmL8X530fls6u" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="HyMNbUJbxU4PdRB8dzTlZ6" Name="Bounds" Kind="InputPin" DefaultValue="768.8, 30.4, 766.4, 792.8" />
+            <Pin Id="HyMNbUJbxU4PdRB8dzTlZ6" Name="Bounds" Kind="InputPin" DefaultValue="1092, 42.4, 399.2, 288.8" />
             <Pin Id="PjnITfUsqP8NR50OEqrBXC" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="GXxZDSWlS46PUIvgSnNUoI" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="UxlDYCc2MskOyzOnyT62fJ" Name="Save Bounds" Kind="InputPin" />
