@@ -2238,7 +2238,7 @@
           <ControlPoint Id="IIlpwki0BXqLDCSn2N89ue" Bounds="1315,1979" />
           <ControlPoint Id="U2zcRTVM6riNv0247dUzTE" Bounds="1361,1970" />
           <Overlay Id="G4NoZbuk09PL9dATFEqfCF" Name="Concept 1: Patching our own camera transforms with VIEW and PROJECTION" Bounds="1518,484,905,898" />
-          <Pad Id="VqkWa0A8bwXPBsAc68JYtC" Comment="" Bounds="1289,1454,35,33" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="VqkWa0A8bwXPBsAc68JYtC" Comment="" Bounds="1289,1454,35,33" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -2328,7 +2328,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="PUkAziI2rFZPl16lJuRKc6" Bounds="1530,1511" />
-          <Pad Id="Ad4d0QqegbOPQioxkySuGR" Bounds="1553,528,463,79" ShowValueBox="true" isIOBox="true" Value="Use a 'Camera {stride.camera]' node&#xD;&#xA;You can supply a View and Projection matrix direclty to this node.">
+          <Pad Id="Ad4d0QqegbOPQioxkySuGR" Bounds="1555,531,463,79" ShowValueBox="true" isIOBox="true" Value="Use a 'Camera {stride.camera]' node&#xD;&#xA;You can supply a View and Projection matrix direclty to this node.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2351,7 +2351,7 @@
             <Pin Id="FhJpOuiANLFLNuRw7aGfXp" Name="Translation" Kind="InputPin" />
             <Pin Id="RYqODdXTwOyOxSr5NH8ebR" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="L08LT8g0Qs5NpktiATP3F6" Comment="Translation" Bounds="1732,673,35,43" ShowValueBox="true" isIOBox="true" Value="0.44, -0.02, -3.21">
+          <Pad Id="L08LT8g0Qs5NpktiATP3F6" Comment="Translation" Bounds="1732,673,35,43" ShowValueBox="true" isIOBox="true" Value="0.44, -0.17, -3.21">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -2362,7 +2362,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="S3PhcOVpMysORrwsrm1ows" Comment="View Matrix" Bounds="1655,787,119,61" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FXEe84bMj7nNEUEbbUVYqu" Bounds="1734,727,439,54" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Using a regular TransformSRT to create the VIEW matrix moves and points the camera as you would expect when you apply rotation and translation.">
+          <Pad Id="FXEe84bMj7nNEUEbbUVYqu" Bounds="1850,633,438,136" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Using a regular TransformSRT to create the VIEW matrix moves and points the camera as you would expect when you apply rotation and translation.&#xD;&#xA;..Or does it? Some things are mirrored in camera space. Note for example that the Y value of the translation is negative to move the cam in the air when that's usually the Y postiive direction.&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
