@@ -1002,7 +1002,7 @@
             <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Matrix" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="LookAt" />
+              <Choice Kind="OperationCallFlag" Name="LookAt (RightHanded)" />
             </p:NodeReference>
             <Pin Id="Fu2sX3t7fk0MIH07lqZ8V2" Name="Eye" Kind="InputPin" />
             <Pin Id="KF3fLyc7nLbNReZHMFZ1b0" Name="Target" Kind="InputPin" />
@@ -1483,7 +1483,7 @@
             <Pin Id="OBBKQM9A2EkM1MHPt7mTA5" Name="ShowUpVector" Kind="InputPin" />
             <Pin Id="Igth8apGDGnPeWGXuEyIuh" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="UD3F1yNKxGUMu4YGtZltzm" Comment="Target" Bounds="330,586,35,43" ShowValueBox="true" isIOBox="true" Value="0.26, 0.76, -1.44">
+          <Pad Id="UD3F1yNKxGUMu4YGtZltzm" Comment="Target" Bounds="330,586,35,43" ShowValueBox="true" isIOBox="true" Value="0.42, 0.76, -1.34">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -1540,12 +1540,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ck4AkFbuemAOkyOONwFq46" Bounds="362,741,410,179" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;LookAt Matrix. What does it actually do? In this setup it's making the teapot positive Z axis (blue arrow) point to the target lookat direction (purple arrow). &#xD;&#xA;The Up vector is a helper that influences the teapots rotation. &#xD;&#xA;In principle its guiding where the teapots green axis is pointing. &#xD;&#xA;BUT green axis doesn't directly follow up vector because its only got 1 degree of freedom, rotation AROUND the new pointing axis. &#xD;&#xA;If you make the up vector right instead (1,0,0) you see the teapoint rolls around the blue axis so its top points relatively right. ">
+          <Pad Id="Ck4AkFbuemAOkyOONwFq46" Bounds="359,740,411,168" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;'LookAt (RightHanded)' [3D.Matrix]. &#xD;&#xA;Note there are two versions right handed and left handed. &#xD;&#xA;Stride typically uses right handed. &#xD;&#xA;What does it actually do? The right handed version will make the teapot negative Z axis (blue arrow) point to the target lookat direction (purple arrow).  &#xD;&#xA;The Up vector is a helper that influences the teapots rotation. &#xD;&#xA;In principle its guiding where the teapots green axis is pointing. &#xD;&#xA;BUT green axis doesn't directly follow up vector because its only got 1 degree of freedom, rotation AROUND the new pointing axis. &#xD;&#xA;If you make the up vector right instead (1,0,0) you see the teapoint rolls around the blue axis so its top points relatively right. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
@@ -1570,7 +1570,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KIHhWNnnQ3lOOyzeQrME86" Bounds="836,321,566,120" ShowValueBox="true" isIOBox="true" Value="Ok so what if we do want to roll around the target vector? &#xD;&#xA;It may not be intuitive to rotate the up vector directly.&#xD;&#xA;&#xD;&#xA;Notice how the Z positive axis became the new target axis. &#xD;&#xA;This means we can apply euler roation around Z after the lookat transform and it will rotate around this axis. ">
+          <Pad Id="KIHhWNnnQ3lOOyzeQrME86" Bounds="827,317,566,120" ShowValueBox="true" isIOBox="true" Value="Ok so what if we do want to roll around the target vector? &#xD;&#xA;It may not be intuitive to rotate the up vector directly.&#xD;&#xA;&#xD;&#xA;Notice how the Z axis became the new target axis. &#xD;&#xA;This means we can apply euler roation around Z after the lookat transform and it will rotate around this axis. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1583,7 +1583,7 @@
             <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Matrix" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="LookAt" />
+              <Choice Kind="OperationCallFlag" Name="LookAt (RightHanded)" />
             </p:NodeReference>
             <Pin Id="Vl08Hf4S30KLfKFjUNfx2Y" Name="Eye" Kind="InputPin" />
             <Pin Id="GmBaTygldGJLsq8eEN8TyA" Name="Target" Kind="InputPin" />
@@ -1808,7 +1808,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AV6vFjBTyfqMZnim355KcY" Comment="To Position" Bounds="1639,603,35,43" ShowValueBox="true" isIOBox="true" Value="-0.54, 1, -1">
+          <Pad Id="AV6vFjBTyfqMZnim355KcY" Comment="To Position" Bounds="1639,603,35,43" ShowValueBox="true" isIOBox="true" Value="-1.67, 1, -1">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -1832,7 +1832,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="EweMGn7jEIJLn5KOmD4H8k" Bounds="1642,962" />
-          <Pad Id="UZlkUGqqvxgNP6nrYjHSIM" Bounds="1678,703,303,334" ShowValueBox="true" isIOBox="true" Value="This works well for some cases.&#xD;&#xA;However the node might introduce undesirable rolls around the target axis, similar to using euler rotation.&#xD;&#xA;&#xD;&#xA;If you set the 'Input Direction' to (0,0,1), the 'To Position' to (-1,1,-1) and then roll the X value between -1 and +1 you will see some weird rolling beahviour.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Note the direction in which there will be 'weird' rolls and flips is influenced by the 'Input Direction' pin. I used an input direction of Z positive. An input direction of Y positive might produce better results for a different usecase (you could do a subsequent rotation of the mesh or entity to get correct visual oreintation )">
+          <Pad Id="UZlkUGqqvxgNP6nrYjHSIM" Bounds="1669,680,304,341" ShowValueBox="true" isIOBox="true" Value="This works well for some cases.&#xD;&#xA;However the node might introduce undesirable rolls around the target axis, similar to using euler rotation.&#xD;&#xA;&#xD;&#xA;If you set the 'Input Direction' to (0,0,1), the 'To Position' to (-1,1,-1) and then roll the 'To' X value between -1 and +1 you will see some weird rolling beahviour.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Note the direction in which there will be 'weird' rolls and flips is influenced by the 'Input Direction' pin. I used an input direction of Z positive. An input direction of Y positive might produce better results for a different usecase (you could do a subsequent rotation of the mesh or entity to get correct visual oreintation )">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2390,7 +2390,7 @@
             <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Matrix" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="LookAt" />
+              <Choice Kind="OperationCallFlag" Name="LookAt (RightHanded)" />
             </p:NodeReference>
             <Pin Id="SCiypwyaA83Ofap4Kzdnxi" Name="Eye" Kind="InputPin" />
             <Pin Id="OW8B6uMJQR1OlDm9ZkPn86" Name="Target" Kind="InputPin" />

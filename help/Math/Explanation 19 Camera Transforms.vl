@@ -2238,7 +2238,7 @@
           <ControlPoint Id="IIlpwki0BXqLDCSn2N89ue" Bounds="1315,1979" />
           <ControlPoint Id="U2zcRTVM6riNv0247dUzTE" Bounds="1361,1970" />
           <Overlay Id="G4NoZbuk09PL9dATFEqfCF" Name="Concept 1: Patching our own camera transforms with VIEW and PROJECTION" Bounds="1518,484,905,898" />
-          <Pad Id="VqkWa0A8bwXPBsAc68JYtC" Comment="" Bounds="1289,1454,35,33" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="VqkWa0A8bwXPBsAc68JYtC" Comment="" Bounds="1289,1454,35,33" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -3002,7 +3002,7 @@
             <Pin Id="T39c5OIzd7fNEenYcP3twj" Name="Output" Kind="OutputPin" />
             <Pin Id="NqCMdCxrpH4M3n4dR0arDf" Name="Camera Component" Kind="OutputPin" />
           </Node>
-          <Pad Id="H3HjgCsJBfNQAKLNbiObla" Comment="Eye" Bounds="6835,622,35,43" ShowValueBox="true" isIOBox="true" Value="-0.87, 1.38, -2.75">
+          <Pad Id="H3HjgCsJBfNQAKLNbiObla" Comment="Eye" Bounds="6835,622,35,43" ShowValueBox="true" isIOBox="true" Value="-1.15, 1.38, -2.75">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -3018,15 +3018,6 @@
             </p:TypeAnnotation>
           </Pad>
           <ControlPoint Id="QPByer5NTkDPAD6tiyncsw" Bounds="6837,952" />
-          <Node Bounds="6930,1163,56,19" Id="RiQ9lXydlrvOkrUg62B5nC">
-            <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Billboard" />
-            </p:NodeReference>
-            <Pin Id="OkAXiPY14F9M0rVIrUcbKy" Name="Input" Kind="InputPin" />
-            <Pin Id="Q2YqHiteXa5MoSLvt3uSfx" Name="Inverse View Rotation" Kind="InputPin" />
-            <Pin Id="UPjTYSS5HrrMZdmitGfByu" Name="Output" Kind="OutputPin" />
-          </Node>
           <Node Bounds="7224,1330,85,19" Id="Nw1etKaQvWRLtXeDLrewGL">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3236,19 +3227,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="7334,1256,85,19" Id="Ezy8NcI1IOyMNgRvmSdz9l">
-            <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="PBRMaterial" />
-            </p:NodeReference>
-            <Pin Id="K0SOQtWE0T3MPciOiEU4by" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="K4T9ImigzfXLbF8uA1Gntr" Name="Color" Kind="InputPin" DefaultValue="0.85, 0.11900002, 0.5137403, 1" />
-            <Pin Id="NRDKMYMEM7zMneoUsxPRVQ" Name="Metalness" Kind="InputPin" />
-            <Pin Id="C9lB5VOoJJ9Ptwr8Y5Pg8A" Name="Roughness" Kind="InputPin" />
-            <Pin Id="IIZxGQqVznLLTscLRBtYra" Name="Transparency" Kind="InputPin" />
-            <Pin Id="BG3YIwaNeXJN2Puai4mLcA" Name="Cull Mode" Kind="InputPin" />
-            <Pin Id="JPRX36qHaamLMHUqOEU6rC" Name="Output" Kind="OutputPin" />
-          </Node>
           <Node Bounds="7338,906,54,19" Id="NOF6qYITjaBOXGYezuvFBn">
             <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3345,12 +3323,12 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="CnuLz4smjYYPnFoe5VsXb6" Name="" Bounds="6876,983,335,249" />
-          <Pad Id="KT6nUwtirzDLOfeHHgghc8" Bounds="6883,1000,200,128" ShowValueBox="true" isIOBox="true" Value="Billboard node must be typed with a transform to work. But this input isn't connected (look inside Billboard). if you want to transform the object you also need to matrix multiply it by the desired transformation. ">
+          <Pad Id="KT6nUwtirzDLOfeHHgghc8" Bounds="6883,1000,290,45" ShowValueBox="true" isIOBox="true" Value="Then multiply the inverse view rotation matrix by the world transform of the object you want to billboard.&#xD;&#xA;(note order matters with matrix multiplication)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
@@ -3378,7 +3356,7 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BNqC6YzvlnQLTwYDWEgUDU" Comment="Size" Bounds="7238,1217,35,28" ShowValueBox="true" isIOBox="true" Value="0.5, 1.4">
+          <Pad Id="BNqC6YzvlnQLTwYDWEgUDU" Comment="Size" Bounds="7238,1217,35,28" ShowValueBox="true" isIOBox="true" Value="1.4, 1.4">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
@@ -3388,7 +3366,7 @@
               <Choice Kind="TypeFlag" Name="NormalDirection" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DdnRWgIGA9zLocTqU7lunn" Bounds="7409,1212,225,48" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;If you billboard a plane it probably needs to be in UpZ mode">
+          <Pad Id="DdnRWgIGA9zLocTqU7lunn" Bounds="7411,1209,225,48" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;If you billboard a plane it probably needs to be in UpZ mode">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3446,6 +3424,68 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="AYqnmF8VxIgQC1voKACJee" Bounds="7251,1053,173,81" ShowValueBox="true" isIOBox="true" Value="What about the 'billboard' node? Doesn't actually do anything but pass through the inverse view rotation matrix.&#xD;&#xA;See third post here &gt;&gt;&gt;&gt;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CUJJYSQM77zLbeAhDpgCjT" Bounds="7383,1112,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/maths-tutorials-dot-product-cross-product-quaternions-and-more/21958/2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GFAmxn9zzo1NTpU0Ia2yWq" Bounds="6898,641,457,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;move this and note how the billboarded object stays facing the camera">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="7320,1233,105,19" Id="RMbFcvhyyFuOTBl5lz2nON">
+            <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileTexture" />
+            </p:NodeReference>
+            <Pin Id="LIyqHbEtmSaPnRbEMCa1S1" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LRicHg3QFfIOrK1KZbwwD1" Name="Path" Kind="InputPin" DefaultValue="UVCheckerMap1024_Quadrants.png" />
+            <Pin Id="RPkW8gNEpH6PfrppcZobjT" Name="Generate Mipmaps" Kind="InputPin" />
+            <Pin Id="FC0YzVdanOnMvFKjxSuIiL" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
+            <Pin Id="EtDL53MsT0lMtnbVFPL9t2" Name="Premultiply Alpha" Kind="InputPin" />
+            <Pin Id="JAARO654iVgPN8KQcxn66Y" Name="Compress" Kind="InputPin" />
+            <Pin Id="RKbeVc2gGx2OEskWI4vI6y" Name="Alpha Format" Kind="InputPin" />
+            <Pin Id="SEvj3rI07nlLOyAwQkNg3R" Name="Reload" Kind="InputPin" />
+            <Pin Id="F35Bkg5MltWOuOS9nuKMz7" Name="Texture" Kind="OutputPin" />
+            <Pin Id="M6VAfTqHCi4Pd1Jb0e7bTg" Name="Is Loading" Kind="OutputPin" />
+            <Pin Id="HeIVrp1yyXGLJXmjzYfnUq" Name="Already Loaded" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="7322,1259,185,19" Id="Judq3DrT2xgN7OPQF5kPkv">
+            <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureMaterial" />
+            </p:NodeReference>
+            <Pin Id="BozRTzuDvxGNmUU1HLrJFu" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PkHuntlpE6AQRaST0wBONV" Name="Texture" Kind="InputPin" />
+            <Pin Id="M7QqlKQM6PePxj0JPTtc8D" Name="Fallback Color" Kind="InputPin" />
+            <Pin Id="RupzcWWxyxOLOqbFo02AQr" Name="Texcoord Index" Kind="InputPin" />
+            <Pin Id="JKUeevoLIqwNumeBjzY9t4" Name="Filtering" Kind="InputPin" />
+            <Pin Id="D0LCHqWVQwtOFCTvHrgWTg" Name="Address Mode U" Kind="InputPin" />
+            <Pin Id="KbifEFKnkB1MALDk866nDC" Name="Address Mode V" Kind="InputPin" />
+            <Pin Id="MS2W6hFDbeGLUzF5Mfl40Y" Name="Scale" Kind="InputPin" />
+            <Pin Id="BZ977fxDDcfPQDFaRv6UFq" Name="Offset" Kind="InputPin" />
+            <Pin Id="QlxxD7rYitLM32LriqQJPJ" Name="Transparency" Kind="InputPin" />
+            <Pin Id="VWqo9XkCR7vOefiRhgpRHs" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="JOjrBle01pgNy7SR3G1vl9" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="Fo7TuwKdL7gOMNjHGOyFYy" Name="Create" />
         <Patch Id="AdZKjFNTCkyQY2UJDDzTbO" Name="Update" />
@@ -3557,20 +3597,19 @@
         <Link Id="C8bkewahLc2LrwulRIlcru" Ids="PeDiaNO02yvNK2d7hYtJak,Q6Ewq3y3WcfNfBrmBZ8UmC" />
         <Link Id="FYA6VlaGk8eOqT1Q9Yqz1m" Ids="OYNNRhla3qfO4Hg61XeVKp,NjEwbHXK0GIPvg3gBpqYCI" />
         <Link Id="SAVvQra7Jh3Np3ShoQ3s9f" Ids="Lzux7sHez6vOqwjCBGA4Li,KDMb3dpPQqfOP1uENA8swX" />
-        <Link Id="ETMpCqWBIIaOIPH0gx5UFk" Ids="UPjTYSS5HrrMZdmitGfByu,V7vHgRi7pxWPREhvZbvZdn" />
         <Link Id="HTaK65yGietMq6IFX98owk" Ids="SPfFWBikPuEMkAO6RQDgXa,CHkkYd8ITZVPNKh5LtK5n3" />
-        <Link Id="NjjSKtCPUBzLVkZEzbPtLi" Ids="SPfFWBikPuEMkAO6RQDgXa,OkAXiPY14F9M0rVIrUcbKy" />
         <Link Id="VluKGClqZXMNTJZRfN8zev" Ids="JhzED17VdCwLs81Sxh8iFE,FQ2xAmP91wJPWU6l3Ez94P" />
         <Link Id="SQ6u8znNucmMyhDXaUyk8X" Ids="PwfH5dBzIzwPuru9atreeE,NcPjv4LbPxTPksGR0GXDOy" />
         <Link Id="D0vkQFJqTSAOV99CRVnzCS" Ids="NfPogvLkvLsQT4YC0Q6CUC,BBZV2pbLajvOlnjgohcEiy" />
-        <Link Id="RX1CPZiNvyYMS3x3r6JEv7" Ids="IfLEJ50jmacPwIZtt6qZBC,Q2YqHiteXa5MoSLvt3uSfx" />
         <Link Id="NPXmDPcbHSDLLFZjUQ7VXU" Ids="T39c5OIzd7fNEenYcP3twj,DLputlNwLqGMAJ9fQNqEL1,QmqVmjXauR4Pan3bQOfeMe" />
-        <Link Id="D7ycg3IOprNNIpQBnvkeey" Ids="JPRX36qHaamLMHUqOEU6rC,I2KdZQtJenbL1gGgqEQ2DI" />
         <Link Id="JfLem5x7rUkNcIoyo13GxD" Ids="JAotOv1KDx4LzFSKSI06bB,EIJuzxAjEPOPAbz3ENpJBY" />
         <Link Id="QAwM3yaPQJrOgg82vzzTRF" Ids="CWSIX54Dz7wPtnPFe2iTPU,UmMrrFz4O52MWJoYZkRrvm" />
         <Link Id="DFYpHRd8e81NuSR7VxUtuu" Ids="AP07lOEdrZxQYS8JD2i6qC,CCAD2MKcD95LImpo7XI7Gk" />
         <Link Id="IYnbqf1YYFINNI3zlLOM2y" Ids="BNqC6YzvlnQLTwYDWEgUDU,N1cfqvMrCC7PDINeKzQRwg" />
         <Link Id="AubLQmxjIOSNhmCJlL4rpE" Ids="BoWwXgfGc3FNd3lM2A4yCm,EnApa6ksp92PHL7I34PCGx" />
+        <Link Id="QZNLpHO75KTOzIlxV4haNi" Ids="IfLEJ50jmacPwIZtt6qZBC,V7vHgRi7pxWPREhvZbvZdn" />
+        <Link Id="BmO4lTXKOEYNVY5T10ESUd" Ids="F35Bkg5MltWOuOS9nuKMz7,PkHuntlpE6AQRaST0wBONV" />
+        <Link Id="DPJzQ2cBZJ2MnJ0LtM8m0N" Ids="JOjrBle01pgNy7SR3G1vl9,I2KdZQtJenbL1gGgqEQ2DI" />
       </Patch>
     </Node>
   </Patch>
