@@ -948,7 +948,7 @@
               <Link Id="HBvoD4mB1FmPx2QcDUi2Nv" Ids="D7VSAC3Nv81L6CtjqPyj29,UeDGjpU5qKbNuFeyJqSGve" />
             </Patch>
           </Node>
-          <Pad Id="BMNf7fgFbjjN9UtqakMOYG" Comment="" Bounds="684,1309,79,60" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="BMNf7fgFbjjN9UtqakMOYG" Comment="" Bounds="684,1309,79,60" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>

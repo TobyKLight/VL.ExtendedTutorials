@@ -24,6 +24,9 @@ https://youtu.be/8dasXkisqTY
 https://youtu.be/cKjb3dFOXqk
 
 # Version History
+V1.1.4 
+* Added maths helppatch for converting from world space to screen space manually. Thanks @Motzi for support with this one. 
+
 V1.1.1 
 * Bugfix set the Renderer windows to start in nicer default positions. Improved some text.
 
