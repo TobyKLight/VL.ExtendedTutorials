@@ -2133,7 +2133,7 @@
             <Pin Id="EG9lAjWPcgOM0OxPcExOOy" Name="Result" Kind="OutputPin" />
           </Node>
           <Overlay Id="Cv4roLsDiEGOOkptvnPyDj" Name="3. Orient the avatar with mouse movement." Bounds="378,1170,863,581" />
-          <Pad Id="AhNim4uQOVfLgNYkvHTwh7" Bounds="550,62,558,20" ShowValueBox="true" isIOBox="true" Value="Goal is to make a controller for an avatar with a camera that follows in third person.">
+          <Pad Id="AhNim4uQOVfLgNYkvHTwh7" Bounds="550,48,558,20" ShowValueBox="true" isIOBox="true" Value="Goal is to make a controller for an avatar with a camera that follows in third person.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2230,48 +2230,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="1298,4643,132,98" Id="JXG3RgUVZOsM9DbnHLX8PS">
-            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-            </p:NodeReference>
-            <Pin Id="EfJrnLVmFdsPckmKtdYcbM" Name="Force" Kind="InputPin" />
-            <Pin Id="MTwaV7iKkdFPFahgc3mmMr" Name="Dispose Cached Outputs" Kind="InputPin" />
-            <Pin Id="RmtbPfZtwpWNhjWgJ9tuhA" Name="Has Changed" Kind="OutputPin" />
-            <Patch Id="Lh3jDGz3wCUNplSXt9sesw" ManuallySortedPins="true">
-              <Patch Id="K7HxQEXDH9GLW8Ow2YTKQV" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="Cq1eMKIBkOjPtxn8JRhuRr" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="1310,4695,97,26" Id="JIl2T7Wl7PfLlN7viY9Ih1">
-                <p:NodeReference LastCategoryFullName="Stride.API.Games.GameWindow" LastDependency="VL.Stride.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="GameWindow" />
-                  <Choice Kind="OperationCallFlag" Name="SetIsMouseVisible" />
-                </p:NodeReference>
-                <Pin Id="Sn9ttv4yXprPapvDeriyLt" Name="Input" Kind="StateInputPin" />
-                <Pin Id="E2X7X2H0VG1MSIreBZE2LB" Name="Value" Kind="InputPin" />
-                <Pin Id="NNXosPoyu75PERUzTC5imK" Name="Output" Kind="StateOutputPin" />
-              </Node>
-              <Node Bounds="1381,4668,37,19" Id="PyT0SrW8RWILv4Mt9mNS4U">
-                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="NOT" />
-                </p:NodeReference>
-                <Pin Id="FKOQJCSKYMxLxEmLdVA9PP" Name="Input" Kind="StateInputPin" />
-                <Pin Id="HveS5PDn9pIMJWvuaHMBIJ" Name="Output" Kind="StateOutputPin" />
-              </Node>
-            </Patch>
-            <ControlPoint Id="LULVHMEuxIIP0CS9B7q8Yi" Bounds="1376,4649" Alignment="Top" />
-          </Node>
-          <Pad Id="TqL3s5X1kngQTwr3IzK4sv" Bounds="1419,4530,283,44" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;also when mouse locked turn off visible mouse cursor for additional window">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="NQEcReYFx4ZO8rtA2kkptj" Bounds="389,1393,246,61" ShowValueBox="true" isIOBox="true" Value="1. When mouse locked to window read delta of the mouse position to get a value that we will use to control the heading (yaw) of the avatar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -2335,7 +2293,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="TasA2NciQayN5rUwNw2Xfd" Name="7. Apply the position and orientation to the camera view matrix" Bounds="1074,3115,943,917" />
+          <Overlay Id="TasA2NciQayN5rUwNw2Xfd" Name="7. Calculate the camera view matrix" Bounds="1074,3115,943,917" />
           <Node Bounds="1530,3761,58,19" Id="FqFSz7Iaf82OIfcRwGSKPt">
             <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2353,7 +2311,6 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UHiVmpd0HppO64uUuf1G2k" SlotId="LVR7PeYxJCoMfmLB3Dx9fB" Bounds="843,1585" />
           <Pad Id="Ms0inDOO1nqNBXIOmor16D" SlotId="Rxca37xVASnP8GPeQEHsqs" Bounds="733,1583" />
           <Node Bounds="731,1616,25,19" Id="LLHYLOeUBACOY6SjkRlec1">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
@@ -2365,26 +2322,6 @@
             <Pin Id="Vhi9Hw0nDgyLM7oZpt9Ob0" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="Hp6G6TM8DmLLEkTNytMvXK" SlotId="Rxca37xVASnP8GPeQEHsqs" Bounds="733,1729" />
-          <Node Bounds="841,1616,25,19" Id="AuEmCuZQ2GtLCfUlNuHDG6">
-            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="+" />
-            </p:NodeReference>
-            <Pin Id="SXWhC46t5NAMZmtEy6dAff" Name="Input" Kind="InputPin" />
-            <Pin Id="NXUVFxB1ifzOUcTOphl530" Name="Input 2" Kind="InputPin" />
-            <Pin Id="KXEN3wFXpHSO1wPpidpLo6" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="841,1661,45,19" Id="JNoH5q4PVJ3QP7vYWJWDbQ">
-            <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Clamp" />
-            </p:NodeReference>
-            <Pin Id="E8oUHt9TbGROc70Q5CgHMK" Name="Input" Kind="InputPin" />
-            <Pin Id="AI55Z0Q9iu8LhSUNKpJRCd" Name="Minimum" Kind="InputPin" DefaultValue="-0.24" />
-            <Pin Id="NzyNjRGhcJ1MdRPKN6IQ3b" Name="Maximum" Kind="InputPin" DefaultValue="0.24" />
-            <Pin Id="AkrR9CzVy3rLgqKQqz3HIX" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="L3qATj54umrPDU9m7133Sz" SlotId="LVR7PeYxJCoMfmLB3Dx9fB" Bounds="843,1730" />
           <Node Bounds="707,1394,45,19" Id="JmfCEQRcDlRO3d5L7aSApk">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2396,7 +2333,6 @@
             <Pin Id="SYsMhMInn0SLG4Z4trKlQo" Name="Input 2" Kind="InputPin" />
             <Pin Id="HfCxYlL37zpNrirYog1WWP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Pv0rPQY5znOPh7XrpAUjLE" SlotId="PlZWCVgo4wlP26XQvTQGFC" Bounds="1371,4592" />
           <Node Bounds="1530,3671,45,19" Id="Fj3ZZAW3eafPl4SvEDP8jW">
             <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2439,7 +2375,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Rcbk0b9ISsuOaT9FKeHrBs" Comment="" Bounds="733,1693,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EY4PUUhKyPkLITrByKQulr" Comment="" Bounds="843,1702,35,15" ShowValueBox="true" isIOBox="true" />
           <ControlPoint Id="J8wKClX9OjxPaz8BdjmMxu" Bounds="1609,3205" />
           <Pad Id="Dqp89bqDIHRLQg6d5Q3NQB" Comment="Yaw" Bounds="1590,3572,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="731,1656,45,19" Id="Ttz4eEW6s1xQE4Tq7r6AIz">
@@ -3027,15 +2962,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NmjnJnr3z8jMLYkW97854i" Bounds="797,1668,35,19" ShowValueBox="true" isIOBox="true" Value="3b.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="Px4eUg72rXGO31St2Q4O9j" Comment="Is Mouse Position Locked" Bounds="1142,1115,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Eyrg0dORAnXPZkdW5ZFdrx" Bounds="659,775,35,19" ShowValueBox="true" isIOBox="true" Value="1.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3171,7 +3097,7 @@
             <Pin Id="D0EMV9DeUZCMD2pLsD98nm" Name="Cull Mode" Kind="InputPin" />
             <Pin Id="HEmXwAFIlVUPbcBuAp3DA0" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Jva238ZcKNRNlP4FQuMfik" Bounds="550,89,566,69" ShowValueBox="true" isIOBox="true" Value="Compared to just making an FPS camera it's a little more challenging because we need to take the transform of an object in world space and then process that for the camera to use. Which is a bit tricky because the camera and object transforms are mirrored in some ways.">
+          <Pad Id="Jva238ZcKNRNlP4FQuMfik" Bounds="550,72,566,78" ShowValueBox="true" isIOBox="true" Value="Compared to just making an FPS camera it's a little more challenging because we need to take the transform of an object in world space and then process that for the camera to use. Which is a bit tricky because the camera and object world transforms are mirrored in some ways. We need to transform the object AND the camera so we need to understand where to invert values.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3301,8 +3227,7 @@
             <Pin Id="UR6P0hrI5jTOs6oxbw2Chx" Name="Not Assigned" Kind="OutputPin" />
           </Node>
           <Pad Id="UgYwG8lt3zvPBIJAOWKys6" SlotId="Rxca37xVASnP8GPeQEHsqs" Bounds="803,638" />
-          <Pad Id="A6a3jG4L4f4OTGN0JCKuKE" SlotId="LVR7PeYxJCoMfmLB3Dx9fB" Bounds="903,638" />
-          <Pad Id="OdjcEB7atw3M9l7AYGLIKC" Comment="AvatarHeadingYaw" Bounds="798,579,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="OdjcEB7atw3M9l7AYGLIKC" Comment="AvatarHeadingYaw" Bounds="802,579,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -3316,7 +3241,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Sg6WZ6w2Tj1MMDi8VEOHaU" Bounds="2576,2094,228,94" ShowValueBox="true" isIOBox="true" Value="(Note compared to FPS cam example Y directions swapped to work in object space.)">
+          <Pad Id="Sg6WZ6w2Tj1MMDi8VEOHaU" Bounds="2576,2094,228,94" ShowValueBox="true" isIOBox="true" Value="(Note compared to FPS cam example Y directions swapped to work in world space.)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3339,7 +3264,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Illtr4wnlGwPaqCRS1DHM4" Bounds="1089,3159,398,94" ShowValueBox="true" isIOBox="true" Value="So what are we trying to achieve wit hthe now we have the avatar position and we want to get the camera position... So where should that be? &#xD;&#xA;Pretend our avatar has a tail behind it on it's local negative Z axis we want to stick to that tail. We also need to give the camera so the &#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="Illtr4wnlGwPaqCRS1DHM4" Bounds="1089,3159,398,94" ShowValueBox="true" isIOBox="true" Value="So now we have the avatar position, we still need to calculate the camera position... So where should that be? &#xD;&#xA;Pretend our avatar has a tail behind it on it's local negative Z axis we want to stick to that tail. We also need to give the camera an angle (yaw) in the heading of the teapot.&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -3511,9 +3436,8 @@
         <Link Id="O8XkXVdlFeoLMktihJS9Rr" Ids="MVJ6P2dyIo2MhzgIyW2wVa,POKnkzAKgYiNWtD8Pp9TX6" />
         <Link Id="KdxfEeCy1pyQI6AoHo6v7R" Ids="HJ0qrWGv0jYQNcoQCiCXTR,OJ7S2MArVZ7LB6upg9NqKN" />
         <Patch Id="Fo7TuwKdL7gOMNjHGOyFYy" Name="Create" ParticipatingElements="KtVlLkequVwPBjPnyRpVDr,HFGagrvy5ekLcb1VNNBazv" />
-        <Patch Id="AdZKjFNTCkyQY2UJDDzTbO" Name="Update" ParticipatingElements="S9qbac5UxZBOcYhbAZyirE,UJ935f9N8EXOm9TgzytP4H,A0xH9AArzAbLz3myjBCq1O,OyoCVDpDHHiNWUEJokkFyI" />
+        <Patch Id="AdZKjFNTCkyQY2UJDDzTbO" Name="Update" ParticipatingElements="S9qbac5UxZBOcYhbAZyirE,A0xH9AArzAbLz3myjBCq1O,OyoCVDpDHHiNWUEJokkFyI" />
         <Link Id="GHVBzHaKmQYOPikEPUwN8c" Ids="ExPPOqsOMUtLXmS8OtImNa,HLmHT0iA0TBMuYXnsELhZQ" />
-        <Link Id="KKhERBYSByaMP3xvvd5xRp" Ids="GJvVSPjcpFEOFunihl9NUp,Sn9ttv4yXprPapvDeriyLt" />
         <Slot Id="ReChHfR6MOTNjqzzQMzopF" Name="AvatarWorldPosition">
           <p:TypeAnnotation p:Type="TypeReference">
             <Choice Kind="TypeFlag" Name="Vector3" />
@@ -3523,24 +3447,13 @@
         <Link Id="BTSzXCSguq9M2XHDDXayIi" Ids="JI8TQNACd50MGlO4B0ApkE,QuPfluNAxC4Po4LJnLz9It" />
         <Link Id="MCDx2Si8pPDOhjEOmP99pQ" Ids="NKLwIbvqdS0LJzkFNVJnon,CVO89uJrP7PNiGfL6aEXgx" />
         <Link Id="LU3zsYg6VNgMHe64PuWIj0" Ids="VTFiFCfomc5ORtm9b1A9Qw,Lo653AscvF2LOWmo4sTlIk" />
-        <Slot Id="LVR7PeYxJCoMfmLB3Dx9fB" Name="Pitch">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Float32" />
-          </p:TypeAnnotation>
-        </Slot>
         <Link Id="BAI1PTa9wg1QXQQdUBJWok" Ids="Ms0inDOO1nqNBXIOmor16D,CDTjeJeBj10Qav79xbu3oG" />
         <Link Id="DCPyo4EaQrpOQGLVI04YIU" Ids="AuhG2OBYxSUP1QxDg6m90L,IZ6oQNlzTYXOIBE3qUNUe9" />
-        <Link Id="KhO2hd78MwDMQMkmGa3WyF" Ids="KXEN3wFXpHSO1wPpidpLo6,E8oUHt9TbGROc70Q5CgHMK" />
-        <Link Id="F8EC9MO5Mh8M3QgUAlJ4uY" Ids="UHiVmpd0HppO64uUuf1G2k,SXWhC46t5NAMZmtEy6dAff" />
         <Link Id="ABeHFY5Ch76PPAXo7nMW5x" Ids="HfCxYlL37zpNrirYog1WWP,JI8TQNACd50MGlO4B0ApkE" />
         <Slot Id="PlZWCVgo4wlP26XQvTQGFC" Name="MouseIsLockedToWindow" />
-        <Link Id="C7rJuMDPHk5LCD2X0Th48z" Ids="LULVHMEuxIIP0CS9B7q8Yi,FKOQJCSKYMxLxEmLdVA9PP" />
-        <Link Id="SH4eUwzCLxfP8gdfWnj1VL" Ids="HveS5PDn9pIMJWvuaHMBIJ,E2X7X2H0VG1MSIreBZE2LB" />
         <Link Id="RVPxipTUg3KP7RZ3Hr5Ih4" Ids="BoseRTbQXs0PvjcROSXiqQ,RrgOFPIGKFzNNi0DbqeqM6" />
         <Link Id="HPAyeQCptmFPIlZwLEnWNK" Ids="UVizppTuJb6MAlrc1v6ifa,MRPPrqQGxbpQcFIy99fiKO" />
         <Link Id="S9qbac5UxZBOcYhbAZyirE" Ids="Rcbk0b9ISsuOaT9FKeHrBs,Hp6G6TM8DmLLEkTNytMvXK" />
-        <Link Id="OxVXm4MIRvfQMqQG8STJCf" Ids="AkrR9CzVy3rLgqKQqz3HIX,EY4PUUhKyPkLITrByKQulr" />
-        <Link Id="UJ935f9N8EXOm9TgzytP4H" Ids="EY4PUUhKyPkLITrByKQulr,L3qATj54umrPDU9m7133Sz" />
         <Link Id="OZAq8VsjOtdNCn3ZkXmYiD" Ids="Hp6G6TM8DmLLEkTNytMvXK,E0RSIVHSPwkMHlBQLHTXj3,J8wKClX9OjxPaz8BdjmMxu,Dqp89bqDIHRLQg6d5Q3NQB" />
         <Link Id="RD92D1U5hRTMPBlY5D6E0M" Ids="Dqp89bqDIHRLQg6d5Q3NQB,AAI5KEsuQ2rNrub0AqTGEv" />
         <Link Id="GZfMZ7K1DWOQZWeAmsm77i" Ids="Vhi9Hw0nDgyLM7oZpt9Ob0,UPeLcB7bV4wP38hTCdxxJ7" />

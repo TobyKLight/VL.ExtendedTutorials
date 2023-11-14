@@ -2413,7 +2413,7 @@
             <Pin Id="DZ9SuJTJH9XQU8pCflTzkt" Name="Z Far" Kind="InputPin" DefaultValue="4.19" />
             <Pin Id="PtWyKrYYkomNj0RQWWfujE" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="N3Ozt9GKzeEMufwu5rFBwW" Bounds="1976,930,298,132" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the 'Perspective (RightHanded) 3D.Matrix' node to create a projection matrix.&#xD;&#xA;There are some other variations of the perspective node, must use the right handed versions.&#xD;&#xA;Note Z Near can't be zero, although you could intuitively expect that would work.">
+          <Pad Id="N3Ozt9GKzeEMufwu5rFBwW" Bounds="1976,930,298,132" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use the 'Perspective (RightHanded) 3D.Matrix' node to create a projection matrix.&#xD;&#xA;There are some other variations of the perspective node, must use the right handed versions.&#xD;&#xA;Note &quot;Z Near&quot; can't be zero, although you may intuitively expect that would work.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2671,7 +2671,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DtFS5ReWWr2OGbVsYkKN1y" Bounds="3545,862,296,94" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;'Perspective (FOV RightHanded) 3D.Matrix' allows you to specify FOV and Aspect rather than width and height.&#xD;&#xA;Note Z Near can't be zero.">
+          <Pad Id="DtFS5ReWWr2OGbVsYkKN1y" Bounds="3545,862,296,94" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;'Perspective (FOV RightHanded) 3D.Matrix' allows you to specify FOV and Aspect rather than width and height.&#xD;&#xA;Note &quot;Z Near&quot; can't be zero.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2748,7 +2748,7 @@
           </Pad>
           <ControlPoint Id="GRgu5rtn1MTMBYeDmoCG1V" Bounds="4121,902" />
           <Pad Id="OAyMiWtdwLvPnVTqSONByD" Comment="Perspective Matrix" Bounds="4298,991,163,66" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VdLBEUwS1pcOuYJ4FcVwn3" Bounds="4437,805,443,88" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;'Perspective (OffCenter Distance Righthanded) 3D.Matrix' allows you to specify FOV as variations from the center axis. &#xD;&#xA;Relative Distance acts like a zoom. &#xD;&#xA;Note as before Z Near can't be zero.">
+          <Pad Id="VdLBEUwS1pcOuYJ4FcVwn3" Bounds="4437,805,443,88" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;'Perspective (OffCenter Distance Righthanded) 3D.Matrix' allows you to specify FOV as variations from the center axis. &#xD;&#xA;Relative Distance acts like a zoom. &#xD;&#xA;Note as before &quot;Z Near&quot; can't be zero.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

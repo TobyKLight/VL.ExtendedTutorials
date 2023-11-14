@@ -2955,7 +2955,7 @@
           </Node>
           <ControlPoint Id="SXc3TbGg7VMQaBHQhf8Nin" Bounds="2285,1034" />
           <Pad Id="OOYZ625c3WuPteXh4XyTCn" SlotId="HGjn7uQegRYPvwNFQciifA" Bounds="2390,777" />
-          <Overlay Id="RklTQ2tM56hNJWsuKs7d1V" Name="Lerp Euler notes" Bounds="1428,1742,650,383" />
+          <Overlay Id="RklTQ2tM56hNJWsuKs7d1V" Name="Lerp Euler ABC notes" Bounds="1428,1742,650,383" />
           <Pad Id="CINQ7odA5DdMZhishFbqrd" Bounds="1308,-110,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -3135,7 +3135,7 @@
             <ControlPoint Id="PqgCQaYpLVJPqWgjsb9x0D" Bounds="3372,932" Alignment="Top" />
             <ControlPoint Id="Q7J928NzwgIPExmxavSh96" Bounds="3341,1071" Alignment="Bottom" />
           </Node>
-          <Overlay Id="RYXRBJr6nAkMiQkTyJ6J68" Name="Lerp Vector notes" Bounds="3386,1742,650,383" />
+          <Overlay Id="RYXRBJr6nAkMiQkTyJ6J68" Name="Lerp Vector DEF notes" Bounds="3386,1742,650,383" />
           <Pad Id="FdbdRp0XRsxOFNbmF9ewC4" Bounds="3422,1817,592,286" ShowValueBox="true" isIOBox="true" Value="Pros &#xD;&#xA;-fairly 'straight' paths&#xD;&#xA;-Handles EMirror case appropriately&#xD;&#xA;Con&#xD;&#xA;-Non linear results, you can see on case E has acceleration and spaced out lerp path. This makes sense: if I told you to turn to face a moving point (like a race car going past) you would turn slowly while the race car is far away, turn really fast while it zips past you, and then turn slowly again as it recedes. Even though the car (Lerp point) may be going the same speed.&#xD;&#xA;-No control of roll. That's because setting rotation by a direction vector alone (&quot;Point that way&quot;) doesn't give any information about roll. &#xD;&#xA;See the last helppatch for more details about using up vectors or setting roll in other ways. These can have undesired results.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -3469,7 +3469,7 @@
             <ControlPoint Id="RNFFzUcmMkMLn1yMbOHWWO" Bounds="5756,929" Alignment="Top" />
             <ControlPoint Id="P1eoGIKGngDOybCJF9D7M4" Bounds="5725,1068" Alignment="Bottom" />
           </Node>
-          <Overlay Id="NudMraTbsDJO8UuBLfJixy" Name="Slerp quaternion from euler notes" Bounds="5770,1739,650,383" />
+          <Overlay Id="NudMraTbsDJO8UuBLfJixy" Name="Slerp quaternion from euler GHI notes" Bounds="5770,1739,650,383" />
           <Pad Id="QfSFnyFJe9JP7JLVKmaP6F" Bounds="5773,1815,636,294" ShowValueBox="true" isIOBox="true" Value="Pros &#xD;&#xA;-Linear spacing and animation&#xD;&#xA;&#xD;&#xA;Cons&#xD;&#xA;But wait... this is still messed up. &#xD;&#xA;-EMirror case is still flipping... &#xD;&#xA;-There's weird arcs on the paths.... &#xD;&#xA;what's going on? weren't quaternions and slerp meant to be the magic fix?&#xD;&#xA;&#xD;&#xA;This is because the quaternion we are using here is created directly from Euler angle data back at step 1.&#xD;&#xA;The orientation as described by euler angle maths is still messed up when describing complex poses.&#xD;&#xA;If you go and change some of the euler roll values notice that it changes the ARC of the path instead of rolling the object.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -4299,7 +4299,7 @@
           </Node>
           <ControlPoint Id="VLqLN4SxcKRLgI2gUDbYHE" Bounds="9021,1343" />
           <ControlPoint Id="VYIEGrDEi8ANJ3iH76aHO6" Bounds="9099,1450" />
-          <Overlay Id="NJTBFmlQ5W6O67Yscp8KJB" Name="Slerp quaternion from Vector notes" Bounds="8275,1728,650,383" />
+          <Overlay Id="NJTBFmlQ5W6O67Yscp8KJB" Name="Slerp quaternion from Vector JKL notes" Bounds="8275,1728,650,383" />
           <Pad Id="BuD9WgJI7IUMLiB1hZEkWy" SlotId="IrMYWutGQG6LzvgyXJklkA" Bounds="7793,690" />
           <Pad Id="N89FR0iGq7rNJFasVuk8TL" Comment="" Bounds="7790,736,35,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="E4xijOvCn40PUfkcQGEhHP" SlotId="TLWx36nlOTrMrmCtYC1Igo" Bounds="7817,785" />
@@ -4835,8 +4835,8 @@
           </Node>
           <Pad Id="TdULQwCwKMfOV7O6X0CMRy" SlotId="Joa6xe8qW52N5Fwm2MTa4G" Bounds="10224,515" />
           <Overlay Id="BaTbmpmmwSjOPvFOcLjLvY" Name="VersionM: Slerp Quaternion FromVector PLUS Roll" Bounds="9969,410,701,1153" />
-          <Overlay Id="OSnEPUhNFJeLYLoGpiCzWj" Name="Slerp quaternion from Vector PLUS ROLL notes" Bounds="10012,1686,650,383" />
-          <Pad Id="C3sSUjzHzo1QI0OzNxwYK9" Bounds="10026,1739,592,286" ShowValueBox="true" isIOBox="true" Value="Pros &#xD;&#xA;-Linear spacing and animation&#xD;&#xA;-Straight paths&#xD;&#xA;-Emirror case handled properly &#xD;&#xA;-Control of roll &#xD;&#xA;&#xD;&#xA;This shows how with a vector (direction) plus a roll value you can control rotation animation preceisly with quaternions">
+          <Overlay Id="OSnEPUhNFJeLYLoGpiCzWj" Name="Slerp quaternion from Vector PLUS ROLL M notes" Bounds="10012,1686,650,383" />
+          <Pad Id="C3sSUjzHzo1QI0OzNxwYK9" Bounds="10026,1739,592,286" ShowValueBox="true" isIOBox="true" Value="Pros &#xD;&#xA;-Linear spacing and animation&#xD;&#xA;-Straight paths&#xD;&#xA;-Emirror case handled properly &#xD;&#xA;-Control of roll &#xD;&#xA;&#xD;&#xA;This shows how with a vector (direction) plus a roll value you can control rotation animation precisely with quaternions">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

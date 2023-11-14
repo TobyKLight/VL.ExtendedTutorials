@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="AFymbInB9EyMe3Z5ZJ0fvq" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SjY5xoQUxvJQNJ0SZlDEEA" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <NugetDependency Id="S61XM5bPjIsPZqU7f8nxha" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="FaPVsPUtYrALUd4C3ckUJ8">
     <Canvas Id="UBgK4c8YIbjOrucod0bgOt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -460,7 +460,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="CdLNJcxjdGjQTbbJto2oU1" Name="Bounds" Kind="InputPin" DefaultValue="930, 273, 584, 285" />
+            <Pin Id="CdLNJcxjdGjQTbbJto2oU1" Name="Bounds" Kind="InputPin" DefaultValue="929, 272, 584, 284" />
             <Pin Id="LqUVFJTH3YHQUA8VgBsrTt" Name="Save Bounds" Kind="InputPin" />
             <Pin Id="DDrjlKFeOFANo45dPlhrv4" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="MC9XoROrLmHLRhF3Lh6pp7" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -1054,6 +1054,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="H7Xb2112PdALdcw8A1s7T0" Bounds="1487,2290,35,19" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BLq6y87FvUzQZXDDtAPhbM" Bounds="1429,3532,500,19" ShowValueBox="true" isIOBox="true" Value="Now open it in inkscape or illustrator... should get editable 2D paths as you see in the skia window">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

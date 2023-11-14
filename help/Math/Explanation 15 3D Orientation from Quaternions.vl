@@ -2245,15 +2245,6 @@
             <Pin Id="Eaoy2jxjef1Lzr5UcSfQJE" Name="Enabled" Kind="InputPin" />
             <Pin Id="GXG7yTXouwcP4RrXGKBJnX" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KMvawSHhymcPo6CE0hlL7B" Bounds="899,72,868,126" ShowValueBox="true" isIOBox="true" Value="Wait slerp and blend give weird arcs... what's going on?">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">25</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="IXWCHeEJABTMabiBNmT5dy" Comment="" Bounds="1033,930,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0.34, 1">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
