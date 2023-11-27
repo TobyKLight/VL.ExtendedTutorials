@@ -96,11 +96,6 @@
                 <Pin Id="MJeebqvljakOwdIiyE1oTx" Name="Color" Kind="InputPin" />
                 <Pin Id="T6Hcl4Dy9vUPKe2E75PU7m" Name="Time" Kind="InputPin" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="EEr8c9u9fiwNUj9FP6g8Z1" IsHidden="true">
                 <Fragment Id="HCujNAuj71AMWRi4Hznusj" Patch="VWZM7G9XCyRNroyJy5b887" Enabled="true" />
                 <Fragment Id="QoxTjAUz1fHLgUMsBAvu69" Patch="TeXTjRRXt6RNJw3GVxl6Lg" />
@@ -178,7 +173,7 @@
                 <Pin Id="JyO3P8ZVlxuONp53nahx47" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="458,581,46,26" Id="TlDZB5542QeLyu1WW0ywZe">
-                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="callmenames-2023-11-27_02.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="HowTo Remove items from a Spread by AliveTime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyItem" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -222,12 +217,14 @@
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="GKpFhb9mw3vPSnz9zGpTS9" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="JZmT55nwvpLOAYVdMSCuIL" Bounds="424,775" Alignment="Top" />
+            <ControlPoint Id="T1Hxz67ZoDJOiIkqxNt8pP" Bounds="424,849" Alignment="Bottom" />
             <Patch Id="HhbU1OjZkYEPedia0lwK4T" ManuallySortedPins="true">
               <Patch Id="ETSmRnxX8fcOaZ8wXmnPeO" Name="Create" ManuallySortedPins="true" />
               <Patch Id="ISEAZe5FGeKQHv6skPkd0f" Name="Update" ManuallySortedPins="true" />
               <Patch Id="DX84CaNlmwtM7sqbEWfYGv" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="422,803,106,26" Id="MZRLcjbwb33PZAcESEC3GP">
-                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="callmenames-2023-11-27_02.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="HowTo Remove items from a Spread by AliveTime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyItem" />
                   <Choice Kind="OperationCallFlag" Name="IncrementAliveTime" />
@@ -236,8 +233,6 @@
                 <Pin Id="A2cQyw1JsplP2RMa0lChRL" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="JZmT55nwvpLOAYVdMSCuIL" Bounds="424,775" Alignment="Top" />
-            <ControlPoint Id="T1Hxz67ZoDJOiIkqxNt8pP" Bounds="424,849" Alignment="Bottom" />
           </Node>
           <Overlay Id="QKXz0nitvuUMKvtYicsCmH" Name="Keep items where their AliveTime is less than MaxTime" Bounds="243,916,556,200" />
           <Overlay Id="JKh2N2JQOzqOtSYvUIec0q" Name="View Data" Bounds="268,1193,535,224" />
@@ -248,12 +243,15 @@
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="E3uxywr4FqSPezmwIJrBIV" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="IRjIc1aIxsiNhh2MzJtiFJ" Bounds="427,1230" Alignment="Top" />
+            <ControlPoint Id="Kiq3sRZ3XLPQXOpCmhznuK" Bounds="427,1304" Alignment="Bottom" />
+            <ControlPoint Id="Q97pKBD9JEKN6KOWM1PPcG" Bounds="464,1304" Alignment="Bottom" />
             <Patch Id="Mj6vz9TRmq6NNMAZMTjUrA" ManuallySortedPins="true">
               <Patch Id="JiN3NK4rbA6PhihFmmV4jI" Name="Create" ManuallySortedPins="true" />
               <Patch Id="GuvVHnKqGKSLcoO5ooECZk" Name="Update" ManuallySortedPins="true" />
               <Patch Id="AHs5gVwezKfOUJ9R6X7l9C" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="424,1247,42,26" Id="StfHal0M1qENIAmpM5nxH0">
-                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="callmenames-2023-11-27_02.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="HowTo Remove items from a Spread by AliveTime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyItem" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -264,9 +262,6 @@
                 <Pin Id="Hf2AldUxiiuOKCf9UpeHSz" Name="Time" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="IRjIc1aIxsiNhh2MzJtiFJ" Bounds="427,1230" Alignment="Top" />
-            <ControlPoint Id="Kiq3sRZ3XLPQXOpCmhznuK" Bounds="427,1304" Alignment="Bottom" />
-            <ControlPoint Id="Q97pKBD9JEKN6KOWM1PPcG" Bounds="464,1304" Alignment="Bottom" />
           </Node>
           <Node Bounds="411,964,127,127" Id="PqOkXGtY3ibL3UFdxFiFK6">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -276,6 +271,7 @@
             </p:NodeReference>
             <Pin Id="JNFrKM5vT3MOj2lO7QN4zF" Name="Break" Kind="OutputPin" />
             <ControlPoint Id="LVVu83rSgKbOsDyu8jyNTd" Bounds="425,970" Alignment="Top" />
+            <ControlPoint Id="SVj7STrdNoDPc8wPcyiQwr" Bounds="427,1085" Alignment="Bottom" />
             <Patch Id="LafPPFdhgmnOdODpSlhzOm" ManuallySortedPins="true">
               <Patch Id="VtVYQiK0wgOMpZaIEGA6vj" Name="Create" ManuallySortedPins="true" />
               <Patch Id="R9tkqSljemkLWZkUsTqOH1" Name="Update" ManuallySortedPins="true">
@@ -283,7 +279,7 @@
               </Patch>
               <Patch Id="NKcwYdG2DqCLKX8yWTA5Lz" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="458,991,42,26" Id="Es7KJyFzGKEOoEzxGtEoFS">
-                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="callmenames-2023-11-27_02.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyItem" LastDependency="HowTo Remove items from a Spread by AliveTime.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyItem" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -304,7 +300,6 @@
               </Node>
               <ControlPoint Id="QawOOXw7DB0NbC9UwbsWxc" Bounds="492,1074" />
             </Patch>
-            <ControlPoint Id="SVj7STrdNoDPc8wPcyiQwr" Bounds="427,1085" Alignment="Bottom" />
           </Node>
           <Pad Id="LlcWgyzvM4KP7COqw3QVjj" Comment="MaxTime" Bounds="554,972,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -353,7 +348,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AMgOGtnk8VQM9THro9iv0P" Bounds="554,1005,224,118" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;ForEach loops can optionally have a 'Keep' pin, this is a good way to run filters that will keep or delete some items. In this case we only keep those where AliveTime is less than MyTime">
+          <Pad Id="AMgOGtnk8VQM9THro9iv0P" Bounds="554,1005,224,118" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;ForEach loops can optionally have a 'Keep' pin, this is a good way to run filters that will keep or delete some items. In this case we only keep those where AliveTime is less than MaxTime">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -374,11 +369,6 @@
         </Canvas>
         <Patch Id="OWAjidYQAgjPpjGXaxe8kY" Name="Create" />
         <Patch Id="GZHNfb5XZdqOqvdItJ7zs9" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="SZPIJlkdSdHMKY0r5ss6qm">
           <Fragment Id="S8EoM2dQ1DrL3Bqq9RAeY0" Patch="OWAjidYQAgjPpjGXaxe8kY" Enabled="true" />
           <Fragment Id="Lswj2u3xJpMLVL7LvjVFzz" Patch="GZHNfb5XZdqOqvdItJ7zs9" Enabled="true" />
