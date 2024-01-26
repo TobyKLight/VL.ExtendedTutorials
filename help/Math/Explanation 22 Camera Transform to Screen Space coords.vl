@@ -89,7 +89,7 @@
             <Pin Id="PZG28CTk0wFLmZUEmCrucM" Name="Entity" Kind="OutputPin" />
           </Node>
           <Overlay Id="I2rFrprzpODPVH8tgfSusA" Name="Intro" Bounds="375,13,700,153" />
-          <Overlay Id="QmH0BcN9t5XNBaxtuvKmbu" Name="1. Generate 3D points" Bounds="373,470,1036,568" />
+          <Overlay Id="QmH0BcN9t5XNBaxtuvKmbu" Name="1. Generate 3D points in world space" Bounds="373,470,1036,568" />
           <Pad Id="QoFGq3WwhJZMnHVbjJ0IQW" Bounds="408,57,557,104" ShowValueBox="true" isIOBox="true" Value="Usually camera transforms go to a render window.&#xD;&#xA;&#xD;&#xA;Sometimes we want to convert World to Screen Space coordinates directly. &#xD;&#xA;&#xD;&#xA;A typical usecase could be to do hit test interactions of 3D objects vs some 2D cursor or other 2D UI element.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -460,7 +460,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="CdLNJcxjdGjQTbbJto2oU1" Name="Bounds" Kind="InputPin" DefaultValue="929, 272, 584, 284" />
+            <Pin Id="CdLNJcxjdGjQTbbJto2oU1" Name="Bounds" Kind="InputPin" DefaultValue="928, 272, 584, 284" />
             <Pin Id="LqUVFJTH3YHQUA8VgBsrTt" Name="Save Bounds" Kind="InputPin" />
             <Pin Id="DDrjlKFeOFANo45dPlhrv4" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="MC9XoROrLmHLRhF3Lh6pp7" Name="Node Context" Kind="InputPin" IsHidden="true" />
