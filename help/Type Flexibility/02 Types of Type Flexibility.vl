@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="JTcN5zD5Up7M6jRRYwByJx" LanguageVersion="2024.6.0-0209-g820e492df4" Version="0.128">
+  <NugetDependency Id="OHjNVp9cXNzM7WJuYVdltz" Location="VL.CoreLib" Version="2024.6.0-0209-g820e492df4" />
+  <Patch Id="NBgiiHFK1DWLrRy5fEb2WM">
+    <Canvas Id="IiOYzOIsxJ0N2fuvb09WV7" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="VJHES04J46mLLqsUnDmjRL">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Au8YQjNBZrSMN1fvxMlp5T">
+        <Canvas Id="Mtm3neLzd2nQUe6vX5GkQa" CanvasType="Group">
+          <Overlay Id="EtKNhIaEcGqOMoBjooiFcz" Name="" Bounds="265,400,271,202" />
+          <Pad Id="BCGQEDYuwP9MT8fjmU5TBZ" Bounds="277,413,219,73" ShowValueBox="true" isIOBox="true" Value="Programming-time type flexibility">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="P0nMlJHTbHuPckAI5db3ZF" Name="" Bounds="603,399,265,199" />
+          <Pad Id="FDMoJRjuuG1PecGRCWDdRd" Bounds="610,413,219,73" ShowValueBox="true" isIOBox="true" Value="Run-time &#xD;&#xA;type flexibility">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">16</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Do0ZgIyFDwkPtblx3405hY" Bounds="277,487,247,118" ShowValueBox="true" isIOBox="true" Value="Related to&#xD;&#xA;-Static polymorphism&#xD;&#xA;-Compile-time polymorphism&#xD;&#xA;-Parametric polymorphism &#xD;&#xA;-Ad-hoc polymorphism&#xD;&#xA;-Overloaded methods">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BbIW5bfbFdyLTzEAGcmVXt" Bounds="610,487,246,80" ShowValueBox="true" isIOBox="true" Value="Related to&#xD;&#xA;-Dynamic polymorphism&#xD;&#xA;-Run-time polymorphism&#xD;&#xA;-Subtyping">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="AKDUu53B5GmMBjJSZYwQH7" Name="" Bounds="263,1429,266,254" />
+          <Pad Id="UMY1pxLjD1oLBy3r6Kw7hX" Bounds="267,1457,224,34" ShowValueBox="true" isIOBox="true" Value="In vvvv these concepts enable programming-type type flexibility">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PsfoG79orMIPUsVJ6Adq3o" Bounds="295,1513,147,35" ShowValueBox="true" isIOBox="true" Value="Generics">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DP7HI1F8GglMSDSv6azZrE" Bounds="295,1551,147,35" ShowValueBox="true" isIOBox="true" Value="Adaptive">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EZFdamveBlSL7yD4KMet8c" Bounds="295,1589,147,35" ShowValueBox="true" isIOBox="true" Value="Overloading">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JIdH46FAnhZQMplYQlEJ9T" Name="" Bounds="588,1433,286,247" />
+          <Pad Id="J3ANwWEYzFLMfrFYz5H0w8" Bounds="595,1458,248,36" ShowValueBox="true" isIOBox="true" Value="In vvvv these concepts enable runtime type flexibility">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="OunzZttFsokNFKeD2Mk6gX" Name="" Bounds="265,668,273,737" />
+          <Pad Id="C3bQE4ihZLhNJmzvxlbCI9" Bounds="263,682,263,726" ShowValueBox="true" isIOBox="true" Value="Programming-time type flexibility enables functions to share names and code. It lets the compiler work out what version to use by context or explicit description.&#xD;&#xA;&#xD;&#xA;Programming-time type flexibility must be resolved the code to compile. EG Types must be known for greyed out nodes to become solid. &#xD;&#xA;&#xD;&#xA;Programming-time type flexibility never compromises type safety and prevents run-time exceptions related to type incompatability.&#xD;&#xA;&#xD;&#xA;Generally this kind of flexibility creates many conveniences for the programmer, but does not allow your software to do anything you couldn't have achieved another way. &#xD;&#xA;&#xD;&#xA;The advantages for the programmer are &#xD;&#xA;-Maintain type safety without risking run-time exceptions&#xD;&#xA;-More reuse of code (so less code to maintain, less boilerplate)&#xD;&#xA;-easier to find functions &#xD;&#xA;-easier to use libraries for other programmers&#xD;&#xA;-often better readable code&#xD;&#xA;-Checking for type-safety occurs at compile-time, meaning it doesn't affect run-time performance.&#xD;&#xA; &#xD;&#xA;Disadvantages&#xD;&#xA;-When implemented poorly can make things far more confusing. Sometimes functions should NOT share a name. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EnxOVPmFygkPIuU9npCldT" Name="" Bounds="604,667,275,515" />
+          <Pad Id="LHpwoQlWPnAN2US2gHB7PC" Bounds="603,684,263,478" ShowValueBox="true" isIOBox="true" Value="Run-time type flexibility allows live objects to be treated as multiple types.&#xD;&#xA;&#xD;&#xA;Generally run-time type flexibility enables novel software patterns and function design that would be very difficult to achieve another way. &#xD;&#xA;&#xD;&#xA;Advantages&#xD;&#xA;-Depends on usecase but typically enables dynamic run-time behaviour based on object type. EG select an object in a CAD app and then draw the relevant edit widgets for that type onscreen. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Disadvantages&#xD;&#xA;-Potential performance impact from run-time checking of type safety&#xD;&#xA;-Possible run-time exceptions on failed type conversions&#xD;&#xA;-Potentially more confusing and ambigious code &#xD;&#xA;-Often means less useful tool-tips showing live values&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K5T7OrPpejVLVa4FhUDrjm" Bounds="631,1556,147,35" ShowValueBox="true" isIOBox="true" Value="Casting">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VHLLBtkogG6O5VpSeMYQKJ" Bounds="629,1596,147,35" ShowValueBox="true" isIOBox="true" Value="Interfaces">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K3u2lvhZykbMqoagrBiW7z" Bounds="632,1517,188,29" ShowValueBox="true" isIOBox="true" Value="Implicit Conversion">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Op5oy32MQirNC0B17DnavV" Bounds="1014,1376,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="RZJb9GSJgD9OUv6lASAjBO" Bounds="1025,1436,79,16" ShowValueBox="true" isIOBox="true" Value="32000">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OHc9l8sdVs2M4Sx6XQUEUO" Bounds="1029,1483,116,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1082,1357,60,19" Id="SuUJyvUMlHBOuagu0jV6Tm">
+            <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Int32Type" Name="Integer32" />
+              <Choice Kind="OperationCallFlag" Name="MaxValue" />
+            </p:NodeReference>
+            <Pin Id="EiWUFi1oJMkOdtDUfihSye" Name="Max Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1103,1396,25,19" Id="GHzV2fPseAjLxIO3dinALT">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="CoOOEt0EV3kO4X9HlzEGHK" Name="Input" Kind="InputPin" />
+            <Pin Id="JBc86aNwUBjMIOwecF1EaR" Name="Input 2" Kind="InputPin" DefaultValue="15250" />
+            <Pin Id="Mwtb62AxLq5MAMnDIWUcos" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LB47H3g6FTNQAdXQzY2ZgU" Bounds="1142,1423,285,71" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note implicit conversion can cause problems, like with very high ints to floats. It's not actually perfectly safe">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Dqz20Oi59LSNgMWdNxUalP" Bounds="1143,1489,285,71" ShowValueBox="true" isIOBox="true" Value="cover also the UI side of it where you occasionally need to give some hints to force it, like if I wanted to put a + between the int and float32 here could give me the wrong one">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EWdxbKGuIygMQrNRBnA1fA" Bounds="276,75,571,234" ShowValueBox="true" isIOBox="true" Value="Typically when this topic is taught, it's split into COMPILE-TIME and RUN-TIME type CHECKING.&#xD;&#xA;This is a useful organisation because it focuses on when the CHECKING for TYPE SAFETY is done, as that can affect performance.&#xD;&#xA;&#xD;&#xA;I've chosen to teach it a different way and split into PROGRAMMING-TIME and RUN-TIME type FLEXIBILITY. &#xD;&#xA;This is because&#xD;&#xA;A) vvvv editor is always compiling code as soon as it can to enable the live programming paradigm. This makes it a little confusing to think about COMPILE-TIME.&#xD;&#xA;B) Organising it this way brings the different USECASES into focus, IE when it's useful to have TYPE FLEXIBILITY, rather than when the TYPE SAFE CHECKING is done. &#xD;&#xA;I will mention the potential performance implications as we go through each case.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="AQncIyEdhwKMBFZJa78kIZ" Name="Note" Bounds="272,32,603,288" />
+          <Pad Id="HaED9RtSc5kNNPaEQJPFNq" Bounds="494,647,173,19" ShowValueBox="true" isIOBox="true" Value="Descriptions and usecase">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="DXbf1VX5U6rQAkiqjaENrs" Name="Create" />
+        <Patch Id="FEPhBjRqQkwM0FH21yuFV8" Name="Update" ParticipatingElements="GsDGNRztVUxNEIudAZb91n" />
+        <ProcessDefinition Id="BALR4Ygwaw5M1jGaSyVLAV">
+          <Fragment Id="DmU10DT5qheMnOXEPv6M6J" Patch="DXbf1VX5U6rQAkiqjaENrs" Enabled="true" />
+          <Fragment Id="S3m73OOJzafO2CLNXI2AOI" Patch="FEPhBjRqQkwM0FH21yuFV8" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="GsDGNRztVUxNEIudAZb91n" Ids="RZJb9GSJgD9OUv6lASAjBO,OHc9l8sdVs2M4Sx6XQUEUO" />
+        <Link Id="VkQv970TFp2MgY5NjU6ve1" Ids="EiWUFi1oJMkOdtDUfihSye,CoOOEt0EV3kO4X9HlzEGHK" />
+        <Link Id="LYNMF5R8BD8Mqu0ksQzi48" Ids="Mwtb62AxLq5MAMnDIWUcos,RZJb9GSJgD9OUv6lASAjBO" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>
