@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="IchUEKXKixEOZp62BQJBbH" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
-  <NugetDependency Id="E80uaJo9aDrMN9MkXxHBeA" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IchUEKXKixEOZp62BQJBbH" LanguageVersion="2024.6.0-0209-g820e492df4" Version="0.128">
+  <NugetDependency Id="E80uaJo9aDrMN9MkXxHBeA" Location="VL.CoreLib" Version="2024.6.0-0209-g820e492df4" />
   <Patch Id="AibenJItzPpOhXpYGv4MwY">
     <Canvas Id="EqoJ9McAsv8LNIjrCEdneV" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -47,7 +47,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="OgimYT0MGC0PXIot4vPHuy" Name="Which objects are stateless?" Bounds="494,471,534,307" />
-          <Pad Id="AC3wo7vRH6RMcRThjJnfzD" Bounds="515,513,337,17" ShowValueBox="true" isIOBox="true" Value="In vvvv gamma basically static operations are stateless">
+          <Pad Id="AC3wo7vRH6RMcRThjJnfzD" Bounds="515,513,337,19" ShowValueBox="true" isIOBox="true" Value="In vvvv gamma basically static operations are stateless">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -101,6 +101,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Integrator" />
             </p:NodeReference>
+            <Pin Id="Rzo5rWBW8SVOEip50va8cl" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FmEYYQp73f4PFmqjPG6FcZ" Name="Initial Value" Kind="InputPin" />
             <Pin Id="V3AICZYB5KkNJB5yWYRCLY" Name="Offset" Kind="InputPin" />
             <Pin Id="FRm2WjducBgOwm5iUWkaNP" Name="Reset Value" Kind="InputPin" />
@@ -137,6 +138,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Integrator" />
                 </p:NodeReference>
+                <Pin Id="Umr8yQJyMnlPBRuACxE5Se" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="IkKit45kgyDPIsVq7tDIqN" Name="Initial Value" Kind="InputPin" />
                 <Pin Id="LmGKFxa3QxnL4Vma7aQklg" Name="Offset" Kind="InputPin" />
                 <Pin Id="RZ6n39rzaVYQNCt6whNNy3" Name="Reset Value" Kind="InputPin" />
@@ -157,7 +159,7 @@
               <Link Id="EEEoYElf5fNPZcCx8YQxvX" Ids="LbofmqmPcE1O21wvEBEuQ8,DaeIdiugzTCP0vbzoLeoyu" IsHidden="true" />
             </Patch>
           </Node>
-          <Node Bounds="761,1073" Id="SUOtDbT3QfqOyoBhaYjN5N">
+          <Node Bounds="761,1073,16,19" Id="SUOtDbT3QfqOyoBhaYjN5N">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Stateful vs Stateless.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="IntegratorOp" />
@@ -244,6 +246,7 @@
               <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="ITFIcsznzIYMYUENDGObdT" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AKnSMIl2TJmMlEnGS1k7NL" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="A7yZdfMu1ZzO8DazgqEZ25" SlotId="REb53QLM0koLLZkE0x1D12" Bounds="711,1531" />
@@ -257,7 +260,7 @@
             <Pin Id="Ci8TU58YZWpMi99uUxaV0w" Name="State Output" Kind="StateOutputPin" />
             <Pin Id="HUjznlR4zGVMCFKw8XwdRP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="D2Bp6h8oYnULnVrSRmHItk" Comment="" Bounds="787,1600,72,14" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="D2Bp6h8oYnULnVrSRmHItk" Comment="" Bounds="787,1600,72,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="AF3QxLaONEILLM6tSc4Lxo" Name="Case: Providing state from outside a static operation" Bounds="499,2105,543,546" />
           <!--
 
@@ -306,7 +309,7 @@
             <Pin Id="RrYoFCjueQtQV9XwWMM4BP" Name="MyIntegratorClassInstance" Kind="InputPin" />
             <Pin Id="UtZG9IglvrLPM0DFhcAc9w" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="CCSIClolX4qM9mLEZuWSJ2" Comment="" Bounds="746,2334,60,11" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CCSIClolX4qM9mLEZuWSJ2" Comment="" Bounds="746,2334,60,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Plv8NF1OwADNq8Z49tC5YR" SlotId="EUjlegPlaMoPuSZYslJunD" Bounds="746,2275" />
           <Node Bounds="744,2222,81,26" Id="NSsQvHrhIKzMzlkmL3ro15">
             <p:NodeReference LastCategoryFullName="Main.MyIntegratorClass" LastDependency="Explanation Stateful vs Stateless.vl">
@@ -314,6 +317,7 @@
               <CategoryReference Kind="ClassType" Name="MyIntegratorClass" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="RjmvYBNEovuMWg2Pz8p11I" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LXBCuFx5CQ8MzlPUGBgvlI" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="893,2295,93,19" Id="S4yyKe1vrhIQBlzLtX3OPZ">
@@ -324,7 +328,7 @@
             <Pin Id="SMN4FWTfjIYOqA4anxQzFU" Name="MyIntegratorClassInstance" Kind="InputPin" />
             <Pin Id="ULnCQ0gR43dPnT3wSO7xAX" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="G1pBwXsfk26NYRjTagO4lY" Comment="" Bounds="897,2335,58,12" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="G1pBwXsfk26NYRjTagO4lY" Comment="" Bounds="897,2335,58,15" ShowValueBox="true" isIOBox="true" />
           <!--
 
     ************************ FooBarSeparator ************************
@@ -385,6 +389,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="FooBarSeparator" />
                 </p:NodeReference>
+                <Pin Id="KZoAxyg3PsUMejTwIrumNb" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="BWgMktQEFUXNbL1HxISuC6" Name="Input" Kind="InputPin" />
                 <Pin Id="Rluxc9NaQt6M85efIqs2RU" Name="Output" Kind="OutputPin" />
               </Node>
@@ -535,13 +540,19 @@
           </Pad>
           <Overlay Id="CA6e54g30H8MhNKHnCaV5i" Name="Some things are stateful that you wouldn't expect" Bounds="501,2666,543,546" />
           <Node Bounds="653,2960,85,19" Id="Ly4t2n3bZAvOz3GGc1ZOx2">
-            <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.vl">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.TextureFX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Blur" />
             </p:NodeReference>
+            <Pin Id="D78FAKmXDqsNdzq0py5oxe" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="ORea18gfCrINUs5a3VH312" Name="Input" Kind="InputPin" />
+            <Pin Id="QgALQkMEq98NEdQY5RcdEA" Name="Always Generate Mips for Input" Kind="InputPin" IsHidden="true" />
             <Pin Id="PlRGVNdFSfvQY2Xi6FVA7S" Name="Strength" Kind="InputPin" />
             <Pin Id="DlSuhJux7s8QLHkz2KKypP" Name="Control" Kind="InputPin" />
+            <Pin Id="IUFZGwkWBHEM7USFiCsYYW" Name="Output Texture" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RLn8dd4Bz3NLOk0RiULhEe" Name="Output Size" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Rhd4UJpzArMQArSa2xBi67" Name="Output Format" Kind="InputPin" IsHidden="true" />
+            <Pin Id="S3SN749wWicP69rU0RYudO" Name="Render Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="SwgrROl1ehvNRQP1u1xh6M" Name="Passes" Kind="InputPin" />
             <Pin Id="O8fQ4FZDFikPlC9nZOebKf" Name="Apply" Kind="InputPin" />
             <Pin Id="TjcR3E2aCUWLUnp6lu8eue" Name="Output" Kind="OutputPin" />
@@ -557,13 +568,19 @@
             </p:NodeReference>
             <Patch Id="AHAV2i1zjFKMqtr86qxKfh">
               <Node Bounds="786,2958,85,19" Id="EBMF8ZAYf6kLEAYWscoxbH">
-                <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.vl">
+                <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.TextureFX.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Blur" />
                 </p:NodeReference>
+                <Pin Id="S6riyTHAuUhNQIZMMYaZ33" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="IC9jt1TlyBaQVmbPnXwhdh" Name="Input" Kind="InputPin" />
+                <Pin Id="ILAoJBAZ9QiNsISvO61rk8" Name="Always Generate Mips for Input" Kind="InputPin" IsHidden="true" />
                 <Pin Id="LhdjMkc6oLPMG5092DcRLY" Name="Strength" Kind="InputPin" />
                 <Pin Id="LFMu6fcyMFWPrMJOoKkuy1" Name="Control" Kind="InputPin" />
+                <Pin Id="FB54Fx6EEKnOCcs2vuTz4O" Name="Output Texture" Kind="InputPin" IsHidden="true" />
+                <Pin Id="GJVuwjNH7pyOMbagH0u6OA" Name="Output Size" Kind="InputPin" IsHidden="true" />
+                <Pin Id="JeLRrLRlmQLNV6va42JE9q" Name="Output Format" Kind="InputPin" IsHidden="true" />
+                <Pin Id="DNrLcpf90tmNbzqS7NKnfx" Name="Render Format" Kind="InputPin" IsHidden="true" />
                 <Pin Id="VB4zOYMc4KhQSkJ1h45vgh" Name="Passes" Kind="InputPin" />
                 <Pin Id="Gnd5j9RbmLmLKMc2dwxSBh" Name="Apply" Kind="InputPin" />
                 <Pin Id="J40QjJhsAxTMQ2PmLXCWDb" Name="Output" Kind="OutputPin" />
@@ -618,5 +635,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Lt3DpC59srDPZ1lXa3Ja7l" Location="VL.Stride" Version="2022.5.0-0577-gbbf5a07a29" />
+  <NugetDependency Id="Lt3DpC59srDPZ1lXa3Ja7l" Location="VL.Stride" Version="2024.6.0-0209-g820e492df4" />
+  <NugetDependency Id="Szz1QKIeyfoMUBOXd7w8Za" Location="VL.Stride.TextureFX" Version="2024.6.0-0209-g820e492df4" />
 </Document>
