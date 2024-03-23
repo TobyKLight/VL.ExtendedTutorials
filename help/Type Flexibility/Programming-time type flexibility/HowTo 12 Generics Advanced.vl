@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GE0OthsTGYdLWv982OnAfb" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Overlay Id="RPGALWeeoPVNAsJRaf48An" Name="Whats all that T, T2, T3 stuff about?" Bounds="97,37,485,579" />
+          <!--
+
+    ************************ GetAndCountandI ************************
+
+-->
+          <Node Name="GetAndCountandI" Bounds="132,813,239,132" Id="Q7f992mlYj4OUVjxDdqDlu">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="CXeQ04qiPrSPVwjELOkfEb">
+              <Node Bounds="144,874,52,19" Id="HkAQ0Ai099LPsMulIdwOqB">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                </p:NodeReference>
+                <Pin Id="JGwpIpCxFufNFIsAX8K5o5" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DmEdQrggn78QYwNE33hUct" Name="Default Value" Kind="InputPin" />
+                <Pin Id="QDyMJP0m3pGO4kD9hCOhoT" Name="Index" Kind="InputPin" />
+                <Pin Id="E4XheZQqygxMja0wJnSJsf" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="209,875,44,26" Id="CcYr22OqDvKQHnwaWxBdQt">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Count" />
+                </p:NodeReference>
+                <Pin Id="PO8hEzbVIUsQXQ0LBd7kKH" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Rz8lW7YUSjDOuj6wITybhy" Name="Count" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="DPZe7JpIeUFPb3txvwhLGA" Bounds="146,834" />
+              <Link Id="IDjacusNbysLUHaapoU4AZ" Ids="DPZe7JpIeUFPb3txvwhLGA,JGwpIpCxFufNFIsAX8K5o5" />
+              <Pin Id="H0MSU0a7F9pO6M7OXz6qh9" Name="Input" Kind="InputPin" />
+              <Link Id="JdQSq6f01xCOyCd57Y3jJ0" Ids="H0MSU0a7F9pO6M7OXz6qh9,DPZe7JpIeUFPb3txvwhLGA" IsHidden="true" />
+              <Link Id="O2fNo1qdQvQPYhhArhrP9E" Ids="DPZe7JpIeUFPb3txvwhLGA,PO8hEzbVIUsQXQ0LBd7kKH" />
+              <ControlPoint Id="Ufg9NPlsrgEO7cUHDTZTfO" Bounds="146,928" />
+              <Link Id="J3ulFQUW5IoLnpdUlBI9h2" Ids="E4XheZQqygxMja0wJnSJsf,Ufg9NPlsrgEO7cUHDTZTfO" />
+              <Pin Id="QBZljzKSqHCOJsf2yqcqQj" Name="Result" Kind="OutputPin" />
+              <Link Id="QJDUGD2gTrNQTC7mybdSrY" Ids="Ufg9NPlsrgEO7cUHDTZTfO,QBZljzKSqHCOJsf2yqcqQj" IsHidden="true" />
+              <ControlPoint Id="BIyqYxicrSmO29URz9JiOO" Bounds="236,831" />
+              <Link Id="JmoAkVc2bOMLaP3e8FOjcw" Ids="BIyqYxicrSmO29URz9JiOO,QDyMJP0m3pGO4kD9hCOhoT" />
+              <Pin Id="C0d1NJcrKVEPuOhWvqwivC" Name="Index" Kind="InputPin" />
+              <Link Id="OiER3g8wgylMxG2JCQ2812" Ids="C0d1NJcrKVEPuOhWvqwivC,BIyqYxicrSmO29URz9JiOO" IsHidden="true" />
+              <ControlPoint Id="BTCNF27BdhsMNuCu8Axeg3" Bounds="211,928" />
+              <Link Id="NHjEIZ3ffF8OWynY9FJYJA" Ids="Rz8lW7YUSjDOuj6wITybhy,BTCNF27BdhsMNuCu8Axeg3" />
+              <Pin Id="H4wUjhFYf8MNC2lncY6BUr" Name="Count" Kind="OutputPin" />
+              <Link Id="KtQ3Me544DjOS0OYxsKP2L" Ids="BTCNF27BdhsMNuCu8Axeg3,H4wUjhFYf8MNC2lncY6BUr" IsHidden="true" />
+              <Node Bounds="280,880,79,19" Id="AdFeMvc1ExePSA17RAY3w3">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" />
+                  <Choice Kind="OperationCallFlag" Name="CreateISpread" />
+                </p:NodeReference>
+                <Pin Id="Ud9MwFuYFCxN3UINLcdovQ" Name="Start" Kind="InputPin" />
+                <Pin Id="MCXmrc9hfHYLE2Fd2nUGS2" Name="Count" Kind="InputPin" />
+                <Pin Id="N85H1Cb0sxiPiYnKKZuQzj" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Link Id="CFnXeqh1af6ObTx36yxAPx" Ids="Rz8lW7YUSjDOuj6wITybhy,MCXmrc9hfHYLE2Fd2nUGS2" />
+              <ControlPoint Id="UI8ui44bhCaMm2JDke6lk1" Bounds="282,928" />
+              <Link Id="T4CUBoCBwA2Lzhs33On3Cn" Ids="N85H1Cb0sxiPiYnKKZuQzj,UI8ui44bhCaMm2JDke6lk1" />
+              <Pin Id="Ms5LCzoqNNhNUPEEOm0eXn" Name="Ints" Kind="OutputPin" />
+              <Link Id="A2LOKV1tmtEORYarfCjVb2" Ids="UI8ui44bhCaMm2JDke6lk1,Ms5LCzoqNNhNUPEEOm0eXn" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="RVflaRslJwIO3eJFPOVrZD" Bounds="103,972,456,591" ShowValueBox="true" isIOBox="true" Value="This static operation is NOT YET GENERIC. Lets have a look BEFORE we turn on the GENERIC flag.&#xD;&#xA;&#xD;&#xA;-Note that the input and result pins are in an error state 'the type is unknown' and both the  Getslice and Count nodes inside are greyed out as they are generic and the compiler cannot yet resolve their type. &#xD;&#xA;&#xD;&#xA;-Note also that the Index, Count and Ints pins are NOT greyed out. That's because these must be Integer32 or Spread&lt;Integer32&gt; so the compiler is confident about the type. &#xD;&#xA;&#xD;&#xA;-Note that the instance of the GetAndCount operation on the right is also not greyed out, although we can see the same errors on the pins. Shouldn't it be greyed out if some of the nodes inside are grey?  NO, because vvvv will usually try to run everything it can, so it will run the code inside functions that it can compile. &#xD;&#xA;IF you mouse over the CreateISpread you will see that it is indeed running  (ensure  'show timings' is on in top right menu)&#xD;&#xA;&#xD;&#xA;-Note that when inputs are connected to greyed out connections they take their own default. The CreateISpread Count INPUT pin has a default of 1. Hence the CreateISpread is already producing 1 slice even though we may assume this should be 0 like the Count output pin has default to.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;NOW make it generic, (without giving the needed external context to resolve the type.)&#xD;&#xA;&#xD;&#xA;You will see the whole node stops running in this 'unresolved generic' state, including the CreateISpread operation. &#xD;&#xA;It can sometimes be a drawback of using generic nodes that you don't get any partially running behaviour until all generic types are unresolved. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="136,84,52,19" Id="VQLijuDfQT6MCrZs6fcTiC">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="TpFseYknoloLrKTIikCrLg" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BCTje5x70BbOTAtAGQAIv1" Name="Default Value" Kind="InputPin" />
+            <Pin Id="CG2THFwjZ7QQcqWxAGWJJT" Name="Index" Kind="InputPin" />
+            <Pin Id="ApvqOOqeQnmNg6bnTDFd5k" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="F8DzuRz2BgdNpGusQY7eKn" Bounds="191,91,331,34" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Mouse over this unconnected GetSlice op check the types on the pins&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Bjq25jRL9HGLNxIvSBOD68" Bounds="92,168,469,169" ShowValueBox="true" isIOBox="true" Value="-Note how the input pin says type of Spread&lt;T&gt; , and notice the default value and Result pins both say T. &#xD;&#xA;&#xD;&#xA;Whenever you see T or T1, T2 etc thats telling you this is a generic input waiting to by typed by the context.&#xD;&#xA;&#xD;&#xA;In this case note they all say T which is telling us that when we type one of them they will all be typed the SAME. Which makes sense as the inner type of Spread&lt;T&gt; will indeed be the same type we want as the result of the GetSlice. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EQ4rsabEtTtPvbH6uXKi5m" Name="Non-generic parts still run while definition is non-generic" Bounds="96,640,484,921" />
+          <Node Bounds="405,847,97,19" Id="JEfetmokZ1qM2OWu6s0WZR">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 12 Generics Advanced.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetAndCountandI" />
+            </p:NodeReference>
+            <Pin Id="TsIhnrB2HclMJxiRu5ECsd" Name="Input" Kind="InputPin" />
+            <Pin Id="FSz2TOWlXHDQGQYjKMqkzE" Name="Index" Kind="InputPin" />
+            <Pin Id="CDcvEKjCMwXLFlUMeOPh26" Name="Result" Kind="OutputPin" />
+            <Pin Id="Sdv3XqNJWirOdkQhLvmL9r" Name="Count" Kind="OutputPin" />
+            <Pin Id="QOCmScyOhdROYCyEt9iCY0" Name="Ints" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VJIhoqbjLFOQKD4cVEBRfq" Bounds="176,769,82,19" ShowValueBox="true" isIOBox="true" Value="//Definition">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Emz4iQ7pEBWNdRRIPfMSVY" Bounds="395,771,82,19" ShowValueBox="true" isIOBox="true" Value="//Instance">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="132,361,52,19" Id="AuNdGoGGaTaLnGOMKINVYC">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="NCUtGIlbHTXNsJNiKGE1Ra" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VrvWb2plpNWOIjlimIkGk7" Name="Default Value" Kind="InputPin" />
+            <Pin Id="Pk9pl6OgpRlOOMA3uf2tzK" Name="Index" Kind="InputPin" />
+            <Pin Id="C6gKGClziT0Nf5C9YIKrBT" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ef5s9l2nTE3QZOq2XjtfCq" Bounds="265,367,228,27" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Now mouse over these ones">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AYx0jLkOx7INdClnOno5LF" Bounds="102,411,444,189" ShowValueBox="true" isIOBox="true" Value="-IF you look at more generic ops (OR copy and paste to create another one) and then mouse over you will see the next GetSlice refers to a different T#. That's because the unique T#s are in the context of this patch that we are viewing them in. The compiler is saying these are ALL the different types I have to resolve in this patch if you want all of this to run. &#xD;&#xA;&#xD;&#xA;-The T# does NOT tell you what types are accepted. In the case of GetSlice it really is all types but for a generic math node it's probably only numeric types.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="214,362,51,26" Id="OT8mMXjtKReONkJFCHI4mo">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetSlice" />
+            </p:NodeReference>
+            <Pin Id="QPJRvOWVRgTM0axO1ccFoK" Name="Input" Kind="StateInputPin" />
+            <Pin Id="LdgBdEVfJvsPSEvlRrIjdp" Name="Value" Kind="InputPin" />
+            <Pin Id="UcK4OncpqfKNNdxqntY1Mr" Name="Index" Kind="InputPin" />
+            <Pin Id="Oz2mrCgp1VhQQmUa02xwr4" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="BfMiGImbiwXQa3JpZXPpMO" Bounds="164,706,307,57" ShowValueBox="true" isIOBox="true" Value="Similar to before, except this node ALSO creates an integer spread with 'CreateISpread' which is a non generic operation">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="T7IOIhLFPsAPJnZwxW3rWo" Name="Performance" Bounds="97,1608,484,229" />
+          <Pad Id="H6xT5USXUeLNAaIrtv0h3C" Bounds="104,1648,451,188" ShowValueBox="true" isIOBox="true" Value="I want to stress that nothing compiles until the types can be completely resolved. &#xD;&#xA;&#xD;&#xA;Nodes are generic but once they are properly 'installed' they are given type by the context. This is resolved at compile-time, nothing is generic in the running program.&#xD;&#xA;&#xD;&#xA;What this means is generics have no performance impact on the running program, because none of the type-checks have to be done by the running program.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+          <Fragment Id="LtgVbsJz2XfOdVOgwmfl6z" Patch="Q7f992mlYj4OUVjxDdqDlu" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+</Document>
