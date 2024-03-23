@@ -8,6 +8,9 @@ Install by going to the top left menu > Manage Nugets > Commandline and typing
 # Contents
 ![image](https://user-images.githubusercontent.com/4467208/223262541-a2b34c30-28c0-441f-880c-6c8c0b04e261.png)
 
+![MathsTutorials](https://github.com/TobyKLight/VL.ExtendedTutorials/assets/4467208/cfacba64-01a7-4489-bf82-a652d5f20b8d)
+
+
 # Videos
 Some of these helppatches are accompanied by videos
 
