@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Hlem2hB7kVQOdOuSSyaFrV" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Pad Id="SxNiMQC1zMfLoQGGmBbMOd" Bounds="228,827,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NTNhiqOvsetNi6DKCrYSfL" Bounds="239,887,79,16" ShowValueBox="true" isIOBox="true" Value="32000">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="F0zrpdDAwZjOvCKcYxilJS" Bounds="243,934,116,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="296,808,60,19" Id="KS1ZvylbXi9QTfRFC3t4Sz">
+            <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Int32Type" Name="Integer32" />
+              <Choice Kind="OperationCallFlag" Name="MaxValue" />
+            </p:NodeReference>
+            <Pin Id="BkwKeFXfE9TPNwijHwH7LY" Name="Max Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="317,847,25,19" Id="IpueYHWxkTtLR967pz53Zf">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="DmAJlffN4pZLst74YwFesK" Name="Input" Kind="InputPin" />
+            <Pin Id="Il0SHGHr6BHQQFj68f5Ots" Name="Input 2" Kind="InputPin" DefaultValue="15250" />
+            <Pin Id="N0SDD3lXpTNOpTXcVW9Oco" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="K4k4UxevWwINSVlQxq9yUb" Bounds="356,874,285,71" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note implicit conversion can cause problems, like with very high ints to floats. It's not actually perfectly safe">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R09z0JzjjeEL1LAdnFqke3" Bounds="357,940,285,71" ShowValueBox="true" isIOBox="true" Value="cover also the UI side of it where you occasionally need to give some hints to force it, like if I wanted to put a + between the int and float32 here could give me the wrong one">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="102,85,471,29" ShowValueBox="true" isIOBox="true" Value="-IMPLICIT CONVERSION automatically happens between certain NUMERIC types">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NuKJM2Qwty3P0UF8QjkBaW" Name="Key Concepts" Bounds="101,44,484,426" />
+          <Pad Id="BvVsZtZQDKaL6I8nQnqra4" Bounds="130,150,140,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions#1023-implicit-numeric-conversions">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NVUua2L1rLpOXMf59gqlCi" Bounds="101,121,471,29" ShowValueBox="true" isIOBox="true" Value="-Those types are listed here in the C# language specification">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LCaJHDpzexaOq9o0wH0WZU" Bounds="95,200,471,29" ShowValueBox="true" isIOBox="true" Value="-In principle the ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="HdmHLmqzBb0MhzedYlxIHu" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HdmHLmqzBb0MhzedYlxIHu" Ids="NTNhiqOvsetNi6DKCrYSfL,F0zrpdDAwZjOvCKcYxilJS" />
+        <Link Id="JQ8CzbnIQWdLctacLNNHFy" Ids="BkwKeFXfE9TPNwijHwH7LY,DmAJlffN4pZLst74YwFesK" />
+        <Link Id="Em145Z08v6GLmfXlmweEcd" Ids="N0SDD3lXpTNOpTXcVW9Oco,NTNhiqOvsetNi6DKCrYSfL" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

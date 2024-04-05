@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="SI0SqEOHxYFLBzQmX66nna" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Overlay Id="JzrbJgmz2koO7SYkoLoL3M" Name="Key Concepts" Bounds="110,25,481,292" />
+          <Overlay Id="DgzUwVkSonrOm7gJ4eYCUJ" Name="Performance" Bounds="109,548,484,124" />
+          <Pad Id="U6PL7UtCqpqNIpiunv9NDf" Bounds="112,66,468,270" ShowValueBox="true" isIOBox="true" Value="-OVERLOADING allows nodes to share the same name and category by having a unique SIGNATURE.&#xD;&#xA;&#xD;&#xA;-The SIGNATURE is the order and type of input and outputs. (But not the pin names, same types with only different pin names = same signature) &#xD;&#xA;&#xD;&#xA;-So this means functions can share the same name but be differentiated into diffierent versions based on their inputs and output types.&#xD;&#xA;&#xD;&#xA;-OVERLOADING is not commonly used in VL libraries but is very common in external .net libraries. &#xD;&#xA;&#xD;&#xA;-A more vvvv friendly version of OVERLOADING is ADAPTIVE. (see next tutorial)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Fnnu40vA3hDL3OS72f6sTc" Bounds="105,393,454,136" ShowValueBox="true" isIOBox="true" Value="OVERLOADING allows a library developer to provide multiple functions that have different versions. &#xD;&#xA;&#xD;&#xA;Two common usecases are &#xD;&#xA;-Provide multiple versions of a function to operate on different types&#xD;&#xA;-Provide basic version of a function with few parameters and then advanced version with same name but more parameters. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Emn4WxgEN9ROu3iIo8OF7r" Name="Usecase " Bounds="109,345,484,192" />
+          <Pad Id="ViNqNG6J4jVPs9H2Fb9DRy" Bounds="108,588,453,61" ShowValueBox="true" isIOBox="true" Value="OVERLOADED functions are fully resolved at compile-time. They don't need to do run-time type checking and should not affect performance of a running application. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ SuperAdd ************************
+
+-->
+          <Node Name="SuperAdd" Bounds="391,792,211,109" Id="V6oPpkMWUj1O9oVAP6WpeW">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="GceZ7Q3pg3SLkzMBmZKewM">
+              <ControlPoint Id="GW3lQVpmiayObAmwQc1Ne5" Bounds="405,810" />
+              <Link Id="BviQ9RffBVPOLC9rNMq43e" Ids="JXIAqABMhXBNYkHaVWk80m,GW3lQVpmiayObAmwQc1Ne5" IsHidden="true" />
+              <ControlPoint Id="RIi93zZp5qOPqRnMDpWcEU" Bounds="478,810" />
+              <Link Id="UbKLVPgPjuwPFRVN5s3a58" Ids="GkUEHRUuHsbPa67vg0Gska,RIi93zZp5qOPqRnMDpWcEU" IsHidden="true" />
+              <ControlPoint Id="NT6qSwobGlRNVDS04Anw9K" Bounds="548,810" />
+              <Link Id="BxzMh6xWt2cLo495xsGtii" Ids="Q6uNSSipkQ9NAkqiNxL8hM,NT6qSwobGlRNVDS04Anw9K" IsHidden="true" />
+              <Node Bounds="403,839,45,19" Id="GiwKeNxtVaZN9hgnMsxJtC">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="HJIBZZ3R5gWMncTzb1qwtT" Name="Input" Kind="InputPin" />
+                <Pin Id="N9iXyAouuWnMTnkhetg275" Name="Input 2" Kind="InputPin" />
+                <Pin Id="KX5d6b0ViGVOknhU6NHGh2" Name="Output" Kind="OutputPin" />
+                <Pin Id="JpePU9U0sx6MTqpSDVAgsG" Name="Input 3" Kind="InputPin" />
+              </Node>
+              <Link Id="FzildXClCFsPUiuY9RCxXo" Ids="GW3lQVpmiayObAmwQc1Ne5,HJIBZZ3R5gWMncTzb1qwtT" />
+              <Link Id="UHAHw8XMgbyPGaySO7xBUQ" Ids="RIi93zZp5qOPqRnMDpWcEU,N9iXyAouuWnMTnkhetg275" />
+              <Link Id="AwscFP2lytFONte61Lodd2" Ids="NT6qSwobGlRNVDS04Anw9K,JpePU9U0sx6MTqpSDVAgsG" />
+              <ControlPoint Id="NMEmGueTqjjOMNSibpGrA6" Bounds="405,884" />
+              <Link Id="IxyenVQ7KkcPrgXA4TOqQJ" Ids="KX5d6b0ViGVOknhU6NHGh2,NMEmGueTqjjOMNSibpGrA6" />
+              <Link Id="Cw7ruRcY8zeQMzz8DEMPrX" Ids="NMEmGueTqjjOMNSibpGrA6,CjUVdkVKH9qPdGnBCRaxR3" IsHidden="true" />
+              <Pin Id="JXIAqABMhXBNYkHaVWk80m" Name="InputA" Kind="InputPin" />
+              <Pin Id="GkUEHRUuHsbPa67vg0Gska" Name="InputB" Kind="InputPin" />
+              <Pin Id="Q6uNSSipkQ9NAkqiNxL8hM" Name="InputC" Kind="InputPin" />
+              <Pin Id="CjUVdkVKH9qPdGnBCRaxR3" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ SuperAdd ************************
+
+-->
+          <Node Name="SuperAdd" Bounds="143,792,191,109" Id="K28DMWxKnqHMVDcDu4bkEP">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="CQsCUG1JwZrPDSDhekL9QV">
+              <ControlPoint Id="GnCLTUr8DjqPB5Q4MDuIud" Bounds="157,810" />
+              <ControlPoint Id="DF73MiQIYxDQdobyuTN2ve" Bounds="230,810" />
+              <Node Bounds="155,839,45,19" Id="FeWblyl8foqQRwHctuFnzO">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="RNJepBw2G80O9T6S0fJvTi" Name="Input" Kind="InputPin" />
+                <Pin Id="Nb2Ah5MVb4MNBmh9efrUqX" Name="Input 2" Kind="InputPin" />
+                <Pin Id="BhYxowkklInMq3yBWwuBIW" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="AnWOnhT8koZNrev04RZHkk" Bounds="157,884" />
+              <Link Id="CDLcguMT3ETP2purNGMEjd" Ids="SkzsORZSmJcO7lm38E0kza,GnCLTUr8DjqPB5Q4MDuIud" IsHidden="true" />
+              <Link Id="U6jzwJ3z6hpNA12kXpiEBj" Ids="L9xQBM40spHNtH4LKrLWho,DF73MiQIYxDQdobyuTN2ve" IsHidden="true" />
+              <Link Id="UjWFlEz3sUNPhrn1gmL7QL" Ids="GnCLTUr8DjqPB5Q4MDuIud,RNJepBw2G80O9T6S0fJvTi" />
+              <Link Id="Q18yU9GhNiiLvFUMYl7C6i" Ids="DF73MiQIYxDQdobyuTN2ve,Nb2Ah5MVb4MNBmh9efrUqX" />
+              <Link Id="CDAuXJoGMl3PvbU47zVdHf" Ids="BhYxowkklInMq3yBWwuBIW,AnWOnhT8koZNrev04RZHkk" />
+              <Link Id="EncVxPGWX3KLwIAtzFWgq5" Ids="AnWOnhT8koZNrev04RZHkk,IgFY7PpgFoYK9hSkz6ls50" IsHidden="true" />
+              <Pin Id="SkzsORZSmJcO7lm38E0kza" Name="InputA" Kind="InputPin" />
+              <Pin Id="L9xQBM40spHNtH4LKrLWho" Name="InputB" Kind="InputPin" />
+              <Pin Id="IgFY7PpgFoYK9hSkz6ls50" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ SuperAdd ************************
+
+-->
+          <Node Name="SuperAdd" Bounds="835,797,140,109" Id="RjyCqxGuSjuPj36FI9qw4Q">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="SeoPGYqYJeEN7WHsvZenBV">
+              <ControlPoint Id="Bd4HtEYXlwSOtOPlkTNIAk" Bounds="849,815" />
+              <ControlPoint Id="LzWYEIH6WqcO4W7Fqowugo" Bounds="922,815" />
+              <Node Bounds="847,844,45,19" Id="GquQu601zXNO0tlhSkdtix">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="JQMOy5o5hG0Me2t1G2aG6v" Name="Input" Kind="InputPin" />
+                <Pin Id="PkfUvFO06UhLC3iNPiEl52" Name="Input 2" Kind="InputPin" />
+                <Pin Id="Befh3cKvz0BL33vZFxgJqa" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="DOd137DGynrPGGuMyc6Srb" Bounds="849,889" />
+              <Link Id="AlgpEMjyflwLdOPLHpno4g" Ids="RA8WDYEOAoLNhh75aMqLOy,Bd4HtEYXlwSOtOPlkTNIAk" IsHidden="true" />
+              <Link Id="TGDACbxG4BtOzKEOe1iCFW" Ids="T9E3qRn6DwgLe4Hd042sl5,LzWYEIH6WqcO4W7Fqowugo" IsHidden="true" />
+              <Link Id="EZ2mvDxO37lNqA5ZeJOdlg" Ids="Bd4HtEYXlwSOtOPlkTNIAk,JQMOy5o5hG0Me2t1G2aG6v" />
+              <Link Id="OQrfYgIiF61MZrkQPIemmg" Ids="LzWYEIH6WqcO4W7Fqowugo,PkfUvFO06UhLC3iNPiEl52" />
+              <Link Id="VKVgZGgxoG6OqZxHOd83eN" Ids="Befh3cKvz0BL33vZFxgJqa,DOd137DGynrPGGuMyc6Srb" />
+              <Link Id="N9ByMfbeId8PCDSE8PzeTy" Ids="DOd137DGynrPGGuMyc6Srb,JR7PUGB6Y1XPe97LRz5o5P" IsHidden="true" />
+              <Pin Id="RA8WDYEOAoLNhh75aMqLOy" Name="InputA" Kind="InputPin" />
+              <Pin Id="T9E3qRn6DwgLe4Hd042sl5" Name="InputB" Kind="InputPin" />
+              <Pin Id="JR7PUGB6Y1XPe97LRz5o5P" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+          </Node>
+          <Pad Id="TW0QtfvRdQqP9Gjil4qtvY" Bounds="116,927,615,114" ShowValueBox="true" isIOBox="true" Value="Here we have three functions with the same name, but no red errors. &#xD;&#xA;&#xD;&#xA;Why? Because they have different SIGNATURES. &#xD;&#xA;&#xD;&#xA;In this case A and B have unique SIGNATURES because they have different counts of Input/Output pins.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="T2AcowiH3nVLeGs9Bvb7ID" Name="Unique Signatures Example 1" Bounds="108,698,641,419" />
+          <Pad Id="DdRrk1Opt6JQaq5Uywc4R8" Bounds="131,741,35,19" ShowValueBox="true" isIOBox="true" Value="//A">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T7xKoJygbHmOg30ag2qp0D" Bounds="385,738,35,19" ShowValueBox="true" isIOBox="true" Value="//B">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KE75mD8YvccPqj7Uh3Jt2l" Bounds="821,742,35,19" ShowValueBox="true" isIOBox="true" Value="//C">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="TOLGT9tRkV8QNcP52ZbQuh" Name="Unique Signatures Example 2" Bounds="781,695,296,429" />
+          <Pad Id="M7B6bdLx4IpOhpkfkMUqfq" Bounds="790,935,256,191" ShowValueBox="true" isIOBox="true" Value="Ok here we have a third function with the same name and the same input/output count as example A. &#xD;&#xA;Why is this able to exist without red errors? &#xD;&#xA;Because the inputs/outputs have a different TYPE to example A (Float32 vs Integer32) &#xD;&#xA;Hence UNIQUE SIGNATURE is also established by Input/Output types.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="H61Cy0Jqqy9NvH4NhNz37W" Name="Unique Signatures Example 3" Bounds="1107,695,553,424" />
+          <!--
+
+    ************************ SuperMinus ************************
+
+-->
+          <Node Name="SuperMinus" Bounds="1164,790,140,109" Id="IZcRo7Wwpn4LEahRtE2RIe">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="CucauVSzUjbMbmkxwGVoLb">
+              <ControlPoint Id="FA30739oOTDLqFAPuRtSqv" Bounds="1178,808" />
+              <ControlPoint Id="JUk03UHn2YhNEgSt9sZMXB" Bounds="1251,808" />
+              <ControlPoint Id="LMEtTvAFYXbM4OnY8Wa8tP" Bounds="1178,882" />
+              <Link Id="Inbhk2zgJdxOZNpjq4mUye" Ids="TZORmGGirpWMhOdDgWDaln,FA30739oOTDLqFAPuRtSqv" IsHidden="true" />
+              <Link Id="FuQKy4iY3OtNpinN1ImA7S" Ids="NcsQzyoo98LLkFupJkvoGI,JUk03UHn2YhNEgSt9sZMXB" IsHidden="true" />
+              <Link Id="TRuUFZeJlxlMa7uBf5pjJ8" Ids="LMEtTvAFYXbM4OnY8Wa8tP,TYaEFzXpM2BNPLG9euXteT" IsHidden="true" />
+              <Pin Id="TZORmGGirpWMhOdDgWDaln" Name="InputA" Kind="InputPin" />
+              <Pin Id="NcsQzyoo98LLkFupJkvoGI" Name="InputB" Kind="InputPin" />
+              <Pin Id="TYaEFzXpM2BNPLG9euXteT" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Node Bounds="1178,836,25,19" Id="SU7u4MVfTp3MdrcnEkUXV0">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="U1XVHnXGjEcOzNaGuAgY1s" Name="Input" Kind="InputPin" />
+                <Pin Id="G92eZz7YNNgMbsLaK36qBb" Name="Input 2" Kind="InputPin" />
+                <Pin Id="HlpauPpByiWL6FdHCuVxRT" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="M1JUfT7896cOMcnfrtkOUG" Ids="FA30739oOTDLqFAPuRtSqv,U1XVHnXGjEcOzNaGuAgY1s" />
+              <Link Id="IrZk7Gu2mGEOa7hY25x7Ej" Ids="HlpauPpByiWL6FdHCuVxRT,LMEtTvAFYXbM4OnY8Wa8tP" />
+              <Link Id="HnwN85Kvsx0QcwsGiFj1Ni" Ids="JUk03UHn2YhNEgSt9sZMXB,G92eZz7YNNgMbsLaK36qBb" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ SuperMinus ************************
+
+-->
+          <Node Name="SuperMinus" Bounds="1402,788,116,110" Id="HkVkN0j2SkEP0roiEUYaoe">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="U1qeBgUadNCLpPxB0eTWxw">
+              <ControlPoint Id="Qfy1lhxRPDnO3tscYVh2KR" Bounds="1417,806" />
+              <ControlPoint Id="O9PyztKqLjrQEaa0RAzH3q" Bounds="1489,807" />
+              <ControlPoint Id="LqgOHcUSNyAO8CrIjFTR09" Bounds="1416,881" />
+              <Link Id="Fa2tTyui1n2MptnU4L7Nt4" Ids="GAvmjMK85FuPviUCOaRe5v,Qfy1lhxRPDnO3tscYVh2KR" IsHidden="true" />
+              <Link Id="A2jDJyWl44aOMC8pu7gLfV" Ids="DHVTfcyRGw8LAtKo25HaDw,O9PyztKqLjrQEaa0RAzH3q" IsHidden="true" />
+              <Link Id="NZ99XDrk41oLRfkdjrkTex" Ids="LqgOHcUSNyAO8CrIjFTR09,VWKVsIBIw2jLdcyRIYcLe8" IsHidden="true" />
+              <Pin Id="GAvmjMK85FuPviUCOaRe5v" Name="X" Kind="InputPin" />
+              <Pin Id="DHVTfcyRGw8LAtKo25HaDw" Name="Y" Kind="InputPin" />
+              <Pin Id="VWKVsIBIw2jLdcyRIYcLe8" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Node Bounds="1416,835,25,19" Id="VN41gMFRfdFPOLolttSnxf">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="DgmzqAdpaR9L2d5OT8dkr4" Name="Input" Kind="InputPin" />
+                <Pin Id="DCkTIMA5wiTPHz5f99yNYH" Name="Input 2" Kind="InputPin" />
+                <Pin Id="LHeaB9exwvsOtcCvmafy0M" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="CEOQFM1Tc7XQHWqV4mCUIx" Ids="Qfy1lhxRPDnO3tscYVh2KR,DgmzqAdpaR9L2d5OT8dkr4" />
+              <Link Id="QiWeSlr56XLPy9Q3qPCSmk" Ids="LHeaB9exwvsOtcCvmafy0M,LqgOHcUSNyAO8CrIjFTR09" />
+              <Link Id="Gs8bqNJs3DoMqryYobqqJB" Ids="O9PyztKqLjrQEaa0RAzH3q,DCkTIMA5wiTPHz5f99yNYH" />
+            </Patch>
+          </Node>
+          <Pad Id="SxxZqOQ9yyGOUtz9VC4Pu9" Bounds="1108,931,540,183" ShowValueBox="true" isIOBox="true" Value="This time we do have a red error. &#xD;&#xA;&#xD;&#xA;If you look at the nodes the only difference is the NAME of the pins. They have the same function name, and the same number of inputs/outputs, with the same types. This means the nodes have matching SIGNATURES and the compiler will not be able to run them.&#xD;&#xA;&#xD;&#xA;This demonstrates the actual name of the input/output pins does not contribute to SIGNATURE uniqueness. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VF7DRDUK7EVOVjRYh689Jx" Name="Deploying OVERLOADED nodes - &quot;When in doubt show pin choices&quot; OFF" Bounds="105,1230,637,302" />
+          <Pad Id="RQKPwrx62U0L4Dm2b64Yhi" Bounds="103,1295,625,160" ShowValueBox="true" isIOBox="true" Value="As of vvvv 6.0-280 there are TWO ways to deploy OVERLOADED nodes based on a setting in the top right menu. &#xD;&#xA;&#xD;&#xA;For this example go to your top right 'hamburger' menu in the vvvv gamma editor. Under 'node browser' ensure 'When in doubt show pin choices' is OFF. &#xD;&#xA;&#xD;&#xA;Now open the node browser and select 'SuperAdd'.&#xD;&#xA;You will get a choice between the three versions above based on pin signature. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="173,1488,60,19" Id="A0FJ6b4cGpDNlpvn8W6kQK">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 14 Overloading.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SuperAdd" />
+              <PinReference Kind="InputPin" Name="InputA">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="InputB">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="InputC" />
+              <PinReference Kind="OutputPin" Name="Output">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="NxV2ycdVrF2PSweStsvItE" Name="InputA" Kind="InputPin" />
+            <Pin Id="EmZ5lLAqMIaO8MnDOKQxkf" Name="InputB" Kind="InputPin" />
+            <Pin Id="LGtjlcBdky6PB4Wdw4locM" Name="InputC" Kind="InputPin" />
+            <Pin Id="NEHjbzX1ityP7MEC3hC3V7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="344,1488,60,19" Id="INEqiZb5OkSP1flJ7yVo1e">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 14 Overloading.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SuperAdd" />
+              <PinReference Kind="InputPin" Name="InputA">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="InputB">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="OutputPin" Name="Output">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="E1Gs39z8vVNLBqdNH7EN3D" Name="InputA" Kind="InputPin" />
+            <Pin Id="PvgYX4Dwhy1OLryL4OFAMr" Name="InputB" Kind="InputPin" />
+            <Pin Id="HjCX0mEvcJbMDTqYsC716h" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="499,1488,60,19" Id="Jvun0ackgL7MGwiwatTYGp">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 14 Overloading.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SuperAdd" />
+              <PinReference Kind="InputPin" Name="InputA">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="InputB">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="OutputPin" Name="Output">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="Nf27Ckjr7hGQYs5DqhcvuK" Name="InputA" Kind="InputPin" />
+            <Pin Id="J6CObZrxHacOV3tMFt9gqM" Name="InputB" Kind="InputPin" />
+            <Pin Id="VwHGGtBwr2WLkjfI62mDvQ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="EEeoJNvzm4jPSpCDx7RAlk" Name="Deploying OVERLOADED nodes - &quot;When in doubt show pin choices&quot; ON" Bounds="105,1585,637,351" />
+          <Pad Id="M3dOkYjwgVGLDnzIOKpCH4" Bounds="109,1662,610,185" ShowValueBox="true" isIOBox="true" Value="For this example go to your top right 'hamburger' menu in the vvvv gamma editor. Under 'node browser' ensure 'When in doubt show pin choices' is ON&#xD;&#xA;&#xD;&#xA;Now open the node browser and select 'SuperAdd'.&#xD;&#xA;It now gives you interactive choices by pin. The idea is that you could go through this little wizard and get the minimum version that will include the pins you want. &#xD;&#xA;&#xD;&#xA;Once an instance is deployed: to change which OVERLOADed function double click on the node and then in the bottom right of the node browser clear the selection of the pin name. You now get to choose the pins again.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EmTYRCemhMnM9pqOtMD01S" Name="OVERLOADING in the wild" Bounds="108,1976,637,540" />
+          <Node Bounds="375,1838,60,19" Id="Df60npyTxFkLWbDob22JdO">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 14 Overloading.vl" OverloadStrategy="UserSelectedPins">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SuperAdd" />
+              <PinReference Kind="InputPin" Name="InputC" />
+            </p:NodeReference>
+            <Pin Id="VMHbTXfBXK8QScznhTfqNo" Name="InputA" Kind="InputPin" />
+            <Pin Id="HJlArMz2gpcNFZpEByUv5Y" Name="InputB" Kind="InputPin" />
+            <Pin Id="AU6KLp1Iv5NP3uwi2zdCzh" Name="InputC" Kind="InputPin" />
+            <Pin Id="OWNksy6s27lLAqKYduFq5F" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SDiCNcQjAjnQBRtjg8ic13" Bounds="108,1898,623,39" ShowValueBox="true" isIOBox="true" Value="(Personally I prefer 'when in doubt show pin choices' OFF. When there are OVERLOADS available I just want to see a plain list of all the versions)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KpqOMmwSOOANXPiVlDAZeI" Bounds="112,1873,356,19" ShowValueBox="true" isIOBox="true" Value="for more info about how to use this flow see the gray book">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KEm7UVY9NrsPoQbM24EQhS" Bounds="473,1873,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/hde/the_nodebrowser.html#nodes-that-only-differ-by-signature">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FlgoAsLxmxtOGYdycVcVJT" Bounds="133,2134,140,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/api/system.console.writeline?view=net-8.0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LEFDa7Hm0nhPavBsDLUc31" Bounds="135,2049,566,90" ShowValueBox="true" isIOBox="true" Value="You most often run into overloading with external .net libraries. OVERLOADING is very common to increase programmer-friendliness of libraries in text coding. &#xD;&#xA;&#xD;&#xA;Check this documenation for System.Console WriteLine function from microsoft. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MrTsfYcYwTxL5Crjrg6EgJ" Bounds="133,2169,583,306" ShowValueBox="true" isIOBox="true" Value="Note there are many versions of the function WriteLine all differentiated only by TYPE. This is OVERLOADING. &#xD;&#xA;&#xD;&#xA;Lets see how that looks in vvvv&#xD;&#xA;-Open the top right menu, on the settings tab under node browser category ensure 'When in doubt show pin choices' is OFF.&#xD;&#xA;-Open document menu at top left (should say 'howto 14 Overloading.vl'), &gt; Dependencies &gt; Files&gt;Add .net framework assembly.&#xD;&#xA;-Find System.Console in the framework list and double click it. It will appear at the bottom of that window.&#xD;&#xA;-Press OK. Verify it added by going document menu&gt;Dependencies&gt;files and check System.Console is listed.&#xD;&#xA;&#xD;&#xA;-Open the node browser and ensure the ADVANCED aspect is on. &#xD;&#xA;-Type WriteLine and click it&#xD;&#xA;-You should see all the different OVERLOADS of WriteLine&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+          <Fragment Id="Lf3wnC48lKhL3ADUY6G5v5" Patch="V6oPpkMWUj1O9oVAP6WpeW" />
+          <Fragment Id="RxWOgMvBAtAOrCbyNEf6fK" Patch="K28DMWxKnqHMVDcDu4bkEP" />
+          <Fragment Id="Kp7aruEz6G8NimEGZ0b1dH" Patch="RjyCqxGuSjuPj36FI9qw4Q" />
+          <Fragment Id="R2HgHPDgVL0QD5zJeJP7Cd" Patch="IZcRo7Wwpn4LEahRtE2RIe" />
+          <Fragment Id="BEOoAFKe1WQMajjCYdSbzj" Patch="HkVkN0j2SkEP0roiEUYaoe" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

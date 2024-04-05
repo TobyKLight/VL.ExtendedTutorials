@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="IrhQTsfUyxNOQefltO9TMZ" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
+  <NugetDependency Id="DjjRK6XXd7SMg0QIBPXt9C" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+  <Patch Id="DLURjIYs4pZN00xD3Gx0xM">
+    <Canvas Id="JqhdZhjqeeMNZrBhaCcpFS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="DiW9dGADeQPMiWr01umxNI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NWjU5dFBzrnOTGLhnr25ge">
+        <Canvas Id="FFExGHWeTq5LNzk7nHSZJT" CanvasType="Group">
+          <Overlay Id="CZqV24SLUdwOcO2oju59XI" Name="Key Concepts" Bounds="94,48,484,426" />
+          <Pad Id="HmUASVJkC5mQG4vpUS4CHi" Bounds="95,98,464,316" ShowValueBox="true" isIOBox="true" Value="-ADAPTIVE is like a hybrid of GENERIC and OVERLOADING functionality. &#xD;&#xA;&#xD;&#xA;-An ADAPTIVE definition will allow the compiler to choose between DIFFERENT functions based on TYPE. It basically gives OVERLOADED functions a GENERIC-style implementation in Gamma editor.&#xD;&#xA;&#xD;&#xA;-From a library developer point of view you basically setup OVERLOADING but then you provide a special extra ADAPTIVE DEFINITION. &#xD;&#xA;&#xD;&#xA;-From a library user point of view ADAPTVE and GENERIC nodes function the same way: Greyed out until the compiler can determine the correct type to use from context.  &#xD;&#xA;&#xD;&#xA;-Limitations: &#xD;&#xA;* ADAPTIVE only works on static operations (not processes) &#xD;&#xA;* the operations an ADAPTIVE definition chooses from must be NON-GENERIC">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Vgps1IQ83lVOXAmFKJJqB4" Bounds="264,425,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/extending/design-guidelines.html#adaptive-nodes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EB0t2DVWgncOxCAp7KOOdq" Name="Usecase " Bounds="94,533,484,468" />
+          <Pad Id="JhCnvljX9FJPVRJzk3RvL6" Bounds="97,577,463,403" ShowValueBox="true" isIOBox="true" Value="Recap: GENERIC functions allow reuse of the SAME code with different types. AND The compiler works out the type from context.&#xD;&#xA;&#xD;&#xA;OVERLOADING allow MULTIPLE DIFFERENT operation to have the same name and be differentiated by SIGNATURE (Type) &#xD;&#xA;&#xD;&#xA;What's new: ADAPTIVE gives OVERLOADED functions GENERIC-style behaviour in the gamma editor where they will initially be greyed out and then typed by context. So therefore ADAPTIVE nodes behave like GENERIC nodes but they DON'T reuse code, instead they call unique functions based on type. &#xD;&#xA;&#xD;&#xA;The COOL PART is that GENERIC nodes can contain ADAPTIVE nodes to make them GENERIC. So you can make a new GENERIC function out of ADAPTIVE or GENERIC parts. This means that you can reuse the same code (GENERIC) or call unique functions based on type (ADAPTIVE) .&#xD;&#xA;&#xD;&#xA;Note however limitation is you can't go the other way. At this time (April24) ADAPTIVE nodes only select their implementation from non-generic functions with the same name. From the gray book: &#xD;&#xA;&quot; all in- and outputs need to have a datatype infered or annotated.&quot;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C280oiu237wM7rh8e1Uhd0" Bounds="145,425,121,19" ShowValueBox="true" isIOBox="true" Value="For more info see">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ifi2GmgGp6EMV7pkRvzv5R" Bounds="104,1081,453,61" ShowValueBox="true" isIOBox="true" Value="ADAPTIVE functions are fully resolved at compile-time. They don't need to do run-time type checking and should not affect performance of a running application. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="BB1FrfmVw7gLSM12Xa2vcp" Name="Performance" Bounds="100,1033,484,124" />
+          <Overlay Id="MPdh5gT1nzGMtHs2xSFL30" Name="Creating an Adaptive node" Bounds="97,1201,759,837" />
+          <!--
+
+    ************************ MinusFive ************************
+
+-->
+          <Node Name="MinusFive" Bounds="154,1621,69,109" Id="BWYqni7U3xCMzS5K2qppNa">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="U9siQyP5MdmN1J2XU3880n">
+              <ControlPoint Id="KEEsNfaBhoaNd5xb3u5hOW" Bounds="168,1639" />
+              <ControlPoint Id="UJOZ5GSW9HuM3zOMD0YqTW" Bounds="168,1713" />
+              <Link Id="BgLEPHuiS3ENkXlLjcpRz2" Ids="FN7lmoBXO8oQUsAfuYWPMG,KEEsNfaBhoaNd5xb3u5hOW" IsHidden="true" />
+              <Link Id="QA9228Hbkx6NPQ2nSBMAW3" Ids="UJOZ5GSW9HuM3zOMD0YqTW,LUDb7LKs7VoMPzN9uu64xU" IsHidden="true" />
+              <Pin Id="FN7lmoBXO8oQUsAfuYWPMG" Name="InputA" Kind="InputPin" />
+              <Pin Id="LUDb7LKs7VoMPzN9uu64xU" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Node Bounds="166,1668,25,19" Id="RNfU7iKI3nVMIQM0yAcsSY">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="BzxkL4Q87OSQBdxnSKdbkJ" Name="Input" Kind="InputPin" />
+                <Pin Id="RLQxpJkkPmZMiZ4YeYTIX0" Name="Input 2" Kind="InputPin" DefaultValue="5" />
+                <Pin Id="I8wtFgSj5TFPBukPJEL0IY" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="EKK7MdbKI5UOavHt7Cv5g7" Ids="KEEsNfaBhoaNd5xb3u5hOW,BzxkL4Q87OSQBdxnSKdbkJ" />
+              <Link Id="Imj7kaSE5p4LSDn1BuOxfV" Ids="I8wtFgSj5TFPBukPJEL0IY,UJOZ5GSW9HuM3zOMD0YqTW" />
+            </Patch>
+          </Node>
+          <Pad Id="Fbu7EIpvcRbNtNUJQRNcG4" Bounds="140,1572,98,19" ShowValueBox="true" isIOBox="true" Value="//Float version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="OQbFucY2HcZOHuMOPIQXDN" Name="You CAN use an ADPATIVE node in a GENERIC node" Bounds="110,3227,759,319" />
+          <!--
+
+    ************************ AddThenMinusFive ************************
+
+-->
+          <Node Name="AddThenMinusFive" Bounds="234,3302,124,148" Id="QnhsnvKFhBnPauH3KtTZIM">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="GI4F5mo3nkkPHEcgJH709j" IsGeneric="true">
+              <Node Bounds="247,3353,25,19" Id="PbtPi3MHpYsLjQjeK0uuAL">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="+" />
+                </p:NodeReference>
+                <Pin Id="Mfc1HXNBiXDNQHPN4WyX4X" Name="Input" Kind="InputPin" />
+                <Pin Id="Hw9f0lrKsBeMTKi0Nby6lX" Name="Input 2" Kind="InputPin" />
+                <Pin Id="LyXVTMtanUPPeCQ1Do4J6Q" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="SXcky7fwVm0MCpbyXBdDoJ" Bounds="249,3320" />
+              <Link Id="IytN4d6JV0iNVXttOD4sNj" Ids="SXcky7fwVm0MCpbyXBdDoJ,Mfc1HXNBiXDNQHPN4WyX4X" />
+              <Pin Id="CxPmihcRPeuMQUknVZUQvF" Name="Input" Kind="InputPin" />
+              <Link Id="Hf7FCPWtlGhNOuu7B0b7PF" Ids="CxPmihcRPeuMQUknVZUQvF,SXcky7fwVm0MCpbyXBdDoJ" IsHidden="true" />
+              <ControlPoint Id="RLlIYvKaQdVPbB89n7hgh5" Bounds="302,3321" />
+              <Link Id="UvflDXnQFcWLBrDWauYvRy" Ids="RLlIYvKaQdVPbB89n7hgh5,Hw9f0lrKsBeMTKi0Nby6lX" />
+              <Pin Id="VkpkAVpvCcFPlvw2Hr8trb" Name="Input 2" Kind="InputPin" />
+              <Link Id="HWHhTL67XmROFdMBlyOTbG" Ids="VkpkAVpvCcFPlvw2Hr8trb,RLlIYvKaQdVPbB89n7hgh5" IsHidden="true" />
+              <ControlPoint Id="F64CmvE1JURPFrsoDZwx8M" Bounds="248,3433" />
+              <Pin Id="PxTOhbi6DhTMZHn8lYbXM8" Name="Output" Kind="OutputPin" />
+              <Link Id="F2m7HG5l9zQMAjPyAOgAOM" Ids="F64CmvE1JURPFrsoDZwx8M,PxTOhbi6DhTMZHn8lYbXM8" IsHidden="true" />
+              <Node Bounds="246,3390,61,19" Id="FbcgyNAWHIHNOPKTCz7jvY">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 15 Adaptive.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="MinusFive" />
+                </p:NodeReference>
+                <Pin Id="RZOkn3EDY1RN61X0blAYoX" Name="InputA" Kind="InputPin" />
+                <Pin Id="AtzrzG20RHUPPqKc3JNLmw" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="D1kZlQIwglSMTIUTqwQpg0" Ids="LyXVTMtanUPPeCQ1Do4J6Q,RZOkn3EDY1RN61X0blAYoX" />
+              <Link Id="IFHoZTWLr4pPicwVehq5af" Ids="AtzrzG20RHUPPqKc3JNLmw,F64CmvE1JURPFrsoDZwx8M" />
+            </Patch>
+          </Node>
+          <Pad Id="BOjWLkcUHsfOUSPeRm312B" Comment="" Bounds="447,3294,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="E9Dd3Cl8k22OMXfte7bUTs" Comment="" Bounds="544,3327,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BZhwBjZlu27Mv2QR96qqFv" Comment="" Bounds="447,3436,39,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="C5tf6J664XfMhMMNytD1xS" Bounds="107,1244,597,61" ShowValueBox="true" isIOBox="true" Value="Ok lets say we want to make some functions called MinusFive. &#xD;&#xA;* The float version subtracts 5.00&#xD;&#xA;* The string version subtracts the first five letters of the string. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusFive ************************
+
+-->
+          <Node Name="MinusFive" Bounds="329,1626,84,106" Id="CXBVluviJFON7vbYWseMl0">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="HVeGcH6Rt3GOE3aMyWq3dM">
+              <ControlPoint Id="LHPIyLQ9CYzLuxz43sZflp" Bounds="343,1644" />
+              <Link Id="RYlBNBhuKs3NUKwdNN1x23" Ids="EpPBI2wsoqdNK7kH1F4WTt,LHPIyLQ9CYzLuxz43sZflp" IsHidden="true" />
+              <Pin Id="EpPBI2wsoqdNK7kH1F4WTt" Name="InputA" Kind="InputPin" />
+              <Node Bounds="341,1667,60,26" Id="Plf5nE8hfy7M9dKLYidvx2">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Substring" />
+                </p:NodeReference>
+                <Pin Id="ASsnBDWb6ByOirUmvF7ko6" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Uv8O6jy6HDHLaWfVj8Z1vW" Name="Start Index" Kind="InputPin" DefaultValue="5" />
+                <Pin Id="M1BszZzRH5QPCbQjWXxeYZ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Link Id="ThPNN9BabKJL2tj9KO8neD" Ids="LHPIyLQ9CYzLuxz43sZflp,ASsnBDWb6ByOirUmvF7ko6" />
+              <ControlPoint Id="DhRgFUU94NwMGlrjN0PvDS" Bounds="343,1715" />
+              <Link Id="BptcS5zvOYqMF95TERc0oy" Ids="M1BszZzRH5QPCbQjWXxeYZ,DhRgFUU94NwMGlrjN0PvDS" />
+              <Pin Id="JF3BaOMVVGoNxgpwLaoXxJ" Name="Output" Kind="OutputPin" />
+              <Link Id="BwU6A5zjJVWPlpLjBzUopw" Ids="DhRgFUU94NwMGlrjN0PvDS,JF3BaOMVVGoNxgpwLaoXxJ" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="NWSeP67AHAAMaA4O71bJia" Bounds="313,1576,128,19" ShowValueBox="true" isIOBox="true" Value="//String version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VbwUDWBwgdrQPAUGpH3saF" Bounds="527,1575,158,20" ShowValueBox="true" isIOBox="true" Value="//Adaptive definition">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusFive (Adaptive) ************************
+
+-->
+          <Node Name="MinusFive (Adaptive)" Bounds="538,1626,69,109" Id="Ko94zs3DhZbLE40OP0LS80">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="PBJxyDE1DhGOk7h8ApohYq" IsGeneric="true">
+              <ControlPoint Id="VwCd1cWDdRnLy8D7raBtAK" Bounds="552,1644" />
+              <ControlPoint Id="VvEjNAQk208LFBEA4sW0n7" Bounds="552,1718" />
+              <Link Id="PqKUigTZLZoNOVFOnad2th" Ids="CDIO5rUdHk0PjIlOUQUAZs,VwCd1cWDdRnLy8D7raBtAK" IsHidden="true" />
+              <Link Id="VRHcbDW49FfLrBXV59Fu1t" Ids="VvEjNAQk208LFBEA4sW0n7,MIIa18cO8FXONEjbD4cJDI" IsHidden="true" />
+              <Pin Id="CDIO5rUdHk0PjIlOUQUAZs" Name="InputA" Kind="InputPin" />
+              <Pin Id="MIIa18cO8FXONEjbD4cJDI" Name="Output" Kind="OutputPin" />
+              <Node Bounds="550,1673,25,19" Id="JfMSbeeaMc9O2LZ8b9hcyM">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="BqK8eKyI568M9zQMynXgRg" Name="Input" Kind="InputPin" />
+                <Pin Id="LuMvveNza6gMkHzv864cmU" Name="Input 2" Kind="InputPin" DefaultValue="2" />
+                <Pin Id="E9pykTPdg2POGtud8FwHab" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="Adg0fexSvtsPGHOtQ3H2Ww" Ids="VwCd1cWDdRnLy8D7raBtAK,BqK8eKyI568M9zQMynXgRg" />
+              <Link Id="G37x6EgN8FJMqKUXi1481x" Ids="E9pykTPdg2POGtud8FwHab,VvEjNAQk208LFBEA4sW0n7" />
+            </Patch>
+          </Node>
+          <Pad Id="BbdvdVGWhpALNIEwYH0hCK" Bounds="117,1334,649,204" ShowValueBox="true" isIOBox="true" Value="To CREATE an ADAPTIVE node: &#xD;&#xA;First we create at least two versions of the function as OVERLOADS. Same name, different signature due to different TYPES.&#xD;&#xA;-These must NOT be generic. In the case of the float version we manually annoted one of the pins. &#xD;&#xA;&#xD;&#xA;Then we created another version of the function with the same name and in the ADAPTIVE category. &#xD;&#xA;Note &#xD;&#xA;-In this case we specified that it's adaptive by adding (Adaptive) in brackets to the name, but could also do this by putting it in an .Adaptive category on a definitions patch. &#xD;&#xA;-This ADAPTIVE defintiion must have at least one GENERIC input or output pin and the GENERIC flag turned on.  ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Oa4KG74YngNPmVGdy7Lp0i" Bounds="126,1778,636,107" ShowValueBox="true" isIOBox="true" Value="To INSTANCE an ADAPTIVE node: &#xD;&#xA;&#xD;&#xA;-Double click below and type &quot;minusfive&quot; in the nodebrowser. You should only see one entry. &#xD;&#xA;-Deploy that MinusFive node below and you see at first it's greyed out like an untyped generic node.&#xD;&#xA;-When you connect it to the existing float and string ioboxes it should resolve the type and run. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="I0tgWHnAFhhNXDspMchTyx" Bounds="174,1913,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G9jT2uXSwzTPVvDtLVx6zX" Bounds="374,1913,66,15" ShowValueBox="true" isIOBox="true" Value="california">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EPeZfGhwjsKMidFOygD6C2" Bounds="173,1992,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DBnyY8M7NXeOKUPZeCkpXF" Bounds="374,1991,65,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GPPUZ1hipAKPBzQ43ncOQA" Bounds="484,1948,229,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;put some &quot;MinusFive&quot; nodes here ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JKiAmKV9YZuL5dzaLWqBVy" Bounds="133,2723,648,239" ShowValueBox="true" isIOBox="true" Value="This is the same as above EXCEPT notice there is no code inside the adaptive definition. &#xD;&#xA;-There does not have to be because the code inside the adaptive definition will never execute. To actually be compiled the gamma editor will choose either the float or string version. The ADAPTIVE definition is just the clue to the gamma editor that it should choose between one of the two 'original' definitions. &#xD;&#xA;-Although it won't execute, the code inside the adaptive definition can still be useful because it still tells the compiler the Input and Output are the SAME type. IE Once it has worked out the type of one of them it can type the other. If you mouse over without any code connected you should see they are unique T#s. If you go back up to the &quot;MinusFive&quot; example and mouse over the generic pins you should see they are the same T#, hence the same type.&#xD;&#xA;&#xD;&#xA;To illustrate this create MinusTen nodes below. Note you will have to connect them to BOTH input and output ioboxes for the node to resolve its type. If you create MinusFive nodes they will only have to have either the input or output connected to resolve their type.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="PlHX9XuCHB5OnbCO0iMwfC" Name="Should there be code in an adative node?" Bounds="103,2456,757,734" />
+          <!--
+
+    ************************ MinusTen ************************
+
+-->
+          <Node Name="MinusTen" Bounds="160,2587,69,109" Id="TU36D3A7tjMPuV7pZ9bBVQ">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="BqWtKL4BvasLztMWqJ7mEs">
+              <ControlPoint Id="FbrJZmGdn6rLY2eESKg8QJ" Bounds="174,2605" />
+              <ControlPoint Id="GmoDOTzsDkaOc8n9KWj4OA" Bounds="174,2679" />
+              <Link Id="R2dQtnmZCyzM3qnENhhUCg" Ids="O7zCMI8RBtkNYSzXUBRlot,FbrJZmGdn6rLY2eESKg8QJ" IsHidden="true" />
+              <Link Id="PDuEpgAiprDOCYVi8veC5N" Ids="GmoDOTzsDkaOc8n9KWj4OA,Czfwy9EdDUtMJVSWYozajc" IsHidden="true" />
+              <Pin Id="O7zCMI8RBtkNYSzXUBRlot" Name="InputA" Kind="InputPin" />
+              <Pin Id="Czfwy9EdDUtMJVSWYozajc" Name="Output" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Node Bounds="172,2634,25,19" Id="NI7jGE0JCTzQawcdrYZM9Y">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="KFB6V3QDUCsLlCmKL5Ixdz" Name="Input" Kind="InputPin" />
+                <Pin Id="HuOGSktx56OPfvj0N6y2CL" Name="Input 2" Kind="InputPin" DefaultValue="10" />
+                <Pin Id="NEvDLVgf0HeOP8aitKwkl6" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="UsiPeHI8Fm6QVZLh6dmhiz" Ids="FbrJZmGdn6rLY2eESKg8QJ,KFB6V3QDUCsLlCmKL5Ixdz" />
+              <Link Id="R0D3Q5dN6O1LJQ6abEELAl" Ids="NEvDLVgf0HeOP8aitKwkl6,GmoDOTzsDkaOc8n9KWj4OA" />
+            </Patch>
+          </Node>
+          <Pad Id="IEN892jlSSVNOuPnBtO93W" Bounds="146,2538,98,19" ShowValueBox="true" isIOBox="true" Value="//Float version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusTen ************************
+
+-->
+          <Node Name="MinusTen" Bounds="335,2587,84,111" Id="KuI6MGyyo5RPkSZT9mzIqN">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="Cu6UajnbhIfNrk4NhEhrw5">
+              <ControlPoint Id="G8IYWaSnZfyNY4k91Z2vFS" Bounds="349,2610" />
+              <Link Id="OggwivZ5fSCPrN4YalUnqE" Ids="TmAu1zEAui2PAVwepmGPO6,G8IYWaSnZfyNY4k91Z2vFS" IsHidden="true" />
+              <Pin Id="TmAu1zEAui2PAVwepmGPO6" Name="InputA" Kind="InputPin" />
+              <Node Bounds="347,2633,60,26" Id="QuWMnD6GMqdM8LYS31IjXD">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Substring" />
+                </p:NodeReference>
+                <Pin Id="A6qrXH0CJvrNz0qRghpEnX" Name="Input" Kind="StateInputPin" />
+                <Pin Id="S3TKTXCDREjNktxpaGa8G4" Name="Start Index" Kind="InputPin" DefaultValue="10" />
+                <Pin Id="QlHPczg9rODLgDlmVQOxCK" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Link Id="B7FONfoTy2hMxKcIOgYGih" Ids="G8IYWaSnZfyNY4k91Z2vFS,A6qrXH0CJvrNz0qRghpEnX" />
+              <ControlPoint Id="PIiRByUHjVkQVrmKk7h1Fp" Bounds="349,2681" />
+              <Link Id="Du4AHRpEX1FNaJIG9JBePX" Ids="QlHPczg9rODLgDlmVQOxCK,PIiRByUHjVkQVrmKk7h1Fp" />
+              <Pin Id="DToax05iIo1OXSWUhO7WTU" Name="Output" Kind="OutputPin" />
+              <Link Id="MXnbxBS8SZOPAXfIPOxM9D" Ids="PIiRByUHjVkQVrmKk7h1Fp,DToax05iIo1OXSWUhO7WTU" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="GH0dCa5r9aQOnm68G4jBI7" Bounds="319,2538,128,19" ShowValueBox="true" isIOBox="true" Value="//String version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OhK6zJkeD22QHUi11HCRGZ" Bounds="533,2538,158,20" ShowValueBox="true" isIOBox="true" Value="//Adaptive definition">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusTen (Adaptive) ************************
+
+-->
+          <Node Name="MinusTen (Adaptive)" Bounds="544,2587,69,114" Id="P4zUq7K1CuKQKjvPmV3d52">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="SscplthhH99MXVTVAq6Ycv" IsGeneric="true">
+              <ControlPoint Id="PUis15sIhAfNNk8Wi9TL8u" Bounds="558,2610" />
+              <ControlPoint Id="RjNl8BfQEOBMWcEtA4Iblo" Bounds="558,2684" />
+              <Link Id="VDOP7ag3dSoOHW497eOmwp" Ids="AbDFHQ2X77tQURpVzYDcTl,PUis15sIhAfNNk8Wi9TL8u" IsHidden="true" />
+              <Link Id="JU8FJoafF00NNAGwFcFt9E" Ids="RjNl8BfQEOBMWcEtA4Iblo,Jli4Da9r2eyM3IUhQBl1P9" IsHidden="true" />
+              <Pin Id="AbDFHQ2X77tQURpVzYDcTl" Name="InputA" Kind="InputPin" />
+              <Pin Id="Jli4Da9r2eyM3IUhQBl1P9" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <Pad Id="TCzH32oWYjiNqbssIy3NX7" Bounds="158,2990,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PAUc4dV7ybhPZqhR7UdsKr" Bounds="358,2990,84,15" ShowValueBox="true" isIOBox="true" Value="Massachusetts ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MWpyDmK6UqDPR5d5AflIig" Bounds="157,3069,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VtC6XRgzh4vNXU2D99LARH" Bounds="358,3068,79,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ImF0PXznchHPy2ugju6iwi" Bounds="126,3101,639,66" ShowValueBox="true" isIOBox="true" Value="As a workaround you could just connect input straight to output in the Adaptive definition. However because it's simplest to just copy and paste an existing definition to create your adaptive definition it's common to just leave the code in there.  ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="650,3380,102,19" Id="A62MzfpM9VrMwOAPnNf7ub">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 15 Adaptive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="AddThenMinusFive" />
+            </p:NodeReference>
+            <Pin Id="Cj69G2tbCtePXWCISbICwV" Name="Input" Kind="InputPin" />
+            <Pin Id="EbQoKQ3sXaKPPAmodJToEw" Name="Input 2" Kind="InputPin" />
+            <Pin Id="NdsPQxSAJwLLoFXIQ3f8N8" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="445,3377,102,19" Id="T9VKmvcV8jpO1bUEwBmX6z">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 15 Adaptive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="AddThenMinusFive" />
+            </p:NodeReference>
+            <Pin Id="UeBWElmZhDRLQCTaeAfZnq" Name="Input" Kind="InputPin" />
+            <Pin Id="LXgv6ghKhAENknXRaYrBEx" Name="Input 2" Kind="InputPin" />
+            <Pin Id="GtpZQ5gpzBrNKpLyZMr432" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MDYK3zgmH1oPMd1AvkaWm4" Comment="" Bounds="651,3299,50,15" ShowValueBox="true" isIOBox="true" Value="New">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EFAU7e1SKJrN8MsbYMkquk" Comment="" Bounds="653,3441,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RdatpXYD7dQLBO1yNf0zYD" Comment="" Bounds="750,3318,63,15" ShowValueBox="true" isIOBox="true" Value=" York">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EgEjBoueeEuP4XIqiA1E3I" Bounds="177,3482,643,42" ShowValueBox="true" isIOBox="true" Value="ADAPTIVE nodes can be used inside GENERIC definitions as if they were also GENERIC nodes themselves.&#xD;&#xA;This can be cool for building some nice chains that hybrid reusable and unique code.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VcUMxgI2mbUMeN1gtHDcCs" Name="You CANNOT use a GENERIC operation in an ADAPTIVE definition" Bounds="108,3591,759,627" />
+          <Pad Id="MlwlGDG9BNGPh5HBeWlzYM" Bounds="142,3648,648,256" ShowValueBox="true" isIOBox="true" Value="Remember the limitation from the gray book? &#xD;&#xA;&#xD;&#xA;The original operations must be implemented &quot;in a non-generic way, ie. this time all in- and outputs need to have a datatype infered or annotated.&quot;&#xD;&#xA;&#xD;&#xA;SO if you are a clever duck you may have already noticed our MinusWhatever nodes have made use of the &quot;-&quot; [Math] node which is itself ADAPTIVE.&#xD;&#xA;&#xD;&#xA;So you may think &quot;AH it would be great to keep this first MinusBla operation generic and then my ADAPTIVE definition can pick between the generic definition for all the types it supports and only choose the string one for strings...&quot; &#xD;&#xA;Unfortunately currently this is NOT possible. &#xD;&#xA;You will get red nodes.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Lcf2hLuZcszMES27CJpSuu" Name="To access a specific version" Bounds="102,2059,770,297" />
+          <Pad Id="HIhxiwB5sRyN6Ws8Bfrpse" Bounds="118,2110,633,135" ShowValueBox="true" isIOBox="true" Value="To manually instance a specific version of an ADAPTIVE node:&#xD;&#xA;&#xD;&#xA;Double click and type 'minusfive' to get the adaptive version.&#xD;&#xA;Double click on the node itself and the unique versions are visible in the node browser.&#xD;&#xA;&#xD;&#xA;How they are displayed seems to relate to the &quot;When in doubt show pin choices&quot; setting, see the OVERLOADING helppatch for more about that. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="359,2274,61,19" Id="LVgDVOQCk9ENLTijPGNglA">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo 15 Adaptive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MinusFive" />
+            </p:NodeReference>
+            <Pin Id="GCChQWDdDdpP09bGdkL1Ac" Name="InputA" Kind="InputPin" />
+            <Pin Id="Cv68twANLd6P5IZv7sbGTD" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="J8xUDENtLGDPiWXFd31ENX" Bounds="265,451,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/how-to-make-adaptive-process-nodes-work/21461/12">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VSS5vVfywGYPBBVSXJOnLE" Bounds="424,2282,422,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;double click to see all the versions and manually choose one">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="SmCW6H0XZ0pN3UA4oFIfEr" Name="A word of caution" Bounds="109,4251,756,331" />
+          <Pad Id="MxQeaghMAx6PTG1jUaXfKw" Bounds="139,4302,685,242" ShowValueBox="true" isIOBox="true" Value="If you are developing a library than GENERIC, OVERLOADS and ADAPTIVE are great tools to make a VVVV DEVELOPERS life a little bit easier. &#xD;&#xA;&#xD;&#xA;But an END-USER of your software will probably never know.&#xD;&#xA;&#xD;&#xA;And there is a risk that 'multiple functions with the same name' actually confuses things&#xD;&#xA;Remember it's not that hard for a vvvv developer to simply pick the correct type from non-generic nodes if you make good documentation. &#xD;&#xA;&#xD;&#xA;So my protip is: be judicious in how much effort you put here. If you are spending many hours getting this to work for some complicated multi-level case it may not be worth it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusTwenty ************************
+
+-->
+          <Node Name="MinusTwenty" Bounds="240,3972,69,109" Id="JfkbriCj9mSLlNroAXPF77">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="Nc69DZUew2CLsTnIfNI5Mj" IsGeneric="true">
+              <ControlPoint Id="DXKVzulIRvOLLbNITHqEI9" Bounds="254,3990" />
+              <ControlPoint Id="DuuCx7O3mK7QPXvVRmxLzW" Bounds="254,4064" />
+              <Link Id="QxSnCs20B55Lhp50FCz7r9" Ids="SCEufDBVoknLzv0S2b7HTS,DXKVzulIRvOLLbNITHqEI9" IsHidden="true" />
+              <Link Id="AS7gPwdTw8HNLr77fkZrfz" Ids="DuuCx7O3mK7QPXvVRmxLzW,BUVTqTAvWwsM34ocd7BnAL" IsHidden="true" />
+              <Pin Id="SCEufDBVoknLzv0S2b7HTS" Name="InputA" Kind="InputPin" />
+              <Pin Id="BUVTqTAvWwsM34ocd7BnAL" Name="Output" Kind="OutputPin" />
+              <Node Bounds="252,4019,25,19" Id="Hv0uP3YpxFuQTbLUN6vEjF">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="LZ2dbxNzN4sLNIBx3u3fo5" Name="Input" Kind="InputPin" />
+                <Pin Id="IHlMD8HrR4aMYcHT6bI7v1" Name="Input 2" Kind="InputPin" DefaultValue="20" />
+                <Pin Id="N095XRelBelQUopsOCYUQ2" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="V64xourjKkXL5vEReIYNF3" Ids="DXKVzulIRvOLLbNITHqEI9,LZ2dbxNzN4sLNIBx3u3fo5" />
+              <Link Id="QtQI69Aixf3QaZoRPhFwN0" Ids="N095XRelBelQUopsOCYUQ2,DuuCx7O3mK7QPXvVRmxLzW" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ MinusTwenty ************************
+
+-->
+          <Node Name="MinusTwenty" Bounds="424,3972,84,111" Id="SIdrXJ2AB43QQzqrsPGmCE">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="Qh3wk50vIazNRsJDnliUsd">
+              <ControlPoint Id="QUTIO8Ow8UlOVSfYeMVNNU" Bounds="438,3995" />
+              <Link Id="E9pdIp78P1JNvKJYF6EGpX" Ids="P9e4KJyLqB7Ntyp8BXYcIa,QUTIO8Ow8UlOVSfYeMVNNU" IsHidden="true" />
+              <Pin Id="P9e4KJyLqB7Ntyp8BXYcIa" Name="InputA" Kind="InputPin" />
+              <Node Bounds="436,4018,60,26" Id="MvnQNvUhRzMPzVzeiNiyLF">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Substring" />
+                </p:NodeReference>
+                <Pin Id="OBQuNpeyh3GPCK0gNqLo8Y" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OWLyG3pcmBhMuaP4bbFIwv" Name="Start Index" Kind="InputPin" DefaultValue="10" />
+                <Pin Id="MIRl4f0RkFuLpamV8vOdlh" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Link Id="VsyPIiHByovOUaa6Cq3fUl" Ids="QUTIO8Ow8UlOVSfYeMVNNU,OBQuNpeyh3GPCK0gNqLo8Y" />
+              <ControlPoint Id="EPVQq9Pjz9APmcdhySALVU" Bounds="438,4066" />
+              <Link Id="VmiCAlSTtPDQEyMhA9GGbu" Ids="MIRl4f0RkFuLpamV8vOdlh,EPVQq9Pjz9APmcdhySALVU" />
+              <Pin Id="BNEIrZKWKfGNuEIUmubxqp" Name="Output" Kind="OutputPin" />
+              <Link Id="HjsY7wluVeJN5rPumAFqms" Ids="EPVQq9Pjz9APmcdhySALVU,BNEIrZKWKfGNuEIUmubxqp" IsHidden="true" />
+            </Patch>
+          </Node>
+          <Pad Id="MNbTZxxtYwDL6JNOaxhDDC" Bounds="408,3923,128,19" ShowValueBox="true" isIOBox="true" Value="//String version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RO9Yx2EnJjfM9BxrbDD2O0" Bounds="613,3923,158,20" ShowValueBox="true" isIOBox="true" Value="//Adaptive definition">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MinusTwenty (Adaptive) ************************
+
+-->
+          <Node Name="MinusTwenty (Adaptive)" Bounds="623,3977,70,109" Id="FMBBf345IhZPTB6MyYdPLO">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <Patch Id="QxHRbnaKL3TLTe8WWFX7ng" IsGeneric="true">
+              <ControlPoint Id="NlCzs1GMl9INZ6R3IyL9be" Bounds="638,3995" />
+              <ControlPoint Id="VvZnQmI8aGOPxvFZG5dZe6" Bounds="638,4069" />
+              <Link Id="OSlZh9rVyJxLM2RjKxCNq0" Ids="BywHGlMIqwaQNHyyfK0uUm,NlCzs1GMl9INZ6R3IyL9be" IsHidden="true" />
+              <Link Id="Tvi9HJL2zBZMqmUlNNDUpu" Ids="VvZnQmI8aGOPxvFZG5dZe6,V5JDEP0TkzOMzwXUi597PK" IsHidden="true" />
+              <Pin Id="BywHGlMIqwaQNHyyfK0uUm" Name="InputA" Kind="InputPin" />
+              <Pin Id="V5JDEP0TkzOMzwXUi597PK" Name="Output" Kind="OutputPin" />
+              <Node Bounds="635,4024,25,19" Id="VzQ4JeBm0lbNgCbHYWhGQh">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="NuXoVPb4MPhO77Ml0cnkyZ" Name="Input" Kind="InputPin" />
+                <Pin Id="QnCgxou0CXxLHkXAMn21FE" Name="Input 2" Kind="InputPin" DefaultValue="20" />
+                <Pin Id="GPI466VxOISNnlhnwBHntt" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="IQotbRSBeCVLlbG8qlmMGa" Ids="NlCzs1GMl9INZ6R3IyL9be,NuXoVPb4MPhO77Ml0cnkyZ" />
+              <Link Id="U5jWynyPQsfLiHOreWnSm8" Ids="GPI466VxOISNnlhnwBHntt,VvZnQmI8aGOPxvFZG5dZe6" />
+            </Patch>
+          </Node>
+          <Pad Id="IzeollSzCMvLwPv7J4SWeX" Bounds="207,3926,175,19" ShowValueBox="true" isIOBox="true" Value="//Generic maths version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="BAPl9e5Xt83QNA4BF9rw7G" Name="Create" />
+        <Patch Id="Thor6b9rj8WMQOgMJF3cv2" Name="Update" />
+        <ProcessDefinition Id="Lz9cs5q4VyUMOMxEqAWH18">
+          <Fragment Id="Qc7aPxN2AOgQQ4zOVZBj4A" Patch="BAPl9e5Xt83QNA4BF9rw7G" Enabled="true" />
+          <Fragment Id="NskJtc62VHWLfNN7tEmoh7" Patch="Thor6b9rj8WMQOgMJF3cv2" Enabled="true" />
+          <Fragment Id="G1hmguNtq5qQXgcm0YZX8z" Patch="BWYqni7U3xCMzS5K2qppNa" />
+          <Fragment Id="KqMCby4COVIMnPj0XnthNE" Patch="QnhsnvKFhBnPauH3KtTZIM" />
+          <Fragment Id="NGjWDcwjWkIOTXf95pYngk" Patch="CXBVluviJFON7vbYWseMl0" />
+          <Fragment Id="DKYmQ4qapcPPw5Y6ClHAjP" Patch="Ko94zs3DhZbLE40OP0LS80" />
+          <Fragment Id="QRi9sUlMFNWP0tIQUikd7v" Patch="TU36D3A7tjMPuV7pZ9bBVQ" />
+          <Fragment Id="PqO2swqUgsaPa5TBBkzqMW" Patch="KuI6MGyyo5RPkSZT9mzIqN" />
+          <Fragment Id="NTRq8I1pBNRQCHJPk3cXGH" Patch="P4zUq7K1CuKQKjvPmV3d52" />
+          <Fragment Id="BWazJx2RnVYLE1TmiWdo68" Patch="JfkbriCj9mSLlNroAXPF77" />
+          <Fragment Id="IVnluCT6xN6O5QcnnhKFhG" Patch="SIdrXJ2AB43QQzqrsPGmCE" />
+          <Fragment Id="STyzzcLP7m2PnznnOx7Rai" Patch="FMBBf345IhZPTB6MyYdPLO" />
+        </ProcessDefinition>
+        <Link Id="E8jbliMmUk1NoSKaz6oenh" Ids="E9Dd3Cl8k22OMXfte7bUTs,LXgv6ghKhAENknXRaYrBEx" />
+        <Link Id="MAwJfyb7E7WMuMUCCfDpez" Ids="BOjWLkcUHsfOUSPeRm312B,UeBWElmZhDRLQCTaeAfZnq" />
+        <Link Id="KI28Nf9azhaObsLEXKEfPH" Ids="GtpZQ5gpzBrNKpLyZMr432,BZhwBjZlu27Mv2QR96qqFv" />
+        <Link Id="CDcAphiwgpaMM63MZgtd3q" Ids="MDYK3zgmH1oPMd1AvkaWm4,Cj69G2tbCtePXWCISbICwV" />
+        <Link Id="C5I2fSuBiJzQUAPKtcbOuc" Ids="NdsPQxSAJwLLoFXIQ3f8N8,EFAU7e1SKJrN8MsbYMkquk" />
+        <Link Id="NN0mwX2SJmCLSC6Zmu42Cq" Ids="RdatpXYD7dQLBO1yNf0zYD,EbQoKQ3sXaKPPAmodJToEw" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="ES5TTkEI74LOXdwZff978P" Location="VL.Stride" Version="2024.6.0-0280-g5542bf5529" />
+  <NugetDependency Id="CtnGiMHTblUPSUfiaJbwYA" Location="VL.Addons" Version="0.1.4" />
+</Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GE0OthsTGYdLWv982OnAfb" LanguageVersion="2024.6.0-0209-g820e492df4" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0209-g820e492df4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GE0OthsTGYdLWv982OnAfb" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -124,7 +124,7 @@
             </Patch>
           </Node>
           <Node Bounds="552,768,53,19" Id="LO9s4mdcxaGQTwfrjzlEon">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="01 What Is Type Safety.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation 01 What Is Type Safety.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FruitList" />
             </p:NodeReference>

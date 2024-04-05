@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="VKUE5on9ixWMurvL3YRfYr" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Overlay Id="JzrbJgmz2koO7SYkoLoL3M" Name="Key Concepts" Bounds="102,33,484,534" />
+          <Overlay Id="DgzUwVkSonrOm7gJ4eYCUJ" Name="Performance" Bounds="105,602,484,124" />
+          <Pad Id="U6PL7UtCqpqNIpiunv9NDf" Bounds="104,78,474,129" ShowValueBox="true" isIOBox="true" Value="-It's possible for two nodes to have the same name but keep a unique identity in the node browser. &#xD;&#xA;&#xD;&#xA;-You may have already seen this with nodes in different categories. Eg Add [Spread] and Add [Dictionary]. For these you resolve which node you want by picking the category. Check it out if you type and select Add in the nodebrowser now.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ViNqNG6J4jVPs9H2Fb9DRy" Bounds="106,643,453,61" ShowValueBox="true" isIOBox="true" Value="All of the concepts above are resolved by the COMPILER at PROGRAMMING -TIME in vvvv. No checks are done at RUN-TIME so RUN-TIME performance is not affected.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="265,209,41,26" Id="B7YvuHrPBgzNnX5UjHbOR1">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="IJsNcLAUEsUMxo7j0nwsxo" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Lw1PMFmQBnVPBZNzUN74Je" Name="Item" Kind="InputPin" />
+            <Pin Id="D2XDre8C7uLO4OPvAXkhjN" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="348,209,53,26" Id="KePFsUSa2M5NX664mQ7QZr">
+            <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Dictionary" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="IdQKGYJ7HQMPC5yPBOwaZh" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SioS7LpmucLMyDWtxtkfXk" Name="Key" Kind="InputPin" />
+            <Pin Id="RuOovDx0WpsMSj5No0fIHi" Name="Value" Kind="InputPin" />
+            <Pin Id="RkvUCKaLx9wOMfFegnW5n5" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="DVQ9PUe4DuxMK3q3F8aaGv" Bounds="106,254,463,294" ShowValueBox="true" isIOBox="true" Value="&#xD;&#xA;-It's also possible for nodes in the SAME category to share a name. This can be via ADAPTIVE or OVERLOADING &#xD;&#xA;&#xD;&#xA;-OVERLOADING is a standard programming language feature. &#xD;&#xA;-ADAPTIVE is unique to vvvv. &#xD;&#xA;&#xD;&#xA;-Compared to GENERICS: &#xD;&#xA;-GENERICS allow you to write ONE FUNCTION that can be used on multiple TYPES&#xD;&#xA;-OVERLOADING and ADAPTIVE both allow you to give MULTIPLE FUNCTIONS the SAME NAME&#xD;&#xA;&#xD;&#xA;-In a sense OVERLOADING and ADAPTIVE are more like &quot;FUNCTION FLEXIBILITY&quot; than TYPE FLEXIBILITY.  (although often the end usecase is still to provide alternate versions of a function for operating on different TYPES.)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+</Document>
