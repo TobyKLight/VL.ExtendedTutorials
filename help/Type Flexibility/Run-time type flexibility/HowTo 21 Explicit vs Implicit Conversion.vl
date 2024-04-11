@@ -87,7 +87,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="HsJ3Blza5L4OFHdy6BE7Av" Name="Implicit Conversion" Bounds="91,987,528,468" />
+          <Overlay Id="HsJ3Blza5L4OFHdy6BE7Av" Name="Implicit Conversion" Bounds="91,987,583,468" />
           <Pad Id="Ti9LhRJnEynLcKNibbxQF3" SlotId="JofjI7TPS6ZMLlAMIvsRvb" Bounds="320,591" />
           <Node Bounds="203,648,48,19" Id="D6lSiAP1p9UNjOsKpOEEzt">
             <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -260,7 +260,7 @@
             <Pin Id="Qv8BqYsaJh9LHeOYi8ctVX" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="PWl8BkKBtJMQJErrKBAusR" Comment="" Bounds="392,1290,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IETtXFnfvF7NghB9BkIBBT" Bounds="444,1258,154,100" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Average [Sequence], Since Sequence is supertype of Spread it accepts a link from a spread directly">
+          <Pad Id="IETtXFnfvF7NghB9BkIBBT" Bounds="442,1261,182,132" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; This is Average [Sequence], Since Spread implements the Sequence interface (Actually called  IEnumerable in .net) it accepts a link from a spread directly">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -297,7 +297,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Uog8xOQBVveNfQM3SqAGjA" Bounds="369,1139,87,19" ShowValueBox="true" isIOBox="true" Value="//Supertype">
+          <Pad Id="Uog8xOQBVveNfQM3SqAGjA" Bounds="358,1142,153,19" ShowValueBox="true" isIOBox="true" Value="//Supertype/Interface">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -306,7 +306,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="K4uQWc85TtcMQw8pmEd5ya" Bounds="115,1565,462,295" ShowValueBox="true" isIOBox="true" Value="All of these conversions can cost some performance. Even a completely 'safe' implicit conversion requires some CPU instructions to execute. The cost will vary depending, naturally, on the complexity of the conversion. &#xD;&#xA;&#xD;&#xA;I will talk about the performance impact at each section.&#xD;&#xA;&#xD;&#xA;However bear in mind that conversions are completely normal and your computer can do thousands of them every second without breaking a sweat. &#xD;&#xA;&#xD;&#xA;Don't get into a mindset of 'casting is bad because type-checking has a cost'. These features are here to be used. &#xD;&#xA;&#xD;&#xA;First priority is make working software, second priority is optimise. &#xD;&#xA;&#xD;&#xA;In typical graphics-heavy vvvv use-cases I would estimate type conversions to be a relatively low priority for optimisation. ">
+          <Pad Id="K4uQWc85TtcMQw8pmEd5ya" Bounds="115,1565,463,327" ShowValueBox="true" isIOBox="true" Value="All of these conversions cost some performance. Even the most straightforward implicit conversion requires some CPU instructions to execute. The cost will vary, naturally, depending on the complexity of the conversion. &#xD;&#xA;&#xD;&#xA;I will talk about the performance impact at each section.&#xD;&#xA;&#xD;&#xA;However bear in mind that conversions are completely normal and your computer can do thousands of them every second without breaking a sweat. &#xD;&#xA;&#xD;&#xA;Don't get into a mindset of 'casting is bad because type-checking has a cost'. These features are here to be used. &#xD;&#xA;&#xD;&#xA;First priority is make working software, second priority is optimise. &#xD;&#xA;&#xD;&#xA;In typical graphics-heavy vvvv use-cases I would estimate type conversions are unlikely to be a bottleneck and a relatively low priority for optimisation. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -325,6 +325,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="N29OtBc1nOSL0FAqy9NMcr" Name="What about performance?" Bounds="89,1512,533,381" />
+          <Pad Id="SS6iN2UNMkANlqIgKRqYCZ" Bounds="174,1424,359,22" ShowValueBox="true" isIOBox="true" Value="We will go into more detail on both of these shortly">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="HUSkMBeQlOWMMzLnpaKitm" />
         <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="IagDXjZQcH3LXfSK8GFdBq" />

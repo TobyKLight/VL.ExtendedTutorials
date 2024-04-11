@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Jc1wkWHOLL2Pm8BIxSfEHc" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Overlay Id="UT6Oe4D4FqUNHqoEOzg6LE" Name="Intro" Bounds="352,17,484,154" />
+          <Pad Id="GNJzLYwPFJ8NjAYaFqg8Fv" Bounds="71,738,447,29" ShowValueBox="true" isIOBox="true" Value="-vvvv editor does not have a way to set inheritance when creating objects.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OTFo4u8lGuuOL9S9UVGrhM" Bounds="69,684,421,48" ShowValueBox="true" isIOBox="true" Value="-INHERITANCE allows child objects to be DERIVED from parent objects and INHERIT their methods (operations)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IIWLBesN7xjNeGfcnRr27e" Bounds="71,774,454,47" ShowValueBox="true" isIOBox="true" Value="-However INHERITANCE is still common in C# and can be important in vvvv when working with native or external libraries.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JT4GSGuEiiAO6eMY8HKSLy" Name="INHERITANCE In The Wild" Bounds="58,938,492,672" />
+          <Pad Id="FxD9ZZyZ7SEMnZxyKknjGy" Bounds="73,832,396,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HLhU2SOxLnVP7gZhWS8TLb" Bounds="92,1041,441,27" ShowValueBox="true" isIOBox="true" Value="In documentation inheritance looks something like this:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BdiVIZgPl48PnSnRoL0JGE" Bounds="63,979,440,40" ShowValueBox="true" isIOBox="true" Value="You can find which objects inherit from others in .net libraries by examining documentation, or directly in code. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OcKcIwX9CC8Mi1hGX5gcsm" Bounds="98,1339,441,27" ShowValueBox="true" isIOBox="true" Value="In C# code look for the : operator">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qkvq7snPeryLXyfgXEF97w" Bounds="361,59,454,115" ShowValueBox="true" isIOBox="true" Value="-INHERITANCE and INTERFACES are two different object oriented  programming concepts that enable an important kind of TYPE FLEXIBILITY.&#xD;&#xA;&#xD;&#xA;-We will do a small theoretical introduction on these below. The main thing to takeaway is that they both need and enable a kind of TYPE FLEXBILITY that we will look at in the next chapters. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="U4M4bJoYBMAMUfenRjvDIl" Name="What is INHERITANCE" Bounds="56,636,490,229" />
+          <Overlay Id="Hj7vY9P7Lt6Nv7O88jX7LO" Name="What are INTERFACES" Bounds="635,637,519,413" />
+          <Pad Id="Gal061s52CUQT4uzrdcZrM" Bounds="660,682,479,307" ShowValueBox="true" isIOBox="true" Value="-INTERFACES are special definitions that contain the SIGNATURE of methods (operations) that we want to share between objects. &#xD;&#xA;&#xD;&#xA;-Objects that IMPLEMENT the INTERFACE can share those methods. &#xD;&#xA;&#xD;&#xA;-INTERFACES in C# have a naming convention where they start with a capital I.* &#xD;&#xA;e.g. IClock is an interface defining shared methods of clocks. &#xD;&#xA;&#xD;&#xA;-Sometimes INTERFACES are named with an adjective that says something is &quot;...able&quot; which gives us a hint what the interface does.&#xD;&#xA;e.g. IResizeable would means something that can be resized. &#xD;&#xA;&#xD;&#xA;-INTERFACES are complicated enough that they need their own tutorial, which I plan to add in future. For now we are only looking at their TYPE FLEXIBILITY aspect.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="J9kfjFUQvl2QINNBWLbxpY" Bounds="356,247,461,351" ShowValueBox="true" isIOBox="true" Value="-The main usecase of both INHERITANCE and INTERFACES is sharing methods. This can help make code more modular. Modularity enables different programming paradigms or even splits of work in a programming team. &#xD;&#xA;&#xD;&#xA;For example two different programmers can create a Widget, one is WidgetX and the other is WidgetY. Every widget should be drawn by the UI so we need a common method Widget.Draw(). And then a third programmer could work on the drawing pipeline and as long as the widgets have Widget.Draw() it will work. &#xD;&#xA;&#xD;&#xA;-What does this have to do with TYPE FLEXIBILITY? &#xD;&#xA;When it comes to actually calling that shared method the compiler must treat the objects as the COMMON TYPE. &#xD;&#xA;&#xD;&#xA;-Widget, WidgetX, and WidgetY are three DIFFERENT types. &#xD;&#xA;&#xD;&#xA;-Via INHERITANCE or INTERFACES WidgetX or WidgetY can be treated as Widget and then we can call Widget.Draw().  &#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="U2jdLsZw0GuPIwGz5L5th1" Name="A modularity usecase" Bounds="354,197,481,404" />
+          <Overlay Id="IDKfunfLghROjdeESIp8AK" Name="INTERFACES in the Wild" Bounds="635,1071,530,603" />
+          <Pad Id="EavPfpd2DpRMwcIQECNw97" Bounds="764,1022,288,9" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/libraries/collections.html#sequence">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">4</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T2UnmOJ1vmpMDysMeBFGba" Bounds="749,1010,350,12" ShowValueBox="true" isIOBox="true" Value="*In vvvv we tend to stick to this convention, with one major exception that IEnumerable is renamed Sequence">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">4</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KPSEbm4m4AUNjK1NLTjWgN" Bounds="141,1096,240,20" ShowValueBox="true" isIOBox="true" Value="https://www.sfml-dev.org/documentation/2.6.1/classsf_1_1SoundSource.php">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NFUDLPkDwMRMd7hwTwwFng" Bounds="141,1124,372,158" ShowValueBox="true" isIOBox="true" Value="This is the class documentation for SoundSource.&#xD;&#xA;Lots of documentation just lists inheritance, but the SFML docs have a nice little diagram. &#xD;&#xA;On the diagram you should see that the classes Sound and Music are children that INHERIT from SoundSource. &#xD;&#xA;This means Sound and Music classes can be converted to SoundSource objects to access the methods of SoundSource like SoundSource.Play(), SoundSource.SetVolume() etc..&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JU4QGUBo7CJLzKewrAG0g7" Bounds="141,1284,271,61" ShowValueBox="true" isIOBox="true" Value="Note that SFML is actually a c++ library (c++ also has inheritance).&#xD;&#xA;It's made available in C#/.net by its official binding project called SFML.net. Hence the C++ docuemtnation should be accurate&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="P0QFKVHeQhlN1NzGmMkexE" Bounds="141,1067,384,22" ShowValueBox="true" isIOBox="true" Value="This is the SFML gamedev library I used in VL.GameAudioPlayer">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HO9i8CPDFPBNYCn9aDx6AU" Bounds="138,1417,344,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/vvvv/VL.StandardLibs/blob/6a8c1a712367f6a4468fa4dd12059c58273adfb9/VL.Core/src/IO/Notifications/MouseNotification.cs#L68">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GF9oKIyJWryOAl2SymozOd" Bounds="138,1374,364,39" ShowValueBox="true" isIOBox="true" Value="Here is some of the code for VL.Core in the VL.StandardLibs github">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MK6uqW3tmtDLCbHbeC3WKn" Bounds="138,1440,361,19" ShowValueBox="true" isIOBox="true" Value="On line 68 you see it says &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BfquyZDgXuzQH1ctamu3AU" Bounds="138,1466,394,21" ShowValueBox="true" isIOBox="true" Value="public abstract class MouseButtonNotification : MouseNotification">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:shownonprintablechars p:Type="Boolean">false</p:shownonprintablechars>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OsOb7UsiEwhQQGfNqDw1pm" Bounds="138,1493,395,40" ShowValueBox="true" isIOBox="true" Value="This is defining a new class MouseButtonNotification that INHERITS from MouseNotification">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A4GKYOTBFHUL2B5BilGcss" Bounds="651,1116,440,40" ShowValueBox="true" isIOBox="true" Value="You can find which objects IMPLEMENT INTERFACES in .net libraries by examining documentation, or directly in code. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="HQ9VpOlGuF4NctT27Tn0oH" Name="INHERITANCE In vvvv nodebrowser" Bounds="62,1711,483,372" />
+          <Pad Id="GhS4GWQ9P6hMGtHZ2MYsos" Bounds="113,1769,413,311" ShowValueBox="true" isIOBox="true" Value="Double click to create a new node, Turn on Advanced aspect in the nodebrowser and type &quot;MoustButtonNotification&quot; &#xD;&#xA;&#xD;&#xA;You will see the methods of MouseButtonNotification listed at the top (Buttons, Equals and Hashcode).&#xD;&#xA;&#xD;&#xA;Following that you will see the methods available from the INHERITANCE tree with their origin in [square brackets].&#xD;&#xA;&#xD;&#xA;In this case this will include methods from [MouseNotification] which is the parent class, and the other parent classes above that inlcuding [NotificationWithPosition],  [NotificationBase] and others.&#xD;&#xA;&#xD;&#xA;You also will also see methods from the child classes of [MouseButtonNotification] including [MouseClickNotification] [MouseUpNotification] and others. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Q0Ew7RwEyhINzYS1wN6Cfa" Name="INTERFACES In vvvv nodebrowser" Bounds="639,2074,483,253" />
+          <Overlay Id="HKhGa6qY1BTP2XdzbKxamu" Name="INTERFACES In vvvv definitions" Bounds="635,1698,483,342" />
+          <Pad Id="FQzeLTUFbmoLxorfRiLiSo" Bounds="65,1551,443,66" ShowValueBox="true" isIOBox="true" Value="Generally documentation is better way to find out inheritance as it tends to show you the whole tree, but you can disover one level at a time going through the code.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CVRX3LpLIU5MGx1p3OHhsq" Bounds="90,1745,192,22" ShowValueBox="true" isIOBox="true" Value="This UI accurate as of vvvv gamma 6.0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GefO5RwmCy6PVGaShNATWE" Bounds="394,2405,429,212" ShowValueBox="true" isIOBox="true" Value="Clear as mud? &#xD;&#xA;&#xD;&#xA;The key point here is that INHERITANCE and INTERFACES both: &#xD;&#xA;-enable objects to SHARE methods&#xD;&#xA;-enable objects to be converted to the common TYPE (necessary so then you can access the shared version of the method)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;If you don't get it completely yet that's ok. It's a complicated topic. For the rest of this tutorial we will just look at the TYPE CONVERSION implications of this system.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BtkF4tPPvyQO8eUXtMxw6i" Bounds="686,1330,441,47" ShowValueBox="true" isIOBox="true" Value="If you don't have documentation you can look in code. In C# code INTERFACE IMPLEMENTATION is also defined with the : symbol ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RiDcaO8SAeTNwcYTwrr1ZF" Bounds="731,1210,140,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TUeUfQvyzBgLR5ZNkD5gbE" Bounds="692,1166,430,36" ShowValueBox="true" isIOBox="true" Value="To see INTERFACE IMPLEMENTATION in documentation check this C# Array class. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EAEWSxapR7AQZW9DWrr2R6" Bounds="729,1236,358,78" ShowValueBox="true" isIOBox="true" Value="It simply says &#xD;&#xA;&quot;Implements&#xD;&#xA;ICollection  IEnumerable  IList  IStructuralComparable  IStructuralEquatable  ICloneable&quot;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D7EjAMgb3iPOkYJuS5WafY" Bounds="720,1377,371,36" ShowValueBox="true" isIOBox="true" Value="This time lets look at the .net Array class in code. Check its definition on line 21 here">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KaamgDbXmx2PEXuT31uUnU" Bounds="720,1420,345,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/dotnet/runtime/blob/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/System.Private.CoreLib/src/System/Array.cs#L20C103-L21C4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="J0FFpx52lh0QKlqanu8rMM" Bounds="720,1447,402,25" ShowValueBox="true" isIOBox="true" Value="The Array class is defined by the line ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SSpiEAgPcRxObmtvlmAYPR" Bounds="720,1473,414,14" ShowValueBox="true" isIOBox="true" Value="public abstract partial class Array : ICloneable, IList, IStructuralComparable, IStructuralEquatable">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Q29KFicfyfxOkRBwCODMWg" Bounds="720,1496,408,123" ShowValueBox="true" isIOBox="true" Value="Now wait is there something missing? In the documentation above it says Array also implements ICollection and IEnumerable which we don't see here. &#xD;&#xA;Where do those come from? If you follow the heirarchy and search to find the definition of IList you'll see it implements ICollection. And then in turn ICollection implements IEnumerable. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PdgeHc4rleBNQUIlGQDM2R" Bounds="649,1635,465,39" ShowValueBox="true" isIOBox="true" Value="This is why good documentation is better than code for working this stuff out, but if code is all you got you can still solve it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ MyCube ************************
+
+-->
+          <Node Name="MyCube" Bounds="696,1870" Id="ABoyc9Z3sigOoLIkZuTcVQ">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 24 Conversion via Inheritance or Interface.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IStackable" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="AgJkIWO9smsMmLA5oJGZga">
+              <Canvas Id="CrtVzbxUIT8P4dUkarkox1" CanvasType="Group">
+                <Overlay Id="LAz8xlXkhT2LdeXxVgxyGs" Name="Stack" Bounds="30,235,310,226" />
+                <ControlPoint Id="CNt4lZVXTqfMl2fWvNe3A8" Bounds="152,313" />
+                <Overlay Id="SU7r3ibLtylN0TCnAyjwnI" Name="UnStack" Bounds="347,235,322,222" />
+                <Pad Id="Lz2UoBV2ICrPXaSoMnsNds" SlotId="U1VHAelTlNOQaiF3lM93qU" Bounds="152,353" />
+                <Pad Id="FRW5erD7zawLymOPNoRSEb" SlotId="U1VHAelTlNOQaiF3lM93qU" Bounds="494,358" />
+                <Pad Id="QU5tHEGw39IQZYWEbaMIzU" Comment="" Bounds="494,300,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Overlay Id="OYTiAzlfvjaOQuV0TQ3CQY" Name="Create" Bounds="347,2,252,221" />
+                <Pad Id="QzFdwQWjvkQOmXBUxqwNsa" SlotId="U1VHAelTlNOQaiF3lM93qU" Bounds="460,123" />
+                <Pad Id="BnYaiMcdHmkPbS0c5s6cOg" Comment="" Bounds="461,66,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="AM0cvuRGRhnQD4SdDG3IHr" Bounds="30,49,303,184" ShowValueBox="true" isIOBox="true" Value="IF you open the Process Explorer (menu in top left, press the C next to MyCube) under the Interfaces entry you will see iStackable has been added.">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+              </Canvas>
+              <Patch Id="J8VSJtfSv78PzFbqWZxaQl" Name="Create" ParticipatingElements="Qd9pr1X2RGzOj8fa7oHShI" />
+              <ProcessDefinition Id="GtsEZ36QVi8MR9gReyrgOP" IsHidden="true">
+                <Fragment Id="Ot3iPkUpZr9OkHVbNzGpJV" Patch="J8VSJtfSv78PzFbqWZxaQl" Enabled="true" />
+                <Fragment Id="NQiEkY2OhcIOdvSdKzUCjX" Patch="RiRYSADVhbuMLHn6kzjztC" />
+                <Fragment Id="DLWrKd07OJeO4vfIKftUO2" Patch="LLxRV4ekTSZPxnVSriYecp" />
+              </ProcessDefinition>
+              <Patch Id="RiRYSADVhbuMLHn6kzjztC" Name="Stack">
+                <Pin Id="SHYSPCC2FiEOAMFrpXwXtd" MergeId="151581" Name="StackHeight" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+              <Link Id="Tf5SxkfuYn7LHYyaGbHuDr" Ids="SHYSPCC2FiEOAMFrpXwXtd,CNt4lZVXTqfMl2fWvNe3A8" IsHidden="true" />
+              <Slot Id="U1VHAelTlNOQaiF3lM93qU" Name="Height" />
+              <Link Id="GfWjuXGskjgNpkyyy9VvVV" Ids="CNt4lZVXTqfMl2fWvNe3A8,Lz2UoBV2ICrPXaSoMnsNds" />
+              <Link Id="B9cBD7MlJXeORH2sQ8m8Tq" Ids="QU5tHEGw39IQZYWEbaMIzU,FRW5erD7zawLymOPNoRSEb" />
+              <Patch Id="LLxRV4ekTSZPxnVSriYecp" Name="UnStack" ParticipatingElements="B9cBD7MlJXeORH2sQ8m8Tq" />
+              <Link Id="Qd9pr1X2RGzOj8fa7oHShI" Ids="BnYaiMcdHmkPbS0c5s6cOg,QzFdwQWjvkQOmXBUxqwNsa" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ IStackable ************************
+
+-->
+          <Node Name="IStackable" Bounds="696,1787" Id="EHhmprPGnlXQWOOwbJiUG5">
+            <p:NodeReference>
+              <Choice Kind="InterfaceDefinition" />
+            </p:NodeReference>
+            <Patch Id="BnjGObPlXY0M4PDxEIRz9r">
+              <Canvas Id="UG3KqbNGASnMvZgwth3ATW" CanvasType="Group">
+                <Overlay Id="Ot2CNG65JoXO1pyV2xdl0m" Name="Stack" Bounds="401,263,310,226" />
+                <ControlPoint Id="N3uPVBEADBgMVXy7aj7F4C" Bounds="523,341" />
+                <Overlay Id="TXDfPCdjQqhMV4YT4T6Y9V" Name="UnStack" Bounds="733,267,322,218" />
+                <Pad Id="AyQteJRLkhnL4caTZ6m5IZ" Bounds="764,406,251,76" ShowValueBox="true" isIOBox="true" Value="UnStack operation has no input or output pins, but you will see it exists an operation name in the process explorer (Top left menu)">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+                <Pad Id="RANj4CmY5CAO9Y7YvVEobC" Bounds="424,408,251,76" ShowValueBox="true" isIOBox="true" Value="Stack operation has one input pin, type Float32 name StackHeight">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+              </Canvas>
+              <ProcessDefinition Id="J6ae7SVN8UdMeq9YtJRqtk" IsHidden="true">
+                <Fragment Id="RqDWkOnLyl0OmSF0gDWQ4C" Patch="ThnQLYVuilkPcEMwBq12LB" />
+                <Fragment Id="ONqXyEedUa6QCEaNevvg62" Patch="HyPslKiMEScLg6ECrzqCbn" />
+              </ProcessDefinition>
+              <Link Id="LLhmvaniPuDL8pVbheaW3e" Ids="UPLaU3zWzT8M0HyYNPFLze,N3uPVBEADBgMVXy7aj7F4C" IsHidden="true" />
+              <Patch Id="ThnQLYVuilkPcEMwBq12LB" Name="Stack">
+                <Pin Id="UPLaU3zWzT8M0HyYNPFLze" Name="StackHeight" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+              <Patch Id="HyPslKiMEScLg6ECrzqCbn" Name="UnStack" />
+            </Patch>
+          </Node>
+          <Pad Id="FZ5YStCR3MMM5Bnfuh09dU" Bounds="801,1770,209,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;This is an interface definition. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MINlMMjlB61MtfQ5MjiOsE" Bounds="801,1852,303,179" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; This is a class which IMPLEMENTS the interface IStackable. &#xD;&#xA;&#xD;&#xA;To see how you tell a class to IMPLEMENT an INTERFACE DEFINITION check the process explorer inside. &#xD;&#xA;&#xD;&#xA;More details on all this in a future INTERFACES tutorial.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ffj3P9FmRFKNYwPiY7tstg" Bounds="666,2131,413,197" ShowValueBox="true" isIOBox="true" Value="Double click to create a new node, Turn OFF Advanced aspect in the nodebrowser and type &quot;MyCube&quot; &#xD;&#xA;&#xD;&#xA;You will see the methods of MyCube are available as well as the [IStackable] versions indiciate with square brackets. &#xD;&#xA;&#xD;&#xA;This is the same UI as inheritance, and if you turn on the Advanced aspect you will see the humble MyCube has access to a whole range of methods it gets from INHERITANCE [Object] and IMPLEMENTATION [IVLObject]">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DldTqt9T39OPtSimcRi5uN" Bounds="70,1631,442,28" ShowValueBox="true" isIOBox="true" Value="There's one more INHERITANCE property to know about and that's that everything INHERITS from OBJECT type. We will look closer at this later.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kpzzs3Sawv5MPTrZZNMyoR" Bounds="648,1735,192,22" ShowValueBox="true" isIOBox="true" Value="This UI accurate as of vvvv gamma 6.0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AHJuA2o4akhMpyUdsDAdZY" Bounds="670,2111,192,22" ShowValueBox="true" isIOBox="true" Value="This UI accurate as of vvvv gamma 6.0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.0" />
+  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.0" />
+</Document>

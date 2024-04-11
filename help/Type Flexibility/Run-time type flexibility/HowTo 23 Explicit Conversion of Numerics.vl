@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GpVtypVBDtnPmpjmFcbxCz" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="106,20,607,41" ShowValueBox="true" isIOBox="true" Value="For completeness we will also take a quick look at EXPLICIT conversion of numeric primitives.. even though it's not really any special kind of type flexibility just standard conversion.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NuKJM2Qwty3P0UF8QjkBaW" Name="Key Concepts" Bounds="115,61,484,142" />
+          <Overlay Id="EbvaFv7n9nIOe07KAL98e1" Name="A few examples of explicit conversions" Bounds="115,235,494,250" />
+          <Pad Id="CWnV3pOe9BKMy7sCuGXOld" Comment="Float32" Bounds="172,317,37,15" ShowValueBox="true" isIOBox="true" Value="45">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L0xhZeAKoEHP73qFCOFiak" Bounds="152,278,392,26" ShowValueBox="true" isIOBox="true" Value="Most simple conversions are done by 'toBla' or 'fromBla' nodes. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VoVaQsu43LePLp6fkHobrW" Bounds="122,106,456,25" ShowValueBox="true" isIOBox="true" Value="-Explicit conversions are functions that you will call as nodes in vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GpQJp7JZuJyL1jZoOgnpGa" Bounds="122,141,456,37" ShowValueBox="true" isIOBox="true" Value="-Every explicit conversion is different and will have a different performance impact">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="LldNhGn6zUKMV4YqPPxXJD" Name="Performance impact" Bounds="110,1197,729,121" />
+          <Node Bounds="170,343,52,26" Id="NJwF3ddrJIUPZczOpoG5di">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Float32Type" Name="Float32" />
+              <Choice Kind="OperationCallFlag" Name="ToInt32" />
+            </p:NodeReference>
+            <Pin Id="Dbk8AI1DB17QMesmKv7xAZ" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VT49A4Yxz1mL6J9oCnXQI6" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="OLux4mn6j3ONDf4JVbDQMm" Comment="Integer32" Bounds="172,391,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QocKxJZk788NoChPnCA1bU" Bounds="139,437,435,51" ShowValueBox="true" isIOBox="true" Value="Note often uses an abbreivated version of the numeric name in this form eg ToInt32 instead of ToInteger32">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GnF8OU4INDXPi6Vsg6LYdC" Comment="Float32" Bounds="335,318,44,15" ShowValueBox="true" isIOBox="true" Value="120">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HNu7NF5M1dgMEtVUrnLKq3" Comment="Byte" Bounds="335,390,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="333,343,47,26" Id="L8QEZYhEqisQEGrzS60bta">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="ToByte" />
+            </p:NodeReference>
+            <Pin Id="NEsjb341wV5MKAXCNrDP51" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OK7jAdNffphLjn5119pcbP" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="JZN1xn8S33CQdKQptnqZJb" Name="Be aware of overflow behaviour" Bounds="111,530,913,318" />
+          <Pad Id="I7tNnwN4SPHMB2oDhIkQay" Comment="Float32" Bounds="209,660,44,15" ShowValueBox="true" isIOBox="true" Value="280">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PPBmqqpn69CLmEpe5kUgQv" Comment="Byte" Bounds="209,732,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="207,685,47,26" Id="KSkzXC8tD1MPdwpmFVGNmd">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="ToByte" />
+            </p:NodeReference>
+            <Pin Id="MbQU20cNGszNQkltlcWjX0" Name="Input" Kind="StateInputPin" />
+            <Pin Id="P5FNFkj6yw4ONFecMa5W8f" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="AmYy6AvP2GJLnmGokXNYv7" Bounds="119,578,893,30" ShowValueBox="true" isIOBox="true" Value="Simple numeric converters almost never throw exceptions, but keep in mind there are a few different ways they could handle unexpected values.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C1iVyFHR36aQMOObe85CJn" Bounds="288,685,282,67" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Float ToByte will wrap from zero when Byte max value exceeded&#xD;&#xA;(As opposed to clamping to Byte MaxValue)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A4ItEek9f4cPeXUWP8kROk" Bounds="688,683,282,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The negative overflow also wraps but not with a mirror behaviour. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Do5MFzulECnQd7HyVL7Cr9" Comment="Float32" Bounds="609,655,55,15" ShowValueBox="true" isIOBox="true" Value="-280">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CeEhJi0PhzeMs8jgEGxpWR" Comment="Byte" Bounds="609,727,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="607,680,47,26" Id="C7DSzSboZ5tQeANKLizmAt">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="ToByte" />
+            </p:NodeReference>
+            <Pin Id="KEngw04eIIqQMmmnDr3s7Y" Name="Input" Kind="StateInputPin" />
+            <Pin Id="RPrr1lAtYqKMu56BzM76jR" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TB02fHUzoAlOtq7C82au66" Bounds="140,787,792,30" ShowValueBox="true" isIOBox="true" Value="This is just a couple of examples, could be different for every converter so just something to be aware of.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RtkQjAT106kP9kQml7H2Yt" Bounds="134,1245,632,60" ShowValueBox="true" isIOBox="true" Value="Every explicit conversion is different and will have a different performance impact. &#xD;&#xA;However I think it's safe to say most of the numeric to numeric conversions are pretty simple and are unlikely to be a signifcant performance issue in real applications.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="330,1039,39,19" Id="GbVbgjgaTTQLJSXioG8C8G">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Floor" />
+            </p:NodeReference>
+            <Pin Id="ASn4o9UwgjoO0HkxMeYOYu" Name="Input" Kind="InputPin" />
+            <Pin Id="RbUZR1Ih3ogNzbB9jsuYmD" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="499,1039,34,19" Id="RB1iNl7DJMGPmS2BYb11nw">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Ceil" />
+            </p:NodeReference>
+            <Pin Id="SqJRiV0t7lnMgi0lJiDWA6" Name="Input" Kind="InputPin" />
+            <Pin Id="QCKx6sbQ4DDN7nCxgmZAFG" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="MIez4IpLr5TMTMqFdvIbNq" Name="Different ways to go from float to integer" Bounds="110,881,768,282" />
+          <Node Bounds="643,1039,46,19" Id="Jh2KStsIZjLQZjJKJSOgTF">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Round" />
+            </p:NodeReference>
+            <Pin Id="RkqrG8QIenZQJZI9hFEwNh" Name="Input" Kind="InputPin" />
+            <Pin Id="HPdctZrV0NrNMzVXoeuYyh" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KOGeIaE3rqtPvJHQ2ohK03" Bounds="119,925,711,42" ShowValueBox="true" isIOBox="true" Value="Bonus protip: Going from Float to Integer you have more options than ToInt32 depending on how you prefer the rounding">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GdmGLw6ASv9M46tbQUdWim" Comment="Float32" Bounds="173,1001,37,15" ShowValueBox="true" isIOBox="true" Value="45.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="171,1039,52,26" Id="NT64UI2zs5BMSkdew7JTFF">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Float32Type" Name="Float32" />
+              <Choice Kind="OperationCallFlag" Name="ToInt32" />
+            </p:NodeReference>
+            <Pin Id="HHqNuTVxbnELYbPJZTpRmW" Name="Input" Kind="StateInputPin" />
+            <Pin Id="AzadTcpqXDqQSqaTELH4r6" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IctsYLLSpUQNPD8nmIGMD7" Comment="Integer32" Bounds="173,1094,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CM32MeuVH4fNDNTG9ynuds" Comment="Float32" Bounds="333,1001,37,15" ShowValueBox="true" isIOBox="true" Value="45.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VbiqhThb7qVOLrzKfgbHxI" Comment="Integer32" Bounds="332,1094,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SYhWndRkdkNNjbqIgiVm7B" Comment="Float32" Bounds="501,1001,37,15" ShowValueBox="true" isIOBox="true" Value="45.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ABuqwpC1MDCOw1Ot2GeSCz" Comment="Integer32" Bounds="501,1094,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QZ6KGslx1bhLcVL0Hwbg4M" Comment="Float32" Bounds="645,1001,37,15" ShowValueBox="true" isIOBox="true" Value="45.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="AO5Vrk9JafaO794gXVuJYi" Comment="Integer32" Bounds="645,1094,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Fc7wVgwTYuaQNYWju40E4x" Bounds="469,1118,127,42" ShowValueBox="true" isIOBox="true" Value="Short for &quot;Ceiling&quot;, opposite of floor">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Lzi4UqdtrzXM6pM3CbIJkT" Ids="CWnV3pOe9BKMy7sCuGXOld,Dbk8AI1DB17QMesmKv7xAZ" />
+        <Link Id="GkO7Anp0EbXNMnF7LYU0fy" Ids="VT49A4Yxz1mL6J9oCnXQI6,OLux4mn6j3ONDf4JVbDQMm" />
+        <Link Id="Uswx3OyBFrvM4OnW82tIBq" Ids="GnF8OU4INDXPi6Vsg6LYdC,NEsjb341wV5MKAXCNrDP51" />
+        <Link Id="OP97mJyavJtOvP4CZ7wVU4" Ids="OK7jAdNffphLjn5119pcbP,HNu7NF5M1dgMEtVUrnLKq3" />
+        <Link Id="U7wJj71VfqaQPeWMiPHjvx" Ids="I7tNnwN4SPHMB2oDhIkQay,MbQU20cNGszNQkltlcWjX0" />
+        <Link Id="BDuZ29jW73pQCNdHCKxwiD" Ids="P5FNFkj6yw4ONFecMa5W8f,PPBmqqpn69CLmEpe5kUgQv" />
+        <Link Id="EKAObvva4ilMK1xBS8tOBB" Ids="Do5MFzulECnQd7HyVL7Cr9,KEngw04eIIqQMmmnDr3s7Y" />
+        <Link Id="T1HoAVitPEAQM6TuITSlSP" Ids="RPrr1lAtYqKMu56BzM76jR,CeEhJi0PhzeMs8jgEGxpWR" />
+        <Link Id="JKEti5G5tM1LvXZ6AzagT6" Ids="GdmGLw6ASv9M46tbQUdWim,HHqNuTVxbnELYbPJZTpRmW" />
+        <Link Id="S86qmAXnt1DN6HOm3TTNKX" Ids="AzadTcpqXDqQSqaTELH4r6,IctsYLLSpUQNPD8nmIGMD7" />
+        <Link Id="Lq0cS8Xspz5OVoBP2yqjM7" Ids="CM32MeuVH4fNDNTG9ynuds,ASn4o9UwgjoO0HkxMeYOYu" />
+        <Link Id="D0AwSRgNbgjLQ1OoU6cYbZ" Ids="RbUZR1Ih3ogNzbB9jsuYmD,VbiqhThb7qVOLrzKfgbHxI" />
+        <Link Id="BSyu0l7YTK4LOC67qMO5rv" Ids="SYhWndRkdkNNjbqIgiVm7B,SqJRiV0t7lnMgi0lJiDWA6" />
+        <Link Id="LaU1Zp7VvUOORQByA3cfuQ" Ids="QCKx6sbQ4DDN7nCxgmZAFG,ABuqwpC1MDCOw1Ot2GeSCz" />
+        <Link Id="AWvdQvv5ZIkNQI1mwEp6Xi" Ids="QZ6KGslx1bhLcVL0Hwbg4M,RkqrG8QIenZQJZI9hFEwNh" />
+        <Link Id="TlZIuKWC5LkPIPR4KGkaGL" Ids="HPdctZrV0NrNMzVXoeuYyh,AO5Vrk9JafaO794gXVuJYi" />
+      </Patch>
+    </Node>
+  </Patch>
+</Document>

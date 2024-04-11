@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="OaOajKu19CjLSa9u7buZQe" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Overlay Id="UT6Oe4D4FqUNHqoEOzg6LE" Name="Intro" Bounds="112,17,484,100" />
+          <Pad Id="Qkvq7snPeryLXyfgXEF97w" Bounds="121,59,447,51" ShowValueBox="true" isIOBox="true" Value="-When we convert types based on INHERITANCE or INTERFACES there is a common terminology of UPCASTING and DOWNCASTING ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ReXNpFdRnVzP8GQ2NhL0bj" Bounds="266,149,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.quora.com/How-do-you-distinguish-between-upcasting-and-downcasting-in-C#:~:text=Upcasting%20means%20casting%20a%20derived,type%20which%20it%20actually%20implements.&amp;text=In%20C%23%20there%20is%20an,implemented%20by%20many%20concrete%20types.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EFUOI2JFDfLMHuFTbHos3X" Name="Upcasting Terminology" Bounds="35,192,286,279" />
+          <Pad Id="RoHfqwBQcmROcsPT7DSMf7" Bounds="41,234,236,35" ShowValueBox="true" isIOBox="true" Value="Also known as casting from SUBTYPE to a SUPERTYPE">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GnWlDj9oZnFNhUzvnqG02q" Bounds="39,283,251,103" ShowValueBox="true" isIOBox="true" Value="In INHERITANCE this means converting from the derived class type to a base class type. &#xD;&#xA;Or to say it another way converting from a child class type to a parent class type. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kq011qlL8w5MypsaGKgUEp" Bounds="40,399,251,67" ShowValueBox="true" isIOBox="true" Value="In INTERFACES this means converting from the OBJECT type to the type of the INTERFACE that it implements.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="N9IP7CAolDyNA2z6rwDuDy" Name="Downcasting Terminology" Bounds="356,191,282,279" />
+          <Pad Id="PbGhaF63lSUOumZGXcwyKt" Bounds="364,281,251,103" ShowValueBox="true" isIOBox="true" Value="In INHERITANCE this means converting from the base class type to the derived class type. &#xD;&#xA;Or to say it another way converting from a parent class type to a child class type. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CK5GpJpvSshPbwzoBQbAwE" Bounds="364,400,251,67" ShowValueBox="true" isIOBox="true" Value="In INTERFACES this means converting from the INTERFACE type back to the original OBJECT type.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="BcQSAGou9lNPU0RjsiprSa" Name="Upcasting and type safety" Bounds="38,493,285,167" />
+          <Pad Id="Mr249DvRp3CMDpmodNxs5W" Bounds="48,535,250,115" ShowValueBox="true" isIOBox="true" Value="Operations that UPCAST are consider safe from certain errors because the SUPERTYPE object is less specialised. The original object should* be able to do everything it might be asked to do while dressed up as its SUPERTYPE.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Svs2Wq8Jz4yNTEKEmDkKib" Bounds="367,229,244,35" ShowValueBox="true" isIOBox="true" Value="Also known as casting from SUPERTYPE to a SUBTYPE">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="AjcLAOvoWa2MSOQIiVwTIx" Name="Downcasting and type safety" Bounds="357,489,281,174" />
+          <Pad Id="S9OkwkTgZuIOSDcgHJq6D6" Bounds="359,533,260,128" ShowValueBox="true" isIOBox="true" Value="Operations that DOWNCAST can potentially have more errors because you are casting to the more specialised type. If you try and incorrectly cast an object to it's brother/sister type then you will get an exception as you violate type safety.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G1i0MyWOBSzQVqMBYmaEhE" Bounds="49,673,251,13" ShowValueBox="true" isIOBox="true" Value="*I say SHOULD, a poor implementation could still cause issues">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MGVf79f3XASN7OhvTrpU5S" Bounds="88,767,534,83" ShowValueBox="true" isIOBox="true" Value="This is best illustrated with an example.&#xD;&#xA;&#xD;&#xA;Say we had RoundWidget and RectWidget and they both implement IWidget so the drawing pipleine can use IWidget.draw().&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="S4USLmUGacKPyxrn6fonjW" Name="Definitions" Bounds="46,873,602,142" />
+          <Pad Id="EDFp61rthMuLs4hbwIkGQa" Bounds="67,928,534,19" ShowValueBox="true" isIOBox="true" Value="Here are the definitions">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ RectWidget ************************
+
+-->
+          <Node Name="RectWidget" Bounds="310,982" Id="FNWljWH6CM6LviIfQ4pOz4">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="Ttth0Muf379L5oW1gflrXA">
+              <Canvas Id="LD6C1F36v21NpsXXmpj4BK" CanvasType="Group">
+                <Pad Id="KeCgC0espEuO224Hl5i8HP" SlotId="TmDud0qnZsOM15DKybKhkV" Bounds="509,279" />
+                <Overlay Id="F89Zx94smm5N5zg4yDvLSR" Name="Draw" Bounds="341,514,298,278" />
+                <Node Bounds="434,650,85,19" Id="BL7N0FIRowtPzlIveuheT6">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Rectangle" />
+                  </p:NodeReference>
+                  <Pin Id="Bv4kiQJwSF0MHZHkUcAaUs" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="KylZspYzG1SNKiuzfKrNGs" Name="Position" Kind="InputPin" />
+                  <Pin Id="VVJkLz7GCicLnybbhGqFbp" Name="Size" Kind="InputPin" />
+                  <Pin Id="U8L1CXCRe6SO2q5DOVGLny" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="OdV5HFdoCQuQeAOrN6AmQi" Name="Paint" Kind="InputPin" />
+                  <Pin Id="AMgBekh3EqwQbjisnP0hoo" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="KvXYB6uxOoDLvvCrez5W39" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="OP4tyvDuX58LlJHYxPIWZy" Bounds="437,718" />
+                <Pad Id="VDQ4M1oJsIUPOPf91Y3IT4" SlotId="Q3kL1GbUo8UNoCP9fx72gO" Bounds="590,279" />
+                <Pad Id="AcxgSJ2C9fpLOEyDbiiHHS" SlotId="TmDud0qnZsOM15DKybKhkV" Bounds="457,598" />
+                <Pad Id="JfLUU1jx0nBL2WBQtotkB9" SlotId="Q3kL1GbUo8UNoCP9fx72gO" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="CXwad17GnfEPjlNAFZeBWC">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="PcSuVkffEShNJqM0Tf87CX" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="MRWmIev40c4K9XtJ236Vo5" Name="Input" Kind="InputPin" />
+                  <Pin Id="RDTZKkBMiW8NEq5ZkVlRgQ" Name="Color" Kind="InputPin" />
+                  <Pin Id="ATWnCmNdIhIPm6O8qBUNof" Name="Shader" Kind="InputPin" />
+                  <Pin Id="KtfNHOquet2O8hGSbwA3iw" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="PV3GJeVKlE5OTMtsYZzB9e" SlotId="S0n3KzcV3PYOzuyXcf9ivW" Bounds="437,573" />
+                <Pad Id="T7Qm4hnGkKrL8JkN1NOiu5" SlotId="S0n3KzcV3PYOzuyXcf9ivW" Bounds="422,279" />
+                <Overlay Id="B2e7t0X5qj6LtdwFOEJa23" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="HP2S4CX4x6MPHv8dh5bKuq" Bounds="422,251" />
+                <ControlPoint Id="H7IYD2QXM9KQJ4iRaIQsgc" Bounds="509,249" />
+                <ControlPoint Id="GM1KJwtWnFaPshO3OuFfvW" Bounds="590,249" />
+                <Overlay Id="SAqhmHfOGXDOnVN5EVfQxU" Name="SetSize" Bounds="342,361,301,126" />
+                <Pad Id="Hdx47ZoHk9QNGAT6U8j9Ji" SlotId="TmDud0qnZsOM15DKybKhkV" Bounds="478,452" />
+                <ControlPoint Id="JpReysLIyhTPG7eS6WPsRw" Bounds="478,403" />
+              </Canvas>
+              <Patch Id="TKBCNv57uScMkQKKmzqjS8" Name="Create">
+                <Pin Id="T9vCvGac1blLMXsOokR9Dy" Name="Position" Kind="InputPin" />
+                <Pin Id="AUNmwzJ8GH0NsotsOcaGRK" Name="Size" Kind="InputPin" />
+                <Pin Id="PSOx5Ey8SrUNZQxukQr8wt" Name="Color" Kind="InputPin" />
+              </Patch>
+              <!--
+
+    ************************  ************************
+
+-->
+              <ProcessDefinition Id="NltSDcLnEfCOJvVcbFiZ26" IsHidden="true">
+                <Fragment Id="L3DzS9dZvyDM8wT4BrrydR" Patch="TKBCNv57uScMkQKKmzqjS8" Enabled="true" />
+                <Fragment Id="MzaONi2XQR6LiD6QH5ARfb" Patch="UMjUNx2DnJRLohJT9PPjOl" />
+                <Fragment Id="NEoDc9JmVXiMsJoBFzjtSD" Patch="GCUEED5DiG0PsY0pmaZf6P" />
+              </ProcessDefinition>
+              <Slot Id="TmDud0qnZsOM15DKybKhkV" Name="Size">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="P2z2wRapIH2NQLZH0oJUWe" Ids="KvXYB6uxOoDLvvCrez5W39,OP4tyvDuX58LlJHYxPIWZy" />
+              <Link Id="F31s7gFCWg2P2YxrdtIHR3" Ids="OP4tyvDuX58LlJHYxPIWZy,HwWBGxyOkZfP3Qis9Vqpfs" IsHidden="true" />
+              <Patch Id="UMjUNx2DnJRLohJT9PPjOl" Name="Draw">
+                <Pin Id="HwWBGxyOkZfP3Qis9Vqpfs" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Slot Id="Q3kL1GbUo8UNoCP9fx72gO" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="Sa5tNynruUhLQxDvArIiXM" Ids="KtfNHOquet2O8hGSbwA3iw,OdV5HFdoCQuQeAOrN6AmQi" />
+              <Link Id="CGwhlgLbHS0LyNXZqwVp6H" Ids="JfLUU1jx0nBL2WBQtotkB9,RDTZKkBMiW8NEq5ZkVlRgQ" />
+              <Link Id="JrpC4CB6WgqOIPyPQc5D7e" Ids="AcxgSJ2C9fpLOEyDbiiHHS,VVJkLz7GCicLnybbhGqFbp" />
+              <Slot Id="S0n3KzcV3PYOzuyXcf9ivW" Name="Position" />
+              <Link Id="OraKqN1ORynO0TuOVhqNVw" Ids="PV3GJeVKlE5OTMtsYZzB9e,KylZspYzG1SNKiuzfKrNGs" />
+              <Link Id="RWVfiJDRcR2NmClxh4DAmv" Ids="HP2S4CX4x6MPHv8dh5bKuq,T7Qm4hnGkKrL8JkN1NOiu5" />
+              <Link Id="KcATEiUwvSsLBwtvglsFTH" Ids="T9vCvGac1blLMXsOokR9Dy,HP2S4CX4x6MPHv8dh5bKuq" IsHidden="true" />
+              <Link Id="D6U4SDvj23mQYhvHlHLUct" Ids="H7IYD2QXM9KQJ4iRaIQsgc,KeCgC0espEuO224Hl5i8HP" />
+              <Link Id="UXUej58NxCVM4jAM5QuKoo" Ids="AUNmwzJ8GH0NsotsOcaGRK,H7IYD2QXM9KQJ4iRaIQsgc" IsHidden="true" />
+              <Link Id="NwQb4P5rlL1PfvG3DVR0dm" Ids="GM1KJwtWnFaPshO3OuFfvW,VDQ4M1oJsIUPOPf91Y3IT4" />
+              <Link Id="TJwI3m4TekzQcU1BTj4PJv" Ids="PSOx5Ey8SrUNZQxukQr8wt,GM1KJwtWnFaPshO3OuFfvW" IsHidden="true" />
+              <Link Id="IM1AE5ajzIpMYSL8HHTjNM" Ids="JpReysLIyhTPG7eS6WPsRw,Hdx47ZoHk9QNGAT6U8j9Ji" />
+              <Patch Id="GCUEED5DiG0PsY0pmaZf6P" Name="SetSize">
+                <Pin Id="THf5DUaAYbDPdNHRVwirPO" Name="Size" Kind="InputPin" />
+              </Patch>
+              <Link Id="FYh4CEHtsGUPMLg8XN7v5D" Ids="THf5DUaAYbDPdNHRVwirPO,JpReysLIyhTPG7eS6WPsRw" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ IWidget ************************
+
+-->
+          <Node Name="IWidget" Bounds="493,981" Id="JzOJJhQud0GPKD0KjnwZYt">
+            <p:NodeReference>
+              <Choice Kind="InterfaceDefinition" />
+            </p:NodeReference>
+            <Patch Id="Rt3WEIDaeBxMdwIOMTyT44">
+              <Canvas Id="Ogco3IJZVvFPEex2sYAtGp" CanvasType="Group">
+                <Overlay Id="SNTtyfpoDcDPSPXRoGvoRD" Name="Draw" Bounds="329,271,310,200" />
+                <ControlPoint Id="GTs7YWocQ0RNv6NbcAWEIY" Bounds="452,395" />
+              </Canvas>
+              <!--
+
+    ************************  ************************
+
+-->
+              <ProcessDefinition Id="JBDqqKvhijlPahEmtSpl28" IsHidden="true">
+                <Fragment Id="PhF02Y9oX1IPqrUmeg7Hf3" Patch="S6DifXZbeiDQGY9pLTRasb" />
+              </ProcessDefinition>
+              <Link Id="Jt54W2iBRNIL3OO6F94AC1" Ids="GTs7YWocQ0RNv6NbcAWEIY,VJlU1wVNYHJLPOaSdS749M" IsHidden="true" />
+              <Patch Id="S6DifXZbeiDQGY9pLTRasb" Name="Draw">
+                <Pin Id="VJlU1wVNYHJLPOaSdS749M" Name="Layer" Kind="OutputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                    <Choice Kind="TypeFlag" Name="Layer" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ RoundWidget ************************
+
+-->
+          <Node Name="RoundWidget" Bounds="121,983" Id="RwXuQmhcv6UMM5BFSCh4og">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="Jnb8jHH8E5BPZYOI65Y4rF">
+              <Canvas Id="ObnfU2yAzKpOYzurPje4Dg" CanvasType="Group">
+                <Overlay Id="MqBx2aIKZMJPcsJycLKAkC" Name="Draw" Bounds="341,514,298,278" />
+                <ControlPoint Id="L6PifiROhwJPXvUwf0cHz7" Bounds="437,718" />
+                <Pad Id="KusDOq7dIruMbJmN0NRxrW" SlotId="PdDdPQMqw5HM3dMaQb17ZH" Bounds="590,279" />
+                <Pad Id="GNBdM7sKCwLL81cRxAtm73" SlotId="PdDdPQMqw5HM3dMaQb17ZH" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="MPOnRxkc6aZNItIGy5U2ZQ">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="OHn5KR7LAxuQCIVv0Cg6w7" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="S1SZNooqEZzQd4IfJfN4FV" Name="Input" Kind="InputPin" />
+                  <Pin Id="UnP6poZq95BPQ0BKU3XJCj" Name="Color" Kind="InputPin" />
+                  <Pin Id="RkeBAxPhuRkNJqxyOBeMEc" Name="Shader" Kind="InputPin" />
+                  <Pin Id="ElyRUbnMBIjOOQCwQfFpge" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="JZLI4hGNXpmMN1Cyc9n3un" SlotId="D99z3WGuB5FPOfKuwNIvTL" Bounds="437,573" />
+                <Pad Id="EsvFRUd25EMNxnFUy75Hzh" SlotId="D99z3WGuB5FPOfKuwNIvTL" Bounds="422,279" />
+                <Overlay Id="GIIgTs6pJ8EQdH9zuitk2q" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="M5xukkO63YLMcnJY9mXMkh" Bounds="422,251" />
+                <ControlPoint Id="Son5TccoQwkLHbc9f8fSlH" Bounds="590,249" />
+                <Overlay Id="PLUDWjIJdg7NNVHxuWjpYB" Name="SetRadius" Bounds="346,346,301,126" />
+                <Node Bounds="435,670,85,19" Id="EasaiFuFxIBL2xRZyGhyTk">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Circle" />
+                  </p:NodeReference>
+                  <Pin Id="EDxv4izhAL7M8ngott8TsK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="RolLGu4jMvNPrOyvX9hjMe" Name="Position" Kind="InputPin" />
+                  <Pin Id="Tn132cN7Vi6Lnf12nhhgDY" Name="Radius" Kind="InputPin" />
+                  <Pin Id="T12EIW3f8fgMjJcBQMF26d" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="JsyhYbVaICRMDWM51QKcQf" Name="Paint" Kind="InputPin" />
+                  <Pin Id="UDgVbU2rD3iOX5ajCFzyrr" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="EDSDmVMY5paPU2hDVXF7KW" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="QdcII7tjZGbMpLaYlFphsR" SlotId="D90ibHVvLBtPsNsvJiDzMd" Bounds="456,597" />
+                <Pad Id="Paxe8ToZFkdLUkApxQL7kN" SlotId="D90ibHVvLBtPsNsvJiDzMd" Bounds="504,434" />
+                <ControlPoint Id="CqICs0WlSuhNfr2qgoOgyZ" Bounds="504,387" />
+                <Pad Id="TIXwA8jEQrILDXDAVkWzpE" SlotId="D90ibHVvLBtPsNsvJiDzMd" Bounds="492,281" />
+                <ControlPoint Id="R7yAuh4dJdjPpukQM90nnp" Bounds="492,249" />
+              </Canvas>
+              <ProcessDefinition Id="SMaEBvrDQQ3NNx2FzEzGW3" IsHidden="true">
+                <Fragment Id="N3y9P7rEaBrOhzHK6WY2PU" Patch="V1n71URyPuvOjCO7PF3jOg" Enabled="true" />
+                <Fragment Id="TDzslUMpUX1NzDP9Q7I6kX" Patch="R8JIlAzkHgVOPxRIYaHS1M" />
+                <Fragment Id="UwDRUs6NSTsPe8usnlElKp" Patch="K3ezKVBP77SQC2iorOXg6t" />
+              </ProcessDefinition>
+              <Link Id="TPth0BLPRSVMTvVgJGdoxW" Ids="L6PifiROhwJPXvUwf0cHz7,G4iGuLVrZDZPfyqMlTd7uA" IsHidden="true" />
+              <Slot Id="PdDdPQMqw5HM3dMaQb17ZH" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="FQqClpsGKapP5DWNQFwGny" Ids="GNBdM7sKCwLL81cRxAtm73,UnP6poZq95BPQ0BKU3XJCj" />
+              <Slot Id="D99z3WGuB5FPOfKuwNIvTL" Name="Position" />
+              <Link Id="Vpl1vD1CL1hObTAltKLPaF" Ids="M5xukkO63YLMcnJY9mXMkh,EsvFRUd25EMNxnFUy75Hzh" />
+              <Link Id="SHfAGxLgbDYNt44mevd4xf" Ids="UjO7tfidcTeL05wlzEOJ33,M5xukkO63YLMcnJY9mXMkh" IsHidden="true" />
+              <Link Id="Ru1uLJht8dLPBuoFn80YyU" Ids="Son5TccoQwkLHbc9f8fSlH,KusDOq7dIruMbJmN0NRxrW" />
+              <Link Id="CfdSbMZ66JuL3vsuOtKT2W" Ids="OTs88j25WsVNZuhHBaGlUL,Son5TccoQwkLHbc9f8fSlH" IsHidden="true" />
+              <Link Id="DEffuQmhcOgNVA55HUVoZn" Ids="JZLI4hGNXpmMN1Cyc9n3un,RolLGu4jMvNPrOyvX9hjMe" />
+              <Slot Id="D90ibHVvLBtPsNsvJiDzMd" Name="Radius" />
+              <Link Id="U1SfGRSKIvaNwFJg0g0tHU" Ids="QdcII7tjZGbMpLaYlFphsR,Tn132cN7Vi6Lnf12nhhgDY" />
+              <Link Id="M5ul0OFWqqSQEggQ2rxUpj" Ids="ElyRUbnMBIjOOQCwQfFpge,JsyhYbVaICRMDWM51QKcQf" />
+              <Link Id="ToUjmBWRAKrM1JMSn7qEOV" Ids="EDSDmVMY5paPU2hDVXF7KW,L6PifiROhwJPXvUwf0cHz7" />
+              <Link Id="SocuLvLgInmQdAbFDQrsLr" Ids="CqICs0WlSuhNfr2qgoOgyZ,Paxe8ToZFkdLUkApxQL7kN" />
+              <Link Id="MwtvoUDFr0CMfKHryRnE8E" Ids="KwidARXQS4iO9onNB4j0tK,CqICs0WlSuhNfr2qgoOgyZ" IsHidden="true" />
+              <Link Id="Nh6X27edeVbMqLsyZ1h29w" Ids="R7yAuh4dJdjPpukQM90nnp,TIXwA8jEQrILDXDAVkWzpE" />
+              <Link Id="KXW4tywKsQHQUFCM3IX0qu" Ids="KKze9QFEcaWO8WiBg8ar6s,R7yAuh4dJdjPpukQM90nnp" IsHidden="true" />
+              <Patch Id="V1n71URyPuvOjCO7PF3jOg" Name="Create">
+                <Pin Id="UjO7tfidcTeL05wlzEOJ33" Name="Position" Kind="InputPin" />
+                <Pin Id="KKze9QFEcaWO8WiBg8ar6s" Name="Radius" Kind="InputPin" />
+                <Pin Id="OTs88j25WsVNZuhHBaGlUL" Name="Color" Kind="InputPin" />
+              </Patch>
+              <Patch Id="R8JIlAzkHgVOPxRIYaHS1M" Name="Draw">
+                <Pin Id="G4iGuLVrZDZPfyqMlTd7uA" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Patch Id="K3ezKVBP77SQC2iorOXg6t" Name="SetRadius">
+                <Pin Id="KwidARXQS4iO9onNB4j0tK" Name="Radius" Kind="InputPin" />
+              </Patch>
+            </Patch>
+          </Node>
+          <Overlay Id="MPCCopCrsUSNNZFJmGMrZs" Name="Create some widgets" Bounds="47,1044,524,258" />
+          <Node Bounds="221,1199,64,26" Id="Eh2nY7kVjpcPiWe5SgB13T">
+            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RoundWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="NsxexKNxgzqNqgnkOxAw9Q" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MeubwQdvdD9OILy35ZQslx" Name="Position" Kind="InputPin" DefaultValue="0.4, -0.14" />
+            <Pin Id="Lfij0Jo1pi2OVw70SBUyTw" Name="Radius" Kind="InputPin" DefaultValue="0.21" />
+            <Pin Id="LYO6KVZ3otGNtQGwlsnEC2" Name="Color" Kind="InputPin" DefaultValue="0, 0.6399996, 1, 1" />
+            <Pin Id="DxyrXBFMuOUP0c0XwtrrdO" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="140,1112,56,26" Id="HBxry0TnAPyMXzGQGzo1at">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="J7VxuNaFJFcLEJeO1CIy9U" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BFleJYj67kDOqgYRJkZS46" Name="Position" Kind="InputPin" DefaultValue="-0.26, -0.15" />
+            <Pin Id="TLhJbFTxGUQMd6v7LotGaB" Name="Size" Kind="InputPin" DefaultValue="0.3, 0.1" />
+            <Pin Id="DKxT6w4BfFiOBoYmL51HSs" Name="Color" Kind="InputPin" DefaultValue="0.49, 0.96940005, 1, 1" />
+            <Pin Id="Q1CbnsfFa7INTX4RPS27iX" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="182,1152,56,26" Id="VcqyYQ4oH1PMUKsrugIM39">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="QPwfRVBJPM8LPb3tetfaTS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FmXj34ma5v4PZfuKmyKgtM" Name="Position" Kind="InputPin" DefaultValue="0, 0.16" />
+            <Pin Id="VnBsIJdgxLrQDMZSgwUmVg" Name="Size" Kind="InputPin" DefaultValue="0.2, 0.2" />
+            <Pin Id="SRg3gdnlibQQHoJRVBZcM9" Name="Color" Kind="InputPin" DefaultValue="0.8049995, 0.25, 1, 1" />
+            <Pin Id="TxHmgcv3t9TPwdORkP8THh" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="RlJ3lxy7WIdLimQO8xRqsA" Bounds="240,1384,310,139" ShowValueBox="true" isIOBox="true" Value="note here&#xD;&#xA;-index 0 and 1 are RectWidget, index 2 is a RoundWidget&#xD;&#xA;-If you mouse over notice there is an implicit conversion here as the RectWidgets and RoundWidget are both UPCAST to IWidget to join the Spread&lt;IWidget&gt;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="CRzgXj9QDKmMQlKEUnB1K4" Name="Put in a spread of IWidget" Bounds="50,1327,520,220" />
+          <Pad Id="Vsp78QhDTa9L7SL8oRqeH0" SlotId="VarGDeedmTdPUp0FD2ov5W" Bounds="189,1518" />
+          <Node Bounds="145,1421,41,26" Id="PXdcRmUddxhQcp9CSuQXNa">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="BmR3kKnFBPXORCz56QVlB2" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SsRfC9Npk0xPdyQbUo9vpZ" Name="Item" Kind="InputPin" />
+            <Pin Id="MYMFIBgVSZ3PCwxY3LkKCV" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="101,1379,41,26" Id="PzDToV3ioSFO2pz1NjYcVI">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="NB7t0pCowiHPWw58xxXr3g" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VUlHYxV8wC8OvYxJ923E1K" Name="Item" Kind="InputPin" />
+            <Pin Id="QNEWne2nZ85OOl3uyadxx6" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="187,1470,41,26" Id="SS4ri1gaNaxNr9XmgwjoLN">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="QRd3mjlEq5DN4vNWonTYp4" Name="Input" Kind="StateInputPin" />
+            <Pin Id="REv4AFjQwONOFIXMHoEIc9" Name="Item" Kind="InputPin" />
+            <Pin Id="T3DbBpBSgCmNjwLvMqqWYe" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Overlay Id="GI9BzrbciQ2M9gFohUty2m" Name="Drawing" Bounds="48,1567,509,363" />
+          <Node Bounds="170,1618,71,83" Id="VgYKwKSs2QSO4prZuXzh2W">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="G84ctclK58fMgrJEuDOSAY" Name="Break" Kind="OutputPin" />
+            <Patch Id="M97U4jfixdEPPRNW4Vozl3" ManuallySortedPins="true">
+              <Patch Id="DKQiqyvNadYPqvx1LPCfwe" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="F2y0fWR3uRdL8wmfZhuKOu" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="FQ9qDjnbCNaLgWGrAtK9CS" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="186,1642,43,26" Id="DHBw9OZgtrfPc7XhzERPqM">
+                <p:NodeReference LastCategoryFullName="Main.IWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="IWidget" />
+                  <Choice Kind="OperationCallFlag" Name="Draw" />
+                </p:NodeReference>
+                <Pin Id="JPqcf7rFVc8OmDa6FdZufQ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Esxau8qK22RPa8TiUn2dsO" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="Qcvkq99q0ItPArGbp1FHTT" Name="Layer" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="IVF0iABp0qGOfa59D9ZqDG" Bounds="188,1624" Alignment="Top" />
+            <ControlPoint Id="HoXfI2d05WcQJxvZfAIgnY" Bounds="184,1695" Alignment="Bottom" />
+          </Node>
+          <Node Bounds="182,1715,45,19" Id="UdpRgr9JhIsLQzNRtvoKsR">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
+            </p:NodeReference>
+            <Pin Id="JwxCBtffz1TOB1dLwX44pd" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LBwYhjgBsTjL3TcD9WSglH" Name="Input" Kind="InputPin" />
+            <Pin Id="Mg4p3z9NW8ZNNXMyLlX7OJ" Name="Debug" Kind="InputPin" />
+            <Pin Id="VFFm8lkz0KHQHBvA5A5TxF" Name="Enabled" Kind="InputPin" />
+            <Pin Id="B2zPQgRd3kHN0sU0X0U2kC" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="DLbQaoz5dD4P4zI7pWwoJT" Comment="" Bounds="184,1754,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GOG88KMDR0ENJlYHE1UMwg" Bounds="277,1638,242,70" ShowValueBox="true" isIOBox="true" Value="And now we can draw all our widgets by calling IWidget.Draw">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="SQ6bJ752nrJLabgbGqE6xi" Name="Updating" Bounds="51,1954,495,578" />
+          <Pad Id="O5fa3lpfdlmOPk18QPO5AX" Bounds="171,1982,351,112" ShowValueBox="true" isIOBox="true" Value="Saw we want to update the sizes of the widgets. This is not a common method of IWidget, its a specific method of RectWidget and RoundWidget.&#xD;&#xA;&#xD;&#xA;RectWidget has setSize method and RoundWidget has setRadius method">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D80PCdLq0wXPhBt8JvtjjG" SlotId="VarGDeedmTdPUp0FD2ov5W" Bounds="171,2132" />
+          <Node Bounds="169,2162,52,19" Id="DhFXIhsBMc8Qck7nNBDdb3">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="D1xb1qEbOI3PqNKqknpIpd" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GOLiBfGHDfxOrnRK8PNetX" Name="Default Value" Kind="InputPin" />
+            <Pin Id="TJP5X8blqBSOpI5Prts14B" Name="Index" Kind="InputPin" />
+            <Pin Id="Mt1Q9M8IymSQCzgPA5OzhT" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UA85DyU2iZdNnQ9RAgQTrv" Bounds="256,1529,251,13" ShowValueBox="true" isIOBox="true" Value="More on the conversions in next helppatches">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">6</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IoeNN89Z8hUMybK6SXPWzF" Comment="Index" Bounds="218,2151,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="F8ng9ina7oPNRn1NASBfPn" Bounds="227,2212,263,72" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;We need to do an EXPLICIT conversion to DOWNCAST from IWidget to one of the child widget types. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="169,2203,58,19" Id="HLMW7Kn4mvYP2Q4aaaAxPl">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="HardCast" />
+            </p:NodeReference>
+            <Pin Id="QBzCIR7yS1vLNCKU9xSRbE" Name="Input" Kind="StateInputPin" />
+            <Pin Id="CXKO876LBSAPp67q8SQs5F" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FlVAxaJRa9TO0QkV6Gl99X" Bounds="226,2474,274,60" ShowValueBox="true" isIOBox="true" Value="We are using HardCast here specifically to demonstrate the exception you can get. Normally we would use CastAs to check if the conversion worked and only run the downstream operation if it did.&#xD;&#xA;&#xD;&#xA;More in the next patches">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">5</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="169,2285,56,26" Id="Ut4lmBSSTrbLv3ZhNaStat">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="SetSize" />
+            </p:NodeReference>
+            <Pin Id="EkFbCkKBoStP9Bd65hYIUM" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I5sZU5JKMvWN1HpXdu5Xa7" Name="Size" Kind="InputPin" DefaultValue="0.18, 0.44" />
+            <Pin Id="V2gsTS1g3K1PTgrviKm7Au" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="NfEkiPx34GAMXGBuTD6Edd" Bounds="227,2291,274,164" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;We use RectWidget.SetSize here. What happens if we try and convert a RoundWidget instead? Try it by making the index above 2. &#xD;&#xA;&#xD;&#xA;As you probably expected we get an exception because a RoundWidget is not a RectWidget and does not support RectWidget.SetSize.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="L9KHMDpowIjO6hjPDBrY0b" Bounds="103,2574,371,52" ShowValueBox="true" isIOBox="true" Value="Hopefully this example demonstrates how DOWNCASTING from a general type to a more specific type can lead to errors.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="PkAShlLCDACPfv2ZBd8IUw" Name="A distinction " Bounds="46,2653,551,529" />
+          <Pad Id="HcQe9ygoXZaQVRCYbUIbq6" Bounds="63,2698,494,453" ShowValueBox="true" isIOBox="true" Value="This kind of type conversion of OBJECTS is a bit different from the NUMERIC type conversion we did earlier. &#xD;&#xA;&#xD;&#xA;When we convert NUMERIC types we actually make a new float or integer etc that is truly in the new format. Generally we can think of this like data itself has truly been converted, and then never think about it again. Once a Float32 has run  ToInt32 then we have a new Integer32 and we can convert that to whatever else we like, its history as a Float32 shouldn't bother us. &#xD;&#xA;&#xD;&#xA;When we type convert OBJECTs we are not making a new object, we are merely saying 'treat this object as if it's a different type'. The RoundWidget is wearing the costume of an IWidget but it's still a RoundWidget underneath. The original type of the object can matter, which is how we can get the DOWNCASTING exceptions we look at above. &#xD;&#xA;&#xD;&#xA;Only if we programmed a specific conversion function that explicitly created a different widget type from the RoundWidgets data would we have a new object. &#xD;&#xA;&#xD;&#xA;Don't confuse this with Mutability. &#xD;&#xA;In vvvv immutable Primitives are value types and type conversion effectively CREATES a new value.  &#xD;&#xA;In vvvv immutable Records and mutable Classes are both OBJECTS and type conversion DISGUISES them. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R1XyJD7ghJGNpvonYEOMKo" Bounds="65,3151,492,20" ShowValueBox="true" isIOBox="true" Value="I try and avoid metaphors as much as possible, but the concept of CASTING and the idea that casting is just DISGUISING your types is as good a metaphor as you are going to get in computer science. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">5</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="ULiUPjjq8haNaGTk7KtEAh" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="VarGDeedmTdPUp0FD2ov5W" Name="IWidgets">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="PpMiwqoHDdpNI6qLEhEUJz" Ids="Q1CbnsfFa7INTX4RPS27iX,VUlHYxV8wC8OvYxJ923E1K" />
+        <Link Id="VQqzrctt8ZhORnXuEOt7jz" Ids="QNEWne2nZ85OOl3uyadxx6,BmR3kKnFBPXORCz56QVlB2" />
+        <Link Id="Q3o7H5n9ww5N5Y7EvBnRRp" Ids="MYMFIBgVSZ3PCwxY3LkKCV,QRd3mjlEq5DN4vNWonTYp4" />
+        <Link Id="ULiUPjjq8haNaGTk7KtEAh" Ids="T3DbBpBSgCmNjwLvMqqWYe,Vsp78QhDTa9L7SL8oRqeH0" />
+        <Link Id="HjBfzpBy4wkQJFcO7n71lW" Ids="DxyrXBFMuOUP0c0XwtrrdO,REv4AFjQwONOFIXMHoEIc9" />
+        <Link Id="V5gaPojwJ0XOWBSS2Uozzb" Ids="TxHmgcv3t9TPwdORkP8THh,SsRfC9Npk0xPdyQbUo9vpZ" />
+        <Link Id="TjddTNVOTB5QMVETZWitoy" Ids="Vsp78QhDTa9L7SL8oRqeH0,IVF0iABp0qGOfa59D9ZqDG" />
+        <Link Id="DtwHlEv3CsYPfXTRHcBpKa" Ids="IVF0iABp0qGOfa59D9ZqDG,JPqcf7rFVc8OmDa6FdZufQ" />
+        <Link Id="NXgCuigXHPHLVGgBwCRT44" Ids="Qcvkq99q0ItPArGbp1FHTT,HoXfI2d05WcQJxvZfAIgnY" />
+        <Link Id="H16xIjnz2rVOJgvQnyLmxK" Ids="HoXfI2d05WcQJxvZfAIgnY,LBwYhjgBsTjL3TcD9WSglH" />
+        <Link Id="MAHjR5pDrGKPcMhpShDTVp" Ids="B2zPQgRd3kHN0sU0X0U2kC,DLbQaoz5dD4P4zI7pWwoJT" />
+        <Link Id="EFwYpe2VY0ZNWlruqp1IAW" Ids="D80PCdLq0wXPhBt8JvtjjG,D1xb1qEbOI3PqNKqknpIpd" />
+        <Link Id="EOK3ieqbEE1NW6aIDmgV4i" Ids="IoeNN89Z8hUMybK6SXPWzF,TJP5X8blqBSOpI5Prts14B" />
+        <Link Id="HHEPqqXX3pFP8QClJWTVf6" Ids="Mt1Q9M8IymSQCzgPA5OzhT,QBzCIR7yS1vLNCKU9xSRbE" />
+        <Link Id="P53ngDNuiVoPS8BToohRjt" Ids="CXKO876LBSAPp67q8SQs5F,EkFbCkKBoStP9Bd65hYIUM" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.0" />
+  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.0" />
+</Document>

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="ETonwU1ntKXOu7WNUK3hNF" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="112,81,444,88" ShowValueBox="true" isIOBox="true" Value="-UPCASTING is an IMPLICIT CONVERSION&#xD;&#xA;&#xD;&#xA;-UPCASTING should never throw errors from the type conversion itself (See helppatch Upcasting vs Downcasting for why) ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NuKJM2Qwty3P0UF8QjkBaW" Name="Key Concepts" Bounds="103,40,484,137" />
+          <Pad Id="NVUua2L1rLpOXMf59gqlCi" Bounds="98,210,461,28" ShowValueBox="true" isIOBox="true" Value="Why is UPCASTING an IMPLICIT CONVERSION? This behaviour comes from C#">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="EbvaFv7n9nIOe07KAL98e1" Name="Some Definitions" Bounds="97,393,494,256" />
+          <Overlay Id="Ax5hhYEHbhONHhSt7lXWiC" Name="Performance impact" Bounds="104,1280,729,121" />
+          <Pad Id="HGKxuiuDZedLByyXEDOKcY" Bounds="141,1330,647,64" ShowValueBox="true" isIOBox="true" Value="UPCASTING is pretty fast. Not totally free but should be very few instructions.&#xD;&#xA;There is no run-time type checking with UPCASTING because the compiler is confident that the more specialised type can do everything that might be asked of it when disguised as the more general type.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LuOi2CY4n8cN9Q9VEJSKrz" Bounds="103,241,140,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions#1028-implicit-reference-conversions">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VAJ13FFDrPbM0WcjcCpcPf" Bounds="103,269,463,41" ShowValueBox="true" isIOBox="true" Value="Notably in this section on Implicit reference conversion it says the following are implicit conversions:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HbXZQyUOfTaORfpqsqdd8t" Bounds="135,310,699,53" ShowValueBox="true" isIOBox="true" Value="From any class_type S to any class_type T, provided S is derived from T. (INHERITANCE UPCASTING)&#xD;&#xA;From any class_type S to any interface_type T, provided S implements T. (INTERFACE UPCASTING)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N58LzqQ6hGiLAkggrxqYra" Bounds="144,1423,140,19" ShowValueBox="true" isIOBox="true" Value="https://stackoverflow.com/questions/45818251/understanding-up-casting-and-down-casting-c-sharp">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RP2KxjBqG4GNJICGxNr2zx" Bounds="290,1423,357,19" ShowValueBox="true" isIOBox="true" Value="&lt;good answer here">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ RectWidget ************************
+
+-->
+          <Node Name="RectWidget" Bounds="302,501" Id="UHQYwdXnNSeMoOoVcBSfRK">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="NyFetO7xOeoMAVXNQxkJ0P">
+              <Canvas Id="Ji1xgL42XUfNCQsi8wtFK7" CanvasType="Group">
+                <Pad Id="EUjjj7h2XTNLlBCetCGorT" SlotId="LpYmFs0Pa3FMwsT3cujA1O" Bounds="509,279" />
+                <Overlay Id="I8txrCEvYdgO9jTxU2chvN" Name="Draw" Bounds="341,514,298,278" />
+                <Node Bounds="434,650,85,19" Id="UnMdZHOE80dNrLXegv0J7Q">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Rectangle" />
+                  </p:NodeReference>
+                  <Pin Id="ONGB4UpFpZtPEm1howgMNm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="JvJas29JtHgQX2My5qlT5x" Name="Position" Kind="InputPin" />
+                  <Pin Id="GlRPi50DiXpO8wVZ40rAnN" Name="Size" Kind="InputPin" />
+                  <Pin Id="VcILH97WS7SQFeeM5cRlou" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="UYcR9VIwzSFOk1FLUBsvUV" Name="Paint" Kind="InputPin" />
+                  <Pin Id="CUWNTqA6h4KL0GHDnirY51" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="Fj3tKDKwZt2OA6vK8i595Q" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="HJ8JIKtKjtbOp9aSR6q7fU" Bounds="437,718" />
+                <Pad Id="IXJZOZcze0rNHzc7PkZwdC" SlotId="REfKZDURw5lL409ejvGbGX" Bounds="590,279" />
+                <Pad Id="TjgGVm2gj5IOMMEk9p7aAh" SlotId="LpYmFs0Pa3FMwsT3cujA1O" Bounds="457,598" />
+                <Pad Id="SsBaqpCr4ZrPHfu9gSKOqg" SlotId="REfKZDURw5lL409ejvGbGX" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="Nhp064bXEgEPpsh9qXWaUD">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="KXJjeuQ7xRENmVHfyV9Hy9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="Pm9k1kNbTubLccMagFsnOn" Name="Input" Kind="InputPin" />
+                  <Pin Id="LKw8pnnqK4MOwTNS21NqZb" Name="Color" Kind="InputPin" />
+                  <Pin Id="Axh8l2ySTglM8VHF5R50x9" Name="Shader" Kind="InputPin" />
+                  <Pin Id="U92pSqTE3ruLS9n9azPvsg" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="PQc1nADeFC4MyUn66cUqEs" SlotId="Q7bmxke9A8POjs3JPWbvFw" Bounds="437,573" />
+                <Pad Id="IZ9x6TmexahMr6kRoOeaNF" SlotId="Q7bmxke9A8POjs3JPWbvFw" Bounds="422,279" />
+                <Overlay Id="IW6Egq9sJQTO2ZFP0q2eTH" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="Vmo5VtZIVKdLz2nZVjtNtz" Bounds="422,251" />
+                <ControlPoint Id="HmHR7CiVgumOJ8uppiDpRS" Bounds="509,249" />
+                <ControlPoint Id="Mim0F8fn1UpNfhaaRzPUzj" Bounds="590,249" />
+                <Overlay Id="EWMpgyjEHkfOiBcL7g5qfm" Name="SetSize" Bounds="342,361,301,126" />
+                <Pad Id="UcIuftiWqxtPlXFBjcSC6b" SlotId="LpYmFs0Pa3FMwsT3cujA1O" Bounds="478,452" />
+                <ControlPoint Id="EQ4M7fFHLltMbPkbN9VKSf" Bounds="478,403" />
+              </Canvas>
+              <Patch Id="DBAbWpDjGuPPIVI2e2GHZS" Name="Create">
+                <Pin Id="VW2obAnxw5RPzVu9DcfCst" Name="Position" Kind="InputPin" />
+                <Pin Id="AbiNUWqDHgkM6ZhJs2sZMK" Name="Size" Kind="InputPin" />
+                <Pin Id="JdqX3FPC8w3LqZTZ2vY451" Name="Color" Kind="InputPin" />
+              </Patch>
+              <ProcessDefinition Id="Kjpo6QlTebILOKXgJhaIp1" IsHidden="true">
+                <Fragment Id="RUOEa0ru1h2QWYY7SOOC3T" Patch="DBAbWpDjGuPPIVI2e2GHZS" Enabled="true" />
+                <Fragment Id="GTXxnZI4fxOL8Eh6i6iBsW" Patch="CWo0VcHSE8ONxV8t5LnLDq" />
+                <Fragment Id="JvohjevgoJPLKvmRmMHKUh" Patch="EwqpQ0l6ypSNn5usDI1ztk" />
+              </ProcessDefinition>
+              <Slot Id="LpYmFs0Pa3FMwsT3cujA1O" Name="Size">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="IqLDuK0EHiRM7HDEbnlqFu" Ids="Fj3tKDKwZt2OA6vK8i595Q,HJ8JIKtKjtbOp9aSR6q7fU" />
+              <Link Id="Nsd3W2LlTySNl084dbisWG" Ids="HJ8JIKtKjtbOp9aSR6q7fU,F0iVltkClN8LyLAtbu2fTf" IsHidden="true" />
+              <Patch Id="CWo0VcHSE8ONxV8t5LnLDq" Name="Draw">
+                <Pin Id="F0iVltkClN8LyLAtbu2fTf" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Slot Id="REfKZDURw5lL409ejvGbGX" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="OFko5ZcuSz1LV0aym1d7xy" Ids="U92pSqTE3ruLS9n9azPvsg,UYcR9VIwzSFOk1FLUBsvUV" />
+              <Link Id="EveKlEoO3rsLHQUHyJwb0K" Ids="SsBaqpCr4ZrPHfu9gSKOqg,LKw8pnnqK4MOwTNS21NqZb" />
+              <Link Id="H8dF4VBUNXtQbOMgsirUKB" Ids="TjgGVm2gj5IOMMEk9p7aAh,GlRPi50DiXpO8wVZ40rAnN" />
+              <Slot Id="Q7bmxke9A8POjs3JPWbvFw" Name="Position" />
+              <Link Id="TbG2a44zN0XMwHQ7IzOLAM" Ids="PQc1nADeFC4MyUn66cUqEs,JvJas29JtHgQX2My5qlT5x" />
+              <Link Id="SUn8vYzl2PHMQ3cQugjPaP" Ids="Vmo5VtZIVKdLz2nZVjtNtz,IZ9x6TmexahMr6kRoOeaNF" />
+              <Link Id="IRYyJ33ngmAPtjsAy7d3nw" Ids="VW2obAnxw5RPzVu9DcfCst,Vmo5VtZIVKdLz2nZVjtNtz" IsHidden="true" />
+              <Link Id="VaJndsWfvH3ORJMO2ml4zW" Ids="HmHR7CiVgumOJ8uppiDpRS,EUjjj7h2XTNLlBCetCGorT" />
+              <Link Id="Avlm04jMubyQWiE30lT4De" Ids="AbiNUWqDHgkM6ZhJs2sZMK,HmHR7CiVgumOJ8uppiDpRS" IsHidden="true" />
+              <Link Id="LNuuNr5PiPrLKsv8Cl0lY3" Ids="Mim0F8fn1UpNfhaaRzPUzj,IXJZOZcze0rNHzc7PkZwdC" />
+              <Link Id="JyMCrrN6Kb7NYiTaXCCnEt" Ids="JdqX3FPC8w3LqZTZ2vY451,Mim0F8fn1UpNfhaaRzPUzj" IsHidden="true" />
+              <Link Id="Lg2PwX5mg4xO445qk1r0rY" Ids="EQ4M7fFHLltMbPkbN9VKSf,UcIuftiWqxtPlXFBjcSC6b" />
+              <Patch Id="EwqpQ0l6ypSNn5usDI1ztk" Name="SetSize">
+                <Pin Id="Ly1TJ5q2803Lh2WXwbrCRs" Name="Size" Kind="InputPin" />
+              </Patch>
+              <Link Id="E6lm87spBVUOyqyeSclifB" Ids="Ly1TJ5q2803Lh2WXwbrCRs,EQ4M7fFHLltMbPkbN9VKSf" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ IWidget ************************
+
+-->
+          <Node Name="IWidget" Bounds="472,501" Id="DxFjlp90wbqOmio6y6XzSM">
+            <p:NodeReference>
+              <Choice Kind="InterfaceDefinition" />
+            </p:NodeReference>
+            <Patch Id="PTuWNoLp2LeQXL9gkIvkmY">
+              <Canvas Id="U4J0m15QUMeOTli0CJTN7z" CanvasType="Group">
+                <Overlay Id="OdT27A73YFBOxXPTQ0wEk5" Name="Draw" Bounds="329,271,310,200" />
+                <ControlPoint Id="Jzd2yoipQfuMs02WWlGSvR" Bounds="452,395" />
+              </Canvas>
+              <ProcessDefinition Id="BZYhzcIwRNgLTOTFV59JQb" IsHidden="true">
+                <Fragment Id="AasAXbOuKeILXSoFvxaxXN" Patch="BvA37SgVCQPMvYuGbGFaYs" />
+              </ProcessDefinition>
+              <Link Id="VXZ9NHzrL3XMqP08bw4N9T" Ids="Jzd2yoipQfuMs02WWlGSvR,MF0T40hRcBMO6qHkWioUqc" IsHidden="true" />
+              <Patch Id="BvA37SgVCQPMvYuGbGFaYs" Name="Draw">
+                <Pin Id="MF0T40hRcBMO6qHkWioUqc" Name="Layer" Kind="OutputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                    <Choice Kind="TypeFlag" Name="Layer" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ RoundWidget ************************
+
+-->
+          <Node Name="RoundWidget" Bounds="134,501" Id="MLXjPo1TuneN5pzQf9YLI6">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="FhzfYksG7DVMd4LWO9dFD0">
+              <Canvas Id="FlDkA3yiF1tL8iNrVb80rP" CanvasType="Group">
+                <Overlay Id="FBZjTGJM3DHLoCrEOYSWzQ" Name="Draw" Bounds="341,514,298,278" />
+                <ControlPoint Id="IjZwGUG45oONNrbzk39NXP" Bounds="437,718" />
+                <Pad Id="LITPmvqd1rqLQvKTypjw4K" SlotId="T9Yk2Vb3FN6QaX9x62aCZv" Bounds="590,279" />
+                <Pad Id="PMBz7u0XMxvMhpS0sKPVb5" SlotId="T9Yk2Vb3FN6QaX9x62aCZv" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="JBwz5um9ficOSs3gAhAwnq">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="M1zz1erlTeoPYN97tTLOpt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="DwFzEvgldaKL5XhPEfXzAn" Name="Input" Kind="InputPin" />
+                  <Pin Id="QswgJX1Mj7aOnSSI2TG0nA" Name="Color" Kind="InputPin" />
+                  <Pin Id="ENBdZH3uOqCMAclr5KIr49" Name="Shader" Kind="InputPin" />
+                  <Pin Id="UDzR0Z6RsM9Opehywk2Rcj" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="TieV5MCYGfNLhIY126xoat" SlotId="QR7JOjHJ9bCNb4lKh5rFl6" Bounds="437,573" />
+                <Pad Id="R3xjC0ubJXRMP4Iot3WJau" SlotId="QR7JOjHJ9bCNb4lKh5rFl6" Bounds="422,279" />
+                <Overlay Id="PBGf7P4xGopP4Q7IUNvohR" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="HI0XMQhqHQJNMmC4p3oHW3" Bounds="422,251" />
+                <ControlPoint Id="HBRQGVFl0SVPD2wGsitYnh" Bounds="590,249" />
+                <Overlay Id="Pk2FFKdHjCkMtVbHIAz39i" Name="SetRadius" Bounds="346,346,301,126" />
+                <Node Bounds="435,670,85,19" Id="RGwkNHuLDy7PlKiDXZuQ1X">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Circle" />
+                  </p:NodeReference>
+                  <Pin Id="H0dfRkei4eWNxpcHqaxsrr" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="AXWEWWLLpjXOFYXmD23y4y" Name="Position" Kind="InputPin" />
+                  <Pin Id="VKp5sklHRQFNMWCVUuwuib" Name="Radius" Kind="InputPin" />
+                  <Pin Id="Fa7SFF3oHR9QROg9XYoFRc" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="SRvJeVk3p87PTvH2uDWRzc" Name="Paint" Kind="InputPin" />
+                  <Pin Id="Qf7Hee8QvENP1tPZJkpjop" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="HHVvBKBwkLEN2qciadyYYA" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="C7DPYeiFmpFL2CV4OY7mnf" SlotId="TGmZ4MBF1OuMp8DWfipITU" Bounds="456,597" />
+                <Pad Id="FkOjjm1OWjPOZs9eHo55RP" SlotId="TGmZ4MBF1OuMp8DWfipITU" Bounds="504,434" />
+                <ControlPoint Id="MAifiUFxyJLQT4tzRjPT0k" Bounds="504,387" />
+                <Pad Id="CCgsMUHwXORNtgE9R637Xr" SlotId="TGmZ4MBF1OuMp8DWfipITU" Bounds="492,281" />
+                <ControlPoint Id="SNLWWxgTQRfM1noARjwckQ" Bounds="492,249" />
+              </Canvas>
+              <ProcessDefinition Id="SLhf8mI2Oa1MN2hq3FH6Ke" IsHidden="true">
+                <Fragment Id="PdMZDxOMgl1MjSKjHjXcRD" Patch="NRg0uPr9LwVPFBax9xAaXc" Enabled="true" />
+                <Fragment Id="CGE14acNDr1P7eqw4OpeA1" Patch="SR2x91EXkpiO4ZgO2TpmdS" />
+                <Fragment Id="LjSxs0e7qryPHL2F8uj4vp" Patch="Vhh85zbkYe3QFX9WlGcVTs" />
+              </ProcessDefinition>
+              <Link Id="LiliaFpxl0vNYvIFHWTkyQ" Ids="IjZwGUG45oONNrbzk39NXP,U52FRIx8fUIN52Vi9oo4Uz" IsHidden="true" />
+              <Slot Id="T9Yk2Vb3FN6QaX9x62aCZv" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="RcL5jEVvHzzPDXJury5hlc" Ids="PMBz7u0XMxvMhpS0sKPVb5,QswgJX1Mj7aOnSSI2TG0nA" />
+              <Slot Id="QR7JOjHJ9bCNb4lKh5rFl6" Name="Position" />
+              <Link Id="Tw5hqDIgasZOQDOGnR3L3s" Ids="HI0XMQhqHQJNMmC4p3oHW3,R3xjC0ubJXRMP4Iot3WJau" />
+              <Link Id="IDvSCwnVEkxPZdUQsXFP7m" Ids="LKZfHR2FTwIOkwkjpWkwun,HI0XMQhqHQJNMmC4p3oHW3" IsHidden="true" />
+              <Link Id="EcALd6NE9daMrSBy3tbeuJ" Ids="HBRQGVFl0SVPD2wGsitYnh,LITPmvqd1rqLQvKTypjw4K" />
+              <Link Id="QST9Nynqs91Plg5ZSzimk1" Ids="PlkyP4cbAPDPmHoaIhjkc0,HBRQGVFl0SVPD2wGsitYnh" IsHidden="true" />
+              <Link Id="MmTUAGydbSNNYR4CSwbRLj" Ids="TieV5MCYGfNLhIY126xoat,AXWEWWLLpjXOFYXmD23y4y" />
+              <Slot Id="TGmZ4MBF1OuMp8DWfipITU" Name="Radius" />
+              <Link Id="DLRb9cOTrxvNRG17V19B0L" Ids="C7DPYeiFmpFL2CV4OY7mnf,VKp5sklHRQFNMWCVUuwuib" />
+              <Link Id="UXx4j5jJ5HvLGieDz2iMY6" Ids="UDzR0Z6RsM9Opehywk2Rcj,SRvJeVk3p87PTvH2uDWRzc" />
+              <Link Id="KbIKax5jMNTOoDyN659Ljj" Ids="HHVvBKBwkLEN2qciadyYYA,IjZwGUG45oONNrbzk39NXP" />
+              <Link Id="UnV2bxL6aN3M1a74AV7VXB" Ids="MAifiUFxyJLQT4tzRjPT0k,FkOjjm1OWjPOZs9eHo55RP" />
+              <Link Id="FQdEL3TO49BM0WYIFEa7YG" Ids="BakikHiPmxJMU3hNUT1wJj,MAifiUFxyJLQT4tzRjPT0k" IsHidden="true" />
+              <Link Id="Q0VfHZQOISfLII5m6ClQvM" Ids="SNLWWxgTQRfM1noARjwckQ,CCgsMUHwXORNtgE9R637Xr" />
+              <Link Id="NqCY6kCRm2ELsqfA27XS1s" Ids="A8XHBpwNnF6NyRI18cXRGK,SNLWWxgTQRfM1noARjwckQ" IsHidden="true" />
+              <Patch Id="NRg0uPr9LwVPFBax9xAaXc" Name="Create">
+                <Pin Id="LKZfHR2FTwIOkwkjpWkwun" Name="Position" Kind="InputPin" />
+                <Pin Id="A8XHBpwNnF6NyRI18cXRGK" Name="Radius" Kind="InputPin" />
+                <Pin Id="PlkyP4cbAPDPmHoaIhjkc0" Name="Color" Kind="InputPin" />
+              </Patch>
+              <Patch Id="SR2x91EXkpiO4ZgO2TpmdS" Name="Draw">
+                <Pin Id="U52FRIx8fUIN52Vi9oo4Uz" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Patch Id="Vhh85zbkYe3QFX9WlGcVTs" Name="SetRadius">
+                <Pin Id="BakikHiPmxJMU3hNUT1wJj" Name="Radius" Kind="InputPin" />
+              </Patch>
+            </Patch>
+          </Node>
+          <Pad Id="An5TRUD5H35MByGSZ65v0G" Bounds="126,535,392,83" ShowValueBox="true" isIOBox="true" Value="Here we have RoundWidget and RectWidget that both IMPLEMENT the INTERFACE IWidget">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JHohWfuawmhPJP6qleK7tX" Name="Implicit Conversion for Upcasting" Bounds="99,683,501,535" />
+          <Node Bounds="184,773,191,163" Id="KcpWq60YbdTMOyJMomn0Q7">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Try" />
+            </p:NodeReference>
+            <Patch Id="Vnc6RkK5PKMLJWZ8WIqgO6" ManuallySortedPins="true">
+              <Patch Id="HbrgpWon7CfL0plcZ1Kcbf" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="S29gcno1aQOQBEDiwU8wlu" Name="Update" ManuallySortedPins="true" />
+              <Node Bounds="198,889,43,26" Id="DiW2E3ZNkJ9Ntfz0kUTYZi">
+                <p:NodeReference LastCategoryFullName="Main.IWidget" LastDependency="HowTo 26 Implicit Conversion for Upcasting.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Main.IWidget" />
+                  <Choice Kind="OperationCallFlag" Name="Draw" />
+                </p:NodeReference>
+                <Pin Id="KsHhaSO5XMnMuwHS3w4kaI" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Fyg4vh5irSjLPOVlKWlj7R" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="JhGPKzYcIL8Lp6DkMKn2Pd" Name="Layer" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="196,796,64,26" Id="UJO53HP8MClNw1iq9UR5Qy">
+                <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 26 Implicit Conversion for Upcasting.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="RoundWidget" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="Ld8CXj2d9WkNAwSXdgVa0n" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="O8nUhkqBpmRMqH4aZD8U4T" Name="Position" Kind="InputPin" />
+                <Pin Id="BQqf6EweFjjOhmDFUEth8V" Name="Radius" Kind="InputPin" />
+                <Pin Id="Q2ULEZ5yIcEMIwwc3s3bh6" Name="Color" Kind="InputPin" />
+                <Pin Id="CmELI2QAQqcNpa6RJBdROk" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="307,796,56,26" Id="EcBlvAi0ic9MQoqcjKwN7j">
+                <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 26 Implicit Conversion for Upcasting.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="RectWidget" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="DqBGYAst655ODtnj8dXRlO" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="NjJULKZSJntO49YgZpfeq2" Name="Position" Kind="InputPin" />
+                <Pin Id="FPLwf3spxVdMeHmfqIbPxN" Name="Size" Kind="InputPin" />
+                <Pin Id="BUbAU1fr57iLXi5MwZc5K8" Name="Color" Kind="InputPin" />
+                <Pin Id="VmfjUUDKmLsMjy7mFr80M9" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="308,890,43,26" Id="TDC3Gwn3ukkPnvkggJMTDD">
+                <p:NodeReference LastCategoryFullName="Main.IWidget" LastDependency="HowTo 26 Implicit Conversion for Upcasting.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="IWidget" />
+                  <Choice Kind="OperationCallFlag" Name="Draw" />
+                </p:NodeReference>
+                <Pin Id="OMxV8culxwpN4RS2MioiMD" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GempQZC4Lu1N8Yw0yHn4fu" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="L2MeuFJWuwoN9HHIXJfGQn" Name="Layer" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <Pin Id="IfgN2ZLaAOgOhgSuWCeXbZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Urfaj2oAhd7MeK8wSvY6r5" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KZCFAwiXwGlMHnALD1gsYB" Name="Stick To Last Valid Outputs" Kind="InputPin" />
+            <Pin Id="PmPTJuW168nOJXP8LRdXKW" Name="Reset Region On Failure" Kind="InputPin" />
+            <Pin Id="FoqRl2Dir3rQHr4dyp62Xd" Name="Success" Kind="OutputPin" />
+            <Pin Id="IRkMZwHtMLlLk2QhzdgyAK" Name="Failure" Kind="OutputPin" />
+            <Pin Id="TXA5O7ky3ZGORc6PtZw21Y" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="JWjqtcT32qIOFdaoLYlMG9" Name="Exceptions" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ux3qCZFzySRNwBWnPtHFPs" Bounds="383,796,192,177" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Connect the RoundWidget.Create and RectWidget.Create to the IWidget.Draw nodes below them. You should be able to directly connect them. The types are converted automatically, hence it's an IMPLICIT CONVERSION.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ArxaliafJOUOovpVJDMSLM" Bounds="131,997,404,37" ShowValueBox="true" isIOBox="true" Value="Why is this in a Try region? Because the IWidget.Draw will throw exceptions while they are unconnected as they cannot operate on NULL object. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JB2c5IS1SJfOfmJecepblC" Bounds="129,1041,406,150" ShowValueBox="true" isIOBox="true" Value="&#xD;&#xA;And for bonus points why is that? &#xD;&#xA;Because normally in vvvv if I create such an operation vvvv will create an unitialised object to be consumed by it. Eg if I create RoundWidget.Draw node and you mouse over the top you see it automatically created a 'blank' RoundWidget. It's not NULL on the input, there is something there, so why not the same with IWidget.Draw? &#xD;&#xA;&#xD;&#xA;Because there is no IWidget.Create &#xD;&#xA;In the case of INTERFACE definitions: INTERFACES cannot be created (instanced) as objects on their own. INTERFACES are only a definition of what other objects will share as common operations. &#xD;&#xA;&#xD;&#xA;So I can create a RoundWidget or RectWidget and CAST it as an IWidget but I cannot directly create an IWidget, so vvvv can't either.&#xD;&#xA;More on this in a future INTERFACES tutorial.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">5</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="CxPBgESviIhO8ZzNb5gVeG" Location="VL.Skia" Version="2024.6.0" />
+</Document>
