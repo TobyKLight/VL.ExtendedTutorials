@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DsW7h3NYOdSL6X41EQvtck" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="L1iZdr4uRGYLddNnAfg3VE" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="J54lPHVWg40L4KCOKI5e8M">
         <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
-          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="132,86,451,149" ShowValueBox="true" isIOBox="true" Value="-OfType (Sequence) casts every object in the sequence to the downstream type. It only keeps the objects that succeed the cast. &#xD;&#xA;&#xD;&#xA;-If nothing succeeds the cast then you get an empty sequence which usually prevents further downstream processing. &#xD;&#xA;&#xD;&#xA;-Which effectively means OfType works similar to CastAs but for spreads. ">
+          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="132,86,451,149" ShowValueBox="true" isIOBox="true" Value="-OfType (Sequence) DOWNCASTS every object in the sequence to the downstream type. It only keeps the objects that succeed the cast. &#xD;&#xA;&#xD;&#xA;-If nothing succeeds the cast then you get an empty sequence which usually prevents further downstream processing. This can act as a 'safety gate' to prevent downstream type mismatch errors.&#xD;&#xA;&#xD;&#xA;-Which effectively means OfType works similar to CastAs but for spreads. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -25,8 +25,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="NuKJM2Qwty3P0UF8QjkBaW" Name="Key Concepts" Bounds="123,45,484,193" />
-          <Overlay Id="Ax5hhYEHbhONHhSt7lXWiC" Name="Performance impact" Bounds="123,1683,652,124" />
-          <Pad Id="HGKxuiuDZedLByyXEDOKcY" Bounds="151,1739,566,57" ShowValueBox="true" isIOBox="true" Value="OfType is doing type checking for every object in the spread. This will use a little performance. That being said it's unlikely to be a major bottleneck in realworld usecases.">
+          <Overlay Id="Ax5hhYEHbhONHhSt7lXWiC" Name="Performance impact" Bounds="119,2155,652,124" />
+          <Pad Id="HGKxuiuDZedLByyXEDOKcY" Bounds="147,2211,566,57" ShowValueBox="true" isIOBox="true" Value="OfType is doing type checking for every object in the spread. This will use a little performance. That being said it's unlikely to be a major bottleneck in realworld usecases.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -305,8 +305,8 @@
             <Pin Id="NAQQUJVU8wtQO4GgCKhx9X" Name="Color" Kind="InputPin" />
             <Pin Id="AO5BszpMxFCNZDQLVjMy1q" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Overlay Id="MvFNJdKBzb2MBwQyRYd9g3" Name="Creating and Upcasting" Bounds="126,531,487,488" />
-          <Pad Id="TnLMoP4yef6QQ9bPx5V2UH" Bounds="160,865,397,61" ShowValueBox="true" isIOBox="true" Value="So that we have something to downcast first we upcast several RoundWidgets and RectWidgets to IWidget and put them in a spread.">
+          <Overlay Id="MvFNJdKBzb2MBwQyRYd9g3" Name="Creating and Upcasting" Bounds="126,531,703,488" />
+          <Pad Id="TnLMoP4yef6QQ9bPx5V2UH" Bounds="280,800,397,61" ShowValueBox="true" isIOBox="true" Value="So that we have something to downcast first we upcast several RoundWidgets and RectWidgets to IWidget and put them in a spread.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -315,7 +315,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HwQHHoutysYLwF8d8dDin5" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="346,829" />
+          <Pad Id="HwQHHoutysYLwF8d8dDin5" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="499,757" />
           <Node Bounds="254,630,41,26" Id="LwVsMJBwquPPDjq0EAjvmu">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -337,7 +337,7 @@
             <Pin Id="VG6vLvIgX58LMLPmzrW8Sj" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="PoY7Vck76waMdioDhe450x" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="210,1107" />
-          <Pad Id="IQqXHj3oagOMjRMOvUO8yN" Bounds="160,1450,445,193" ShowValueBox="true" isIOBox="true" Value="OfType basically works like a ForEach loop running CastAs on every object. It only keeps the objects that sucessfully cast to the downstream type. &#xD;&#xA; &#xD;&#xA;If nothing casts succesfully then the downstream sequence will be empty (zero slices). In most cases this will prevent downstream processing and so OfType can act as a safety gate to prevent downstream errors. ">
+          <Pad Id="IQqXHj3oagOMjRMOvUO8yN" Bounds="160,1450,445,193" ShowValueBox="true" isIOBox="true" Value="OfType basically works similar to a ForEach loop running CastAs on every object, that only keeps the objects that sucessfully cast to the downstream type. &#xD;&#xA; &#xD;&#xA;If nothing casts succesfully then the downstream sequence will be empty (zero slices). In most cases this will prevent downstream processing and so OfType can act as a safety gate to prevent downstream errors. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -368,7 +368,7 @@
             <Pin Id="DVGsR88PJU8PRXnKgv8ge2" Name="Item" Kind="InputPin" />
             <Pin Id="FDa196R9YuiOJgl3VVktZN" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="258,681,56,26" Id="CxcUgDCPqaQNnohbMxt8Pv">
+          <Node Bounds="531,589,56,26" Id="CxcUgDCPqaQNnohbMxt8Pv">
             <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
@@ -380,7 +380,7 @@
             <Pin Id="ITw2J5beIZ2MvsmosjvzlC" Name="Color" Kind="InputPin" />
             <Pin Id="VfpS0dkSRpLMe3mre0iE2G" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="254,732,41,26" Id="EEUP1iEE248OocImK1EPSe">
+          <Node Bounds="532,633,41,26" Id="EEUP1iEE248OocImK1EPSe">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="Spread" />
@@ -390,7 +390,7 @@
             <Pin Id="KtOL9QmrwkLMxrBXkeczRH" Name="Item" Kind="InputPin" />
             <Pin Id="HskH1RFnBSrLxPQFJhMdJ9" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="352,681,56,26" Id="CuELdalrcFqMAvBq9KdR1t">
+          <Node Bounds="625,589,56,26" Id="CuELdalrcFqMAvBq9KdR1t">
             <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
@@ -402,7 +402,7 @@
             <Pin Id="LQkuCW6RQRXNEkWElcAsEZ" Name="Color" Kind="InputPin" />
             <Pin Id="VRVfayutj33MBX2Z7XOYte" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="348,732,41,26" Id="UENgf7xCrqOQUJaebjWeYQ">
+          <Node Bounds="626,633,41,26" Id="UENgf7xCrqOQUJaebjWeYQ">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="Spread" />
@@ -412,7 +412,7 @@
             <Pin Id="RlpC0BSdPcrPY1CNtjHD8X" Name="Item" Kind="InputPin" />
             <Pin Id="GOojgvFJwDfQIImGIGuCZ6" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="444,733,41,26" Id="BhUWs1jVgxIPi4BMCBvLvM">
+          <Node Bounds="722,634,41,26" Id="BhUWs1jVgxIPi4BMCBvLvM">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="Spread" />
@@ -422,7 +422,7 @@
             <Pin Id="PmJCv9DR54FNjihVVJgVsN" Name="Item" Kind="InputPin" />
             <Pin Id="QFT3tjfmK50NX1gM2p9ox1" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="BIiCI2KRlu5QHU6DefLtiY" Bounds="158,931,397,61" ShowValueBox="true" isIOBox="true" Value="In total should be 4 RectWidgets and 2 RoundWidgets">
+          <Pad Id="BIiCI2KRlu5QHU6DefLtiY" Bounds="278,866,397,61" ShowValueBox="true" isIOBox="true" Value="In total should be 4 RectWidgets and 2 RoundWidgets">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -431,7 +431,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="446,682,56,26" Id="FuF0jI2XRXEN0zgWKvzPdu">
+          <Node Bounds="719,590,56,26" Id="FuF0jI2XRXEN0zgWKvzPdu">
             <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
@@ -533,9 +533,38 @@
             <Pin Id="HfTR96Ueos2OziuJkubVFz" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="BaRpZIpTXJMLztJ06XqjxI" Comment="" Bounds="553,1257,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Gq7a2zgZeWhLZxRdRtMY5y" Bounds="133,1744,517,163" ShowValueBox="true" isIOBox="true" Value="Technically OfType [Sequence[ only works for DOWNCASTING, I.E Scenarios where you MUST use CastAs or HardCast to do EXPLICIT conversion in the singular context. &#xD;&#xA;&#xD;&#xA;UPCASTING a spread is not supported by OfType. Instead use a ForEach loop and make the IMPLICIT conversion in the singular context. See helppatch 'Implicit Conversions for Upcasting' for more details. &#xD;&#xA;&#xD;&#xA;Note for collection types other than Spread a direct connection may be supprted.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KfKvYS2KSXWQBWDkXYSvic" SlotId="LKwFMXxnrdfOqZbtwaxIBx" Bounds="274,1920" />
+          <Pad Id="OcEO0sePX1vL5xtI3LZkYH" SlotId="IinrfXPbrVGP1M6uCs3mRZ" Bounds="274,2071" />
+          <Node Bounds="260,1953,92,86" Id="EXk0rFBDCNJOsygxPiuHrH">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="MsRevv9Wor2L2U9Pu69MMC" Name="Break" Kind="OutputPin" />
+            <Patch Id="BFFbaYbM0M4MlEfWq0JPmw" ManuallySortedPins="true">
+              <Patch Id="V4rArjE1BmbQbZ9KD2kmnN" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="GBSlKBOVDEoPid2Gk6WpPY" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="PpPcAZkkVD4N5Iz4mTi7LS" Name="Dispose" ManuallySortedPins="true" />
+            </Patch>
+            <ControlPoint Id="FSnbjWrocYbMaWLYFICQMK" Bounds="274,1959" Alignment="Top" />
+            <ControlPoint Id="ALbaZqeZxisNJzA6QnAKid" Bounds="274,2033" Alignment="Bottom" />
+          </Node>
+          <Overlay Id="C8ELVmNBIiqNnoBI8vpvbX" Name="What about UPCASTING?" Bounds="120,1674,538,448" />
+          <Pad Id="K6wYi7a1S5VLNvoYsYmZWP" SlotId="JHENoFSctvNLvUNs1NBdq8" Bounds="553,1924" />
+          <Pad Id="OEQPkVEKQA3NUI9Eozz7Av" SlotId="HjYimXhIqh0LwQZDssp8Cm" Bounds="553,2065" />
         </Canvas>
         <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="TMQO5iBK0HMM0WLz36lcL9" />
-        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="NUqZStUkUzlODbRRx19Tuw" />
         <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
           <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
           <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
@@ -576,8 +605,52 @@
         <Link Id="McSxLf2FT3VMboVVab38W9" Ids="HfTR96Ueos2OziuJkubVFz,BaRpZIpTXJMLztJ06XqjxI" />
         <Link Id="GOzZ3aUlgPTN46hwzpvTtw" Ids="LFw7T2PSDaNLTM5oy79xsO,BuME20C4P0TQRPWy6uyzTF" />
         <Link Id="Uvh2g6kKTJhPkKC2FzB6MZ" Ids="PoY7Vck76waMdioDhe450x,BPqFQemF1e4L1hbG70KXie" />
+        <Slot Id="LKwFMXxnrdfOqZbtwaxIBx" Name="Spread&lt;RoundWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RoundWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Slot Id="IinrfXPbrVGP1M6uCs3mRZ" Name="Spread&lt;IWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="JuHNTmxXJFaODElRvTy1Sm" Ids="KfKvYS2KSXWQBWDkXYSvic,FSnbjWrocYbMaWLYFICQMK" />
+        <Link Id="OOJSPrDKtV7P2LkKRbv8r7" Ids="ALbaZqeZxisNJzA6QnAKid,OcEO0sePX1vL5xtI3LZkYH" />
+        <Link Id="Jmz8ykTHDBHPmXcVVu61YB" Ids="FSnbjWrocYbMaWLYFICQMK,ALbaZqeZxisNJzA6QnAKid" />
+        <Slot Id="JHENoFSctvNLvUNs1NBdq8" Name="Sequence&lt;RoundWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RoundWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="NUqZStUkUzlODbRRx19Tuw" Ids="K6wYi7a1S5VLNvoYsYmZWP,OEQPkVEKQA3NUI9Eozz7Av" />
+        <Slot Id="HjYimXhIqh0LwQZDssp8Cm" Name="Sequence&lt;IWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="CxPBgESviIhO8ZzNb5gVeG" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="CxPBgESviIhO8ZzNb5gVeG" Location="VL.Skia" Version="2024.6.2" />
 </Document>

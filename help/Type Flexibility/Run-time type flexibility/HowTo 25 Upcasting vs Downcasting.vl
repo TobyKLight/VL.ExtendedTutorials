@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OaOajKu19CjLSa9u7buZQe" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OaOajKu19CjLSa9u7buZQe" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -199,11 +199,6 @@
                 <Pin Id="AUNmwzJ8GH0NsotsOcaGRK" Name="Size" Kind="InputPin" />
                 <Pin Id="PSOx5Ey8SrUNZQxukQr8wt" Name="Color" Kind="InputPin" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="NltSDcLnEfCOJvVcbFiZ26" IsHidden="true">
                 <Fragment Id="L3DzS9dZvyDM8wT4BrrydR" Patch="TKBCNv57uScMkQKKmzqjS8" Enabled="true" />
                 <Fragment Id="MzaONi2XQR6LiD6QH5ARfb" Patch="UMjUNx2DnJRLohJT9PPjOl" />
@@ -256,11 +251,6 @@
                 <Overlay Id="SNTtyfpoDcDPSPXRoGvoRD" Name="Draw" Bounds="329,271,310,200" />
                 <ControlPoint Id="GTs7YWocQ0RNv6NbcAWEIY" Bounds="452,395" />
               </Canvas>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="JBDqqKvhijlPahEmtSpl28" IsHidden="true">
                 <Fragment Id="PhF02Y9oX1IPqrUmeg7Hf3" Patch="S6DifXZbeiDQGY9pLTRasb" />
               </ProcessDefinition>
@@ -371,7 +361,7 @@
           </Node>
           <Overlay Id="MPCCopCrsUSNNZFJmGMrZs" Name="Create some widgets" Bounds="47,1044,524,258" />
           <Node Bounds="221,1199,64,26" Id="Eh2nY7kVjpcPiWe5SgB13T">
-            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 25 Upcasting vs Downcasting.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RoundWidget" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -383,7 +373,7 @@
             <Pin Id="DxyrXBFMuOUP0c0XwtrrdO" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="140,1112,56,26" Id="HBxry0TnAPyMXzGQGzo1at">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 25 Upcasting vs Downcasting.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -395,7 +385,7 @@
             <Pin Id="Q1CbnsfFa7INTX4RPS27iX" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="182,1152,56,26" Id="VcqyYQ4oH1PMUKsrugIM39">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 25 Upcasting vs Downcasting.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
               <Choice Kind="OperationCallFlag" Name="Create" />
@@ -455,12 +445,14 @@
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="G84ctclK58fMgrJEuDOSAY" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="IVF0iABp0qGOfa59D9ZqDG" Bounds="188,1624" Alignment="Top" />
+            <ControlPoint Id="HoXfI2d05WcQJxvZfAIgnY" Bounds="184,1695" Alignment="Bottom" />
             <Patch Id="M97U4jfixdEPPRNW4Vozl3" ManuallySortedPins="true">
               <Patch Id="DKQiqyvNadYPqvx1LPCfwe" Name="Create" ManuallySortedPins="true" />
               <Patch Id="F2y0fWR3uRdL8wmfZhuKOu" Name="Update" ManuallySortedPins="true" />
               <Patch Id="FQ9qDjnbCNaLgWGrAtK9CS" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="186,1642,43,26" Id="DHBw9OZgtrfPc7XhzERPqM">
-                <p:NodeReference LastCategoryFullName="Main.IWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <p:NodeReference LastCategoryFullName="Main.IWidget" LastDependency="HowTo 25 Upcasting vs Downcasting.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="InterfaceTypeFlag" Name="IWidget" />
                   <Choice Kind="OperationCallFlag" Name="Draw" />
@@ -470,8 +462,6 @@
                 <Pin Id="Qcvkq99q0ItPArGbp1FHTT" Name="Layer" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="IVF0iABp0qGOfa59D9ZqDG" Bounds="188,1624" Alignment="Top" />
-            <ControlPoint Id="HoXfI2d05WcQJxvZfAIgnY" Bounds="184,1695" Alignment="Bottom" />
           </Node>
           <Node Bounds="182,1715,45,19" Id="UdpRgr9JhIsLQzNRtvoKsR">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
@@ -557,7 +547,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="169,2285,56,26" Id="Ut4lmBSSTrbLv3ZhNaStat">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 25 Upcasting vs Downcasting.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="RectWidget" />
               <Choice Kind="OperationCallFlag" Name="SetSize" />
@@ -638,6 +628,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.0" />
-  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.2" />
+  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.2" />
 </Document>
