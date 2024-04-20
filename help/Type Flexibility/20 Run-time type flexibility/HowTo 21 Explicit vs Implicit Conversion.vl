@@ -306,7 +306,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="K4uQWc85TtcMQw8pmEd5ya" Bounds="123,1922,463,327" ShowValueBox="true" isIOBox="true" Value="All of these conversions cost some performance. Even the most straightforward implicit conversion requires some CPU instructions to execute. The cost will vary, naturally, depending on the complexity of the conversion. &#xD;&#xA;&#xD;&#xA;I will talk about the performance impact at each section.&#xD;&#xA;&#xD;&#xA;However bear in mind that conversions are completely normal and your computer can do thousands of them every second without breaking a sweat. &#xD;&#xA;&#xD;&#xA;Don't get into a mindset of 'casting is bad because type-checking has a cost'. These features are here to be used. &#xD;&#xA;&#xD;&#xA;In typical graphics-heavy vvvv use-cases I would estimate type conversions are unlikely to be a bottleneck and should generally be a low priority for optimisation. ">
+          <Pad Id="K4uQWc85TtcMQw8pmEd5ya" Bounds="106,1527,463,327" ShowValueBox="true" isIOBox="true" Value="All of these conversions cost some performance. Even the most straightforward implicit conversion requires some CPU instructions to execute. The cost will vary, naturally, depending on the complexity of the conversion. &#xD;&#xA;&#xD;&#xA;I will talk about the performance impact at each section.&#xD;&#xA;&#xD;&#xA;However bear in mind that conversions are completely normal and your computer can do thousands of them every second without breaking a sweat. &#xD;&#xA;&#xD;&#xA;Don't get into a mindset of 'casting is bad because type-checking has a cost'. These features are here to be used. &#xD;&#xA;&#xD;&#xA;In typical graphics-heavy vvvv use-cases I would estimate type conversions are unlikely to be a bottleneck and should generally be a low priority for optimisation. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -324,7 +324,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="N29OtBc1nOSL0FAqy9NMcr" Name="What about performance?" Bounds="97,1869,533,381" />
+          <Overlay Id="N29OtBc1nOSL0FAqy9NMcr" Name="What about performance?" Bounds="80,1474,533,381" />
           <Pad Id="SS6iN2UNMkANlqIgKRqYCZ" Bounds="174,1424,359,22" ShowValueBox="true" isIOBox="true" Value="We will go into more detail on both of these shortly">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -385,135 +385,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="NxD8KxoIxgmNPwdCrm7gu4" Name="Collections block implicit conversion" Bounds="91,1494,902,355" />
-          <Pad Id="TEMlEOLorvGLhu7upAvkfI" Bounds="119,1546,826,37" ShowValueBox="true" isIOBox="true" Value="An important note is that as of 6.0 direct implicit conversion is not possible when the types are in collections (and in other scenarios where they are 'wrapped' as an inner type)">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="LAUsHsaaZgYL7pN6PSDbH1" Comment="Float32" Bounds="195,1774,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="LbaJLENQHZTP9wj5I4zyMh" Comment="Integer32" Bounds="195,1695,35,15" ShowValueBox="true" isIOBox="true" Value="50">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="SlCrQMBW2laLLfh2gfm5H5" Bounds="132,1615,207,42" ShowValueBox="true" isIOBox="true" Value="//For example this Integer32 implicity converts to a Float32">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="S7VHHjckbN4MjoKMzHkcpJ" Bounds="428,1611,209,63" ShowValueBox="true" isIOBox="true" Value="//But this Spread&lt;Integer32&gt; does not directly implicitly convert to a Spread&lt;Float32&gt;">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="QrEUJNRqRbdP833BRaVAFe" Comment="Spread&lt;Integer32&gt;" Bounds="483,1690,30,34" ShowValueBox="true" isIOBox="true" Value="50">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="RocQTXQGkIeNWUjoSa2ooX" Bounds="225,1738,137,15" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try drawing a link, can connect">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="MLgITKyWYg9N3n2kd0cgSc" Bounds="524,1730,117,23" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try drawing a link, cannnot connect">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="JGJoztejqPVO9CFEaudcWH" Comment="Spread&lt;Float32&gt;" Bounds="479,1768,35,34" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="ImmutableTypeFlag" Name="Float32" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="KUZspWzKpqcNMEjyNLVR6H" Bounds="713,1610,235,60" ShowValueBox="true" isIOBox="true" Value="//Can achieve the implicit conversion in an appropriate singular context. eg a ForEach loop">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Bg93dBaR3HHQazjyGR4Tzw" Comment="Spread&lt;Integer32&gt;" Bounds="809,1679,30,34" ShowValueBox="true" isIOBox="true" Value="50">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="SAmpFc0DFwzOuUbE20zjJa" Bounds="825,1739,119,53" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try drawing a link between the splicers. Inside the ForEach region the context is singular again Integer32 to Float32 so it works">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="DkfDrkhYTDsPFNcXQwmpGo" Comment="Spread&lt;Float32&gt;" Bounds="808,1807,35,34" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="ImmutableTypeFlag" Name="Float32" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="794,1729,31,48" Id="KkHoeFYsGNHOcSp9Mtr35R">
-            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-            </p:NodeReference>
-            <Pin Id="QQhteSdOU1DLvGpQaS0FBn" Name="Break" Kind="OutputPin" />
-            <Patch Id="REY7rXTARF6OXqAqyPQYtE" ManuallySortedPins="true">
-              <Patch Id="BCOcCbp4EqdNIGataBbi9y" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="Rd4W6yfX6MGNsO5aVCSf1V" Name="Update" ManuallySortedPins="true" />
-              <Patch Id="FeRFPgxyo9mQF5vCZ3KiQp" Name="Dispose" ManuallySortedPins="true" />
-            </Patch>
-            <ControlPoint Id="RM9neJJANTJO8yalN6CFLJ" Bounds="808,1735" Alignment="Top" />
-            <ControlPoint Id="SqHZjS2XHGIMvdGyg3XFcQ" Bounds="808,1771" Alignment="Bottom" />
-          </Node>
         </Canvas>
         <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="HUSkMBeQlOWMMzLnpaKitm" />
         <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="IagDXjZQcH3LXfSK8GFdBq" />
@@ -558,8 +429,6 @@
         <Link Id="GnDADb5QodvQOZh9qsLmbW" Ids="Ed9Wva7xQehQMyKnqJkd6g,IPGn8PopeIHM7rf6BypRQo" />
         <Link Id="KuPzTMYI3WVM7Izosnx9I7" Ids="UtTnhzwxvLMO6IekeQPhwe,SozBN9LJ1xNOaM1dEgBn0n" />
         <Link Id="UY4uRHw10b0Mv3ixE64FJ2" Ids="QutyeZMYHwrQOoVND995my,VCg4qPg2vv7P6UI1Qzfkxs" />
-        <Link Id="KzAUraJW9csMDAwq8e3gZS" Ids="Bg93dBaR3HHQazjyGR4Tzw,RM9neJJANTJO8yalN6CFLJ" />
-        <Link Id="MU6ragSnkonMWmTde2G2r4" Ids="SqHZjS2XHGIMvdGyg3XFcQ,DkfDrkhYTDsPFNcXQwmpGo" />
       </Patch>
     </Node>
   </Patch>

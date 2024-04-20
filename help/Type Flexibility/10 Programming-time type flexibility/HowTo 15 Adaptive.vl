@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IrhQTsfUyxNOQefltO9TMZ" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
-  <NugetDependency Id="DjjRK6XXd7SMg0QIBPXt9C" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IrhQTsfUyxNOQefltO9TMZ" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="DjjRK6XXd7SMg0QIBPXt9C" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="DLURjIYs4pZN00xD3Gx0xM">
     <Canvas Id="JqhdZhjqeeMNZrBhaCcpFS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,8 +15,8 @@
       </p:NodeReference>
       <Patch Id="NWjU5dFBzrnOTGLhnr25ge">
         <Canvas Id="FFExGHWeTq5LNzk7nHSZJT" CanvasType="Group">
-          <Overlay Id="CZqV24SLUdwOcO2oju59XI" Name="Key Concepts" Bounds="94,48,484,426" />
-          <Pad Id="HmUASVJkC5mQG4vpUS4CHi" Bounds="95,98,464,316" ShowValueBox="true" isIOBox="true" Value="-ADAPTIVE is like a hybrid of GENERIC and OVERLOADING functionality. &#xD;&#xA;&#xD;&#xA;-An ADAPTIVE definition will allow the compiler to choose between DIFFERENT functions based on TYPE. It basically gives OVERLOADED functions a GENERIC-style implementation in Gamma editor.&#xD;&#xA;&#xD;&#xA;-From a library developer point of view you basically setup OVERLOADING but then you provide a special extra ADAPTIVE DEFINITION. &#xD;&#xA;&#xD;&#xA;-From a library user point of view ADAPTVE and GENERIC nodes function the same way: Greyed out until the compiler can determine the correct type to use from context.  &#xD;&#xA;&#xD;&#xA;-Limitations: &#xD;&#xA;* ADAPTIVE only works on static operations (not processes) &#xD;&#xA;* the operations an ADAPTIVE definition chooses from must be NON-GENERIC">
+          <Overlay Id="CZqV24SLUdwOcO2oju59XI" Name="Key Concepts" Bounds="94,48,484,451" />
+          <Pad Id="HmUASVJkC5mQG4vpUS4CHi" Bounds="95,98,447,351" ShowValueBox="true" isIOBox="true" Value="-ADAPTIVE is like a hybrid of GENERIC and OVERLOADING functionality. &#xD;&#xA;&#xD;&#xA;-An ADAPTIVE definition will allow the compiler to choose between DIFFERENT functions based on TYPE. It basically gives OVERLOADED functions a GENERIC-style implementation in Gamma editor.&#xD;&#xA;&#xD;&#xA;-From a library developer point of view you basically setup OVERLOADING but then you provide a special extra ADAPTIVE DEFINITION. &#xD;&#xA;&#xD;&#xA;-From a library user point of view ADAPTVE and GENERIC nodes function the same way: Greyed out until the compiler can determine the correct type to use from context.  &#xD;&#xA;&#xD;&#xA;-Limitations: &#xD;&#xA;* ADAPTIVE only works on static operations (not processes) &#xD;&#xA;* the operations an ADAPTIVE definition chooses from should have the same pin count&#xD;&#xA;* the operations an ADAPTIVE definition chooses from must be NON-GENERIC">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -25,7 +25,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Vgps1IQ83lVOXAmFKJJqB4" Bounds="264,425,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/extending/design-guidelines.html#adaptive-nodes">
+          <Pad Id="Vgps1IQ83lVOXAmFKJJqB4" Bounds="265,452,140,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/extending/design-guidelines.html#adaptive-nodes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -44,7 +44,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="C280oiu237wM7rh8e1Uhd0" Bounds="145,425,121,19" ShowValueBox="true" isIOBox="true" Value="For more info see">
+          <Pad Id="C280oiu237wM7rh8e1Uhd0" Bounds="146,452,121,19" ShowValueBox="true" isIOBox="true" Value="For more info see">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -504,7 +504,7 @@
             <Pin Id="GCChQWDdDdpP09bGdkL1Ac" Name="InputA" Kind="InputPin" />
             <Pin Id="Cv68twANLd6P5IZv7sbGTD" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="J8xUDENtLGDPiWXFd31ENX" Bounds="265,451,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/how-to-make-adaptive-process-nodes-work/21461/12">
+          <Pad Id="J8xUDENtLGDPiWXFd31ENX" Bounds="266,478,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/how-to-make-adaptive-process-nodes-work/21461/12">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -672,6 +672,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ES5TTkEI74LOXdwZff978P" Location="VL.Stride" Version="2024.6.0-0280-g5542bf5529" />
+  <NugetDependency Id="ES5TTkEI74LOXdwZff978P" Location="VL.Stride" Version="2024.6.2" />
   <NugetDependency Id="CtnGiMHTblUPSUfiaJbwYA" Location="VL.Addons" Version="0.1.4" />
 </Document>

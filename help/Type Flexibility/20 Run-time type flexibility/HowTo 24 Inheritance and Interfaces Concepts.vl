@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Jc1wkWHOLL2Pm8BIxSfEHc" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Jc1wkWHOLL2Pm8BIxSfEHc" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -222,7 +222,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="HQ9VpOlGuF4NctT27Tn0oH" Name="INHERITANCE In vvvv nodebrowser" Bounds="62,1711,483,372" />
-          <Pad Id="GhS4GWQ9P6hMGtHZ2MYsos" Bounds="113,1769,413,311" ShowValueBox="true" isIOBox="true" Value="Double click to create a new node, Turn on Advanced aspect in the nodebrowser and type &quot;MoustButtonNotification&quot; &#xD;&#xA;&#xD;&#xA;You will see the methods of MouseButtonNotification listed at the top (Buttons, Equals and Hashcode).&#xD;&#xA;&#xD;&#xA;Following that you will see the methods available from the INHERITANCE tree with their origin in [square brackets].&#xD;&#xA;&#xD;&#xA;In this case this will include methods from [MouseNotification] which is the parent class, and the other parent classes above that inlcuding [NotificationWithPosition],  [NotificationBase] and others.&#xD;&#xA;&#xD;&#xA;You also will also see methods from the child classes of [MouseButtonNotification] including [MouseClickNotification] [MouseUpNotification] and others. ">
+          <Pad Id="GhS4GWQ9P6hMGtHZ2MYsos" Bounds="113,1769,413,311" ShowValueBox="true" isIOBox="true" Value="Double click to create a new node, Turn on Advanced aspect in the nodebrowser and type &quot;MouseButtonNotification&quot; &#xD;&#xA;&#xD;&#xA;You will see the methods of MouseButtonNotification listed at the top (Buttons, Equals and Hashcode).&#xD;&#xA;&#xD;&#xA;Following that you will see the methods available from the INHERITANCE tree with their origin in [square brackets].&#xD;&#xA;&#xD;&#xA;In this case this will include methods from [MouseNotification] which is the parent class, and the other parent classes above that inlcuding [NotificationWithPosition],  [NotificationBase] and others.&#xD;&#xA;&#xD;&#xA;You also will also see methods from the child classes of [MouseButtonNotification] including [MouseClickNotification] [MouseUpNotification] and others. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -526,6 +526,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.0" />
-  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="U9zORP63MT9OHy8Th5saZj" Location="VL.Serialization.FSPickler" Version="2024.6.2" />
+  <NugetDependency Id="EXfncj7rd7WP43AnbC5nKH" Location="VL.Skia" Version="2024.6.2" />
 </Document>

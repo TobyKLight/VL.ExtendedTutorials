@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SI0SqEOHxYFLBzQmX66nna" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="SI0SqEOHxYFLBzQmX66nna" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -161,7 +161,7 @@
               </Pin>
             </Patch>
           </Node>
-          <Pad Id="TW0QtfvRdQqP9Gjil4qtvY" Bounds="116,927,615,114" ShowValueBox="true" isIOBox="true" Value="Here we have three functions with the same name, but no red errors. &#xD;&#xA;&#xD;&#xA;Why? Because they have different SIGNATURES. &#xD;&#xA;&#xD;&#xA;In this case A and B have unique SIGNATURES because they have different counts of Input/Output pins.">
+          <Pad Id="TW0QtfvRdQqP9Gjil4qtvY" Bounds="116,927,615,114" ShowValueBox="true" isIOBox="true" Value="Here we have multiple functions with the same name, but no red errors. &#xD;&#xA;&#xD;&#xA;Why? Because they have different SIGNATURES. &#xD;&#xA;&#xD;&#xA;In this case A and B have unique SIGNATURES because they have different counts of Input/Output pins.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

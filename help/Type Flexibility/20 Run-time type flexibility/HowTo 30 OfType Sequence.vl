@@ -281,30 +281,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="OOWPWd7DV1kLuJqPnsgs2K" Name="OfType (Sequence)" Bounds="119,1047,529,605" />
-          <Node Bounds="247,584,64,26" Id="NrptYEOkm9qQMOLoM9IfNt">
-            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RoundWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="PDBcIe2ObGzPi9GcicgPZD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VEV9eO9gIAdL2zon91co2i" Name="Position" Kind="InputPin" />
-            <Pin Id="FQIrjeItbmTOlTHz9clTWD" Name="Radius" Kind="InputPin" DefaultValue="0.1" />
-            <Pin Id="RkVjyeg9kFmL5PVG8aM1Fb" Name="Color" Kind="InputPin" />
-            <Pin Id="NIgY3RJIi9GNIrEMPX8635" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="347,583,56,26" Id="OmUDhwaNOIjLSGWfJkY1kf">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RectWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="IPPu388wzcuPNP5C0AIGTk" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PwMxHUmlIJJPJpWNesQQDE" Name="Position" Kind="InputPin" />
-            <Pin Id="NuN0cTDOdvXOtD69JyBJVX" Name="Size" Kind="InputPin" DefaultValue="0.2, 0.2" />
-            <Pin Id="NAQQUJVU8wtQO4GgCKhx9X" Name="Color" Kind="InputPin" />
-            <Pin Id="AO5BszpMxFCNZDQLVjMy1q" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Overlay Id="MvFNJdKBzb2MBwQyRYd9g3" Name="Creating and Upcasting" Bounds="126,531,703,488" />
           <Pad Id="TnLMoP4yef6QQ9bPx5V2UH" Bounds="280,800,397,61" ShowValueBox="true" isIOBox="true" Value="So that we have something to downcast first we upcast several RoundWidgets and RectWidgets to IWidget and put them in a spread.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -315,27 +291,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HwQHHoutysYLwF8d8dDin5" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="499,757" />
-          <Node Bounds="254,630,41,26" Id="LwVsMJBwquPPDjq0EAjvmu">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="RpXlTcvKrRcNkbupPo19T0" Name="Input" Kind="StateInputPin" />
-            <Pin Id="FzcdDxPfzq2Ow8ATipaVHx" Name="Item" Kind="InputPin" />
-            <Pin Id="UpaIzN73WHhOW871psGMHb" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="343,634,41,26" Id="OO6lRdXHsuiLncL0XtdZz3">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="IdLFTPvzlUoOcUcHRlM3du" Name="Input" Kind="StateInputPin" />
-            <Pin Id="P41tO3CbSOuLVwkjeQCdk9" Name="Item" Kind="InputPin" />
-            <Pin Id="VG6vLvIgX58LMLPmzrW8Sj" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Pad Id="PoY7Vck76waMdioDhe450x" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="210,1107" />
           <Pad Id="IQqXHj3oagOMjRMOvUO8yN" Bounds="160,1450,445,193" ShowValueBox="true" isIOBox="true" Value="OfType basically works similar to a ForEach loop running CastAs on every object, that only keeps the objects that sucessfully cast to the downstream type. &#xD;&#xA; &#xD;&#xA;If nothing casts succesfully then the downstream sequence will be empty (zero slices). In most cases this will prevent downstream processing and so OfType can act as a safety gate to prevent downstream errors. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -346,82 +301,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="440,586,64,26" Id="RxYW5KbIBLnOjgPk4xL8Yv">
-            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RoundWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="PSKjpkofmtCOEJGD38sD16" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SknM1y6y7uoMbz2l44gVX7" Name="Position" Kind="InputPin" />
-            <Pin Id="Uf1HVeczQ9UMODb1CBMtuH" Name="Radius" Kind="InputPin" DefaultValue="0.3" />
-            <Pin Id="R0wZXYpJvUpNfABbqVF0Ad" Name="Color" Kind="InputPin" />
-            <Pin Id="H74jEII3crfNtvLxLKJd9l" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="447,632,41,26" Id="AnSXLrV5XvkNc9gft4ZWWQ">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="P8NXCHhO18mLYzxIm6nWAJ" Name="Input" Kind="StateInputPin" />
-            <Pin Id="DVGsR88PJU8PRXnKgv8ge2" Name="Item" Kind="InputPin" />
-            <Pin Id="FDa196R9YuiOJgl3VVktZN" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="531,589,56,26" Id="CxcUgDCPqaQNnohbMxt8Pv">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RectWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="Gvk5CouJ5HSPuNX0wWT1V2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JkjF7napbVKPt6XGlkBriC" Name="Position" Kind="InputPin" />
-            <Pin Id="ODWccmfCCpqM8ArLnSgDMh" Name="Size" Kind="InputPin" DefaultValue="0.4, 0.4" />
-            <Pin Id="ITw2J5beIZ2MvsmosjvzlC" Name="Color" Kind="InputPin" />
-            <Pin Id="VfpS0dkSRpLMe3mre0iE2G" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="532,633,41,26" Id="EEUP1iEE248OocImK1EPSe">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="Mt6w4RW1jyOOE1lV2qA9tL" Name="Input" Kind="StateInputPin" />
-            <Pin Id="KtOL9QmrwkLMxrBXkeczRH" Name="Item" Kind="InputPin" />
-            <Pin Id="HskH1RFnBSrLxPQFJhMdJ9" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="625,589,56,26" Id="CuELdalrcFqMAvBq9KdR1t">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RectWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="Man36XtvhNqPyOKDhtLKUQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Czok2OWS0tFMQirvPMdh0w" Name="Position" Kind="InputPin" />
-            <Pin Id="VCemeFOptZIMaC9XcnE73w" Name="Size" Kind="InputPin" DefaultValue="0.5, 0.5" />
-            <Pin Id="LQkuCW6RQRXNEkWElcAsEZ" Name="Color" Kind="InputPin" />
-            <Pin Id="VRVfayutj33MBX2Z7XOYte" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="626,633,41,26" Id="UENgf7xCrqOQUJaebjWeYQ">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="LUIlrRXHoBZP5YoVkN0lru" Name="Input" Kind="StateInputPin" />
-            <Pin Id="RlpC0BSdPcrPY1CNtjHD8X" Name="Item" Kind="InputPin" />
-            <Pin Id="GOojgvFJwDfQIImGIGuCZ6" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="722,634,41,26" Id="BhUWs1jVgxIPi4BMCBvLvM">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" />
-              <Choice Kind="OperationCallFlag" Name="Add" />
-            </p:NodeReference>
-            <Pin Id="Oib4FZItMopQR5p4QGxyNb" Name="Input" Kind="StateInputPin" />
-            <Pin Id="PmJCv9DR54FNjihVVJgVsN" Name="Item" Kind="InputPin" />
-            <Pin Id="QFT3tjfmK50NX1gM2p9ox1" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Pad Id="BIiCI2KRlu5QHU6DefLtiY" Bounds="278,866,397,61" ShowValueBox="true" isIOBox="true" Value="In total should be 4 RectWidgets and 2 RoundWidgets">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -431,18 +310,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="719,590,56,26" Id="FuF0jI2XRXEN0zgWKvzPdu">
-            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="RectWidget" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="Oz8k2W2yxcmNmkbsMLtjAZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERbFrgv0x5gNk3z34QDyZr" Name="Position" Kind="InputPin" />
-            <Pin Id="AX1xow9y7jiLAQH8cck0cp" Name="Size" Kind="InputPin" DefaultValue="0.6, 0.6" />
-            <Pin Id="Bd1ilF3UY7vNW2WWdWFHsZ" Name="Color" Kind="InputPin" />
-            <Pin Id="T3CKOCYwe8PQN5pksgqYYH" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Node Bounds="208,1172,49,19" Id="SZmWsAxerKTOpvOknCVnS6">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -562,8 +429,141 @@
           <Overlay Id="C8ELVmNBIiqNnoBI8vpvbX" Name="What about UPCASTING?" Bounds="120,1674,538,448" />
           <Pad Id="K6wYi7a1S5VLNvoYsYmZWP" SlotId="JHENoFSctvNLvUNs1NBdq8" Bounds="553,1924" />
           <Pad Id="OEQPkVEKQA3NUI9Eozz7Av" SlotId="HjYimXhIqh0LwQZDssp8Cm" Bounds="553,2065" />
+          <Node Bounds="236,606,64,26" Id="NQUvVxuGD5jPJ0X5wzLOdd">
+            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RoundWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="Lh0450BTJMGPL7ElYmaHqH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FvQMBc76GS1NSAJdErDIqg" Name="Position" Kind="InputPin" />
+            <Pin Id="KXQhf2HJY2wMaAZ3mDwATT" Name="Radius" Kind="InputPin" DefaultValue="0.1" />
+            <Pin Id="DvGNaNf7cBdPOBtBaxHjSx" Name="Color" Kind="InputPin" />
+            <Pin Id="IWXAVZFQfHmLy2MrfwxG0t" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="336,606,56,26" Id="BHiO2Svt4KyP7HpRxraDUO">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="CvlTesB2gL3LnpC3ah7Cg4" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DrJ38oRN4NaLuBVYTRdgSb" Name="Position" Kind="InputPin" />
+            <Pin Id="F93Cok0wr7XLOhredZeLCA" Name="Size" Kind="InputPin" DefaultValue="0.2, 0.2" />
+            <Pin Id="OikECbQV9w4LxrOhpRrKpc" Name="Color" Kind="InputPin" />
+            <Pin Id="BV88VdDmKzgQNkviXWOoAa" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="GPIjFEXhcuKM6JSWOgWGlz" SlotId="GJHdLvY9SYxQaL4P83tRuy" Bounds="490,741" />
+          <Node Bounds="236,653,41,26" Id="DVmILjoBBONPoPRA3mBDWr">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="OFIUQiITYiFL5fko5WE4mB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OBn8n2azborN7Ugzb3EVuX" Name="Item" Kind="InputPin" />
+            <Pin Id="GiXcYrAgRilPPFAs0MnCQf" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="336,653,41,26" Id="K5l9hCPlyuQLcaUmyvTu7q">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="FzP4lZdS7MVO49ZW6Prpaa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="K8pUrreJuKqPp2ZA5lOR3A" Name="Item" Kind="InputPin" />
+            <Pin Id="Sl4C3GyXIXmMak6ZGLZuIY" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="429,606,64,26" Id="Dz3O0O9O487MVcNnsdHonu">
+            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RoundWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="TTbumLcHArwQdd0sdMsWfJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KlDSj2lg4dUPntVHUX2T7g" Name="Position" Kind="InputPin" />
+            <Pin Id="UvkedDvVTslNnJ47TpEnC5" Name="Radius" Kind="InputPin" DefaultValue="0.3" />
+            <Pin Id="EezzZ6G2KYmOhWdS8pqQNz" Name="Color" Kind="InputPin" />
+            <Pin Id="MnE3uMtCRLUN9PVgRGrzzT" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="429,653,41,26" Id="UHXnGrX2D5MNMFEMde8QFS">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="C8ceItbThJfN74PNmoqcT0" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SqTGdSpYAOTN2TI2HOZOYX" Name="Item" Kind="InputPin" />
+            <Pin Id="FzjMkfySzsnNIAb2wcxS1a" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="520,606,56,26" Id="EysZGA3RmHROimgupg36LP">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="I2yGXLA5An8QAdVDMOz3f7" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TEsWcgSrEF9MSEbHxGqw74" Name="Position" Kind="InputPin" />
+            <Pin Id="NRitEwu2BS2LZaOOflgCEW" Name="Size" Kind="InputPin" DefaultValue="0.4, 0.4" />
+            <Pin Id="ORnfXSd3S5WOUUaquHxkvT" Name="Color" Kind="InputPin" />
+            <Pin Id="RtqozOzhkGhQZoceqj618g" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="520,653,41,26" Id="DZVeSXDzuN3QHY6nquPgTF">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="HmX5iYqXWUpLrRs4cCri6W" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VUSWg3FpwWTMusq7mY4Qg0" Name="Item" Kind="InputPin" />
+            <Pin Id="EGNq2azISLtLy0TJNh6UiO" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="614,606,56,26" Id="Ulj1Ey66ve9PvqJ4qIiUrw">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="VQAsojjFLvZON9LsKipH9L" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Rqlu0NglLP7OTMkOl7srse" Name="Position" Kind="InputPin" />
+            <Pin Id="CaWclkA5nbuNLhObt5wIS9" Name="Size" Kind="InputPin" DefaultValue="0.5, 0.5" />
+            <Pin Id="H2zKDJmx5kyPpKV39Tro2J" Name="Color" Kind="InputPin" />
+            <Pin Id="QN4HXdm6qWWQWz5bOQpYBX" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="614,653,41,26" Id="CPAcuXyqIC5QBxdJMCZb5W">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="VBwMpV1dGRGMdNXtRqKV4D" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TVbElMi7aDfMRIU6kiI61g" Name="Item" Kind="InputPin" />
+            <Pin Id="CSi9erk9wOuMTxGoLQqgrn" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="708,653,41,26" Id="G01X4WHw6G1NAKLrTsn05g">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="FcKsFhuukRRLiZ7I3Hm7hz" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Oj1ByvIFvZGLAzPHbB8T9P" Name="Item" Kind="InputPin" />
+            <Pin Id="No5gRaYm6ERN8ZVp66mHM1" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="708,606,56,26" Id="S3B6tTcWG6tQKLNXjqkXkS">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 30 OfType Sequence.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="Uquoa0c1UUIOdJkk4VfU7p" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E6UG9bpS9vWMTpsclWLbeD" Name="Position" Kind="InputPin" />
+            <Pin Id="PJLWNPUtBMfQQe3bPXXRer" Name="Size" Kind="InputPin" DefaultValue="0.6, 0.6" />
+            <Pin Id="RwRzRjGJJj3Pgqo4hR3xRa" Name="Color" Kind="InputPin" />
+            <Pin Id="UusaWTCF1JsNeGX8a2iL4N" Name="Output" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
-        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="TMQO5iBK0HMM0WLz36lcL9" />
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" ParticipatingElements="KIow4qK7fmMO07n2SdrRRo" />
         <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="NUqZStUkUzlODbRRx19Tuw" />
         <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
           <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
@@ -579,18 +579,6 @@
             </p:TypeArguments>
           </p:TypeAnnotation>
         </Slot>
-        <Link Id="FVPjrpcqHGqOpYPIx7daoF" Ids="NIgY3RJIi9GNIrEMPX8635,FzcdDxPfzq2Ow8ATipaVHx" />
-        <Link Id="VWJUukm83QTLSLsaNnLLhi" Ids="UpaIzN73WHhOW871psGMHb,IdLFTPvzlUoOcUcHRlM3du" />
-        <Link Id="Vs16Z3xmgSqO7PNt9cf4o3" Ids="AO5BszpMxFCNZDQLVjMy1q,P41tO3CbSOuLVwkjeQCdk9" />
-        <Link Id="GBGBjgG2bcrN1tt2ZqthiG" Ids="H74jEII3crfNtvLxLKJd9l,DVGsR88PJU8PRXnKgv8ge2" />
-        <Link Id="OcB3gj17fAvNBrbPvuJYEB" Ids="VG6vLvIgX58LMLPmzrW8Sj,P8NXCHhO18mLYzxIm6nWAJ" />
-        <Link Id="PPOPNxkKFn3PkPWpGE9VnT" Ids="VfpS0dkSRpLMe3mre0iE2G,KtOL9QmrwkLMxrBXkeczRH" />
-        <Link Id="OCqtOhwDISEOR6pFoOhWUY" Ids="VRVfayutj33MBX2Z7XOYte,RlpC0BSdPcrPY1CNtjHD8X" />
-        <Link Id="V4ZKoBa6tUFLBbb03mEvhd" Ids="FDa196R9YuiOJgl3VVktZN,Mt6w4RW1jyOOE1lV2qA9tL" />
-        <Link Id="LFAhmOTEE5WL8kuDSY30n9" Ids="HskH1RFnBSrLxPQFJhMdJ9,LUIlrRXHoBZP5YoVkN0lru" />
-        <Link Id="FWDZhtkuEqaNMFYct796V6" Ids="GOojgvFJwDfQIImGIGuCZ6,Oib4FZItMopQR5p4QGxyNb" />
-        <Link Id="TMQO5iBK0HMM0WLz36lcL9" Ids="QFT3tjfmK50NX1gM2p9ox1,HwQHHoutysYLwF8d8dDin5" />
-        <Link Id="Aa5NPLyEgH9OXiSxXoWt2J" Ids="T3CKOCYwe8PQN5pksgqYYH,PmJCv9DR54FNjihVVJgVsN" />
         <Link Id="HD7YFzo9a7YN7Yyhixbapa" Ids="PoY7Vck76waMdioDhe450x,OIPYJkHz9wbNuy3TxS6pFq" />
         <Link Id="KmaDzVv8ktdPyho108WMmn" Ids="TzT3x1pKky7N6UrVaY0xUN,Sku6ljJXZE2PBHWKjZt6zi" />
         <Link Id="BSg2Fxin0WjMLS3liyjv1O" Ids="Sku6ljJXZE2PBHWKjZt6zi,GOWasNkfHzsNAb2lNPkcZn" />
@@ -649,6 +637,18 @@
             </p:TypeArguments>
           </p:TypeAnnotation>
         </Slot>
+        <Link Id="EhQeibkDOwmMPaCOKyErP7" Ids="IWXAVZFQfHmLy2MrfwxG0t,OBn8n2azborN7Ugzb3EVuX" />
+        <Link Id="AvNKzlonYvfQAyLVaQFG0a" Ids="GiXcYrAgRilPPFAs0MnCQf,FzP4lZdS7MVO49ZW6Prpaa" />
+        <Link Id="IeUoxMbNagZNF9dMPVzk5v" Ids="BV88VdDmKzgQNkviXWOoAa,K8pUrreJuKqPp2ZA5lOR3A" />
+        <Link Id="BjP0hzuzoOXLAZTxcGKEVe" Ids="MnE3uMtCRLUN9PVgRGrzzT,SqTGdSpYAOTN2TI2HOZOYX" />
+        <Link Id="DzU6Nq74FulPr3aVLOnzNT" Ids="Sl4C3GyXIXmMak6ZGLZuIY,C8ceItbThJfN74PNmoqcT0" />
+        <Link Id="Qs3WO4iKUXVN5tRuPMOvaQ" Ids="RtqozOzhkGhQZoceqj618g,VUSWg3FpwWTMusq7mY4Qg0" />
+        <Link Id="PFhiycDKXxtOOTzP0i6VPg" Ids="QN4HXdm6qWWQWz5bOQpYBX,TVbElMi7aDfMRIU6kiI61g" />
+        <Link Id="LPjYB4gZ193POaqtbyHsba" Ids="FzjMkfySzsnNIAb2wcxS1a,HmX5iYqXWUpLrRs4cCri6W" />
+        <Link Id="AWXNVpj433NOJxn4AYm4eu" Ids="EGNq2azISLtLy0TJNh6UiO,VBwMpV1dGRGMdNXtRqKV4D" />
+        <Link Id="HVSJrY8mxn8PpVggNkdkd0" Ids="CSi9erk9wOuMTxGoLQqgrn,FcKsFhuukRRLiZ7I3Hm7hz" />
+        <Link Id="KIow4qK7fmMO07n2SdrRRo" Ids="No5gRaYm6ERN8ZVp66mHM1,GPIjFEXhcuKM6JSWOgWGlz" />
+        <Link Id="FzfrFgWPtkwQTpV9wsox7n" Ids="UusaWTCF1JsNeGX8a2iL4N,Oj1ByvIFvZGLAzPHbB8T9P" />
       </Patch>
     </Node>
   </Patch>

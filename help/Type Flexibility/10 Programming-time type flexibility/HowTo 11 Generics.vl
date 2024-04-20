@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HBE1NEhHAyOLgHYF371L0X" LanguageVersion="2024.6.0-0280-g5542bf5529" Version="0.128">
-  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.0-0280-g5542bf5529" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HBE1NEhHAyOLgHYF371L0X" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
     <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -17,7 +17,7 @@
         <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
           <Overlay Id="JzrbJgmz2koO7SYkoLoL3M" Name="Key Concepts" Bounds="100,40,484,306" />
           <Overlay Id="DgzUwVkSonrOm7gJ4eYCUJ" Name="Performance" Bounds="101,522,484,124" />
-          <Pad Id="U6PL7UtCqpqNIpiunv9NDf" Bounds="102,81,457,268" ShowValueBox="true" isIOBox="true" Value="- the GENERIC switch allows one function to operate on multiple types. &#xD;&#xA;&#xD;&#xA;Although they are 'generic', there may still be a limited number of types these functions will work with. For example maths related generic functions usually only operate on numeric types.&#xD;&#xA;&#xD;&#xA;- GENERICS are only generic at programming-time, they need to resolve to a defined type to be compiled and run. &#xD;&#xA;&#xD;&#xA;It's like buying a generic pipe from the hardware store. The same pipe could be used for cold water, hot water or sewage. &#xD;&#xA;HOWEVER once you install it in the house its function becomes FIXED. &#xD;&#xA;You definitely don't want the pipe to switch the type that flows through it between fresh water and sewage. &#xD;&#xA;">
+          <Pad Id="U6PL7UtCqpqNIpiunv9NDf" Bounds="102,81,457,268" ShowValueBox="true" isIOBox="true" Value="- the GENERIC feature allows one function to operate on multiple types. &#xD;&#xA;&#xD;&#xA;-Although they are 'generic', they may still be constrained to a limited number of types these functions will work with. &#xD;&#xA;&#xD;&#xA;- GENERICS are only generic at programming-time, they need to resolve to a defined type to be compiled and run. &#xD;&#xA;&#xD;&#xA;It's like buying a generic pipe from the hardware store. The same pipe could be used for cold water, hot water or sewage. &#xD;&#xA;HOWEVER once you install it in the house its function becomes FIXED. &#xD;&#xA;You definitely don't want the pipe to switch the type that flows through it between fresh water and sewage. &#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

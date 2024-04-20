@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="PkGzKQ14tYyLZvuNUHhrmH" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="HbKEvHF3XzdPgKVY9UmW9f" Location="VL.CoreLib" Version="2024.6.2" />
+  <Patch Id="VvmT1hkx7pXLEUEo07dpM8">
+    <Canvas Id="AfTRYnWJsgiM6vi88SzAml" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="G3dPDpOonYgOYfqtJOLorJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="J54lPHVWg40L4KCOKI5e8M">
+        <Canvas Id="BfdfrTkJ5zuOLR4YdoFvdl" CanvasType="Group">
+          <Pad Id="H1e9OD56VzzLJaUZIfswZr" Bounds="129,65,457,251" ShowValueBox="true" isIOBox="true" Value="-Question: If you have type A that implicitly converts to type B, does that mean collection&lt;A&gt; will implicitly convert to collection&lt;B&gt;? &#xD;&#xA;&#xD;&#xA;Answer: Maybe, It's complicated! Detailed rules for these cases come from the C# language specification. &#xD;&#xA;&#xD;&#xA;-Key thing to remember is if such a conversion does not happen automatically then you can make the implicit conversion in the singular context, eg in a ForEach loop. &#xD;&#xA;&#xD;&#xA;-Sometimes the compiler can be very clever and make a conversion that should be impossible happen in an unexpected way. Which is good but can lead to confusion.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NuKJM2Qwty3P0UF8QjkBaW" Name="Key Concepts" Bounds="123,26,484,301" />
+          <Pad Id="ReKFZmiCOYwQR3rIPFXT54" Bounds="139,338,373,19" ShowValueBox="true" isIOBox="true" Value="For more details see">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ItSAUmgeRoFLrTVf5W8NAU" Bounds="137,361,225,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/implicit-conversion-of-collections-and-observables/22557">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="IpFmOsiKPNVOulqelfkhcL" Name="Yes direct implicit conversion possible for these cases" Bounds="127,589,546,328" />
+          <Pad Id="OviFWWjG7lmQBms521x0Nj" Bounds="165,637,219,41" ShowValueBox="true" isIOBox="true" Value="Many .net collection types from subtype to supertype">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OcGdZ3kQNapLehkvVUsjE3" SlotId="E2DMADeQn8lLnQeKJ1rUvM" Bounds="292,709" />
+          <Overlay Id="JSYB5mCMLmqP1pAODatuaw" Name="Some Definitions" Bounds="133,377,481,184" />
+          <!--
+
+    ************************ RectWidget ************************
+
+-->
+          <Node Name="RectWidget" Bounds="338,485" Id="FIzObofHQ8PMCV10Ldp5HE">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="OWR8Vzhv41ZMwZapLm3jf6">
+              <Canvas Id="DQkeXVlg65dPl03b6uEjl5" CanvasType="Group">
+                <Pad Id="ABlGe5UDs16LQcNcoxYsj3" SlotId="VtEBl4s9ZuiLaEmDcfFBQE" Bounds="509,279" />
+                <Overlay Id="N0bWkyLYH3kMQgKw1hRTNR" Name="Draw" Bounds="341,514,298,278" />
+                <Node Bounds="434,650,85,19" Id="PeDOKMXLA2aM6jqHRogksI">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Rectangle" />
+                  </p:NodeReference>
+                  <Pin Id="TssjjyfBmsgMGQERRbkFzo" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="AzAikytBQB8NavSvXMP7r0" Name="Position" Kind="InputPin" />
+                  <Pin Id="UkXgFlf0pwNNhJowYG7fNp" Name="Size" Kind="InputPin" />
+                  <Pin Id="LrJGANwa6T9OE1xSQzLtew" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="OLJXssmTnYMLds3UhGf1D8" Name="Paint" Kind="InputPin" />
+                  <Pin Id="G84ysYuQdKBLhD0QHfdvld" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="BIpoYoGoLxkPcyAwcglvBi" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="O3TkN9b0aRMOKuwzGTQX33" Bounds="437,718" />
+                <Pad Id="NTwzWe7P5YWPX5DpGJ1C5k" SlotId="M3FvwN9NNHgOvP2seED13B" Bounds="590,279" />
+                <Pad Id="Fuq1SbkDcdIO5Wyg8a65ph" SlotId="VtEBl4s9ZuiLaEmDcfFBQE" Bounds="457,598" />
+                <Pad Id="NjLshFHN3wnQCtcbMrDmaT" SlotId="M3FvwN9NNHgOvP2seED13B" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="TCgeMMmafj9MpwELQSOclc">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="I4JPUcgkfYgMXNMAfLmDTc" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="RTVCvylMeNyMuhLKgRrKZF" Name="Input" Kind="InputPin" />
+                  <Pin Id="BfFnMDosJUFN6XC9bZGepg" Name="Color" Kind="InputPin" />
+                  <Pin Id="JzDq1ywQBf7MQ3mCjKwYtt" Name="Shader" Kind="InputPin" />
+                  <Pin Id="Mzzo3Z2wVOLLGxx3laFSMt" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="A1ugflXVwGmOFsBVs87nuH" SlotId="MoO4FjyWxZoQC5tANiNXGQ" Bounds="437,573" />
+                <Pad Id="KlsAPQ0q1LhP7IFPBjnMLY" SlotId="MoO4FjyWxZoQC5tANiNXGQ" Bounds="422,279" />
+                <Overlay Id="JGFWpcE9n8KLO3zfSu9hac" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="QdoCPDmXjwbMHudMPKtDEW" Bounds="422,251" />
+                <ControlPoint Id="IhjvzDYJLQjOLAhCYRsFft" Bounds="509,249" />
+                <ControlPoint Id="VTEc5z54ehiP1erQeI3Zw7" Bounds="590,249" />
+                <Overlay Id="Ib0b1Erd2SIOLn5GRpEU7N" Name="SetSize" Bounds="342,361,301,126" />
+                <Pad Id="OcCmYDFttU1M7UWB11dPji" SlotId="VtEBl4s9ZuiLaEmDcfFBQE" Bounds="478,452" />
+                <ControlPoint Id="QcWq8jCTrzXOES88E2tGb9" Bounds="478,403" />
+                <ControlPoint Id="GnXcfIBYOAHP51NPWw3U7X" Bounds="508,302" />
+              </Canvas>
+              <Patch Id="Sc9g2EDu3CqOUIwgvMaabb" Name="Create">
+                <Pin Id="JcjT2oLkcmUOfjQGyLcCbY" Name="Position" Kind="InputPin" />
+                <Pin Id="HFyXBS2XdPKNj72U8bh7aH" Name="Size" Kind="InputPin" />
+                <Pin Id="FJJB1aaqgg7O2Q3SA8UEHX" Name="Color" Kind="InputPin" />
+              </Patch>
+              <ProcessDefinition Id="JOlVz3UQ226NXcb28aMj7e" IsHidden="true">
+                <Fragment Id="FNL3Zu2GItPOmcuvUAlxvi" Patch="Sc9g2EDu3CqOUIwgvMaabb" Enabled="true" />
+                <Fragment Id="MX3PkHbXFS9LhLjHijk56v" Patch="Kts40uoMVKsQCb1gUo5MDH" />
+                <Fragment Id="BcWnzCXNHVKOS3Xo6GrdSl" Patch="K9DRhJqkmCYMzK69FhMk4v" />
+                <Fragment Id="E4cUPx6sXx1N7XojX1rb0o" Patch="GEaZ4zrYjbiNXzp7OxHkj8" />
+              </ProcessDefinition>
+              <Slot Id="VtEBl4s9ZuiLaEmDcfFBQE" Name="Size">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="Iu8K3DOB26qNg5G9JzqqoZ" Ids="BIpoYoGoLxkPcyAwcglvBi,O3TkN9b0aRMOKuwzGTQX33" />
+              <Link Id="AABPtpNmK1MMObRD0RxH0j" Ids="O3TkN9b0aRMOKuwzGTQX33,FvsCqXsYtcxNvhFrTvrZvY" IsHidden="true" />
+              <Patch Id="Kts40uoMVKsQCb1gUo5MDH" Name="Draw">
+                <Pin Id="FvsCqXsYtcxNvhFrTvrZvY" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Slot Id="M3FvwN9NNHgOvP2seED13B" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="RBCZ4lm4xlNOabmXLoUroy" Ids="Mzzo3Z2wVOLLGxx3laFSMt,OLJXssmTnYMLds3UhGf1D8" />
+              <Link Id="CIRFYMqzKM3LqOCe7hjeVl" Ids="NjLshFHN3wnQCtcbMrDmaT,BfFnMDosJUFN6XC9bZGepg" />
+              <Link Id="M0ouxVPbmxdNND3I33SC2v" Ids="Fuq1SbkDcdIO5Wyg8a65ph,UkXgFlf0pwNNhJowYG7fNp" />
+              <Slot Id="MoO4FjyWxZoQC5tANiNXGQ" Name="Position" />
+              <Link Id="FlBbciykfa6L6k8GpLHINo" Ids="A1ugflXVwGmOFsBVs87nuH,AzAikytBQB8NavSvXMP7r0" />
+              <Link Id="EMXrJLqFE7WPtUYEk74ow9" Ids="QdoCPDmXjwbMHudMPKtDEW,KlsAPQ0q1LhP7IFPBjnMLY" />
+              <Link Id="KhS1DPPKGRZORsdpTMg5y0" Ids="JcjT2oLkcmUOfjQGyLcCbY,QdoCPDmXjwbMHudMPKtDEW" IsHidden="true" />
+              <Link Id="P2wyhzAiPdyMQSuAez2Aub" Ids="IhjvzDYJLQjOLAhCYRsFft,ABlGe5UDs16LQcNcoxYsj3" />
+              <Link Id="LPhrwOC1L5aOKslWckK03r" Ids="HFyXBS2XdPKNj72U8bh7aH,IhjvzDYJLQjOLAhCYRsFft" IsHidden="true" />
+              <Link Id="JDakLrWONLWL3s8RpexCEy" Ids="VTEc5z54ehiP1erQeI3Zw7,NTwzWe7P5YWPX5DpGJ1C5k" />
+              <Link Id="LAJQpkIOHinO9h2K8fDfZX" Ids="FJJB1aaqgg7O2Q3SA8UEHX,VTEc5z54ehiP1erQeI3Zw7" IsHidden="true" />
+              <Link Id="R1AFcQRAF4aLNLmmFAwWhG" Ids="QcWq8jCTrzXOES88E2tGb9,OcCmYDFttU1M7UWB11dPji" />
+              <Patch Id="K9DRhJqkmCYMzK69FhMk4v" Name="SetSize">
+                <Pin Id="GlamXzpy95tMs7xderwasN" Name="Size" Kind="InputPin" />
+              </Patch>
+              <Link Id="PqjhxuPswMWM8YXWC56H5E" Ids="GlamXzpy95tMs7xderwasN,QcWq8jCTrzXOES88E2tGb9" IsHidden="true" />
+              <Link Id="Ug8yXdSJecKN4X5EAbhV9q" Ids="ABlGe5UDs16LQcNcoxYsj3,GnXcfIBYOAHP51NPWw3U7X" />
+              <Link Id="UB7KS6H14efQdUT8w3tNUM" Ids="GnXcfIBYOAHP51NPWw3U7X,Pado3pPr0qYPxaKJ7cEFYH" IsHidden="true" />
+              <Patch Id="GEaZ4zrYjbiNXzp7OxHkj8" Name="Size">
+                <Pin Id="Pado3pPr0qYPxaKJ7cEFYH" Name="Size" Kind="OutputPin" />
+              </Patch>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ IWidget ************************
+
+-->
+          <Node Name="IWidget" Bounds="492,485" Id="JWRIyyC3bJLLgGzwYfwBR5">
+            <p:NodeReference>
+              <Choice Kind="InterfaceDefinition" />
+            </p:NodeReference>
+            <Patch Id="Bu0KMOgpMdSMthOR1aHXxs">
+              <Canvas Id="GkT518rAxv1N0B88edMT9A" CanvasType="Group">
+                <Overlay Id="Hwsr7EBFUmXOzcbKaoLilG" Name="Draw" Bounds="329,271,310,200" />
+                <ControlPoint Id="R6TktaDJujuMJUardiq55n" Bounds="452,395" />
+              </Canvas>
+              <ProcessDefinition Id="A03YAsf134YPtAnPBSgeru" IsHidden="true">
+                <Fragment Id="Pfr9RQcWPA2QCoHpnP1P86" Patch="GPB5sMlbvImLjL2vTCVsWd" />
+              </ProcessDefinition>
+              <Link Id="RiNbxToO7tINyivv4Zvv9O" Ids="R6TktaDJujuMJUardiq55n,Appu1LTq9fWL0O0yNf5nlm" IsHidden="true" />
+              <Patch Id="GPB5sMlbvImLjL2vTCVsWd" Name="Draw">
+                <Pin Id="Appu1LTq9fWL0O0yNf5nlm" Name="Layer" Kind="OutputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                    <Choice Kind="TypeFlag" Name="Layer" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ RoundWidget ************************
+
+-->
+          <Node Name="RoundWidget" Bounds="170,485" Id="Q8qpkUoDx6QMByeuwTyzgx">
+            <p:NodeReference>
+              <Choice Kind="ClassDefinition" />
+            </p:NodeReference>
+            <p:Interfaces>
+              <TypeReference LastCategoryFullName="Main" LastDependency="Explanation 25 Upcasting vs Downcasting.vl">
+                <Choice Kind="InterfaceTypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:Interfaces>
+            <Patch Id="DAoIXJDFGjJMPskyzw6aOp">
+              <Canvas Id="IUa76njKioNMewzWMGwnDs" CanvasType="Group">
+                <Overlay Id="Qfo6AoxjdLqPyvl8lA6i9Y" Name="Draw" Bounds="341,514,298,278" />
+                <ControlPoint Id="TmEbvjSBlsbP44xvzVvtKW" Bounds="437,718" />
+                <Pad Id="SuKsPsA4baSOKBDKMprVLC" SlotId="FL1dmTX6qBmNlvQYpMXUkd" Bounds="590,279" />
+                <Pad Id="TF3Z4d2gUTdOOx7mJgkDee" SlotId="FL1dmTX6qBmNlvQYpMXUkd" Bounds="516,597" />
+                <Node Bounds="494,617,45,19" Id="UwfoIEZWo63MBqvZidw71p">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="TsKrC2ySchRN720QpYH5Kk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="BPQDAW2G6nDO8wbSmtwLnC" Name="Input" Kind="InputPin" />
+                  <Pin Id="Gbo8r2J6CauQbH0T9u2iPq" Name="Color" Kind="InputPin" />
+                  <Pin Id="OPNr93V9vFRQXnlkgeVkmj" Name="Shader" Kind="InputPin" />
+                  <Pin Id="VzKPRklXpLcPif91Qgz0Ed" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="JbLRVnSXKYOMs6enJ80Syb" SlotId="GIpCDXzlmgNQE3KXwxWK9S" Bounds="437,573" />
+                <Pad Id="B9SCOqayczyLuKbWCgH7Ii" SlotId="GIpCDXzlmgNQE3KXwxWK9S" Bounds="422,279" />
+                <Overlay Id="PDj9PwR7vx7OpbYvEJM5ar" Name="Create" Bounds="339,202,313,117" />
+                <ControlPoint Id="Uqs3WuFcbRHLYrVKr3DPDY" Bounds="422,251" />
+                <ControlPoint Id="GFSpCXpJRK2MyqmkkWqlfN" Bounds="590,249" />
+                <Overlay Id="BBH8lwgLtLFMzsjk0z6UFR" Name="SetRadius" Bounds="346,346,301,126" />
+                <Node Bounds="435,670,85,19" Id="MMbO4fOt39GP5259HPpH0Z">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Circle" />
+                  </p:NodeReference>
+                  <Pin Id="UlWkhTJFKLvPeRTsZOf8gE" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="TMlJ0wi0xKTPoGsP3T2KNW" Name="Position" Kind="InputPin" />
+                  <Pin Id="HcOVUqN2meGLdQRZy9JTdU" Name="Radius" Kind="InputPin" />
+                  <Pin Id="FIw7tLnI05YO208isYoVlw" Name="Anchor" Kind="InputPin" />
+                  <Pin Id="FZxugSfwnSgQdihLrsJzCb" Name="Paint" Kind="InputPin" />
+                  <Pin Id="DwrDQoAqa8hQM7RQN3KYFC" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="HJZWHcfH8FnQMemirao9EJ" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="Nj5zduERCvsNVxnbR9i8nk" SlotId="IaOJ6Cvf0LcL0mFrsqb3Bh" Bounds="456,597" />
+                <Pad Id="CjpKqFkgbbrLwJULUoldIM" SlotId="IaOJ6Cvf0LcL0mFrsqb3Bh" Bounds="504,434" />
+                <ControlPoint Id="FIwpuIly2C7L5qdE2oTdsX" Bounds="504,387" />
+                <Pad Id="V0La9GTRpKLM0AQwwXkOOo" SlotId="IaOJ6Cvf0LcL0mFrsqb3Bh" Bounds="492,281" />
+                <ControlPoint Id="Q0AiwNKfSpJO1uls5lHk7N" Bounds="492,249" />
+                <ControlPoint Id="GdBgkAPGpYVP4WK7c2tDhY" Bounds="492,301" />
+              </Canvas>
+              <ProcessDefinition Id="ODnYWN2p6BvNz9N9X2d7bH" IsHidden="true">
+                <Fragment Id="DhtdaPaRuu0PIsGtcURKWC" Patch="CXJ0qwxELwGPAeoNnl0CUW" Enabled="true" />
+                <Fragment Id="Sd25qx7NmjRP1KrWJwRlMt" Patch="KEU9CMtFCpiQRxrzYeOExA" />
+                <Fragment Id="R8Sdohvxkk9LyVDaUN8nTQ" Patch="QAyqXWJF1pdNWg7DqSNQyK" />
+                <Fragment Id="Py1zBb24HAyO0hj7kLJejL" Patch="B8ZJkUj1pdXQAaDQIix1O1" />
+              </ProcessDefinition>
+              <Link Id="VW01hhLyBOnOcKYTHgst5I" Ids="TmEbvjSBlsbP44xvzVvtKW,AKpvzAsDooLPFJU9oxuqUa" IsHidden="true" />
+              <Slot Id="FL1dmTX6qBmNlvQYpMXUkd" Name="Color">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="Bgu50rxREXEQRBxMfyEKfR" Ids="TF3Z4d2gUTdOOx7mJgkDee,Gbo8r2J6CauQbH0T9u2iPq" />
+              <Slot Id="GIpCDXzlmgNQE3KXwxWK9S" Name="Position" />
+              <Link Id="RQlIqcjC92kOcGaNOJeK9I" Ids="Uqs3WuFcbRHLYrVKr3DPDY,B9SCOqayczyLuKbWCgH7Ii" />
+              <Link Id="UGHH9rueqFTNKx3OEoXEZT" Ids="Kx9X5ejgjzsMhQHJAMuAJP,Uqs3WuFcbRHLYrVKr3DPDY" IsHidden="true" />
+              <Link Id="V0YQjlBdeSuNGMfFGEVvb2" Ids="GFSpCXpJRK2MyqmkkWqlfN,SuKsPsA4baSOKBDKMprVLC" />
+              <Link Id="UsF6s87gAttMODaCyh8mhW" Ids="J7cT4eMYyToNcqHmPuPDyn,GFSpCXpJRK2MyqmkkWqlfN" IsHidden="true" />
+              <Link Id="SbNN80v9FNFMACrFZzXlYv" Ids="JbLRVnSXKYOMs6enJ80Syb,TMlJ0wi0xKTPoGsP3T2KNW" />
+              <Slot Id="IaOJ6Cvf0LcL0mFrsqb3Bh" Name="Radius" />
+              <Link Id="N2eDeNXIQOZOM3dLCC3MHT" Ids="Nj5zduERCvsNVxnbR9i8nk,HcOVUqN2meGLdQRZy9JTdU" />
+              <Link Id="PJjWvextUBSMuVE3SjJ6n5" Ids="VzKPRklXpLcPif91Qgz0Ed,FZxugSfwnSgQdihLrsJzCb" />
+              <Link Id="Di60tk2jy7xPRtfVvxwYsa" Ids="HJZWHcfH8FnQMemirao9EJ,TmEbvjSBlsbP44xvzVvtKW" />
+              <Link Id="INTsiQjwEEXPdZeqg7hYou" Ids="FIwpuIly2C7L5qdE2oTdsX,CjpKqFkgbbrLwJULUoldIM" />
+              <Link Id="GUtnTHc2GkJN8DFGK6vVcY" Ids="KA239VzSYI2Md5j6RR32g9,FIwpuIly2C7L5qdE2oTdsX" IsHidden="true" />
+              <Link Id="Ml0kpxaTg8SMezSMhj9C5a" Ids="Q0AiwNKfSpJO1uls5lHk7N,V0La9GTRpKLM0AQwwXkOOo" />
+              <Link Id="Lj7xmc8PYdVOZQRvBBI8fy" Ids="Ftt27WqH590PiovgOUlEDO,Q0AiwNKfSpJO1uls5lHk7N" IsHidden="true" />
+              <Patch Id="CXJ0qwxELwGPAeoNnl0CUW" Name="Create">
+                <Pin Id="Kx9X5ejgjzsMhQHJAMuAJP" Name="Position" Kind="InputPin" />
+                <Pin Id="Ftt27WqH590PiovgOUlEDO" Name="Radius" Kind="InputPin" />
+                <Pin Id="J7cT4eMYyToNcqHmPuPDyn" Name="Color" Kind="InputPin" />
+              </Patch>
+              <Patch Id="KEU9CMtFCpiQRxrzYeOExA" Name="Draw">
+                <Pin Id="AKpvzAsDooLPFJU9oxuqUa" Name="Layer" Kind="OutputPin" />
+              </Patch>
+              <Patch Id="QAyqXWJF1pdNWg7DqSNQyK" Name="SetRadius">
+                <Pin Id="KA239VzSYI2Md5j6RR32g9" Name="Radius" Kind="InputPin" />
+              </Patch>
+              <Link Id="OQfHVdKQz6qQX60rrcSMzB" Ids="V0La9GTRpKLM0AQwwXkOOo,GdBgkAPGpYVP4WK7c2tDhY" />
+              <Link Id="KIdYrkRk2qPPH6fmuQZUiJ" Ids="GdBgkAPGpYVP4WK7c2tDhY,UmIPCObw7D4MObg272aG2Z" IsHidden="true" />
+              <Patch Id="B8ZJkUj1pdXQAaDQIix1O1" Name="Radius">
+                <Pin Id="UmIPCObw7D4MObg272aG2Z" Name="Radius" Kind="OutputPin" />
+              </Patch>
+            </Patch>
+          </Node>
+          <Pad Id="Kag8D2IPmCtM48TStLELBd" Bounds="191,502,393,50" ShowValueBox="true" isIOBox="true" Value="Here we have RoundWidget and RectWidget that both IMPLEMENT the INTERFACE IWidget">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LtqZRiD5bMHOUWVtOqQKvd" SlotId="JWOrN76jGqhLThyh7fJPXe" Bounds="292,814" />
+          <Pad Id="Sm15Fyv7w9wMrcuNJjtiOT" Bounds="419,640,219,41" ShowValueBox="true" isIOBox="true" Value="Observable from subtype to supertype">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D7OzWYFXoAUPI9kl2TEeyM" SlotId="G2fBk3WEHuqO1RvQA7SF54" Bounds="547,821" />
+          <Pad Id="U1jhuuTFe8DPsF4AkcxXpR" SlotId="O33SZV0dn4oNuUOrkv0KGk" Bounds="547,711" />
+          <Overlay Id="Bnn8xTcsRobOWDEZjS9KpF" Name="No direct implicit conversion not possible " Bounds="131,948,546,328" />
+          <Pad Id="NpZxSlsd2h5M9vlsit1IZ3" Bounds="417,1014,219,41" ShowValueBox="true" isIOBox="true" Value="Does not work for any numeric implicit conversion">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Mo9VrBAwk6GQaOnZPM8itY" SlotId="NTLxiOGI5Y5Oku6xsiG0jt" Bounds="531,1205" />
+          <Pad Id="PRqO8CuAd2dNkACqshs38P" SlotId="QlYrfS2yssaMaDe7oRjpI8" Bounds="532,1064" />
+          <Pad Id="HokHZLsbCc3OJDRzihQhwG" Bounds="160,1012,219,41" ShowValueBox="true" isIOBox="true" Value="Notably does not work for Spreads">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LS37IWiEskbLipHxov3ddJ" SlotId="VsuNuFTICMCLoJlaVvJhQb" Bounds="282,1062" />
+          <Pad Id="QvaKGAlxnq2OulYZuGrHeI" SlotId="DvdyOsuW5dyLIORwEDun3C" Bounds="281,1200" />
+          <Overlay Id="F2FwkDGfKtrOMH3RdC1laW" Name="Workaround..." Bounds="132,1306,546,328" />
+          <Pad Id="DnsfMD2o66ZPOn1wv6LCVd" Bounds="274,1354,228,44" ShowValueBox="true" isIOBox="true" Value="Convert in the singular context, e.g. using a ForEach loop">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="COZG9U6XklWPaX536k9dOp" SlotId="RX6YsknL4w3LxEHhaAINlf" Bounds="533,1558" />
+          <Pad Id="Bvyj32v705VPaOJPLnim8u" SlotId="QlYrfS2yssaMaDe7oRjpI8" Bounds="533,1417" />
+          <Pad Id="P0w5FPLSf48QWONMn5j65E" SlotId="VsuNuFTICMCLoJlaVvJhQb" Bounds="264,1415" />
+          <Pad Id="GnHqCOwXegFPWNiuyFqLNI" SlotId="HKIddwmqQd4PkRkX3TPaD1" Bounds="264,1553" />
+          <Node Bounds="250,1439,92,86" Id="QvPOwuTq321QaPRVlO4RCZ">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="JJUOuzVhsuRQDx5aLuAKYj" Name="Break" Kind="OutputPin" />
+            <Patch Id="VtRNm1nrOr1LS1lbcds4m5" ManuallySortedPins="true">
+              <Patch Id="MNv3bYiCb8JO0G4jL3qCXW" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Aq1BwPa1O3hOyJHn8sgXXt" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="OrtskXebiKmNVr7s8GanI5" Name="Dispose" ManuallySortedPins="true" />
+            </Patch>
+            <ControlPoint Id="BLifSZcZEJ0QWRQFRo57A2" Bounds="264,1445" Alignment="Top" />
+            <ControlPoint Id="KOu7vGCB09cMWRXntQgr3i" Bounds="264,1519" Alignment="Bottom" />
+          </Node>
+          <Node Bounds="513,1445,80,86" Id="NTFBjPr9fGyMEUUC3yc901">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="HD4Y8Fh5GOfQWzbefIK1di" Name="Break" Kind="OutputPin" />
+            <Patch Id="TGGfJZmUfBvM91OwXh93jR" ManuallySortedPins="true">
+              <Patch Id="CQxeGVWDbj9NBjAPIgNwCI" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="QwNNv7wwbSdQXUVHZdkmPR" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="AVGtGlfn1zAMvkOe6GTQVC" Name="Dispose" ManuallySortedPins="true" />
+            </Patch>
+            <ControlPoint Id="Pp1W3ePPyAMPoyIYNV6GXs" Bounds="533,1451" Alignment="Top" />
+            <ControlPoint Id="TYoxuWfjc40MxpT7Vvjxwp" Bounds="533,1525" Alignment="Bottom" />
+          </Node>
+          <Overlay Id="FMRTHIiItapO7iUZDUTK6K" Name="Sometimes the compiler, confusingly, finds a way...." Bounds="129,1659,545,1000" />
+          <Pad Id="Se59YL6ADKMN12J02CVCIi" Bounds="174,1723,424,53" ShowValueBox="true" isIOBox="true" Value="We just said spreads don't support direct implicit conversion, so what is happening here? It works to patch this and at a glance seems like a spread is changing it's inner type...">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="278,1814,64,26" Id="C2T4FmBI7ZCLXVlvol3Ear">
+            <p:NodeReference LastCategoryFullName="Main.RoundWidget" LastDependency="HowTo 33 Implicit Conversion and Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RoundWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="M2BFwDgG9vAN6uozd53y03" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Q1XKcuFfPnHPYcqJCvpSv7" Name="Position" Kind="InputPin" />
+            <Pin Id="ATzjp7wxxr7PAElIzQeI6E" Name="Radius" Kind="InputPin" />
+            <Pin Id="CBF5iVZE1PBPq1UbBrIkfp" Name="Color" Kind="InputPin" />
+            <Pin Id="H8drP3ePax9MOZMxwPKlSr" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="388,1814,56,26" Id="DaR3ImKGhniMn4FXcQo1x3">
+            <p:NodeReference LastCategoryFullName="Main.RectWidget" LastDependency="HowTo 33 Implicit Conversion and Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="RectWidget" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="QJTr4pDdBfWOxFAwO0QreL" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TKQnhVSB4yPLWPjIBXOcgb" Name="Position" Kind="InputPin" />
+            <Pin Id="BMm6SgaaJT8OTnV4qHRnMy" Name="Size" Kind="InputPin" />
+            <Pin Id="PkAoLck9jVSK9ZspKhUTOG" Name="Color" Kind="InputPin" />
+            <Pin Id="MXByHhaQOV7LO5C992jOXw" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="UsJzKORy9fLN8iZcbHqJmZ" SlotId="OpBCfaYZXj0Pb9PZkR8MoL" Bounds="386,1925" />
+          <Node Bounds="285,1860,41,26" Id="SPNco4Pk5CXL87gVPcOL6x">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="U1gDgD4uDIiPgT4ehiFiz5" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I81Pign9SSWLniHAivFp9q" Name="Item" Kind="InputPin" />
+            <Pin Id="AYPrZNrJG4RMDKqQg6toK3" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="384,1865,41,26" Id="LP9ZdCfje3pPeaeuzec2cx">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="Dd12Xv3YUitLjVZlpCTKCa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OlqarKdGLMPN1socG8AM5E" Name="Item" Kind="InputPin" />
+            <Pin Id="F4FAVBDo8BFLbQCVnu7Re1" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="MSexXZrx8dHMOs6AbQmgsT" Bounds="170,1961,473,228" ShowValueBox="true" isIOBox="true" Value="If you mouse over you notice the type at the top of the Spread.Add() nodes is IWidget. So there is actually two singular context conversions going on from RoundWidget to IWidget and from RectWidget to IWidget. The Spread is always Spread&lt;IWidget&gt;.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;It just means the compiler is being extra smart and saying &quot;Ah there is a valid way to do this if I make the conversions here&quot;, but of course this can lead to confusion where it seems like Spread&lt;Type&gt; is being implicitly converted to Spread&lt;Supertype&gt; and leaves you wondering why such a conversion won't work elsewhere. &#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="427,2315,48,19" Id="PkpSscgSak7Mbbb4TtrpXi">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Concat" />
+            </p:NodeReference>
+            <Pin Id="MDGazdnKTTfLfAqSTjpmma" Name="Input" Kind="InputPin" />
+            <Pin Id="OLqEk8KjtfCLOYo4uJoZk2" Name="Input 2" Kind="InputPin" />
+            <Pin Id="PB70AHTWXBPOocRgJZ9YSi" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="H2mCF7t5JynPNIYRNzuoTp" SlotId="JXWMX5gMMP4PUuQBaw5UqJ" Bounds="429,2365" />
+          <Pad Id="HyVwRl14BEgM5Rfbs6nbQV" SlotId="VsuNuFTICMCLoJlaVvJhQb" Bounds="429,2229" />
+          <Pad Id="Mz8QnsHpjidOEZLIh8MeLf" SlotId="VwKuUE3Y2Z5NTDdVaKhf6k" Bounds="473,2261" />
+          <Pad Id="Ff44dKNwerTOpf2buFKHZ9" Bounds="184,2400,473,228" ShowValueBox="true" isIOBox="true" Value="How about this case? If Spread doesn't support direct impicit conversion how comes this works? &#xD;&#xA;&#xD;&#xA;It's extra tricky. &#xD;&#xA;-The concat will accept Sequences &#xD;&#xA;-Spread itself can be implicitly converted to Sequence due to the fact Spread implements IEnumerable (And in vvvv IEnumerable is renamed Sequence). So the collection type is doing a supertype conversion.  &#xD;&#xA;-And Sequence DOES support inner type direct implicit conversion. &#xD;&#xA;-Then the Concat has been typed &lt;IWidget&gt; &#xD;&#xA;-So the compiler can achieve this by converting the input spreads to Sequence&lt;IWidget&gt; ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="O0vKeR6YozSOshOf2dOlrs,C0kRjf4j5jkMJqpjUaYDYd,BtzwMSMcnldL7ZLEmHSqYc,G5N4lKcWOQgNxKIkMmrho1,TybidwxLaHxQSlNUiE3IV7" />
+        <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
+          <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
+          <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="E2DMADeQn8lLnQeKJ1rUvM" Name="Sequence&lt;RoundWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RoundWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Slot Id="JWOrN76jGqhLThyh7fJPXe" Name="Sequence&lt;IWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="O0vKeR6YozSOshOf2dOlrs" Ids="OcGdZ3kQNapLehkvVUsjE3,LtqZRiD5bMHOUWVtOqQKvd" />
+        <Slot Id="G2fBk3WEHuqO1RvQA7SF54" Name="Observable&lt;IWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Observable" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Slot Id="O33SZV0dn4oNuUOrkv0KGk" Name="Observable&lt;RoundWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Observable" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RoundWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="C0kRjf4j5jkMJqpjUaYDYd" Ids="U1jhuuTFe8DPsF4AkcxXpR,D7OzWYFXoAUPI9kl2TEeyM" />
+        <Slot Id="NTLxiOGI5Y5Oku6xsiG0jt" Name="Sequence&lt;Float32&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Slot Id="QlYrfS2yssaMaDe7oRjpI8" Name="Sequence&lt;Integer32&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="BtzwMSMcnldL7ZLEmHSqYc" Ids="PRqO8CuAd2dNkACqshs38P,Mo9VrBAwk6GQaOnZPM8itY" />
+        <Slot Id="VsuNuFTICMCLoJlaVvJhQb" Name="Spread&lt;RoundWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RoundWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Slot Id="DvdyOsuW5dyLIORwEDun3C" Name="Spread&lt;IWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="G5N4lKcWOQgNxKIkMmrho1" Ids="LS37IWiEskbLipHxov3ddJ,QvaKGAlxnq2OulYZuGrHeI" />
+        <Link Id="I98gXVTxcIYL9CIQI5WeTA" Ids="P0w5FPLSf48QWONMn5j65E,BLifSZcZEJ0QWRQFRo57A2" />
+        <Link Id="LCrvBuKdQFePvdzFagK5bZ" Ids="BLifSZcZEJ0QWRQFRo57A2,KOu7vGCB09cMWRXntQgr3i" />
+        <Link Id="EIe3HQFEI4gLNwNFNaif4D" Ids="KOu7vGCB09cMWRXntQgr3i,GnHqCOwXegFPWNiuyFqLNI" />
+        <Slot Id="HKIddwmqQd4PkRkX3TPaD1" Name="Spread&lt;IWidget&gt;_2">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="IWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="UKpDOeYpylPMdlTEKSQ75y" Ids="Pp1W3ePPyAMPoyIYNV6GXs,TYoxuWfjc40MxpT7Vvjxwp" />
+        <Link Id="U42ISy7oH71LTZRmTQj6KJ" Ids="Bvyj32v705VPaOJPLnim8u,Pp1W3ePPyAMPoyIYNV6GXs" />
+        <Link Id="JuNOdFljvTeN0uzTqLRqtE" Ids="TYoxuWfjc40MxpT7Vvjxwp,COZG9U6XklWPaX536k9dOp" />
+        <Slot Id="RX6YsknL4w3LxEHhaAINlf" Name="Sequence&lt;Float32&gt;_2">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="AcEw9yzQUd9M8MZUAvW7c9" Ids="H8drP3ePax9MOZMxwPKlSr,I81Pign9SSWLniHAivFp9q" />
+        <Link Id="VcjeeGoGeweLCM199YbLDy" Ids="AYPrZNrJG4RMDKqQg6toK3,Dd12Xv3YUitLjVZlpCTKCa" />
+        <Link Id="TybidwxLaHxQSlNUiE3IV7" Ids="F4FAVBDo8BFLbQCVnu7Re1,UsJzKORy9fLN8iZcbHqJmZ" />
+        <Link Id="AkgVeKmJESAP0CNwSLSQaI" Ids="MXByHhaQOV7LO5C992jOXw,OlqarKdGLMPN1socG8AM5E" />
+        <Slot Id="VwKuUE3Y2Z5NTDdVaKhf6k" Name="Spread&lt;RectWidget&gt;">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Spread" />
+            <p:TypeArguments>
+              <TypeReference>
+                <Choice Kind="TypeFlag" Name="RectWidget" />
+              </TypeReference>
+            </p:TypeArguments>
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="UgLkdcDIUiINnv9mjh8Vw5" Ids="PB70AHTWXBPOocRgJZ9YSi,H2mCF7t5JynPNIYRNzuoTp" />
+        <Link Id="LtwGzC1vz2NOZiXOWS7Mvs" Ids="HyVwRl14BEgM5Rfbs6nbQV,MDGazdnKTTfLfAqSTjpmma" />
+        <Link Id="VfDKBeCGDohPXuM9k9p7ll" Ids="Mz8QnsHpjidOEZLIh8MeLf,OLqEk8KjtfCLOYo4uJoZk2" />
+        <Slot Id="OpBCfaYZXj0Pb9PZkR8MoL" Name="Spread&lt;IWidget&gt;_3" />
+        <Slot Id="JXWMX5gMMP4PUuQBaw5UqJ" Name="Spread&lt;IWidget&gt;_4" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="CxPBgESviIhO8ZzNb5gVeG" Location="VL.Skia" Version="2024.6.2" />
+</Document>

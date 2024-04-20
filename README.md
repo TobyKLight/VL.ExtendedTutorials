@@ -12,21 +12,16 @@ Install by going to the top left menu > Manage Nugets > Commandline and typing
 
 
 # Videos
-Some of these helppatches are accompanied by videos
-
-## Mutability (Records Vs Class)
-https://youtu.be/zGufG64WSF4
-
-## First steps with Records
-https://youtu.be/RXDRfqLbc74
-
-## Tickets are the new bang
-https://youtu.be/8dasXkisqTY
-
-## Exporting data to a spreadsheet
-https://youtu.be/cKjb3dFOXqk
+Some of these helppatches are accompanied by videos that you can find in this playlist on youtube 
+https://youtube.com/playlist?list=PLEncasrnvr2bkPb0QKdU1DrDs4Hd_Jr0V&feature=shared
 
 # Version History
+V1.1.9 
+* Added small helppatch on working with the Box mathematical structure from Stride used by collision nodes. 
+
+V1.1.8 
+* Added patches for Types tutorial (video coming soon) and example patch for Manipulating classes video 
+
 V1.1.5 
 * Fixed some typos 
 

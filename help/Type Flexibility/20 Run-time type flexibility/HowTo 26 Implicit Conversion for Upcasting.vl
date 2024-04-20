@@ -35,8 +35,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="EbvaFv7n9nIOe07KAL98e1" Name="Some Definitions" Bounds="97,393,494,256" />
-          <Overlay Id="Ax5hhYEHbhONHhSt7lXWiC" Name="Performance impact" Bounds="108,1531,729,121" />
-          <Pad Id="HGKxuiuDZedLByyXEDOKcY" Bounds="145,1581,647,64" ShowValueBox="true" isIOBox="true" Value="UPCASTING is pretty fast. Not totally free but should be very few instructions.&#xD;&#xA;There is no run-time type checking with UPCASTING because the compiler is confident that the more specialised type can do everything that might be asked of it when disguised as the more general type.">
+          <Overlay Id="Ax5hhYEHbhONHhSt7lXWiC" Name="Performance impact" Bounds="102,1105,729,121" />
+          <Pad Id="HGKxuiuDZedLByyXEDOKcY" Bounds="139,1155,647,64" ShowValueBox="true" isIOBox="true" Value="UPCASTING is pretty fast. Not totally free but should be very few instructions.&#xD;&#xA;There is no run-time type checking with UPCASTING because the compiler is confident that the more specialised type can do everything that might be asked of it when disguised as the more general type.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -72,7 +72,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="N58LzqQ6hGiLAkggrxqYra" Bounds="179,1693,140,19" ShowValueBox="true" isIOBox="true" Value="https://stackoverflow.com/questions/45818251/understanding-up-casting-and-down-casting-c-sharp">
+          <Pad Id="N58LzqQ6hGiLAkggrxqYra" Bounds="229,1261,140,19" ShowValueBox="true" isIOBox="true" Value="https://stackoverflow.com/questions/45818251/understanding-up-casting-and-down-casting-c-sharp">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -81,7 +81,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RP2KxjBqG4GNJICGxNr2zx" Bounds="325,1693,357,19" ShowValueBox="true" isIOBox="true" Value="&lt;good answer here">
+          <Pad Id="RP2KxjBqG4GNJICGxNr2zx" Bounds="375,1261,357,19" ShowValueBox="true" isIOBox="true" Value="&lt;good answer here">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -411,153 +411,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="DLxuyZEojmhL4gwfa1PyQi" Name="Implicit Conversion for Upcasting in Spreads" Bounds="101,1087,711,414" />
-          <Pad Id="MX1Q1udisWHM9XvKUGQxqy" Bounds="125,1151,649,47" ShowValueBox="true" isIOBox="true" Value="When items are in spreads they cannot be directly converted from Spread&lt;A&gt; to Spread&lt;B&gt; even when A implicitly converts to B. &#xD;&#xA;The solution is to use a ForEach loop or similar to create the appropriate singular context where A can convert to B.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">7</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="TdpWCRONfgtPzrgu3zQram" SlotId="T0Frgax8mFHOyzODQxIyTx" Bounds="267,1233" />
-          <Pad Id="N57Rdckk8QfL3DrIYylbDZ" SlotId="NiGDOMX6H52MvnN0Sn610p" Bounds="271,1381" />
-          <Pad Id="UrimrCIQgRtNzU1dVgXyX0" Bounds="272,1291,120,72" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try drawing a link, cannnot connect because Spread&lt;RoundWidget&gt; does not implicitly convert to Spread&lt;IWidget&gt;">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="H0BMSD4ZO2gO9nZ8VUAScu" SlotId="T0Frgax8mFHOyzODQxIyTx" Bounds="563,1235" />
-          <Pad Id="A3X4gp6Nq72PCUXozTAitU" SlotId="NiGDOMX6H52MvnN0Sn610p" Bounds="565,1386" />
-          <Node Bounds="546,1268,80,86" Id="M8ryeuVKatzO7lrAaoLK8E">
-            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-            </p:NodeReference>
-            <Pin Id="NyWPBzBxnb5OT1PyAWvbXt" Name="Break" Kind="OutputPin" />
-            <Patch Id="QilktzCRt2CLAqwWlj1SIN" ManuallySortedPins="true">
-              <Patch Id="CLM59n14LfwPkNNOpg7C83" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="MVYHNJTwjBwNEUemdev6Jj" Name="Update" ManuallySortedPins="true" />
-              <Patch Id="Rm8vABNk9ytNOWOwV2cy9k" Name="Dispose" ManuallySortedPins="true" />
-            </Patch>
-            <ControlPoint Id="Kc76sEYNH8TOGfYaqRSbXl" Bounds="564,1274" Alignment="Top" />
-            <ControlPoint Id="SZMcKfw3RM7OLrqUrfaQYP" Bounds="565,1348" Alignment="Bottom" />
-          </Node>
-          <Pad Id="JqQTmNnCnH5Lbm0NWihZrc" Bounds="633,1290,120,72" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Try drawing a link to connect the splicers. This does work because RoundWidget does implicitly convert to IWidget">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">5</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Overlay Id="EixLJgFG18HQAyljI4ps6w" Name="Implicit Conversion for Upcasting in other collection types" Bounds="864,1090,711,414" />
-          <Pad Id="HPEfB93CxY2LukpSgtUUIo" SlotId="T0Frgax8mFHOyzODQxIyTx" Bounds="1031,1198" />
-          <Pad Id="O0mZOCxC5O4OfFrL2aQb1o" SlotId="KRbxVasDv7aPMFzxnTHieJ" Bounds="1174,1196" />
-          <Pad Id="IBftwCQjAVRNRAHDBYvI9J" SlotId="MZedVe5aiUsMTToi8xoLoU" Bounds="1367,1196" />
-          <Pad Id="G3kv3bnm9dtMi0co5XPNnP" SlotId="DntnnWEz3BFOFb9gNMGPIu" Bounds="1029,1343" />
-          <Pad Id="O4ekY5XMGVwMbNnOxqzmZG" SlotId="OTqiFsKJdXpOF29s2wTwXH" Bounds="1539,1192" />
-          <Node Bounds="1029,1264,48,19" Id="A4Y7mAed0nSOzF926bggHE">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="Concat" />
-            </p:NodeReference>
-            <Pin Id="KTKXVUsqA8NNNobv0bipsv" Name="Input" Kind="InputPin" />
-            <Pin Id="HwsvVAMRX9vOHmMQK8mVuX" Name="Input 2" Kind="InputPin" />
-            <Pin Id="DzdxkDk3so7OPbCutzHjlv" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Pad Id="UADEsUY8AqAPetpgP6oJx8" SlotId="TPPlG2SSDerMubdT3U0Ph8" Bounds="1365,1338" />
         </Canvas>
         <Patch Id="LoFBEUqh3PvPeNpyf7Hpir" Name="Create" />
-        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" ParticipatingElements="KyB41EDwS33LQwunn81EcP" />
+        <Patch Id="NmxJhnXiEEBQDOMInFLHPb" Name="Update" />
         <ProcessDefinition Id="Nou8e2vVhXsNA4Mz6LWV0f">
           <Fragment Id="H9LTRyfbjNCQFrAHTSMiww" Patch="LoFBEUqh3PvPeNpyf7Hpir" Enabled="true" />
           <Fragment Id="EaqvWO6UZXKMvfsXSp5dh9" Patch="NmxJhnXiEEBQDOMInFLHPb" Enabled="true" />
         </ProcessDefinition>
-        <Slot Id="T0Frgax8mFHOyzODQxIyTx" Name="Spread&lt;RoundWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Spread" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="RoundWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Slot Id="NiGDOMX6H52MvnN0Sn610p" Name="Spread&lt;IWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Spread" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="IWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Link Id="O6pL0y9z5o2OPdPFw4XSeh" Ids="H0BMSD4ZO2gO9nZ8VUAScu,Kc76sEYNH8TOGfYaqRSbXl" />
-        <Link Id="LnrWZppIKfvOUB2feRHdom" Ids="SZMcKfw3RM7OLrqUrfaQYP,A3X4gp6Nq72PCUXozTAitU" />
-        <Slot Id="KRbxVasDv7aPMFzxnTHieJ" Name="Spread&lt;RectWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Spread" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="RectWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Slot Id="MZedVe5aiUsMTToi8xoLoU" Name="Sequence&lt;RoundWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Sequence" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="RoundWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Slot Id="DntnnWEz3BFOFb9gNMGPIu" Name="Spread&lt;IWidget&gt;_2">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Spread" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="IWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Link Id="HS073mLpVEOO26l8xLiqNQ" Ids="HPEfB93CxY2LukpSgtUUIo,KTKXVUsqA8NNNobv0bipsv" />
-        <Link Id="EbhufBuVNd8PQzEXC1iIsc" Ids="O0mZOCxC5O4OfFrL2aQb1o,HwsvVAMRX9vOHmMQK8mVuX" />
-        <Link Id="OlIuOZ8szkDPD6mNvDOeg7" Ids="DzdxkDk3so7OPbCutzHjlv,G3kv3bnm9dtMi0co5XPNnP" />
-        <Slot Id="OTqiFsKJdXpOF29s2wTwXH" Name="Sequence&lt;RectWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Sequence" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="RectWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Slot Id="TPPlG2SSDerMubdT3U0Ph8" Name="Sequence&lt;IWidget&gt;">
-          <p:TypeAnnotation p:Type="TypeReference">
-            <Choice Kind="TypeFlag" Name="Sequence" />
-            <p:TypeArguments>
-              <TypeReference>
-                <Choice Kind="TypeFlag" Name="IWidget" />
-              </TypeReference>
-            </p:TypeArguments>
-          </p:TypeAnnotation>
-        </Slot>
-        <Link Id="KyB41EDwS33LQwunn81EcP" Ids="IBftwCQjAVRNRAHDBYvI9J,UADEsUY8AqAPetpgP6oJx8" />
       </Patch>
     </Node>
   </Patch>
