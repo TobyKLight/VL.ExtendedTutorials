@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M079j7w0GtGP3wihjHZpZn" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
-  <NugetDependency Id="Bsvdn5nKBUsOzWxFPnvmtf" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="M079j7w0GtGP3wihjHZpZn" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="Bsvdn5nKBUsOzWxFPnvmtf" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="Lt1CxW63D9KPKtS48qaoUq">
     <Canvas Id="VMAiKQCtGYuPQlVhFNBhSA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -31,7 +31,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="UIkhMqlAKKpPlUyC1Xkz3q" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="StMxD6V0CCZOeJuxZZjCHG" Name="Bounds" Kind="InputPin" DefaultValue="1065.6, 48, 439.2, 352" IsHidden="true" />
+            <Pin Id="StMxD6V0CCZOeJuxZZjCHG" Name="Bounds" Kind="InputPin" DefaultValue="1065.5, 48, 439, 352" IsHidden="true" />
             <Pin Id="UASMA3LgASjNj185t0o7kd" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="GWTrd0LCqPXOQSQr1MHzK3" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="LvgVnPROEZuMbfv363DBiA" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -46,6 +46,7 @@
             <Pin Id="UMRcQrcTv83OW4tFMyRbNF" Name="Post Effects" Kind="InputPin" />
             <Pin Id="MkhmwKMrjGbMFWUcYWsRYb" Name="Enable Default Post Effects" Kind="InputPin" />
             <Pin Id="KBWSBEYqRlWOnT3qOgSLKx" Name="Render Group Mask" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Faez4iUuojcOHWNjPCNAEH" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="LCsDNMrmbdUPtECMQNlAxc" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
             <Pin Id="DkDEH01aTqVLLCsC2PpowU" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="RqkFXjMtq3QMI3BIIlsA6t" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
@@ -2032,7 +2033,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BFIcjLbccXRLEZILL6Y4tp" Location="VL.Stride" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="BFIcjLbccXRLEZILL6Y4tp" Location="VL.Stride" Version="2024.6.2" />
   <NugetDependency Id="OqM5nJXc6fnLHj2f0FsPX8" Location="VL.PolyTools" Version="0.0.0" />
-  <NugetDependency Id="JqRGfbxcsxwOXsUgbxUToW" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="JqRGfbxcsxwOXsUgbxUToW" Location="VL.Skia" Version="2024.6.2" />
+  <NugetDependency Id="GpDzCNdRKShOcfkw5wC39a" Location="VL.Stride.TextureFX" Version="2024.6.2" />
 </Document>

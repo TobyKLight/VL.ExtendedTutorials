@@ -16,6 +16,9 @@ Some of these helppatches are accompanied by videos that you can find in this pl
 https://youtube.com/playlist?list=PLEncasrnvr2bkPb0QKdU1DrDs4Hd_Jr0V&feature=shared
 
 # Version History
+V1.1.10 
+* Small improvements in the type flex tutorials 
+
 V1.1.9 
 * Added small helppatch on working with the Box mathematical structure from Stride used by collision nodes. 
 
