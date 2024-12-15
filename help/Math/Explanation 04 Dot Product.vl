@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GWP07bCqOUPL1nS5upkn7n" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
-  <NugetDependency Id="I6YfCdUIRwKMPpfE8RzhUt" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GWP07bCqOUPL1nS5upkn7n" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="I6YfCdUIRwKMPpfE8RzhUt" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="GS7h4jcExDLOg2i8zv4JB2">
     <Canvas Id="CWgkhPnPp68PLjufmRGIZG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -31,6 +31,7 @@
             <Pin Id="KoHy3YeLfjELNPuQGs7mgo" Name="Space" Kind="InputPin" />
             <Pin Id="IEfwfhve3PrPjp8uOxbeB5" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="IPyRd4GdbbaPhWshksA2a9" Name="VSync" Kind="InputPin" />
+            <Pin Id="BqSlwIlQGL8PYkRg0jdMoH" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="B6FSooFdiidPib4W0GlvPn" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="AAM71h6EOMAQZsqWhmoHaa" Name="Enabled" Kind="InputPin" />
             <Pin Id="PqEtefF1LV3N5GGqtk40xa" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
@@ -1636,13 +1637,13 @@
             <Pin Id="JQD6subh7KBMPagURUbuyp" Name="ShowMidLabel" Kind="InputPin" DefaultValue="False" />
             <Pin Id="QKW2iWdI2pwLjzV5rOa4Lk" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="B3aNK1IGAKmLBoeQv7TQJX" Comment="Apos" Bounds="2294,274,35,28" ShowValueBox="true" isIOBox="true" Value="4.49, -1.2">
+          <Pad Id="B3aNK1IGAKmLBoeQv7TQJX" Comment="Apos" Bounds="2294,274,35,28" ShowValueBox="true" isIOBox="true" Value="0.36, -1.2">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
               <CategoryReference Kind="Category" Name="2D" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="S0gntOW1KFvLWSLqzWZu2h" Comment="Bpos" Bounds="2378,274,35,28" ShowValueBox="true" isIOBox="true" Value="-5.3, 0.37">
+          <Pad Id="S0gntOW1KFvLWSLqzWZu2h" Comment="Bpos" Bounds="2378,274,35,28" ShowValueBox="true" isIOBox="true" Value="-1.49, 0.37">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
@@ -1745,7 +1746,7 @@
             <Pin Id="BynTQ7FCB9bOZjSLBsm4cD" Name="Input 2" Kind="InputPin" />
             <Pin Id="TYERd5NRm9FMMBi9jCeD3f" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="OIrJ3jnyFWiQIh4uM5dkyu" Bounds="1550,998,104,99" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="OIrJ3jnyFWiQIh4uM5dkyu" Bounds="1550,998,104,99" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -2058,5 +2059,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ShR8r05wDk5NcTL5qfiDYc" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="ShR8r05wDk5NcTL5qfiDYc" Location="VL.Skia" Version="2024.6.2" />
 </Document>
