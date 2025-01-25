@@ -157,7 +157,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="D8sBGHYmJ8vOFCYbvsGSG3" Bounds="91,316,428,19" ShowValueBox="true" isIOBox="true" Value="https://vvvv.org/contribution/model-runtime-editor-design-pattern">
+          <Pad Id="D8sBGHYmJ8vOFCYbvsGSG3" Bounds="91,316,454,19" ShowValueBox="true" isIOBox="true" Value="https://legacy.vvvv.org/contribution/model-runtime-editor-design-pattern">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
