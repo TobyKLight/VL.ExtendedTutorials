@@ -15,7 +15,11 @@ Install by going to the top left menu > Manage Nugets > Commandline and typing
 Some of these helppatches are accompanied by videos that you can find in this playlist on youtube 
 https://youtube.com/playlist?list=PLEncasrnvr2bkPb0QKdU1DrDs4Hd_Jr0V&feature=shared
 
-# Version History
+# Release History
+V1.1.13
+* Added helppatch on generating every combination of x numbers (for brute forcing)
+* Added helppatch on inserting a new value in a sorted collection
+
 V1.1.10 
 * Small improvements in the type flex tutorials 
 
